@@ -230,3 +230,6 @@ Mikael Jacobsson (leochingkwake@gmail.com) has volunteered to translate the book
 ## Turkish
 
 Türker SEZER (tsezer@btturk.net) and Bugra Cakir (bugracakir@gmail.com) have volunteered to translate the book to Turkish. "Where is Turkish version? Bitse de okusak."
+
+## Persian 
+Najmeh Ghaderi (najmeh.gh.7.2008@gmail.com) has volunteered to translate the book into Persian. The translation has just been started and is currently in progress.
