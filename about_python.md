@@ -44,47 +44,47 @@
 
 برنامه ای که با یک زبان کامپایل شونده مانند C یا ++C  نوشته می شود،با استفاده از یک کامپایلر و مجموعه ای از پرچم ها و گزینه های متفاوت، از زبان منبع یعنی C یا ++C به زبانی قابل فهم برای کامپیوتر شما تبدیل می شود یعنی همان کد دودویی (کد باینری) متشکل از صفرها و یک ها.هنگامی که برنامه را اجرا می کنید، نرم افزار پیوند دهنده/بارگذار (linker\loader)، برنامه را از هارد دیسک به حافظه منتقل کرده و اجرای آن را آغاز می کند. 
 
-در مقابل، پایتون برای تبدیل شدن به کد باینری به کامپایل شدن احتیاجی ندارد. شما مستقیماً برنامه را از کد منبع _اجرا_ می کنید. پایتون در داخل خود، کد منبع را به شکلی میانی به نام بایت کدها (bytecodes) تبدیل می کند و سپس آن را به زبان بومی کامپیوترتان ترجمه کرده و اجرا می کند.  All this, actually, makes using Python much easier since you don't have to worry about compiling the program, making sure that the proper libraries are linked and loaded, etc. This also makes your Python programs much more portable, since you can just copy your Python program onto another computer and it just works!
+در مقابل، پایتون برای تبدیل شدن به کد باینری به کامپایل شدن احتیاجی ندارد. شما مستقیماً برنامه را از کد منبع _اجرا_ می کنید. پایتون در داخل خود، کد منبع را به شکلی میانی به نام بایت کدها (bytecodes) تبدیل می کند و سپس آن را به زبان بومی کامپیوترتان ترجمه کرده و اجرا می کند. در واقع، تمام این فرآیند باعث می شود استفاده از پایتون بسیار آسان تر شود؛زیرا نیازی به نگرانی درباره کامپایل کردن برنامه، اطمینان از پیوند و بارگذاری صحیح کتابخانه ها و موارد دیگر وجود ندارد. همچنین این امر سبب می شود برنامه های پایتون شما قابلیت حمل بیشتری داشته باشند؛ چون می توانید برنامۀ پایتون خود را بر روی کامپیوتر دیگر کپی کنید و برنامه شما به آسانی اجرا شود! 
 
-### Object Oriented
+### شئ گرا 
 
-Python supports procedure-oriented programming as well as object-oriented programming (OOP). In _procedure-oriented_ languages, the program is built around procedures or functions which are nothing but reusable pieces of programs. In _object-oriented_ languages, the program is built around objects which combine data and functionality. Python has a very powerful but simplistic way of doing OOP, especially when compared to big languages like C++ or Java.
+پایتون از برنامه نویسی رویه ای (Procedure-oriented programming) همانند برنامه نویسی شئ گرا (OOP) پشتیبانی می کند. در زبان های _رویه ای_، برنامه حول رویه ها یا توابع ساخته می شوند؛ واحدهایی که در واقع قسمت های قابل استفاده مجدد از برنامه ها هستند.  در زبان های _شئ گرا_، برنامه حول اشیاء ساخته می شود که داده و ویژگی های مرتبط با آن را با یکدیگر ترکیب می کند.  پایتون دارای روشی بسیار قدرتمند، اما در عین حال ساده، برای برنامه نویسی شئ گرا است؛به خصوص هنگامی که با زبان های بزرگی مانند ++C یا جاوا مقایسه می شود.  
 
-### Extensible
+### توسعه پذیر
 
-If you need a critical piece of code to run very fast or want to have some piece of algorithm not to be open, you can code that part of your program in C or C\++ and then use it from your Python program.
+اگر به بخشی ضروری از کد نیاز دارید که با سرعت بالا اجرا شود یا می خواهید قسمتی از یک الگوریتم دیده نشود،می توانید آن بخش از برنامه را در C یا ++C بنویسید سپس از آن در برنامه پایتون خود استفاده کنید. 
 
-### Embeddable
+### قابل جاسازی
 
-You can embed Python within your C/C\++ programs to give _scripting_ capabilities for your program's users.
+شما می توانید پایتون را در برنامه های C++\C خود جاسازی کنید تا قابلیت های _اسکریپت نویسی_ را در اختیار کاربران برنامه پایتون خود قرار دهید.
 
-### Extensive Libraries
+### کتابخانه های گسترده
 
-The Python Standard Library is huge indeed. It can help you do various things involving regular expressions,documentation generation, unit testing, threading, databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV files, cryptography, GUI (graphical user interfaces), and other system-dependent stuff. Remember, all this is always available wherever Python is installed. This is called the _Batteries Included_ philosophy of Python.
+کتابخانه استاندارد پایتون واقعا عظیم است. این کتابخانه می تواند به شما در انجام کارهای گوناگون کمک کند؛ از جمله کار با عبارات با قاعده، تولید مستندات، آزمون واحد، بند کشی، پایگاه های داده، مرورگرهای وب، CGI،FTP، ایمیل، XML, XML-RPC, HTML, WAV files, رمزنگاری، GUI (رابط های کاربری گرافیکی)، و سایر قابلیت های وابسته به سیستم.  به خاطر داشته باشید که تمام این قابلیت ها هرجایی که پایتون نصب شده باشد، در دسترس است. این رویکرد با عنوان فلسفه  _باتری های مشمول_ (_Batteries Included_) پایتون شناخته می شود.  
 
-Besides the standard library, there are various other high-quality libraries which you can find at the [Python Package Index](http://pypi.python.org/pypi).
+علاوه بر کتابخانه استاندارد، کتابخانه های با کیفیت متعدد دیگری نیز وجود دارد که شما می توانید آن ها را در [Python Package Index](http://pypi.python.org/pypi) پیدا کنید. 
 
-### Summary
+### خلاصه
 
-Python is indeed an exciting and powerful language. It has the right combination of performance and features that make writing programs in Python both fun and easy.
+پایتون واقعا زبانی جذاب و قدرتمند است. این زبان دارای ترکیبی مناسب از عملکرد و ویژگی ها است؛ ترکیبی که برنامه نویسی در پایتون را هم لذت بخش و هم آسان می کند. 
 
-## Python 3 versus 2
+## پایتون 3 در برابر پایتون 2
 
-You can ignore this section if you're not interested in the difference between "Python version 2" and "Python version 3". But please do be aware of which version you are using. This book is written for Python version 3.
+اگر علاقه ای به دانستن تفاوت بین «نسخه 2 پایتون» و «نسخه 3 پایتون» ندارید، می توانید از خواندن این بخش صرف نظر کنید. با این حال، حتماً توجه داشته باشید که از کدام نسخه استفاده می کنید. این کتاب برای نسخه 3 پایتون نوشته شده است. 
 
-Remember that once you have properly understood and learn to use one version, you can easily learn the differences and use the other one. The hard part is learning programming and understanding the basics of Python language itself. That is our goal in this book, and once you have achieved that goal, you can easily use Python 2 or Python 3 depending on your situation.
+به یاد داشته باشید که پس از آنکه یک نسخه را به درستی درک و یاد گرفتید، می توانید به راحتی تفاوت های بین دو نسخه و استفاده از نسخه دیگر را فرا بگیرید. بخش دشوار کار، یادگیری برنامه نویسی و درک مبانی خود زبان پایتون است. هدف ما در این کتاب نیز همین است و هنگامی که به این هدف دست پیدا کنید، بسته به شرایط خود، می توانید از پایتون 2 یا پایتون 3 استفاده کنید.
 
-For details on differences between Python 2 and Python 3, see:
+برای اطلاع از جزئیات تفاوت های میان پایتون2 وپایتون3، منابع زیر را مشاهده کنید:
 
 - [The future of Python 2](http://lwn.net/Articles/547191/)
 - [Porting Python 2 Code to Python 3](https://docs.python.org/3/howto/pyporting.html)
 - [Writing code that runs under both Python2 and 3](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
 - [Supporting Python 3: An in-depth guide](http://python3porting.com)
 
-## What Programmers Say
+## هر آنچه برنامه نویسان می گویند 
 
-You may find it interesting to read what great hackers like Eric S. Raymond (ESR) have to say about Python:
+شاید برایتان جالب باشد که بدانید هکرهای برجسته ای همچون اریک اس. ریموند (ESR) چه نظری دربارۀ پایتون دارند: 
 
-- _Eric S. Raymond_ is the author of "The Cathedral and the Bazaar" and is also the person who coined the term _Open Source_. He says that [Python has become his favorite programming language](http://www.python.org/about/success/esr/). This article was the real inspiration for my first brush with Python.
-- _Bruce Eckel_ is the author of the famous 'Thinking in Java' and 'Thinking in C++' books. He says that no language has made him more productive than Python. He says that Python is perhaps the only language that focuses on making things easier for the programmer. Read the [complete interview](http://www.artima.com/intv/aboutme.html) for more details.
-- _Peter Norvig_ is a well-known Lisp author and Director of Search Quality at Google (thanks to Guido van Rossum for pointing that out). He says that [writing Python is like writing in pseudocode](https://news.ycombinator.com/item?id=1803815). He says that Python has always been an integral part of Google. You can actually verify this statement by looking at the [Google Jobs](http://www.google.com/jobs/index.html) page which lists Python knowledge as a requirement for software engineers.
+- _اریک اس. ریموند_ نویسنده کتاب "The Cathedral and the Bazaar" است و همچنین کسی است که اصطلاح _متن باز_ را ابداع کرد. او می گوید [Python has become his favorite programming language](http://www.python.org/about/success/esr/) این مقاله الهام بخش واقعی نخستین تجربۀ من در کار با پایتون بود.
+- _بروس اکل_ نویسنده کتاب های مشهور 'Thinking in Java' و 'Thinking in ++C' است. او می گوید هیچ زبانی به اندازه پایتون بهره وری او را افزایش نداده است. همچنین معتقد است پایتون شاید تنها زبانی باشد که بر آسان تر کردن کارها برای برنامه نویس متمرکز شده است. برای جزئیات بیشتر [complete interview](http://www.artima.com/intv/aboutme.html) را بخوانید.  
+- _پیتر نورویگ_ نویسنده ای شناخته شده در حوزه زبان Lisp و مدیر کیفیت جست و جو در شرکت Google است (با تشکر از گیدو وان روسوم برای اشاره به این موضوع). او می گوید [writing Python is like writing in pseudocode](http://news.ycombinator.com/item?id=1803815). همچنین بیان می کند که پایتون همواره بخشی جدایی ناپذیر از گوگل بوده است.  در واقع می توانید این گفته را با مراجعه به صفحه [Google Jobs](http://www.google.com/jobs/index.html) بررسی کنید؛صفحه ای که دانش پایتون را به عنوان یکی از الزامات برای مهندسان نرم افزار فهرست کرده است. 
