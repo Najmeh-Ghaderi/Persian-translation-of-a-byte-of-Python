@@ -1,52 +1,50 @@
-# About Python
+# درباره پایتون
 
-Python is one of those rare languages which can claim to be both _simple_ and _powerful_. You will find yourself pleasantly surprised to see how easy it is to concentrate on the solution to the problem rather than the syntax and structure of the language you are programming in.
+ پایتون یکی از آن معدود زبان هایی است که می تواند در عین _سادگی_ ادعای _قدرتمند بودن_ نیز داشته باشد.از اینکه قادر هستید به جای تمرکز بر نحو و ساختار زبانی که با آن برنامه نویسی می کنید بر روی راه حل مسئله متمرکز شوید، شگفت زده خواهید شد.
 
-The official introduction to Python is:
+معرفی رسمی پایتون به شرح زیر است:
 
-> Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
+>پایتون یک زبان برنامه نویسی با یادگیری آسان و قدرتمند است .این زبان دارای ساختارهای داده سطح بالای  کارآمد و رویکردی مؤثر در عین حال ساده در برنامه نویسی شئ گرا است.  نحو شیک و تایپ پویا، در کنار ماهیت  تفسیری پایتون، این زبان را به زبانی ایده آل برای اسکریپت نویسی و توسعه سریع برنامه ها در حوزه های متعدد در بیشتر پلتفرم ها تبدیل کرده است.  
 
-I will discuss most of these features in more detail in the next section.
+در قسمت بعدی، بیشتر این ویژگی ها را با جزئیات مورد بررسی قرار خواهم داد.
 
-## Story behind the name
+## داستان نام گذاری
 
-Guido van Rossum, the creator of the Python language, named the language after the BBC show "Monty
-Python's Flying Circus". He doesn't particularly like snakes that kill animals for food by winding
-their long bodies around them and crushing them.
+گیدو وان روسوم،خالق زبان پایتون،این زبان را بعد از تماشای برنامه تلویزیونی بی بی سی «سیرک پرنده مانتی پایتون» نام گذاری کرد. او علاقه خاصی به مارهایی ندارد که برای تغذیه، حیوانات دیگر را با پیچیدن بدن بلند خود به دور آن ها و فشردنشان می کشند. 
 
-## Features of Python
+## ویژگی های پایتون
 
-### Simple
+### ساده بودن
 
-Python is a simple and minimalistic language. Reading a good Python program feels almost like reading English, although very strict English! This pseudo-code nature of Python is one of its greatest strengths. It allows you to concentrate on the solution to the problem rather than the language itself.
+پایتون زبانی ساده و کمینه گرا است. خواندن یک برنامه پایتون خوب احساسی شبیه به خواندن زبان انگلیسی دارد، البته زبان انگلیسی بسیار دقیق! این ذات شبه کدی پایتون یکی از بهترین نقاط قوت آن محسوب می شود. این امر به شما اجازه می دهد که به جای تمرکز بر خود زبان، بر راه حل مسئله متمرکز شوید.
 
-### Easy to Learn
+### یادگیری آسان 
 
-As you will see, Python is extremely easy to get started with. Python has an extraordinarily simple syntax, as already mentioned.
+همانطور که خواهید دید، شروع کار با پایتون بسیار آسان است.همانگونه که اشاره شد، پایتون از نحو فوق العاده ساده برخوردار است. 
 
-### Free and Open Source
+### رایگان و متن باز 
 
-Python is an example of a _FLOSS_ (Free/Libre and Open Source Software). In simple terms, you can freely distribute copies of this software, read its source code, make changes to it, and use pieces of it in new free programs. FLOSS is based on the concept of a community which shares knowledge. This is one of the reasons why Python is so good - it has been created and is constantly improved by a community who just want to see a better Python.
+پایتون نمونه ای از _FLOSS_ (نرم افزار آزاد/رایگان و متن باز) است.به بیان ساده، شما قادر به توزیع آزادانه نسخه هایی از این نرم افزار، مطالعه ی کد منبع آن، ایجاد تغییراتی در آن، و استفاده بخش هایی از آن در برنامه های رایگان جدید هستید. FLOSS بر مفهوم جامعه ای مبتنی است که با یکدیگر دانش را به اشتراک می گذارند. این موضوع یکی از دلایلی است که پایتون تا به این اندازه خوب و موفق است - پایتون توسط جامعه ای خلق شده است و به طور مداوم توسعه می یابد که فقط می خواهند نسخه ای بهتر از پایتون را ببینند.  
 
-### High-level Language
+### زبان سطح بالا
 
-When you write programs in Python, you never need to bother about the low-level details such as managing the memory used by your program, etc.
+زمانی که شما برنامه ای در پایتون می نویسید، هرگز نیازی ندارید که خود را درگیر جزئیات سطح پایین، مانند مدیریت حافظه مورد استفاده برنامه و موارد مشابه آن، کنید. 
 
-### Portable
+### قابل حمل
 
-Due to its open-source nature, Python has been ported to (i.e. changed to make it work on) many platforms. All your Python programs can work on any of these platforms without requiring any changes at all if you are careful enough to avoid any system-dependent features.
+به دلیل ماهیت متن باز بودن پایتون، این زبان به پلتفرم های مختلفی منتقل شده است؛ بدین معنا که برای اجرا بر روی این پلتفرم ها تغییر داده شده است. اگر به اندازه کافی دقت داشته باشید که از ویژگی ها و قابلیت های وابسته به سیستم عامل اجتناب کنید، تمام برنامه های پایتون شما می توانند بدون نیاز به هیچ گونه تغییری بر هر یک از این پلتفرم ها اجرا شوند.   
 
-You can use Python on GNU/Linux, Windows, FreeBSD, Macintosh, Solaris, OS/2, Amiga, AROS, AS/400, BeOS, OS/390, z/OS, Palm OS, QNX, VMS, Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE and PocketPC!
+  شما می توانید از پایتون در GNU/Linux, Windows, FreeBSD, Macintosh, Solaris, OS/2, Amiga, AROS, AS/400, BeOS, OS/390, z/OS, PalmOS,QNX, VMS, Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE و PocketPC استفاده کنید!
 
-You can even use a platform like [Kivy](http://kivy.org) to create games for your computer _and_ for iPhone, iPad, and Android.
+حتی می توانید از پلتفرمی همچون [Kivy](http://kivy.org)برای ساخت بازی هایی استفاده کنید که هم بر روی کامپیوتر _و_ آیفون، آیپد، و اندروید اجرا شوند.
 
-### Interpreted
+### تفسیری
 
-This requires a bit of explanation.
+این ویژگی به کمی توضیح نیاز دارد. 
 
-A program written in a compiled language like C or C\++ is converted from the source language i.e. C or C++ into a language that is spoken by your computer (binary code i.e. 0s and 1s) using a compiler with various flags and options. When you run the program, the linker/loader software copies the program from hard disk to memory and starts running it.
+برنامه ای که با یک زبان کامپایل شونده مانند C یا ++C  نوشته می شود،با استفاده از یک کامپایلر و مجموعه ای از پرچم ها و گزینه های متفاوت، از زبان منبع یعنی C یا ++C به زبانی قابل فهم برای کامپیوتر شما تبدیل می شود یعنی همان کد دودویی (کد باینری) متشکل از صفرها و یک ها.هنگامی که برنامه را اجرا می کنید، نرم افزار پیوند دهنده/بارگذار (linker\loader)، برنامه را از هارد دیسک به حافظه منتقل کرده و اجرای آن را آغاز می کند. 
 
-Python, on the other hand, does not need compilation to binary. You just _run_ the program directly from the source code. Internally, Python converts the source code into an intermediate form called bytecodes and then translates this into the native language of your computer and then runs it. All this, actually, makes using Python much easier since you don't have to worry about compiling the program, making sure that the proper libraries are linked and loaded, etc. This also makes your Python programs much more portable, since you can just copy your Python program onto another computer and it just works!
+در مقابل، پایتون برای تبدیل شدن به کد باینری به کامپایل شدن احتیاجی ندارد. شما مستقیماً برنامه را از کد منبع _اجرا_ می کنید. پایتون در داخل خود، کد منبع را به شکلی میانی به نام بایت کدها (bytecodes) تبدیل می کند و سپس آن را به زبان بومی کامپیوترتان ترجمه کرده و اجرا می کند.  All this, actually, makes using Python much easier since you don't have to worry about compiling the program, making sure that the proper libraries are linked and loaded, etc. This also makes your Python programs much more portable, since you can just copy your Python program onto another computer and it just works!
 
 ### Object Oriented
 
