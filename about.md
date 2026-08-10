@@ -1,37 +1,33 @@
-# Appendix: Colophon {#colophon}
+# پیوست: شناسنامه اثر{colophon#}
+تقریباً تمام نرم افزارهایی که از آن ها در نگارش این کتاب استفاده کرده ام، از نوع [FLOSS](./floss.md#floss) هستند.
 
-Almost all of the software that I have used in the creation of this book are [FLOSS](./floss.md#floss).
+## دوران تولد کتاب 
 
-## Birth of the Book
+در نخستین پیش نویس این کتاب، از Red Hat 9.0 Linux به عنوان پایه محیط کاری خود استفاده می کردم و در ششمین پیش نویس، Fedora Core 3 Linux را مبنای محیط کاری خود قرار دادم. 
 
-In the first draft of this book, I had used Red Hat 9.0 Linux as the foundation of my setup and in the sixth draft, I used Fedora Core 3 Linux as the basis of my setup.
+در ابتدا، از KWord برای نوشتن کتاب استفاده می کردم؛ (همانطور که در [history lesson](./revision_history.md#history-lesson) توضیح داده شده است).
 
-Initially, I was using KWord to write the book (as explained in the [history lesson](./revision_history.md#history-lesson)).
+## دوران نوجوانی
 
-## Teenage Years
+بعداً، با استفاده از Kate به DocBook XML روی آوردم، اما کار با آن بسیار خسته کننده بود. بنابراین، به OpenOffice تغییر مسیر دادم؛ نرم افزاری که از نظر میزان کنترلی که برای قالب بندی و نیز تولید فایل های پی دی اف در اختیارم قرار می داد، فوق العاده بود؛ اما HTML حاصل از سند را، بسیار نامرتب و بی کیفیت تولید می کرد. 
 
-Later, I switched to DocBook XML using Kate but I found it too tedious. So, I switched to OpenOffice which was just excellent with the level of control it provided for formatting as well as the PDF generation, but it produced very sloppy HTML from the document.
+در نهایت، XEmacs را یافتم و پس از آنکه متوجه شدم این فرمت می تواند راه حل بلند مدت مناسبی باشد، کتاب را باری دیگر از ابتدا و به طور کامل در DocBook XML بازنویسی کردم. 
 
-Finally, I discovered XEmacs and I rewrote the book from scratch in DocBook XML (again) after I decided that this format was the long term solution.
+در ششمین پیش نویس، تصمیم گرفتم تمام ویرایش ها را با استفاده از +Quanta انجام دهم. در آن موقع، از شیوه نامه های استاندارد XSL که همراه با Fedora Core 3 Linux ارائه می شدند، استفاده می کردم. با این حال، یک سند CSSنوشته بودم تا به صفحات HTML رنگ و سبک بصری ببخشد. همچنین، یک تحلیلگر واژگانی ابتدایی نیز نوشته بودم،البته با استفاده از پایتون، که به طور خودکار برای تمام قطعه های کد موجود در کتاب، برجسته سازی نحوی (syntax highlighting) را فراهم می کرد.  
 
-In the sixth draft, I decided to use Quanta+ to do all the editing. The standard XSL stylesheets that came with Fedora Core 3 Linux were being used. However, I had written a CSS document to give color and style to the HTML pages. I had also written a crude lexical analyzer, in Python of course, which automatically provides syntax highlighting to all the program listings.
+ در هفتمین پیش نویس، به عنوان محیط کاری خود از [MediaWiki](http://www.mediawiki.org) استفاده می کردم. همه چیز را به صورت آنلاین ویرایش می کردم و خوانندگان نیز می توانستند مستقیماً در وب سایت ویکی مطالب را مطالعه،ویرایش و درباره آن بحث کنند؛ اما زمان زیادی را صرف مقابله با هرزنامه ها می کردم تا نوشتن کتاب. 
 
-For the seventh draft, I was using [MediaWiki](http://www.mediawiki.org) as the basis of my setup. I used to edit everything online and the readers can directly read/edit/discuss within the wiki website, but I ended up spending more time fighting spam than writing.
+در هشتمین پیش نویس، از ({{ book.vimBookUrl }})[Vim] ,  [Pandoc](http://johnmacfarlane.net/pandoc/README.html) و Mac OS X استفاده می کردم. 
 
-For the eight draft, I used [Vim]({{ book.vimBookUrl }}), [Pandoc](http://johnmacfarlane.net/pandoc/README.html), and Mac OS X.
+در نهمین پیش نویس، به [AsciiDoc format](http://asciidoctor.org/docs/what-is-asciidoc/) روی آوردم و برای نگارش از [Emacs 24.3](http://www.masteringemacs.org/articles/2013/03/11/what-new-emacs-24-03/), [tomorrow theme](https://github.com/chriskempson/tomorrow-theme) , [Fira Mono font](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/#download-primary) و [adoc-mode](https://github.com/sensorflo/adoc-mode/wiki) استفاده کردم. 
 
-For the ninth draft, I switched to [AsciiDoc format](http://asciidoctor.org/docs/what-is-asciidoc/) and used [Emacs 24.3](http://www.masteringemacs.org/articles/2013/03/11/whats-new-emacs-24-3/),
-[tomorrow theme](https://github.com/chriskempson/tomorrow-theme),
-[Fira Mono font](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/#download-primary) and [adoc-mode](https://github.com/sensorflo/adoc-mode/wiki) to write.
+## اکنون
 
-## Now
+2016: از چندین مشکل جزئی در رندر شدن (rendering) اسناد در AsciiDoctor خسته شدم ؛ به طور مثال علامت های ` ++` در `C/++C`ناپدید می شدند و پیگیری و مدیریت چنین موارد جزئی مربوط به escaping دشوار بود. علاوه بر این، به دلیل پیچیدگی قالب Asciidoc، دیگر تمایل چندانی به ویرایش متن نداشتم. 
 
-2016: I got tired of several minor rendering issues in AsciiDoctor, like the `++` in `C/C++` would disappear and it was hard to keep track of escaping such minor things. Plus, I had become reluctant to edit the text because of the complex Asciidoc format.
+ در دهمین پیش نویس، نگارش کتاب را در قالب Markdown + [GitBook](https://www.gitbook.com) آغاز کردم و از [Spacemacs editor](http://spacemacs.org) استفاده کردم. 
 
-For the tenth draft, I switched to writing in Markdown + [GitBook](https://www.gitbook.com) format, using the [Spacemacs editor](http://spacemacs.org).
+نوامبر 2020: از آنجایی که Gitbook نرم افزار متن باز خود را متوقف کرده بود، پروژه را به [Honkit, که یک فورک تحت نظارت جامعه کاربری گیت بوک است](https://github.com/honkit/honkit) منتقل کردم. 
 
-Nov 2020: Since Gitbook abandoned their open source software, migrated to [Honkit, a community-maintained fork of Gitbook legacy](https://github.com/honkit/honkit).
-
-## About the Author
-
-See {{ book.authorUrl }}
+## دربارۀ نویسنده 
+به {{ book.authorUrl }} مراجعه کنید. 
