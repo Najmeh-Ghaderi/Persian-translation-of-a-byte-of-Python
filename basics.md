@@ -1,73 +1,77 @@
-# Basics
+# مبانی
+فقظ پرینت کردن `hello world` کافی نیست، درست است؟شما می خواهید کارهایی بیش از این انجام دهید - می خواهید مقداری ورودی دریافت کنید، آن را پردازش کنید و در نهایت از آن خروجی به دست آورید. در پایتون می توانیم با استفاده از ثابت ها و متغیر ها این هدف را کسب کنیم و همچنین در این فصل با مفاهیم دیگری آشنا خواهیم شد. 
 
-Just printing `hello world` is not enough, is it? You want to do more than that - you want to take some input, manipulate it and get something out of it. We can achieve this in Python using constants and variables, and we'll learn some other concepts as well in this chapter.
+## توضیحات
 
-## Comments
+ _توضیحات_ متونی هستند که در سمت راست نماد `#` قرار می گیرند و بیشتر برای ارائۀ نکات و یادداشت ها به خوانندۀ برنامه مورد استفاده قرار می گیرند.
 
-_Comments_ are any text to the right of the `#` symbol and is mainly useful as notes for the reader of the program.
-
-For example:
+برای مثال: 
 
 ```python
-print('hello world') # Note that print is a function
+print('hello world')   # یک تابع است print توجه داشته باشید
 ```
 
-or:
+یا: 
 
 ```python
-# Note that print is a function
+#print یک تابع است
 print('hello world')
 ```
 
-Use as many useful comments as you can in your program to:
+برای توضیح موارد زیر تا حد امکان از توضیحات مفید استفاده کنید:
 
-- explain assumptions
-- explain important decisions
-- explain important details
-- explain problems you're trying to solve
-- explain problems you're trying to overcome in your program, etc.
+- فرضیات 
+- تصمیمات مهم 
+- جزئیات ضروری 
+- مسائلی که سعی در حل آن ها دارید
+- مشکلاتی که در برنامۀ خود در تلاش برای برطرف کردن آنها هستید و موارد دیگر
 
 [*Code tells you how, comments should tell you why*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
 
-This is useful for readers of your program so that they can easily understand what the program is doing. Remember, that person can be yourself after six months!
+این موضوع برای خوانندگان برنامۀ شما مفید است، زیرا می توانند به راحتی متوجه شوند برنامه شما چه کاری انجام می دهد.
 
-## Literal Constants
+ در نظر داشته باشید، که آن فرد ممکن است خود شما، شش ماه بعد باشید!
 
-An example of a literal constant is a number like `5`, `1.23`, or a string like `'This is a string'` or `"It's a string!"`.
+## ثابت های تلفظی (Literal constants)
 
-It is called a literal because it is _literal_ - you use its value literally. The number `2` always represents itself and nothing else - it is a _constant_ because its value cannot be changed. Hence, all these are referred to as literal constants.
+مثالی از یک ثابت تلفظی عددی مانند `5`, `1.23` یا رشته ای مانند `'!This is a string'`, `"It's a string"` است. 
 
-## Numbers
+به آن لفظی گفته می شود چون دقیقا همان _لفظی_ است - زیرا مقدار آن را همانگونه که هست استفاده می کنید. عدد `2` همواره بیانگر خودشاست و نه چیز دیگری؛ این یک _ثابت_ است زیرا مقدار آن غیر قابل تغییر است. بنابراین، تمام این موارد ثابت های تلفظی نامیده می شوند. 
 
-Numbers are mainly of two types - integers and floats.
+## اعداد
 
-An example of an integer is `2` which is just a whole number.
+اعداد عمدتاً به دو نوع تقسیم می شوند؛ اعداد صحیح و اعداد اعشاری
 
-Examples of floating point numbers (or _floats_ for short) are `3.23` and `52.3E-4`. The `E` notation indicates powers of 10. In this case, `52.3E-4` means `52.3 * 10^-4`.
+نمونه ای از یک عدد صحیح عدد `2` است که صرفاً یک عدد کامل است. 
 
-> **Note for Experienced Programmers**
+نمونه هایی از اعداد اعشاری (یا به اختصار _floats_) `3.23` و `52.3E-4` هستند نماد `E` نشان دهندۀ توان های 10 است.
+
+ در این مثال،
+ `52.3E-4` به معنای `10^-4 * 52.3` است. 
+
+> **نکته ای برای برنامه نویسان با تجربه**
 > 
-> There is no separate `long` type. The `int` type can be an integer of any size.
+> نوع جداگانه ای به نام `long` وجود ندارد. نوع `int` می تواند عدد صحیحی با هر اندازه ای باشد. 
 
-## Strings
+## رشته ها 
 
-A string is a _sequence_ of _characters_. Strings are basically just a bunch of words.
+رشته ها _دنباله ای_ از _کاراکترها_ هستند. رشته ها در اصل مجموعه ای از کلمات هستند. 
 
-You will be using strings in almost every Python program that you write, so pay attention to the following part.
+تقریباً در هر برنامه پایتونی که می نویسید از رشته ها استفاده می کنید، پس به بخش بعدی خیلی خوب توجه کنید: 
 
-### Single Quote
+### نقل قول های تکی (Single Quotes)
 
-You can specify strings using single quotes such as `'Quote me on this'`.
+می توانید با استفاده از نقل قول های تکی رشته ها را مشخص کنید، مانند: `'Quote me on this'`. 
 
-All white space i.e. spaces and tabs, within the quotes, are preserved as-is.
+تمام فضاهای خالی، یعنی فاصله ها و Tabها، که درون نقل قول ها قرار دارند دقیقاً به همان شکل حفظ می شوند. 
 
-### Double Quotes
+### نقل قول های دوتایی (Double Quotes)
 
-Strings in double quotes work exactly the same way as strings in single quotes. An example is `"What's your name?"`.
+رشته هایی که درون نقل قول های دوتایی قرار می گیرند دقیقاً ماند رشته های دارای نقل قول تکی عمل می کنند. برای نمونه: `"?What's your name"`. 
 
-### Triple Quotes {#triple-quotes}
+### نقل قول های سه تایی {triple-quotes#} 
 
-You can specify multi-line strings using triple quotes - (`"""` or `'''`). You can use single quotes and double quotes freely within the triple quotes. An example is:
+می توانید رشته های چند خطی را با استفاده از نقل قول های سه تایی (`"""` یا `'''`) مشخص کنید. درون نقل قول های سه تایی می توانید آزادانه از نقل قول های تکی و دوتایی استفاده کنید. مثلاً: 
 
 ```python
 '''This is a multi-line string. This is the first line.
@@ -77,27 +81,25 @@ He said "Bond, James Bond."
 '''
 ```
 
-### Strings Are Immutable
+### غیر قابل تغییر بودن رشته ها
 
-This means that once you have created a string, you cannot change it. Although this might seem like
-a bad thing, it really isn't. We will see why this is not a limitation in the various programs that
-we see later on.
+این بدان معناست که پس از ایجاد رشته، نمی توانید آن را تغییر دهید. اگرچه این موضوع ممکن است نامطلوب به نظز برسد، اما در واقع چنین نیست. در برنامه های مختلفی که در ادامه خواهیم دید، متوجه خواهیم شد که چرا این موضوع محدودیت به شمار نمی رود. 
 
-> **Note for C/C++ Programmers**
+> **نکته ای برای برنامه نویسان C++/C**
 > 
-> There is no separate `char` data type in Python. There is no real need for it and I am sure you won't miss it.
+> در پایتون نوع داده جداگانه ای به نام `char` وجود ندارد. در واقع نیازی به چنین نوعی نیست و من یقین دارم نبودش را احساس نخواهید کرد. 
 
 <!-- -->
 
-> **Note for Perl/PHP Programmers**
+> **نکته ای برای برنامه نویسان Perl/PHP**
 > 
-> Remember that single-quoted strings and double-quoted strings are the same - they do not differ in any way.
+> به خاطر داشته باشید که رشته های دارای نقل قول تکی و رشته های دارای نقل قول دوتایی یکسان هستند و هیچ تفاوتی با یکدیگر ندارند. 
 
-### The format method
+### روش format 
 
-Sometimes we may want to construct strings from other information. This is where the `format()` method is useful.
+گاهی اوقات ممکن است تمایل داشته باشیم رشته هایی را براساس اطلاعات دیگری ایجاد کنیم. در چنین شرایطی روش `()format`مفید واقع می شود.  
 
-Save the following lines as a file `str_format.py`:
+خطوط زیر را در فایلی به نام `str_format.py` ذخیره کنید: 
 
 ```python
 age = 20
@@ -107,7 +109,7 @@ print('{0} was {1} years old when he wrote this book'.format(name, age))
 print('Why is {0} playing with that python?'.format(name))
 ```
 
-Output:
+خروجی:
 
 ```
 $ python str_format.py
@@ -115,21 +117,21 @@ Swaroop was 20 years old when he wrote this book
 Why is Swaroop playing with that python?
 ```
 
-**How It Works**
+**نحوۀ عملکرد**
 
-A string can use certain specifications and subsequently, the `format` method can be called to substitute those specifications with corresponding arguments to the `format` method.
+یک رشته می تواند شامل مشخصه های خاصی باشد و پس از می توان روش `format` را فراخوانی کرد تا این مشخصه ها را با آرگومان های متناظر جایگزین کند. 
 
-Observe the first usage where we use `{0}` and this corresponds to the variable `name` which is the first argument to the format method. Similarly, the second specification is `{1}` corresponding to `age` which is the second argument to the format method. Note that Python starts counting from 0 which means that first position is at index 0, second position is at index 1, and so on.
+در نخستین کاربرد، از `{0}` استفاده کردیم که با متغیر `name` مطابقت دارد؛ که نخستین آرگومان روش format است. به همین ترتیب، مشخصه دوم یعنی `{1}` با `age` که دومین آرگومان متد format است متناسب است توجه داشته باشید که پایتون شمارش را از 0 آغاز می کند؛ بدان معنا که موقعیت اول دارای اندیس 0، موقعیت دوم اندیس 1 و به همین ترتیب است. 
 
-Notice that we could have achieved the same using string concatenation:
+توجه داشته باشید که می توانستیم همین نتیجه را با استفاده از الحاق رشته ها نیز به دست آوریم: 
 
 ```python
 name + ' is ' + str(age) + ' years old'
 ```
 
-but that is much uglier and more error-prone. Second, the conversion to string would be done automatically by the `format` method instead of the explicit conversion to strings needed in this case. Third, when using the `format` method, we can change the message without having to deal with the variables used and vice-versa.
+اما این روش نامرتب تر و مستعد خطاست. دوم اینکه در روش `format` تبدیل مقدار به رشته به صورت خودکار انجام می شود در حالی که در این حالت باید صریحاً آن را به رشته تبدیل کنیم. سوم اینکه هنگام استفاده از روش `format` می توانیم بدون درگیر شدن با متغیر ها پیام مورد نظر را تغییر دهیم و برعکس. 
 
-Also note that the numbers are optional, so you could have also written as:
+همچنین به یاد داشته باشید که اعداد اختیاری هستند؛ بنابراین می توانستید به صورت زیر کد را بنویسید: 
 
 ```python
 age = 20
@@ -139,9 +141,9 @@ print('{} was {} years old when he wrote this book'.format(name, age))
 print('Why is {} playing with that python?'.format(name))
 ```
 
-which will give the same exact output as the previous program.
+که یک خروجی همانند برنامۀ قبلی خواهد داشت.
 
-We can also name the parameters:
+همچنین می توانیم پارامترها را نام گذاری کنیم: 
 
 ```python
 age = 20
@@ -151,33 +153,33 @@ print('{name} was {age} years old when he wrote this book'.format(name=name, age
 print('Why is {name} playing with that python?'.format(name=name))
 ```
 
-which will give the same exact output as the previous program.
+این کد نیز دقیقاً همان خروجی برنامه قبل را تولید خواهد کرد. 
 
-Python 3.6 introduced a shorter way to do named parameters, called "f-strings":
+پایتون 3.6 روش میانبری را برای استفاده از پارامترهای نام گذاری شده معرفی کرد، به نام "f-strings":
 
 ```python
 age = 20
 name = 'Swaroop'
 
-print(f'{name} was {age} years old when he wrote this book')  # notice the 'f' before the string
-print(f'Why is {name} playing with that python?')  # notice the 'f' before the string
+print(f'{name} was {age} years old when he wrote this book')  #   قبل از رشته توجه کنید'f'به 
+print(f'Why is {name} playing with that python?')  # قبل از رشته توجه کنید'f'به 
 ```
 
-which will give the same exact output as the previous program.
+این کد نیز خروجی مشابه برنامه قبل خواهد داشت. 
 
-What Python does in the `format` method is that it substitutes each argument value into the place of the specification. There can be more detailed specifications such as:
+کاری که پایتون در روش `format` انجام می دهد این است که مقدار هر آرگومان را در موقعیت مشخصه مربوط به آن قرار می دهد. مشخصه های دقیق تر بیشتری نیز وجود دارند مانند: 
 
 ```python
-# decimal (.) precision of 3 for float '0.333'
+# دقت اعشاری (.) برابر با 3 برای عدد اعشاری '0.333'. 
 print('{0:.3f}'.format(1.0/3))
-# fill with underscores (_) with the text centered
-# (^) to 11 width '___hello___'
+# پر کردن با زیر خط (_) و وسط چین کردن متن 
+#  (^) با عرض 11 کاراکتر '___hello___' 
 print('{0:_^11}'.format('hello'))
-# keyword-based 'Swaroop wrote A Byte of Python'
+# استفاده از کلمات کلیدی 'Swaroop wrote A Byte of Python' 
 print('{name} wrote {book}'.format(name='Swaroop', book='A Byte of Python'))
 ```
 
-Output:
+خروجی: 
 
 ```
 0.333
@@ -185,20 +187,20 @@ ___hello___
 Swaroop wrote A Byte of Python
 ```
 
-Since we are discussing formatting, note that `print` always ends with an invisible "new line" character (`\n`) so that repeated calls to `print` will all print on a separate line each. To prevent this newline character from being printed, you can specify that it should `end` with a blank:
+از آنجایی که درباره قالب بندی (formatting) بحث می کنیم، توجه داشته باشید که `print` همواره با یک کاراکتر نامرئی «خط جدید»(`\n`) به پایان می رسد؛ بنابراین این فراخوانی های متوالی `print` هرکددام در یک خط جدا چاپ می شوند. به منظور جلوگیری از پرینت این کاراکتر خط جدید، می توانید تعیین کنید که با یک رشته خالی پایان `end` یابد. 
 
 ```python
 print('a', end='')
 print('b', end='')
 ```
 
-Output is:
+خروجی: 
 
 ```
 ab
 ```
 
-Or you can `end` with a space:
+یا می توانید که خروجی با یک فاصله به پایان `end` رسد: 
 
 ```python
 print('a', end=' ')
@@ -206,103 +208,110 @@ print('b', end=' ')
 print('c')
 ```
 
-Output is:
+خروجی:
 
 ```
 a b c
 ```
 
-### Escape Sequences
+### دنباله های گریز (Escape Sequences)
 
-Suppose, you want to have a string which contains a single quote (`'`), how will you specify this string? For example, the string is `"What's your name?"`. You cannot specify `'What's your name?'` because Python will be confused as to where the string starts and ends. So, you will have to specify that this single quote does not indicate the end of the string. This can be done with the help of what is called an _escape sequence_. You specify the single quote as `\'` : notice the backslash. Now, you can specify the string as `'What\'s your name?'`.
+فرض کنید می خواهید رشته ای داشته باشید که شامل یک نقل قول تکی (`'`) باشد، چگونه چنین رشته ای را مشخص می کنید؟ برای مثال، رشته مورد نظر ما این `"?What's your name"`است. نمی توانید آن را به شکل `'?What's your name'`تعیین کنید؛ زیرا پایتون در تشخیص محل شروع و پایان رشته دچار ابهام خواهد شد. بنابراین، باید مشخص کنید که این نقل قول تکی نشان دهندۀ پایان رشته نیست. این امر با استفاده چیزی به نام _دنبالۀ گریز_ امکان پذیر است. می توانید نقل قول تکی را به شکل `'\` مشخص کنید؛ به وجود بک اسلش توجه کنید. اکنون می توانید رشته را به صورت `'?What\'s your name'` بنویسید. 
 
-Another way of specifying this specific string would be `"What's your name?"` i.e. using double quotes. Similarly, you have to use an escape sequence for using a double quote itself in a double quoted string. Also, you have to indicate the backslash itself using the escape sequence `\\`.
+روش دیگری برای مشخص کردن این رشته استفاده از نقل قول های دوتاییی است؛ یعنی به صورت `"?What's your name"`به طور مشابه، باید برای استفاده از خود نقل قول دوتایی در رشته ای که با نقل قول دوتایی مشخص شده است، از یک دنباله گریز استفاده کنید. همچنین برای نمایش خود بک اسلش باید از دنباله گریز `\\` استفاده کنید. 
 
-What if you wanted to specify a two-line string? One way is to use a triple-quoted string as shown [previously](#triple-quotes) or you can use an escape sequence for the newline character - `\n` to indicate the start of a new line. An example is:
+اگر بخواهید یک رشته دوخطی را مشخص کنید،چه؟ یک روش این است که همانطور که قبلاً نشان داده شد [previously](#triple-quotes)، از نقل قول سه تایی استفاده کنید یا می توانید از دنباله گریز مربوط به کاراکتر خط جدید یعنی `n\` است بهره مند شوید که نشان دهنده آغاز یک خط جدید است. به عنوان مثال: 
 
 ```python
 'This is the first line\nThis is the second line'
 ```
 
-Another useful escape sequence to know is the tab: `\t`. There are many more escape sequences but I have mentioned only the most useful ones here.
+یکی دیگر از دنباله های گریز مفیدی که باید به آن توجه کنید Tab است:`t\`. دنباله های گریز بسیار زیادی وجود دارد اما من در این کتاب فقط مفیدترین آن ها را ذکر کردم. 
 
-One thing to note is that in a string, a single backslash at the end of the line indicates that the string is continued in the next line, but no newline is added. For example:
+نکتۀ دیگری که باید به آن توجه کنید این است که در یک رشته، قرار گرفتن یک بک اسلش منفرد در انتهای خط نشان دهندۀ این است که رشته در خط بعد ادامه پیدا می کند اما خط جدیدی اضافه نمی شود. برای مثال: 
 
 ```python
 "This is the first sentence. \
 This is the second sentence."
 ```
 
-is equivalent to
+معادل است با: 
 
 ```python
 "This is the first sentence. This is the second sentence."
 ```
 
-### Raw String
+### رشتۀ خام (Raw String)
 
-If you need to specify some strings where no special processing such as escape sequences are handled, then what you need is to specify a _raw_ string by prefixing `r` or `R` to the string. An example is:
+اگر نیاز داشته باشید رشته ای را مشخص کنید که در آن هیچ پردازش خاصی مانند دنباله های گریز انجام نشود، پس باید یک رشته _خام_ تعریف کنید، برای این کار، از پسوند های `r` یا `R` استفاده کنید. مانند: 
 
 ```python
 r"Newlines are indicated by \n"
 ```
 
-> **Note for Regular Expression Users**
+> **نکته برای کاربران عبارات باقاعده **
 > 
-> Always use raw strings when dealing with regular expressions. Otherwise, a lot of backwhacking may be required. For example, backreferences can be referred to as `'\\1'` or `r'\1'`.
+> هنگام کار با عبارات باقاعده، همواره از رشته های خام استفاده کنید. در غیر این صورت، مجبور خواهید شد مقدار زیادی از بک اسلش ها را مدیریت کنید. برای نمونه می توان به ارجاع های پس نگر(backreferences) به صورت `'1\\'` یا `r'\1` اشاره کرد. 
 
-## Variable
+## متغیر
 
-Using just literal constants can soon become boring - we need some way of storing any information and manipulate them as well. This is where _variables_ come into the picture. Variables are exactly what the name implies - their value can vary, i.e., you can store anything using a variable. Variables are just parts of your computer's memory where you store some information. Unlike literal constants, you need some method of accessing these variables and hence you give them names.
+استفاده صرف از ثابت های لفظی خیلی زود حوصله سر بر می شود، پس به روشی برای ذخیره اطلاعات و نیز پردازش آنها احتیاج داریم. در این هنگام _متغیرها_ وارد عمل می شوند. متغیرها دقیقاً همان چیزی هستند که نامشان نشان می دهد: مقدار آن ها می تواند تغییر کند؛ یعنی شما قادر هستید با استفاده از یک متغیر هر چیزی را ذخیره کنید. متغیرها در واقع بخشی از حافظه رایانه شما هستند که در آن اطلاعاتی را ذخیره می کنید. بر خلاف ثابت های لفظی، برای دسترسی به این متغیرها به روشی نیاز دارید؛ از این جهت آنها را نام گذاری می کنید. 
 
-## Identifier Naming
+## نام گذاری شناسه ها 
 
-Variables are examples of identifiers. _Identifiers_ are names given to identify _something_. There are some rules you have to follow for naming identifiers:
+متغیرها نمونه ای از شناسه ها هستند. _شناسه ها_ نام هایی هستند که برای شناسایی _چیزی_ به آن اختصاص داده می شوند. برای نام گذاری شناسه ها باید قوانین زیر را رعایت کنید: 
 
-- The first character of the identifier must be a letter of the alphabet (uppercase ASCII or lowercase ASCII or Unicode character) or an underscore (`_`).
-- The rest of the identifier name can consist of letters (uppercase ASCII or lowercase ASCII or Unicode character), underscores (`_`) or digits (0-9).
-- Identifier names are case-sensitive. For example, `myname` and `myName` are _not_ the same. Note the lowercase `n` in the former and the uppercase `N` in the latter.
-- Examples of _valid_ identifier names are `i`, `name_2_3`. Examples of _invalid_ identifier names are `2things`, `this is spaced out`, `my-name` and `>a1b2_c3`.
+- نخستین کاراکتر یک شناسه باید یک حرف الفبا(حرف بزرگ یا حرف کوچک ASCII یا یک کاراکتر Unicode) یا یک زیر خط (`_`) باشد. 
+- ادامه نام شناسه می تواند شامل حروف (حرف بزرگ ASCII یا حرف کوچک ASCII یا یک کاراکتر Unicode)، زیرخط ها (`_`) یا ارقام (9-0) باشد. 
+- نام حروف نسبت به بزرگ یا کوچک بودن حروف حساس هستند. برای مثال `myname` و `myName` یکسان _نیستند_ . به `n` در مورد اول و به `N` در مورد دوم توجه کنید. 
+- نام هایی از شناسۀ های _معتبر_ عبارت اند از: `i`, `name_2_3`. 
 
-## Data Types
+مثال هایی از نام های شناسه 
+_نامعتبر_ نیز به صورت `2things` , `this is spaced out` , `my-name` و `>a1b2_c3`
+ هستند.
+ 
 
-Variables can hold values of different types called _data types_. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
+## انواع داده 
 
-## Object
+متغیرها می توانند مقادیری از انواع مختلف به نام _انواع داده_ را در خود نگه دارند. انواع پایه آنها اعداد و رشته ها هستند که پیش تر دربارۀ آنها بحث کردیم. در فصل های بعد خواهیم دید چگونه با استفاده از [classes](.oop.md#clasess) انواع داده خود را ایجاد کنیم. 
 
-Remember, Python refers to anything used in a program as an _object_.  This is meant in the generic sense. Instead of saying "the _something_"', we say "the _object_".
+## شئ
 
-> **Note for Object Oriented Programming users**:
+توجه داشته باشید که پایتون هر چیزی را که در یک برنامه استفاده می شود، یک _شئ_ در نظر می گیرد. منظور از این واژه معنای عمومی آن است. به جای گفتن " _آن چیز_ " می گوییم " _آن شئ_ ". 
+
+> **نکته برای کاربران برنامه نویسی شئ گرا**
 >
-> Python is strongly object-oriented in the sense that everything is an object including numbers, strings and functions.
+> پایتون از نظر اینکه همه چیز در آن یک شئ محسوب می شود بسیار شئ گرا است؛ از جمله اعداد، رشته ها و توابع.
 
-We will now see how to use variables along with literal constants. Save the following example and run the program.
+اکنون خواهیم دید چگونه می توانیم از متغیرها در کنار ثابت های لفظی استفاده کنیم. مثال پیش رو را ذخیره کرده و سپس برنامه را اجرا کنید. 
 
-## How to write Python programs
+## چگونه برنامه های پایتون را بنویسیم
 
-Henceforth, the standard procedure to save and run a Python program is as follows:
+از این پس، روش استاندارد ذخیره و اجرای یک برنامۀ پایتون به صورت زیر است: 
 
-### For PyCharm
+### برای Pycharm
 
-1. Open [PyCharm](./first_steps.md#pycharm).
-2. Create new file with the filename mentioned.
-3. Type the program code given in the example.
-4. Right-click and run the current file.
+1. نرم افزار [Pycharm](./first_steps.md#pycharm) را باز کنید. 
+2. فایل جدیدی با نام فایلی که ذکرشده است، ایجاد کنید. 
+3. کد برنامۀ ارائه شده در مثال را وارد کنید. 
+4. روی آن راست کلیک کرده و برنامه را اجرا کنید. 
 
-NOTE: Whenever you have to provide [command line arguments](./modules.md#modules), click on `Run` -> `Edit Configurations` and type the arguments in the `Script parameters:` section and click the `OK` button:
+نکته: هر زمانی که لازم باشد [command line arguments](./modules.md#modules) را وارد کنید، روی `Run` -> `Edit Configuration` کلیک کنید و 
+
+آرگومان ها را در قسمت `:Script parameters` بنویسید و سپس بر روی دکمه `OK` کلیک کنید: 
 
 ![PyCharm command line arguments](./img/pycharm_command_line_arguments.png)
 
-### For other editors
+### برای سایر ویرایشگرها 
 
-1. Open your editor of choice.
-2. Type the program code given in the example.
-3. Save it as a file with the filename mentioned.
-4. Run the interpreter with the command `python program.py` to run the program.
+1. ویرایشگر موردنظر خود را باز کنید.
+2. کد برنامه ارائه شده در مثال را وارد کنید. 
+3. آن را با نام فایل ذکرشده ذخیره کنید. 
+4. مفسر را با دستور `program.py` اجرا کنید تا برنامه اجرا شود. 
 
-### Example: Using Variables And Literal Constants
+### مثال: استفاده از متغیرها و ثابت های لفظی 
 
-Type and run the following program:
+برنامۀ زیر را وارد کرده و اجرا کنید: 
 
 ```python
 # Filename : var.py
@@ -316,7 +325,7 @@ This is the second line.'''
 print(s)
 ```
 
-Output:
+خروجی: 
 
 ```
 5
@@ -325,55 +334,55 @@ This is a multi-line string.
 This is the second line.
 ```
 
-**How It Works**
+**نحوۀ عملکرد**
 
-Here's how this program works. First, we assign the literal constant value `5` to the variable `i` using the assignment operator (`=`). This line is called a statement because it states that something should be done and in this case, we connect the variable name `i` to the value `5`. Next, we print the value of `i` using the `print` statement which, unsurprisingly, just prints the value of the variable to the screen.
+نحوۀ عملکرد برنامه به این صورت است: ابتدا با استفاده از عملگر انتساب (`=`) مقدار ثابت لفظی `5` را به متغیر `i` اختصاص می دهیم. این خط یک دستور (Statement) نامیده می شود، زیرا بیان می کند که کاری باید انجام شود؛ در این صورت، نام متغیر `i` را به مقدار `5` مرتبط می کنیم. سپس، با استفاده از دستور `print` مقدار `i` را چاپ می کنیم که همان طور که انتظار می رود، مقدار متغیر روی صفحه ظاهر می گردد. 
 
-Then we add `1` to the value stored in `i` and store it back. We then print it and expectedly, we get the value `6`.
+در ادامه، `1` را به مقدار ذخیره شده در `i` اضافه کرده و نتیجه را ذخیره می کنیم. سپس آن را پرینت می کنیم و همان طور که انتظار داشتیم مقدار `6` را دریافت می کنیم. 
 
-Similarly, we assign the literal string to the variable `s` and then print it.
+به همین ترتیب، رشته لفظی را به متغیر `s` نسبت می دهیم و سپس آن را چاپ می کنیم. 
 
-> **Note for static language programmers**
+> **نکته برای برنامه نویسان زبان های ایستا**
 > 
-> Variables are used by just assigning them a value. No declaration or data type definition is needed/used.
+> متغیرها صرفاً با اختصاص دادن یک مقدار به آنها مورد استفاده قرار می گیرند. هیچ اعلام یا تعریف نوع داده ای نیاز نیست/استفاده نمی شود. 
 
-## Logical And Physical Line
+## خط منطقی و خط فیزیکی 
 
-A physical line is what you _see_ when you write the program. A logical line is what _Python sees_ as a single statement. Python implicitly assumes that each _physical line_ corresponds to a _logical line_.
+خط فیزیکی چیزی است که هنگام نوشتن برنامه _می بینید_. خط منطقی چیزی است که _پایتون_ آن را به عنوان یک دستور واحد _در نظر می گیرد_. پایتون به طور ضمنی فرض می کند که هر _خط فیزیکی_ معادل یک _خط منطقی_ است. 
 
-An example of a logical line is a statement like `print('hello world')` - if this was on a line by itself (as you see it in an editor), then this also corresponds to a physical line.
+نمونه ای از یک خط منطقی، دستوری مانند `print('hello world')` است. اگر این دستور در یک خط مستقل قرار گرفته باشد (همانطور که در یک ویرایشگر مشاهده می کنید)، در این صورت با یک خط فیزیکی نیز تطابق دارد. 
 
-Implicitly, Python encourages the use of a single statement per line which makes code more readable.
+به طور ضمنی پایتون استفاده از یک دستور در هر خط را تشویق می کند؛ که باعث خوانایی بیشتر کد می شود. 
 
-If you want to specify more than one logical line on a single physical line, then you have to explicitly specify this using a semicolon (`;`) which indicates the end of a logical line/statement. For example:
+اگر بخواهید بیش از یک خط منطقی را در یک خط فیزیکی قرار دهید، باید این موضوع را به صورت صریح با استفاده از نقطه ویرگول (`؛`) مشخص کنید. نقطه ویرگول پایان یک خط منطقی/دستور را نشان می دهد. برای مثال: 
 
 ```python
 i = 5
 print(i)
 ```
 
-is effectively same as
+از نظر عملکردی یکسان است با: 
 
 ```python
 i = 5;
 print(i);
 ```
 
-which is also same as
+و این مورد نیز: 
 
 ```python
 i = 5; print(i);
 ```
 
-and same as
+و یکسان است با: 
 
 ```python
 i = 5; print(i)
 ```
 
-However, I *strongly recommend* that you stick to *writing a maximum of a single logical line on each single physical line*. The idea is that you should never use the semicolon. In fact, I have _never_ used or even seen a semicolon in a Python program.
+با این حال، _اکیداً توصیه می کنم_ که _در هر خط فیزیکی، حداکثر یک خط منطقی بنویسید._ به عبارت دیگر، بهتر است هرگز از نقطه ویرگول استفاده نکنید. در واقع، من شخصاً _هرگز_ از نقطه ویرگول در یک برنامه پایتون استفاده نکردم و حتی نمونه ای از آن نیز ندیده ام. 
 
-There is one kind of situation where this concept is really useful: if you have a long line of code, you can break it into multiple physical lines by using the backslash. This is referred to as _explicit line joining_:
+موقعیتی وجود دارد که این مفهوم وافعاً مفید واقع می شود: اگر خطی از کد بسیار طولانی باشد، قادر هستید با استفاده از بک اسلش آن را به چند خط فیزیکی تقسیم کنید. به این کار _اتصال صریح خطوط (explicit line joining)_ گفته می شود.: 
 
 ```python
 s = 'This is a string. \
@@ -381,43 +390,43 @@ This continues the string.'
 print(s)
 ```
 
-Output:
+خروجی: 
 
 ```
 This is a string. This continues the string.
 ```
 
-Similarly,
+به همین ترتیب، 
 
 ```python
 i = \
 5
 ```
 
-is the same as
+مشابه است با: 
 
 ```python
 i = 5
 ```
 
-Sometimes, there is an implicit assumption where you don't need to use a backslash. This is the case where the logical line has a starting parentheses, starting square brackets or a starting curly braces but not an ending one. This is called *implicit line joining*. You can see this in action when we write programs using [list](./data_structures.md#lists) in later chapters.
+گاهی اوقات نیز شرایطی وجود دارد که به صورت ضمنی فرض می شود و نیازی به استفاده از بک اسلش ندارید. این حالت هنگامی رخ می دهد که خط منطقی با یک پرانتز باز، کروشۀ باز یا آکولاد باز آغاز شود و پرانتز، کروشه و آکولاد بسته هنوز قرار نگرفته باشد. به این حالت _اتصال ضمنی خطوط (implicit line joining)_ گفته می شود. در فصل های بعد، هنگام نوشتن برنامه هایی که از [list](./data_structures.md#lists) استفاده می کنند، نمونه ای از این حالت را مشاهده خواهید کرد. 
 
-## Indentation
+## تورفتگی 
 
-Whitespace is important in Python. Actually, *whitespace at the beginning of the line is important*. This is called _indentation_. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
+فضای خالی در پایتون از اهمیت زیادی برخوردار است. در واقع، _فضای خالی در ابتدای خط اهمیت ویژه ای دارد_. به این ویژگی _تورفتگی_ می گویند.  فضای خالی ابتدایی، یعنی فاصله ها و Tabها، در ابتدای خط منطقی برای تعیین سطح تورفتگی آن خط مورد استفاده قرار می گیرند و این سطح تورفتگی نیز برای تعیین گروه بندی دستورات به کار می رود. 
 
-This means that statements which go together _must_ have the same indentation. Each such set of statements is called a *block*. We will see examples of how blocks are important in later chapters.
+این بدان معناست که دستوراتی که به یکدیگر تعلق دارند، _باید_ دارای میزان تورفتگی یکسانی باشند. هر مجموعه از چنین دستوراتی یک _بلوک(block)_ نامیده می شود. در فصل های بعد، نمونه هایی از اهمیت بلوک ها را مشاهده خواهیم کرد. 
 
-One thing you should remember is that wrong indentation can give rise to errors. For example:
+نکته ای که باید به خاطر داشته باشید این است که تورفتگی اشتباه می تواند منجر به خطا شود. به عنوان مثال: 
 
 ```python
 i = 5
-# Error below! Notice a single space at the start of the line
+# خطای زیر! به یک فاصله در ابتدای خط توجه کنید. 
  print('Value is', i)
 print('I repeat, the value is', i)
 ```
 
-When you run this, you get the following error:
+هنگام اجرای این برنامه، با خطای زیر مواجه خواهید شد: 
 
 ```
   File "whitespace.py", line 3
@@ -426,19 +435,19 @@ When you run this, you get the following error:
 IndentationError: unexpected indent
 ```
 
-Notice that there is a single space at the beginning of the second line. The error indicated by Python tells us that the syntax of the program is invalid i.e. the program was not properly written. What this means to you is that _you cannot arbitrarily start new blocks of statements_ (except for the default main block which you have been using all along, of course). Cases where you can use new blocks will be detailed in later chapters such as the [control flow](./control_flow.md#control_flow).
+توجه داشته باشید یک فاصله در ابتدای خط دوم وجود دارد. خطایی که پایتون گزارش می کند به ما می گوید نحو برنامه نامعتبر است؛ یعنی برنامه به درستی نوشته نشده است. مفهوم این موضوع برای شما این است که _نمی توانید به صورت دلخواه بلوک جدیدی از دستورات را ایجاد کتید_ ؛ البته به جز بلوک اصلی پیش فرض که تاکنون از آن استفاده کرده اید. مواردی که در آنها می توانید از بلوک های جدید استفاده کنید در فصل های بعد، مانند فصل [control flow](./control_flow.md#control_flow) با جزئیات توضیح داده خواهند شد. 
 
-> **How to indent**
+> **چگونه تورفتگی ایجاد کنیم**
 > 
-> Use four spaces for indentation. This is the official Python language recommendation. Good editors will automatically do this for you. Make sure you use a consistent number of spaces for indentation, otherwise your program will not run or will have unexpected behavior.
+> برای تورفتگی از چهار فاصله استفاده کنید. این توصیۀ رسمی زبان پایتون است. ویرایشگرهای مناسب این کار را به صورت خودکار برای شما انجام می دهند. اطمینان حاصل کنید که در سراسر برنامه از تعداد ثابتی فاصله برای تورفتگی استفاده می کنید؛ در غیر این صورت، برنامۀ شما اجرا نخواهد شد یا ممکن است رفتاری غیرمنتظره نشان دهد. 
 
 <!-- -->
 
-> **Note to static language programmers**
+> **نکته برای برنامه نویسان زبان های ایستا**
 > 
-> Python will always use indentation for blocks and will never use braces. Run `from __future__ import braces` to learn more.
+> پایتون همیشه برای ایجاد بلوک ها از تورفتگی استفاده می کند و هرگز از آکولادها استفاده نمی کند. برای اطلاعات بیشتر، `from __future__ import bases` را اجرا کنید.
 
-## Summary
+## جمع بندی
 
-Now that we have gone through many nitty-gritty details, we can move on to more interesting stuff such as control flow statements. Be sure to become comfortable with what you have read in this chapter.
+اکنون که بسیاری از جزئیات ریز و نکات ظریف را بررسی کردیم، می توانیم به سراغ مباحث جالب تری مانند دستورات جریان کنترل برویم. حتماً درک مطالبی را که در این فصل خواندید به خوبی تثبیت کنید. 
 
