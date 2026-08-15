@@ -1,138 +1,136 @@
-# Control Flow {#control-flow}
+# جریان کنترل {#control-flow} 
 
-In the programs we have seen till now, there has always been a series of statements faithfully executed by Python in exact top-down order. What if you wanted to change the flow of how it works? For example, you want the program to take some decisions and do different things depending on different situations, such as printing 'Good Morning' or 'Good Evening' depending on the time of the day?
+در برنامه هایی که تاکنون دیده ایم، همیشه مجموعه ای از دستورات وجود داشته است که پایتون آن ها را به طور دقیق و از بالا به پایین اجرا می کرد. اما اگر بخواهید جریان یا ترتیب اجرای برنامه را تغییر دهید، چطور؟ برای مثال، می خواهید برنامه براساس شرایط مختلف تصمیم گیری کند و کارهای متقاوتی انجام دهد؛ مثلاً باتوجه به زمان روز، عبارت 'Good Morning' یا 'Good Evening' را پرینت کند. 
 
-As you might have guessed, this is achieved using control flow statements. There are three control flow statements in Python - `if`, `for` and `while`.
+همان طور که احتمالاً حدس زده اید، این هدف با استفاده از دستورات جریان کنترل به دست می آید. در پایتون سه دستور برای کنترل جریان وجود دارد: `if`, `for` و `while`. 
 
-## The `if` statement
+## دستور `if` 
 
-The `if` statement is used to check a condition: *if* the condition is true, we run a block of statements (called the _if-block_), *else* we process another block of statements (called the _else-block_). The *else* clause is optional.
+دستور `if` برای بررسی یک شرط استفاده می شود: _اگر(if)_ شرط درست باشد، مجموعه ای از دستورات را اجرا می کنیم که _if-block_ نام دارد؛ در غیر این صورت (_else_) مجموعه ای از دستورات دیگر را اجرا می کنیم که _else-block_ نامیده می شود. بخش _else_ اختیاری است. 
 
-Example (save as `if.py`):
+مثال را با نام `if.py` ذخیره کنید: 
 
 <!-- Tags expansion does not happen inside code blocks https://github.com/GitbookIO/gitbook/issues/707 -->
 <pre><code class="lang-python">{% include "./programs/if.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/if.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-In this program, we take guesses from the user and check if it is the number that we have. We set the variable `number` to any integer we want, say `23`. Then, we take the user's guess using the `input()` function. Functions are just reusable pieces of programs. We'll read more about them in the [next chapter](./functions.md#functions).
+در این برنامه، از کاربر می خواهیم که حدس بزند و بررسی می کنیم که آیا حدس او همان عددی است که ما انتخاب کرده ایم یا خیر. متغیر `number` را روی یک عدد صحیح دلخواه، مثلاً `23`، قرار می دهیم. سپس، با استفاده از تابع `()input` حدس کاربر را دریافت می کنیم. توابع بخش هایی از برنامه هستند که می توان آنها را مجدد استفاده کرد. در [next chapter](./functions.md#functions) بیشتر دربارۀ آنها خواهیم خواند. 
 
-We supply a string to the built-in `input` function which prints it to the screen and waits for input from the user. Once we enter something and press kbd:[enter] key, the `input()` function returns what we entered, as a string. We then convert this string to an integer using `int` and then store it in the variable `guess`. Actually, the `int` is a class but all you need to know right now is that you can use it to convert a string to an integer (assuming the string contains a valid integer in the text).
+ما یک رشته به تابع `input` می دهیم؛ این تابع رشته را روی صفحه نمایش می دهد و منتظر دریافت ورودی از کاربر می ماند.  هنگامی که چیزی را وارد کرده و کلید [enter] را فشار دهیم، تابع `()input` چیزی را که وارد کرده ایم به عنوان یک رشته بر می گرداند. سپس این رشته را با استفاده از `int` به یک عدد صحیح تبدیل کرده و آن را در متغیر `guess` ذخیره می کنیم. در واقع، `int` یک کلاس (class) است؛ اما در حال حاضر کافی است بدانید که می توانید از آن برای تبدیل یک رشته به عددی صحیح استفاده کنید ( فرض کنید رشته شامل یک عدد صحیح معتبر در متن است). 
 
-Next, we compare the guess of the user with the number we have chosen. If they are equal, we print a success message. Notice that we use indentation levels to tell Python which statements belong to which block. This is why indentation is so important in Python. I hope you are sticking to the "consistent indentation" rule. Are you?
+سپس، حدس کاربر را با عددی که انتخاب کرده ایم، مقایسه می کنیم. اگر این دو عدد با هم مساوی باشند، یک پیام موفقیت پرینت می کنیم. توجه داشته باشید که ما از سطوح تورفتگی استفاده می کنیم تا به پایتون بگوییم هر دستور به کدام بلوک تعلق دارد. به همین دلیل تورفتگی در پایتون از اهمیت ویژه ای برخوردار است. امیدوارم همچنان قانون «تورفتگی یکسان» را رعایت کنید. آیا این کار را انجام می دهید؟ 
 
-Notice how the `if` statement contains a colon at the end - we are indicating to Python that a block of statements follows.
+دقت کنید که دستور `if` در انتهای خود دارای یک دو نقطه (:) است. با این کار به پایتون نشان می دهیم که پس از آن یک بلوک از دستورات قرار خواهد گرفت. 
 
-Then, we check if the guess is less than the number, and if so, we inform the user that they must guess a little higher than that. What we have used here is the `elif` clause which actually combines two related `if else-if else` statements into one combined `if-elif-else` statement. This makes the program easier and reduces the amount of indentation required.
+در مرحلۀ بعد، بررسی می کنیم که آیا حدس کاربر از عدد موردنظر کوچک تر است یا خیر. اگر چنین باشد، به کاربر اطلاع می دهیم که باید عددی بزرگنر را حدس بزند. در اینجا از عبارت `elif` استفاده کرده ایم. این عبارت در واقع دو ساختار ترکیبی `if else-if else` را در قالب یک ساختار ترکیبی `if-elif-else` ادغام می کند. این امر برنامه را ساده تر کرده و میزان تورفتگی موردنیاز را کاهش می دهد. 
 
-The `elif` and `else` statements must also have a colon at the end of the logical line followed by their corresponding block of statements (with proper indentation, of course)
+دستورات `elif` و `else` نیز باید در انتهای خط منطقی خود یک دو نقطه داشته باشد و پس از آن دستورات مربوطه قرار گیرد؛ البته با رعایت تورفتگی صحیح. 
 
-You can have another `if` statement inside the if-block of an `if` statement and so on - this is called a nested `if` statement.
+می توانید یک دستور `if` دیگر را درون بلوک if  یک دستور `if` قرار دهید و همین طور ادامه دهید. به چنین ساختاری دستور `if` تودرتو گفته می شود. 
 
-Remember that the `elif` and `else` parts are optional. A minimal valid `if` statement is:
+به خاطر داشته باشید که بخش های `elif` و `else` اختیاری هستند. حداقل یک دستور `if` معتبر می تواند به شکل زیر باشد: 
 
 ```python
 if True:
     print('Yes, it is true')
 ```
 
-After Python has finished executing the complete `if` statement along with the associated `elif` and `else` clauses, it moves on to the next statement in the block containing the `if` statement. In this case, it is the main block (where execution of the program starts), and the next statement is the `print('Done')` statement. After this, Python sees the ends of the program and simply finishes up.
+پس از آنکه پایتون اجرای کامل دستور `if` و بخش های مرتبط `elif` و `else` را به پایان رساند، به سراغ دستور بعدی در بلوکی می رود که دارای دستور `if` باشد. در این مثال، آن بلوک، بلوک اصلی است (جایی که اجرای برنامه از آن آغاز می شود). دستور بعدی نیز دستور `print('Done')` است. پس از آن، پایتون به انتهای برنامه می رسد و اجرای آن را به پایان می رساند. 
 
-Even though this is a very simple program, I have been pointing out a lot of things that you should notice. All these are pretty straightforward (and surprisingly simple for those of you from C/C++ backgrounds). You will need to become aware of all these things initially, but after some practice you will become comfortable with them, and it will all feel 'natural' to you.
+اگرچه این برنامه بسیار ساده است، نکات زیادی وجود دارد که باید به آن توجه کنید. همه این نکات بسیار منطقی و سرراست هستند (حتی برای افرادی که پیش زمینه C++/C دارند، به طرز شگفت انگیزی ساده هستند). در ابتدا لازم است با تمام این نکات آشنا شوید، اما پس از کمی تمرین، به راحتی با آن ها کنار خواهید آمد و استفاده از آن ها برایتان کاملاً «طبیعی» خواهد شد. 
 
-> **Note for C/C++ Programmers**
+> **نکته برای برنامه نویسان C++/C**
 > 
-> There is no `switch` statement in Python. You can use an `if..elif..else` statement to do the same thing (and in some cases, use a [dictionary](./data_structures.md#dictionary) to do it quickly)
+> در پایتون دستور `switch` وجود ندارد. از`if..elif..else` برای انجام همان کار استفاده کنید (و در برخی موارد، برای انجام سریع تر این کار از یک [dictionary](./data_structures.md#dictionary) استفاده کنید.) می توانید از دستور 
 
-## The while Statement
+## دستور while
 
-The `while` statement allows you to repeatedly execute a block of statements as long as a condition is true. A `while` statement is an example of what is called a *looping* statement. A `while` statement can have an optional `else` clause.
+دستور `while` به شما اجازه می دهد تا هنگامی که یک شرط درست باشد، یک بلوک از دستورات را به طور مکرر اجرا کنید. دستور `while` نمونه ای از چیزی است که *دستور حلقه (looping)* نامیده می شود. یک دستور `while` می تواند یک عبارت `else` اختیاری نیز داشته باشد. 
 
-Example (save as `while.py`):
+مثال را با نام `while.py` ذخیره کنید:
 
 <pre><code class="lang-python">{% include "./programs/while.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/while.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-In this program, we are still playing the guessing game, but the advantage is that the user is allowed to keep guessing until he guesses correctly - there is no need to repeatedly run the program for each guess, as we have done in the previous section. This aptly demonstrates the use of the `while` statement.
+در این برنامه، همچنان درحال اجرای بازی حدس زدن هستیم؛ اما مزیت آن این است که کاربر می تواند تا زمانی که پاسخ صحیح را حدس بزند، به حدس زدن ادامه دهد. بنابراین دیگر نیازی نیست برای هر حدس، برنامه را دوباره اجرا کنیم؛ کاری که در بخش قبلی انجام می دادیم. این مثال به خوبی کاربرد دستور `while` را نشان می دهد. 
 
-We move the `input` and `if` statements to inside the `while` loop and set the variable `running` to `True` before the while loop. First, we check if the variable `running` is `True` and then proceed to execute the corresponding *while-block*. After this block is executed, the condition is again checked which in this case is the `running` variable. If it is true, we execute the while-block again, else we continue to execute the optional else-block and then continue to the next statement.
+دستورات `input` و `if` را به داخل حلقه `while` منتقل می کنیم و پیش از شروع حلقه while، متغیر `running` را برابر `True` قرار می دهیم. ابتدا بررسی می کنیم که آیا متغیر `running` برابر `True` است یا خیر. سپس بلوک مربوط به while را، یعنی *while-block*اجرا می شود. پس از اجرای این بلوک،شرط دوباره بررسی می شود؛ در اینجا این شرط همان متغیر `running` است. اگر مقدار آن True باشد، بلوک while دوباره اجرا می شود؛ در غیر این صورت، اجرای برنامه به بلوک else منتقل می شود و پس از آن به سراغ دستور بعدی می رود.  
 
-The `else` block is executed when the `while` loop condition becomes `False` - this may even be the first time that the condition is checked. If there is an `else` clause for a `while` loop, it is always executed unless you break out of the loop with a `break` statement.
+بلوک `else` زمانی اجرا می شود که شرط حلقۀ `while` برابر `False (نادرست)` شود؛ حتی ممکن است این اولین باری باشد که شرط بررسی می شود. اگر یک حلقۀ `while` دارای عبارت `else` باشد، همیشه اجرا می شود مگر اینکه با استفاده از دستور `break` از حلقه خارج شوید. 
 
-The `True` and `False` are called Boolean types and you can consider them to be equivalent to the value `1` and `0` respectively.
+مقادیر `True` و `False` انواع بولی (Boolean types) نامیده می شوند و می توانید آن ها را به ترتیب معادل مقادیر `1` و `0` در نظر بگیرید. 
 
-> **Note for C/C++ Programmers**
+> **نکته برای برنامه نویسان C++/C**
 > 
-> Remember that you can have an `else` clause for the `while` loop.
+> به خاطر داشته باشید که حلقه `while` نیز می تواند دارای عبارت `else` باشد. 
 
-## The `for` loop
+## حلقۀ `for` 
 
-The `for..in` statement is another looping statement which *iterates* over a sequence of objects i.e. go through each item in a sequence. We will see more about [sequences](./data_structures.md#sequence) in detail in later chapters. What you need to know right now is that a sequence is just an ordered collection of items.
+دستور `for..in` یکی دیگر از دستورات حلقه ای است که روی یک دنباله از اشیا *تکرار* انجام می دهد؛ یعنی تک تک آیتم های موجود در یک دنباله را بررسی می کند. در فصل های بعد دربارۀ [sequences](./data_structures.md#sequence) با جزئیات بیشتری بحث خواهیم کرد. چیزی که در حال حاضر کافی است بدانید این است که یک دنباله، مجموعه ای مرتب از آیتم ها است. 
 
-Example (save as `for.py`):
+مثال را با نام `for.py` ذخیره کنید. 
 
 <pre><code class="lang-python">{% include "./programs/for.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/for.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-In this program, we are printing a *sequence* of numbers. We generate this sequence of numbers using the built-in `range` function.
+در این برنامه، یک *دنباله* از اعداد را چاپ می کنیم. این دنباله را با استفاده از تابع داخلی `range` ایجاد می کنیم. 
 
-What we do here is supply it two numbers and `range` returns a sequence of numbers starting from the first number and up to the second number. For example, `range(1,5)` gives the sequence `[1, 2, 3, 4]`. By default, `range` takes a step count of 1. If we supply a third number to `range`, then that becomes the step count. For example, `range(1,5,2)` gives `[1,3]`. Remember that the range extends *up to* the second number i.e. it does *not* include the second number.
+ در اینجا دو عدد به range می دهیم و `range` دنباله ای از اعداد را باز می گرداند که از عدد اول شروع شده و تا قبل از عدد دوم ادامه دارد. برای مثال، `range(1,5)` دنبالۀ `[1,2,3,4]` را ایجاد می کند. به صورت پیش فرض، `range` گام را برابر 1 در نظر می گیرد. اگر عدد سومی را به `range` بدهیم، آن عدد به عنوان گام استفاده می شود. برای مثال، `range(1,5,2)` دنبالۀ `[1,3]` را ایجاد می کند. به خاطر داشته باشید که range تا *قبل از* عدد دوم ادامه پیدا می کند؛ یعنی دنباله شامل عدد دوم *نمی شود*. 
 
-Note that `range()` generates only one number at a time, if you want the full list of numbers, call `list()` on the `range()`, for example, `list(range(5))` will result in `[0, 1, 2, 3, 4]`. Lists are explained in the [data structures chapter](./data_structures.md#data-structures).
+توجه کنید که `()range` در هر لحظه فقط یک عدد را تولید می کند. اگر فهرست کامل اعداد را می خواهید، می توانید روی `()range` تابع `()list` را فراخوانی کنید. به عنوان مثال، `list(range(5))` نتیجۀ `[0,1,2,3,4]` را به دنبال خواهد داشت. لیست ها (lists) در [data structures chapter](./data_structures.md#data-structures) توضیح داده خواهند شد. 
 
-The `for` loop then iterates over this range - `for i in range(1,5)` is equivalent to `for i in [1, 2, 3, 4]` which is like assigning each number (or object) in the sequence to i, one at a time, and then executing the block of statements for each value of `i`.  In this case, we just print the value in the block of statements.
+سپس حلقۀ `for` روی این محدوده تکرار انجام می دهد. عبارت `for i in range(1,5)` معادل است با `for i in [1,2,3,4]`؛ یعنی هر عدد (یا به طور کلی هر شئ) موجود در دنباله، یکی یکی به `i` اختصاص داده می شود و سپس بلوک دستورات برای هر مقدار `i` اجرا می شود. در این مثال، تنها کاری که انجام می دهیم این است که مقدار را درون بلوک پرینت می کنیم. 
 
-Remember that the `else` part is optional. When included, it is always executed once after the `for` loop is over unless a [break](#break-statement) statement is encountered.
+به خاطر داشته باشید که بخش `else` اختیاری است. زمانی که بخش `else` وجود داشته باشد پس از پایان حلقۀ `for` اجرا می شود؛ مگر اینکه یک دستور [break](#break-statement) اجرا شود. 
 
-Remember that the `for..in` loop works for any sequence. Here, we have a list of numbers generated by the built-in `range` function, but in general we can use any kind of sequence of any kind of objects! We will explore this idea in detail in later chapters.
+به یاد داشته باشید که حلقۀ `for..in` برای هر نوع دنباله ای قابل استفاده است. در اینجا یک لیست از اعداد داریم که با استفاده از تابع داخلی `range` ساخته شده است، اما به طور کلی می توانیم از هر نوع دنباله ای شامل هر نوع شئ استفاده کنیم! در فصل های بعد این موضوع را با جزئیات بیشتری مورد بررسی قرار خواهیم داد. 
 
-> **Note for C/C++/Java/C# Programmers**
+> **نکته برای برنامه نویسان #C++/C/Java/C**
 > 
-> The Python `for` loop is radically different from the C/C++ `for` loop. C# programmers will note that the `for` loop in Python is similar to the `foreach` loop in C#. Java programmers will note that the same is similar to `for (int i : IntArray)` in Java 1.5.
+> حلقۀ `for` در پایتون تفاوت اساسی با حلقۀ `for` در C++/C دارد. برنامه نویسان #C توجه خواهند کرد که حلقه `for` در پایتون شبیه حلقۀ `foreach` در #C است. برنامه نویسان Java نیز متوجه خواهند شد که این حلقه به ساختار `for(int i: IntArray)` در Java 1.5 شباهت دارد. 
 > 
-> In C/C++, if you want to write `for (int i = 0; i < 5; i++)`, then in Python you write just `for i in range(0,5)`. As you can see, the `for` loop is simpler, more expressive and less error prone in Python.
+> در C++/C، اگر بخواهید بنویسید `for (int i = 0; i < 5; i++)`، در پایتون فقط باید بنویسید `for i in range(0,5)`. همانطور که می بینید، حلقه `for` در پایتون ساده تر، گویاتر و کم خطاتر است. 
 
-## The break Statement {#break-statement}
+## دستور break 
 
-The `break` statement is used to *break* out of a loop statement i.e. stop the execution of a looping statement, even if the loop condition has not become `False` or the sequence of items has not been completely iterated over.
+دستور `break` برای *خارج شدن* از یک حلقه استفاده می شود؛ یعنی اجرای دستور حلقه ای را متوقف می کند، حتی اگر شرط حلقه هنوز `False` نشده باشد یا تمام آیتم های دنباله هنوز به طور کامل تکرار نشده باشند.
 
-An important note is that if you *break* out of a `for` or `while` loop, any corresponding loop `else` block is **not** executed.
+نکتۀ مهم این است که اگر با استفاده از `break` از یک حلقۀ `for` یا `while` خارج شوید، بلوک `else` مربوط به آن حلقه اجرا *نخواهد شد*. 
 
-Example (save as `break.py`):
+مثال را تحت عنوان `break.py` ذخیره کنید. 
 
 <pre><code class="lang-python">{% include "./programs/break.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/break.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-In this program, we repeatedly take the user's input and print the length of each input each
-time. We are providing a special condition to stop the program by checking if the user input is
-`'quit'`. We stop the program by *breaking* out of the loop and reach the end of the program.
+در این برنامه، به طور مکرر ورودی کاربر را دریافت کرده و هر بار طول هر ورودی را پرینت می کنیم. یک شرط خاص برای متوقف کردن برنامه تعیین کرده ایم؛ بررسی می کنیم که آیا ورودی کاربر برابر با `'quit'` است یا خیر. با استفاده از *break* از حلقه خارج می شویم و به انتهای برنامه می رسیم. 
 
-The length of the input string can be found out using the built-in `len` function.
+طول یک رشته ورودی را می توان با تابع داخلی `len` به دست آورد. 
 
-Remember that the `break` statement can be used with the `for` loop as well.
+به خاطر داشته باشید که دستور `break` را می توان با حلقۀ `for` نیز استفاده کرد. 
 
-**Swaroop's Poetic Python**
+**پایتون شاعرانه Swaroop**
 
-The input I have used here is a mini poem I have written:
+ورودی ای که در اینجا استفاده کرده ام، شعری کوتاه است که خودم نوشته ام:
 
 ```
 Programming is fun
@@ -141,26 +139,26 @@ if you wanna make your work also fun:
     use Python!
 ```
 
-## The `continue` Statement {#continue-statement}
+## دستور `continue`  
 
-The `continue` statement is used to tell Python to skip the rest of the statements in the current loop block and to *continue* to the next iteration of the loop.
+دستور `continue` برای آن استفاده می شود که به پایتون بگوید باقی دستورات موجود در بلوک فعلی را نادیده بگبرد و به تکرار بعدی حلقه *ادامه دهد*. 
 
-Example (save as `continue.py`):
+مثال را با نام `continue.py` ذخیره کنید. 
 
 <pre><code class="lang-python">{% include "./programs/continue.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/continue.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-In this program, we accept input from the user, but we process the input string only if it is at least 3 characters long. So, we use the built-in `len` function to get the length and if the length is less than 3, we skip the rest of the statements in the block by using the `continue` statement. Otherwise, the rest of the statements in the loop are executed, doing any kind of processing we want to do here.
+در این برنامه، ورودی را از کاربر می پذیریم، اما زمانی آن را پردازش می کنیم که رشته ورودی حداقل 3 کاراکتر را داشته باشد. بنابراین، با استفاده از تابع داخلی `len` طول رشته را به دست می آوریم و اگر طول آن کمتر از 3 کاراکتر باشد، با استفاده از دستور `continue` باقی دستورات موجود در بلوک را رد می کنیم. در غیر این صورت، باقی دستورات حلقه اجرا می شوند و هر نوع پردازشی را که بخواهیم می توانیم دراینجا انجام دهیم. 
 
-Note that the `continue` statement works with the `for` loop as well.
+توجه داشته باشید که دستور `continue` با حلقه `for` نیز کار می کند. 
 
-## Summary
+## جمع بندی
 
-We have seen how to use the three control flow statements - `if`, `while` and `for` along with their associated `break` and `continue` statements. These are some of the most commonly used parts of Python and hence, becoming comfortable with them is essential.
+در این فصل نحوۀ استفاده از سه دستور جریان کنترل، یعنی `if`, `while` و `for` را همراه با دستورات مرتبط `break` و `continue` بررسی کردیم. این دستورات از پرکاربردترین بخش های زبان پایتون هستند؛ بنابراین تسلط بر استفاده از آنها ضروری است. 
 
-Next, we will see how to create and use functions.
+در ادامه، با نحوۀ ایجاد و استفاده از توابع آشنا خواهیم شد. 
