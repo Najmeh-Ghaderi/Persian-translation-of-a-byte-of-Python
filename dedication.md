@@ -1,6 +1,6 @@
 # تقدیرنامه
 
-تقدیم به [Kalyan Varma](http://www.kalyanvarma.net/) و بسیاری دیگر از دانش آموختگان در [PESIT](http://www.pes.edu/) که ما را با با GNU/Linux و دنیای متن باز آشنا کردند. 
+تقدیم به [Kalyan Varma](http://www.kalyanvarma.net/) و بسیاری دیگر از دانش آموختگان در [PESIT](http://www.pes.edu/) که ما را با GNU/Linux و دنیای متن باز آشنا کردند. 
 
 تقدیم به یاد و خاطرۀ [Atul Chitnis](http://www.nextbigwhat.com/atul-chitnis-obituary-297/)، دوست و راهنمایی که جای خالی او همواره احساس خواهد شد. 
 
