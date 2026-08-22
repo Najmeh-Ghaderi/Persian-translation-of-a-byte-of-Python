@@ -1,152 +1,152 @@
-# Data Structures {#data-structures}
+# ساختارهای داده
 
-Data structures are basically just that - they are *structures* which can hold some *data* together. In other words, they are used to store a collection of related data.
+ساختارهای داده همان طور که از نامشان پیداست، *ساختارهایی* هستند که می توانند مجموعه ای از *داده ها* را کنار هم نگه دارند. به بیان دیگر، از آنها برای ذخیره سازی مجموعه ای از داده های مرتبط با یکدیگر استفاده می کنند. 
 
-There are four built-in data structures in Python - _list, tuple, dictionary and set_. We will see how to use each of them and how they make life easier for us.
+پایتون چهار ساختار داده داخلی دارد- *list, tuple, dictionary و set*. در این بخش خواهیم دید که چگونه از آنها استفاده کنیم و چگونه می توانند زندگی آسان تری را برای ما رقم بزنند. 
 
 ## List
 
-A `list` is a data structure that holds an ordered collection of items i.e. you can store a *sequence* of items in a list. This is easy to imagine if you can think of a shopping list where you have a list of items to buy, except that you probably have each item on a separate line in your shopping list whereas in Python you put commas in between them.
+یک `list` ساختار داده ای است که مجموعه ای مرتب از آیتم ها را در خود نگهداری می کند؛ یعنی شما قادر هستید *دنباله ای* از آیتم ها را در یک list ذخیره کنید. تصور کردن آن آسان است، مثلاً فهرستی از کالاهایی را در نظر بگیرید که قصد خرید آنها را دارید. با این تفاوت که احتمالاً در فهرست خریدتان هر مورد را در یک خط جداگانه می نویسید، درحالی که در پایتون بین هر آیتم ویرگول می گذاریم. 
 
-The list of items should be enclosed in square brackets so that Python understands that you are specifying a list. Once you have created a list, you can add, remove or search for items in the list. Since we can add and remove items, we say that a list is a *mutable* data type i.e. this type can be altered.
+عناصر یک لیست باید درون براکت قرار بگیرند تا پایتون متوجه شود که شما درحال تعریف یک لیست هستید. پس از ایجاد یک لیست، می توانید عناصر موجود در آن را اضافه، حذف یا جست و جو کنید. از آنجایی که امکان اضافه یا حذف کردن عناصر وجود دارد، می گوییم list یک نوع داده *تغییرپذیر* است یعنی می توان داده های آن را تغییر داد. 
 
-## Quick Introduction To Objects And Classes
+## مقدمه ای کوتاه بر شئ ها و کلاس ها
 
-Although I've been generally delaying the discussion of objects and classes till now, a little explanation is needed right now so that you can understand lists better. We will explore this topic in detail in a [later chapter](./oop.md#oop).
+اگرچه تا اینجا به طور کلی بحث درباره اشیا و کلاس ها را به تعویق انداخته ام، توضیح مختصری نیاز است تا بتوانید مفهوم لیست ها را بهتر درک کنید. این موضوع را در [later chapter](./oop.md#oop) با جزئیات بیشتری توضیح خواهم داد. 
 
-A list is an example of usage of objects and classes. When we use a variable `i` and assign a value to it, say integer `5` to it, you can think of it as creating an *object* (i.e. instance) `i` of *class* (i.e. type) `int`. In fact, you can read `help(int)` to understand this better.
+یک لیست نمونه ای از کاربرد اشیا و کلاس ها است. زمانی که از متغیری مانند `i` استفاده می کنیم و مقداری مانند عدد صحیح `5` را به آن نسبت می دهیم، می توانید آن را به عنوان ایجاد یک *شئ* (یعنی نمو نه ای) به نام `i` از *کلاس* (یعنی نوع) `int` در نظر بگیرید. در واقع، می توانید برای درک بهتر این موضوع `help(int)` را مطالعه کنید. 
 
-A class can also have *methods* i.e. functions defined for use with respect to that class only. You can use these pieces of functionality only when you have an object of that class. For example, Python provides an `append` method for the `list` class which allows you to add an item to the end of the list. For example, `mylist.append('an item')` will add that string to the list `mylist`. Note the use of dotted notation for accessing methods of the objects.
+یک کلاس می تواند نیز *روش هایی (methods)* داشته باشد؛ یعنی توابعی که برای استفاده در ارتباط با همان کلاس تعریف شده اند. این قابلیت ها را فقط زمانی می توانید استفاده کنید که یک شئ از آن کلاس را در اختیار داشته باشید. برای مثال، پایتون روش `append` را برای کلاس `list` فراهم کرده است که به شما این اجازه را می دهد یک آیتم را به انتهای لیست اضافه کنید. به عنوان مثال، `mylist.append('an item')` رشته مورد نظر را به لیست `mylist` اضافه می کند. توجه کنید که برای دسترسی به روش های اشیا از نشانه گذاری نقطه ای استفاده می شود. 
 
-A class can also have *fields* which are nothing but variables defined for use with respect to that class only. You can use these variables/names only when you have an object of that class. Fields are also accessed by the dotted notation, for example, `mylist.field`.
+یک کلاس نیز می تواند *فیلدهایی (fields)* داشته باشد که چیزی جز متغیرهایی نیست که برای ارتباط با همان کلاس تعریف شده اند. این متغیرها/نام ها را تنها زمانی می توانید استفاده کنید که یک شئ از آن کلاس را داشته باشید. فیلدها نیز با استفاده از نشانه گذاری نقطه ای قابل دسترس هستند؛ برای مثال، `mylist.field`. 
 
-Example (save as `ds_using_list.py`):
+مثال را تحت عنوان `ds_using_list.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/ds_using_list.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/ds_using_list.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-The variable `shoplist` is a shopping list for someone who is going to the market. In `shoplist`, we only store strings of the names of the items to buy but you can add _any kind of object_ to a list including numbers and even other lists.
+متغیر `shoplist` یک لیست خرید برای کسی است که قصد رفتن به مارکت را دارد. در `shoplist` فقط رشته هایی شامل نام اقلام مورد نیاز را ذخیره کرده ایم، اما _هر نوع از شئ_ را می توانید در یک لیست قرار دهید از جمله اعداد و حتی لیست های دیگر. 
 
-We have also used the `for..in` loop to iterate through the items of the list. By now, you must have realised that a list is also a sequence. The speciality of sequences will be discussed in a [later section](#sequence).
+همچنین از حلقۀ `for..in` برای پیمایش در سراسر آیتم های لیست استفاده کرده ایم. تا به اینجا، باید متوجه شده باشید که یک لیست نیز یک دنباله است. ویژگی دنباله ها را در [later section](#sequence) مورد بررسی قرار خواهیم داد. 
 
-Notice the use of the `end` parameter in the call to `print` function to indicate that we want to end the output with a space instead of the usual line break.
+توجه داشته باشید که از پارامتر `end` برای فراخوانی تابع `print` استفاده می شود. با استفاده از این پارامتر نمایش می دهیم که می خواهیم خروجی به جای خط جدید معمول، با یک فاصله به پایان رسد. 
 
-Next, we add an item to the list using the `append` method of the list object, as already discussed before. Then, we check that the item has been indeed added to the list by printing the contents of the list by simply passing the list to the `print` function which prints it neatly.
+سپس با استفاده از روش `append` مربوط به شئ لیست، یک آیتم را به لیست اضافه می کنیم؛ همان طور که پیش تر توضیح داده شد. در مرحله بعد، با پرینت محتوای لیست، بررسی می کنیم که آیا آیتم موردنظر واقعاً به لیست اضافه شده است یا خیر. برای انجام این کار، کافی است لیست را به تابع `print` بدهیم تا محتوای آن را به شکل مرتبی نمایش دهد. 
 
-Then, we sort the list by using the `sort` method of the list. It is important to understand that this method affects the list itself and does not return a modified list - this is different from the way strings work. This is what we mean by saying that lists are _mutable_ and that strings are _immutable_.
+در مرحلۀ بعد، با استفاده از روش `sort` متعلق به لیست، لیست را مرتب می کنیم. مهم این است که بدانید این روش بر خود لیست تاثیر می گذارد و یک لیست تغییر یافته را بر نمی گرداند؛ این رفتار با نحوۀ عملکرد رشته ها متفاوت است. منظور ما از اینکه، لیست ها _تغییرپذیر_ و رشته ها _تغییرناپذیر_ هستند، نیز همین است. 
 
-Next, when we finish buying an item in the market, we want to remove it from the list. We achieve this by using the `del` statement. Here, we mention which item of the list we want to remove and the `del` statement removes it from the list for us.  We specify that we want to remove the first item from the list and hence we use `del shoplist[0]` (remember that Python starts counting from 0).
+سپس، هنگامی که خرید یک کالا در مارکت به پایان می رسد، می خواهیم آن را از لیست حذف کنیم. با استفاده از دستور `del` می توانیم به این هدف دست پیدا کنیم. در اینجا مشخص می کنیم کدام عنصر لیست باید حذف شود و دستور `del` آن را برای ما از لیست حذف می کند. ما مشخص می کنیم که می خواهیم نخستین عنصر لیست حذف شود، بنابراین از `del shoplist[0]` استفاده می کنیم. (به خاطر داشته باشید شمارش در پایتون از صفر آغاز می شود). 
 
-If you want to know all the methods defined by the list object, see `help(list)` for details.
+اگر می خواهید تمام روش های تعریف شده برای شئ لیست را مشاهده کنید، برای جزئیات بیشتر `help(list)` را ببینید. 
 
-## Tuple
+## تاپل (Tuple)
 
-Tuples are used to hold together multiple objects. Think of them as similar to lists, but without the extensive functionality that the list class gives you. One major feature of tuples is that they are *immutable* like strings i.e. you cannot modify tuples.
+از تاپل ها برای نگهداری چند شئ در کنار یکدیگر استفاده می شوند. می توانید آنها را شبیه به لیست ها در نظر بگیرید، اما تاپل ها بسیاری از قابلیت هایی را که کلاس list در اختیار شما قرار می دهد ندارند. ویژگی اصلی تاپل ها این است که مانند رشته *تغییرناپذیر* هستند یعنی شما نمی توانید محتوای یک تاپل را تغییر دهید. 
 
-Tuples are defined by specifying items separated by commas within an optional pair of parentheses.
+تاپل ها با قرار دادن آیتم ها در کنار یکدیگر و جداکردن آن ها با ویرگول تعریف می شوند و قرار دادن آنها درون یک جفت پرانتز اختیاری است. 
 
-Tuples are usually used in cases where a statement or a user-defined function can safely assume that the collection of values (i.e. the tuple of values used) will not change.
+تاپل ها معمولاً در شرایطی استفاده می شوند که یک دستور یا یک تابع تعریف شده توسط کاربر بتواند با اطمینان فرض کند مجموعۀ مقادیر مورد نظر (یعنی تاپل مقادیر) تغییر نخواهد کرد. 
 
-Example (save as `ds_using_tuple.py`):
+مثال را با نام `ds_using_tuple.py` ذخیره کنید. 
 
 <pre><code class="lang-python">{% include "./programs/ds_using_tuple.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/ds_using_tuple.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-The variable `zoo` refers to a tuple of items. We see that the `len` function can be used to get the length of the tuple. This also indicates that a tuple is a [sequence](#sequence) as well.
+متغیر `zoo` به یک تاپل از آیتم ها اشاره دارد. مشاهده می کنیم که تابع `len` را می توان برای به دست آوردن طول تاپل استفاده کرد. این موضوع همچنین نشان می دهد که یک تاپل یک [sequence](#sequence) نیز هست. 
 
-We are now shifting these animals to a new zoo since the old zoo is being closed. Therefore, the `new_zoo` tuple contains some animals which are already there along with the animals brought over from the old zoo. Back to reality, note that a tuple within a tuple does not lose its identity.
+اکنون حیوانات را به یک باغ وحش جدید منتقل می کنیم، زیرا باغ وحش قدیمی درحال بسته شدن است. بنابراین، تاپل `new_zoo` شامل تعدادی حیوان است که از قبل در آنجا حضور دارند و همچنین حیواناتی که از باغ وحش قدیمی منتقل شده اند. خارج از این مثال، توجه داشته باشید که قرار کرفتن یک تاپل درون تاپل دیگر، هویت آن را از بین نمی برد. 
 
-We can access the items in the tuple by specifying the item's position within a pair of square brackets just like we did for lists. This is called the _indexing_ operator. We access the third item in `new_zoo` by specifying `new_zoo[2]` and we access the third item within the third item in the `new_zoo` tuple by specifying `new_zoo[2][2]`. This is pretty simple once you've understood the idiom.
+می توانیم با مشخص کردن موقعیت یک آیتم درون یک جفت براکت، به عناصر تاپل دسترسی پیدا کنیم؛ درست مانند کاری که با لیست ها انجام دادیم. این کار عملگر _اندیس گذاری_ (_indexing_) نام دارد. برای دسترسی به سومین آیتم در تاپل `new_zoo` از `new_zoo[2]` استفاده می کنیم و برای دسترسی به سومین عنصر سومین عنصر موجود در تاپل `new_zoo` از `new_zoo[2][2]` استفاده می کنیم. پس از درک این الگو، انجام آن بسیار ساده خواهد بود.
 
-> **Tuple with 0 or 1 items**
+> **تاپل با 0 یا 1 عنصر **
 > 
-> An empty tuple is constructed by an empty pair of parentheses such as `myempty = ()`. However, a tuple with a single item is not so simple. You have to specify it using a comma following the first (and only) item so that Python can differentiate between a tuple and a pair of parentheses surrounding the object in an expression i.e. you have to specify `singleton = (2 , )` if you mean you want a tuple containing the item `2`.
+> یک تاپل خالی با استفاده از یک جفت پرانتز خالی ساخته می شود مانند `() = myempty `. با این حال، تعریف تاپل با یک عنصر ساده نیست. باید پس از اولین (و تنها) آیتم، یک ویرگول قرار دهید تا پایتون بتواند بین یک تاپل و یک جفت پرانتز که یک شئ را در بر گرفته است، تمایز قائل شود. بنابراین اگر منظورتان ساخت تاپلی شامل عدد `2` است، باید بنویسید: `singleton = (2, ). 
 
 <!-- -->
 
-> **Note for Perl programmers**
+> **نکته ای برای برنامه نویسان Perl**
 > 
-> A list within a list does not lose its identity i.e. lists are not flattened as in Perl. The same applies to a tuple within a tuple, or a tuple within a list, or a list within a tuple, etc. As far as Python is concerned, they are just objects stored using another object, that's all.
+> یک لیست درون یک لیست، هویت خود را از دست نمی دهد؛ یعنی بر خلاف Perl، لیست ها در پایتون تخت (flattened) نمی شوند. همین موضوع دربارۀ تاپل درون تاپل، یا تاپل درون لیست، یا لیست درون تاپل و موارد مشابه نیز صدق می کند. از دید پایتون، همه این ها صرفاً اشیائی هستند که درون یک شئ دیگر ذخیره شده اند.  
 
-## Dictionary
+## دیکشنری(Dictionary)
 
-A dictionary is like an address-book where you can find the address or contact details of a person by knowing only his/her name i.e. we associate *keys* (name) with *values* (details). Note that the key must be unique just like you cannot find out the correct information if you have two persons with the exact same name.
+یک دیکشنری شبیه یک دفترجه آدرس/تلفن است یعنی شما می توانید با دانستن نام یک شخص، آدرس یا اطلاعات تماس او را پیدا کنید. به بیان دیگر، در دیکشنری *کلیدها* (نام) را به *مقادیر*(جزئیات)، مرتبط می کنیم. توجه داشته باشید که کلید باید یکتا باشد؛ درست همانطور که اگر دو نفر دقیقاً نام های یکسانی داشته باشند، نمی توانید به تنهایی از روی نام اطلاعات صحیح را تشخیص دهید. 
 
-Note that you can use only immutable objects (like strings) for the keys of a dictionary but you can use either immutable or mutable objects for the values of the dictionary.  This basically translates to say that you should use only simple objects for keys.
+توجه کنید که برای کلیدهای دیکشنری فقط می توانید از اشیای تغییر ناپذیر (مانند رشته ها) استفاده کنید، اما مقادیر دیکشنری می توانند هم اشیای تغییرناپذیر و هم تغییرپذیر باشند. به بیان ساده، برای کلیدها فقط از اشیای ساده استفاده کنید. 
 
-Pairs of keys and values are specified in a dictionary by using the notation `d = {key1 : value1, key2 : value2 }`. Notice that the key-value pairs are separated by a colon and the pairs are separated themselves by commas and all this is enclosed in a pair of curly braces.
+جفت های کلیدها و مقادیر در یک دیکشنری با استفاده از ساختار `d = {key1 : value1, key2 : value2}` مشخص می شوند. توجه کنید که بین کلید و مقدار از دو نقطه استفاده می شود و جفت های کلید-مقدار نیز با ویرگول از یکدیگر جدا می شوند؛ همۀ این موارد نیز درون یک جفت آکولاد قرار می گیرند. 
 
-Remember that key-value pairs in a dictionary are not ordered in any manner. If you want a particular order, then you will have to sort them yourself before using it.
+به خاطر داشته باشید که جفت های کلید-مقدار در دیکشنری به صورت ذاتی ترتیب خاصی ندارند. اگر ترتیب مشخصی می خواهید، باید پیش از استفاده از آنها خودتان آنها را مرتب کنید. 
 
-The dictionaries that you will be using are instances/objects of the `dict` class.
+دیکشنری هایی که استفاده می کنید نمونه ها یا اشیائی از کلاس `dict` هستند. 
 
-Example (save as `ds_using_dict.py`):
+مثال را تحت عنوان `ds_using_dict.py` ذخیره کنید:
 
 <pre><code class="lang-python">{% include "./programs/ds_using_dict.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/ds_using_dict.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-We create the dictionary `ab` using the notation already discussed. We then access key-value pairs by specifying the key using the indexing operator as discussed in the context of lists and tuples. Observe the simple syntax.
+با استفاده از ساختاری که پیش تر توضیح دادیم، دیکشنری `ab` را ایجاد می کنیم. سپس با مشخص کردن کلید با استفاده از عملگر اندیس گذاری، به جفت های کلید-مقدار دسترسی پیدا می کنیم؛ درست مانند چیزی که در لیست ها و تاپل ها توضیح داده شد. نحو ساده را مشاهده کنید. 
 
-We can delete key-value pairs using our old friend - the `del` statement. We simply specify the dictionary and the indexing operator for the key to be removed and pass it to the `del` statement. There is no need to know the value corresponding to the key for this operation.
+می توانیم جفت های کلید-مقدار را با استفاده از دوست قدیمی مان یعنی دستور `del`، حذف کنیم. کافیست دیکشنری و عملگر اندیس گذاری را برای کلیدی که باید حذف شود، مشخص کنیم و آن را به دستور `del` بدهیم. برای این کار نیازی نیست مقدار مربوط به کلید را بدانیم. 
 
-Next, we access each key-value pair of the dictionary using the `items` method of the dictionary which returns a list of tuples where each tuple contains a pair of items - the key followed by the value. We retrieve this pair and assign it to the variables `name` and `address` correspondingly for each pair using the `for..in` loop and then print these values in the for-block.
+سپس، با استفاده از روش `items` دیکشنری به تک تک جفت های کلید-مقدار دسترسی پیدا می کنیم. این روش لیستی از تاپل ها را بر می گرداند که هر تاپل شامل یک جفت آیتم است_ کلید با مقدار همراه است. با استفاده از حلقۀ `for..in` این جفت ها را دریافت کرده و به ترتیب در متغیرهای `name` و `address` قرار می دهیم و سپس این مقادیر را در بلوک for پرینت می کنیم. 
 
-We can add new key-value pairs by simply using the indexing operator to access a key and assign that value, as we have done for Guido in the above case.
+می توانیم با استفاده از عملگر اندیس گذاری و اختصاص یک مقدار به کلید، جفت های کلید-مقدار جدیدی نیز اضافه کنیم؛ همان کاری که در مثال بالا برای Guido انجام داده ایم. 
 
-We can check if a key-value pair exists using the `in` operator.
+شما قادر هستید با استفاده از عملگر `in` بررسی کنید که آیا یک کلید در دیکشنری وجود دارد یا خیر. 
 
-For the list of methods of the `dict` class, see `help(dict)`.
+برای مشاهده لیستی از روش های کلاس `dict`، به `help(dict)` مراجعه کنید.  
 
-> **Keyword Arguments and Dictionaries**
+> **آرگومان های کلیدی و دیکشنری ها **
 > 
-> If you have used keyword arguments in your functions, you have already used dictionaries! Just think about it - the key-value pair is specified by you in the parameter list of the function definition and when you access variables within your function, it is just a key access of a dictionary (which is called the _symbol table_ in compiler design terminology).
+> اگر در توابع خود از آرگومان های کلیدی استفاده کرده باشید، در واقع از دیکشنری ها استفاده کرده اید! کمی به این موضوع فکر کنید _ جفت کلید-مقدار توسط شما در لیست پارامترهای تعریف تابع مشخص می شود و هنگامی که به متغیرهای داخل تابع دسترسی پیدا می کنید، در واقع به یک کلید از یک دیکشنری دسترسی پیدا کرده اید؛ چیزی که در اصطلاح طراحی کامپایلر _جدول نماد (symbol table)_ نامیده می شود. 
 
-## Sequence
+## دنباله
 
-Lists, tuples and strings are examples of sequences, but what are sequences and what is so special about them?
+لیست ها، تاپل ها و رشته ها نمونه هایی از دنباله ها هستند؛ اما دنباله ها دقیقاً چه چیزهایی هستند و چه ویژگی خاصی دارند؟ 
 
-The major features are *membership tests*, (i.e. the `in` and `not in` expressions) and *indexing operations*, which allow us to fetch a particular item in the sequence directly.
+مهم ترین ویژگی های دنباله ها عبارتند از *آزمون عضویت* (یعنی عبارت های `in` و `not in`)، *عملیات اندیس گذاری* که به ما امکان می دهد مستقیماً یک آیتم خاص از دنباله را دریافت کنیم. 
 
-The three types of sequences mentioned above - lists, tuples and strings, also have a *slicing* operation which allows us to retrieve a slice of the sequence i.e. a part of the sequence.
+سه نوع دنباله ای که در بالا به آن ها اشاره شد، یعنی لیست ها، تاپل ها و رشته ها، همچنین از عملیات *برش(slicing)* پشتیبانی می کنند که به ما این امکان را می دهد که بخشی از یک دنباله را استخراج کنیم. 
 
-Example (save as `ds_seq.py`):
+مثال را با نام `ds_seq.py` ذخیره کنید:
 
 <pre><code class="lang-python">{% include "./programs/ds_seq.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/ds_seq.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-First, we see how to use indexes to get individual items of a sequence. This is also referred to as the _subscription operation_. Whenever you specify a number to a sequence within square brackets as shown above, Python will fetch you the item corresponding to that position in the sequence. Remember that Python starts counting numbers from 0. Hence, `shoplist[0]` fetches the first item and `shoplist[3]` fetches the fourth item in the `shoplist` sequence.
+ابتدا می بینیم چگونه با استفاده از اندیس ها، آیتم های منفرد یک دنباله را دریافت کنیم. به این کار *عملیات subscription* نیز گفته می شود. هرگاه عددی را همانند مثال بالا، درون براکت هایی پس از یک دنباله قرار دهید، پایتون آیتمی را که در آن موقعیت قرار دارد، برای شما دریافت می کند. به یاد داشته باشید که در پایتون شمارش از صفر آغاز می شود. بنابراین، `shoplist[0]` اولین عنصر و `shoplist[3]` چهارمین عنصر دنبالۀ `shoplist` را برمی گرداند. 
 
-The index can also be a negative number, in which case, the position is calculated from the end of the sequence. Therefore, `shoplist[-1]` refers to the last item in the sequence and `shoplist[-2]` fetches the second last item in the sequence.
+اندیس یک عدد منفی نییز می تواند باشد، در این حالت، موقعیت عنصر از انتهای دنباله محاسبه می شود. بنابراین، `shoplist[-1]` به آخرین عنصر دنباله اشاره دارد و `shoplist[-2]` دومین عنصر را از انتها باز می گرداند. 
 
-The slicing operation is used by specifying the name of the sequence followed by an optional pair of numbers separated by a colon within square brackets. Note that this is very similar to the indexing operation you have been using till now. Remember the numbers are optional but the colon isn't.
+عملیات برش با مشخص کردن نام دنباله و یک جفت اختیاری از اعداد که با دونقطه از یکدیگر جدا شده اند، درون براکت انجام می شود. توجه داشته باشید که این ساختار بسیار شبیه به عملیات اندیس گذاری است که تاکنون استفاده کرده اید. به خاطر داشته باشید که اعداد اختیاری هستند اما دو نقطه الزامی است.
 
-The first number (before the colon) in the slicing operation refers to the position from where the slice starts and the second number (after the colon) indicates where the slice will stop at. If the first number is not specified, Python will start at the beginning of the sequence. If the second number is left out, Python will stop at the end of the sequence. Note that the slice returned _starts_ at the start position and will end just before the _end_ position i.e. the start position is included but the end position is excluded from the sequence slice.
+اولین عدد (عدد قبل از دونقطه) در عملیات برش، موقعیتی را مشخص می کند که برش از آنجا آغاز می شود و عدد دوم (بعد از دونقطه)، نشان می دهد که برش در کجا متوقف می شود. اگر عدد اول مشخص نشود، پایتون از ابتدای دنباله شروع می کند. اگر عدد دوم حذف شود، پایتون تا انتهای دنباله ادامه می دهد و سپس متوقف می شود. توجه کنید که برش از موقعیت شروع _آغاز می شود_ و درست پیش از موقعیت _پایان_ متوقف می شود؛ یعنی موقعیت شروع در برش قرار می گیرد اما موقعیت پایان در آن قرار نمی گیرد. 
 
-Thus, `shoplist[1:3]` returns a slice of the sequence starting at position 1, includes position 2 but stops at position 3 and therefore a *slice* of two items is returned.  Similarly, `shoplist[:]` returns a copy of the whole sequence.
+بنابراین، `shoplist[1:3]` برشی از دنباله را برمی گرداند که از موقعیت 1 آغاز می شود، موقعیت 2 را شامل می شود و پیش از موقعیت 3 متوقف می شود؛ در نتیجه، *برشی* شامل دو عنصر ایجاد می شود. به طور مشابه، `[:]shoplist` یک کپی از کل دنباله را بر می گرداند. 
 
-You can also do slicing with negative positions. Negative numbers are used for positions from the end of the sequence. For example, `shoplist[:-1]` will return a slice of the sequence which excludes the last item of the sequence but contains everything else.
+می توانید از موقعیت های منفی نیز برای برش استفاده کنید. اعداد منفی برای مشخص کردن موقعیت ها از انتهای دنباله استفاده می شوند. برای مثال، `shoplist[:-1]` برشی از دنباله را باز می گرداند که آخرین عنصر را حذف کرده، اما تمام عناصر دیگر را شامل می شود. 
 
-You can also provide a third argument for the slice, which is the _step_ for the slicing (by default, the step size is 1):
+همچنین می توانید آرگومان سومی را برای برش ایجاد کنید که *گام* برش است. (مقدار پیش فرض گام 1 است ): 
 
 ```python
 >>> shoplist = ['apple', 'mango', 'carrot', 'banana']
@@ -160,15 +160,15 @@ You can also provide a third argument for the slice, which is the _step_ for the
 ['banana', 'carrot', 'mango', 'apple']
 ```
 
-Notice that when the step is 2, we get the items with position 0, 2,... When the step size is 3, we get the items with position 0, 3, etc.
+توجه کنید که وقتی مقدار گام 2 باشد، آیتم های موجود در موقعیت های ...،0،2 را دریافت می کنیم. وقتی اندازه گام 3 باشد، عناصر موجود در موقعیت های 0،3 و موارد دیگر دریافت می شوند.  
 
-Try various combinations of such slice specifications using the Python interpreter interactively i.e. the prompt so that you can see the results immediately. The great thing about sequences is that you can access tuples, lists and strings all in the same way!
+ترکیب های مختلف این مشخصات برش را به صورت تعاملی در مفسر پایتون امتحان کنید؛ یعنی در محیط خط فرمان، تا بتوانید نتیجه را بلافاصله مشاهده کنید. ویژگی فوق العاده دنباله ها این است که می توانید به تاپل ها، لیست ها و رشته ها به یک روش مشابه دسترسی پیدا کنید! 
 
-## Set
+## مجموعه(Set) 
 
-Sets are _unordered_ collections of simple objects. These are used when the existence of an object in a collection is more important than the order or how many times it occurs.
+مجموعه ها، مجموعه هایی _بدون ترتیب_ از اشیای ساده هستند. از آنها زمانی استفاده می شود که وجود یک شئ در یک مجموعه، از ترتیب آن یا تعداد دفعاتی که درآن ظاهر می شود، اهمیت بیشتری دارد. 
 
-Using sets, you can test for membership, whether it is a subset of another set, find the intersection between two sets, and so on.
+با استفاده از مجموعه ها می توانید بررسی کنید که آیا یک عنصر عضو مجموعه است، آیا یک مجموعه زیر مجموعۀ، مجموعه دیگری هست، اشتراک دو مجموعه را پیدا کنید و موارد مشابه دیگر را نیز انجام دهید. 
 
 ```python
 >>> bri = set(['brazil', 'russia', 'india'])
@@ -185,56 +185,56 @@ True
 {'brazil', 'india'}
 ```
 
-**How It Works**
+**نحوۀ عملکرد**
 
-If you remember basic set theory mathematics from school, then this example is fairly self-explanatory.  But if not, you can google "set theory" and "Venn diagram" to better understand our use of sets in Python.
+اگر مفاهیم پایۀ نظریۀ مجموعه ها را که در درس ریاضی در مدرسه آموخته اید، به یاد داشته باشید، این مثال تا حد زیادی خودتوضیح است. اما اگر چنین نیست، می توانید عبارت های "set theory" و "Venn diagram" را در گوگل جست و جو کنید تا کاربرد مجموعه ها در پایتون را بهتر درک کنید. 
 
-## References
+## ارجاع ها
 
-When you create an object and assign it to a variable, the variable only _refers_ to the object and does not represent the object itself!  That is, the variable name points to that part of your computer's memory where the object is stored. This is called *binding* the name to the object.
+هنگامی که یک شئ ایجاد می کنید و آن را به یک متغیر نسبت می دهید، متغیر فقط به آن شئ _اشاره می کند_ و خود شئ نیست! به بیان دیگر، نام متغیر به بخشی از حافظه کامپیوتر شما اشاره می کند که شئ در آن ذخیره شده است. به این فرآیند، *پیوند دادن (binding)* نام به شئ گفته می شود. 
 
-Generally, you don't need to be worried about this, but there is a subtle effect due to references which you need to be aware of:
+به طور کلی، نیازی به نگرانی دربارۀ این موضوع نیست، اما یک اثر ظریف ناشی از ارجاع ها وجود دارد که باید از آن آگاه باشید: 
 
-Example (save as `ds_reference.py`):
+مثال را تحت عنوان `ds_reference.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/ds_reference.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/ds_reference.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-Most of the explanation is available in the comments.
+بخش عمدۀ توضیحات در کامنت ها ارائه شده است. 
 
-Remember that if you want to make a copy of a list or such kinds of sequences or complex objects (not simple _objects_ such as integers), then you have to use the slicing operation to make a copy. If you just assign the variable name to another name, both of them will ''refer'' to the same object and this could be trouble if you are not careful.
+به خاطر داشته باشید که اگر بخواهید از یک لیست یا انواع مشابه دنباله ها یا اشیای پیچیده (نه _اشیای_ آسان مانند اعداد صحیح)، یک کپی ایجاد کنید باید برای ساخت کپی از عملیات برش استفاده کنید. اگر فقط نام یک متغیر را به نام دیگری نسبت دهید، هردو نام به همان شئ «اشاره دارد» و اگر مراقب نباشید، این موضوع می تواند مشکل ساز شود. 
 
-> **Note for Perl programmers**
+> **نکته برای برنامه نویسان Perl**
 > 
-> Remember that an assignment statement for lists does **not** create a copy. You have to use slicing operation to make a copy of the sequence.
+> به یاد داشته باشید که یک دستور انتساب برای لیست ها کپی ایجاد **نمی کند**. باید از عملیات برش برای ایجاد یک کپی از دنباله استفاده کنید. 
 
-## More About Strings {#more-strings}
+## اطلاعات بیشتر دربارۀ رشته ها
 
-We have already discussed strings in detail earlier. What more can there be to know?  Well, did you know that strings are also objects and have methods which do everything from checking part of a string to stripping spaces?  In fact, you've already been using a string method... the `format` method!
+پیش تر رشته ها را با جزئیات بررسی کردیم. پس چه چیز دیگری برای دانستن وجود دارد؟ خب، آیا می دانستید که رشته ها نیز اشیا هستند و روش هایی دارند که کارهایی از بررسی بخشی از رشته گرفته تا حذف فاصله ها را انجام دهند؟ در واقع، شما پیش تر از روش های رشته استفاده کرده اید... روش `format`!
 
-The strings that you use in programs are all objects of the class `str`.  Some useful methods of this class are demonstrated in the next example. For a complete list of such methods, see `help(str)`.
+رشته هایی که در برنامه ها استفاده می کنید، همگی اشیائی از کلاس `str` هستند. برخی از روش های کاربردی و مفید این کلاس در مثال بعد نشان داده شده است. برای مشاهدۀ لیست کامل این روش ها به `help(str)` مراجعه کنید. 
 
-Example (save as `ds_str_methods.py`):
+مثال را با نام `ds_str_methods.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/ds_str_methods.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/ds_str_methods.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-Here, we see a lot of the string methods in action. The `startswith` method is used to find out whether the string starts with the given string. The `in` operator is used to check if a given string is a part of the string.
+در اینجا نمونه های مختلفی از روش های رشته ها را در عمل مشاهده می کنیم. روش `startswith` برای بررسی این موضوع استفاده می شود که آیا رشته با رشته داده شده آغاز می شود یا خیر. عملگر `in` برای بررسی اینکه آیا این رشته داده شده بخشی از رشته دیگر است یا خیر، استفاده می شود. 
 
-The `find` method is used to locate the position of the given substring within the string; `find` returns -1 if it is unsuccessful in finding the substring. The `str` class also has a neat method to `join` the items of a sequence with the string acting as a delimiter between each item of the sequence and returns a bigger string generated from this.
+روش `find` برای یافتن موقعیت زیررشتۀ داده شده درون رشته به کار می رود؛ اگر این روش نتواند زیر رشته را پیدا کند، مقدار 1- را بر می گرداند. کلاس `str` نیز روش مرتب و مفیدی به نام `join` دارد که که عناصر یک رشته را با استفاده از یک رشته به عنوان جداکننده به یکدیگر متصل می کند و یک رشته بزرگتر ایجاد می شود. 
 
-## Summary
+## جمع بندی
 
-We have explored the various built-in data structures of Python in detail. These data structures will be essential for writing programs of reasonable size.
+در این بخش، ساختارهای داده داخلی مختلف پایتون را با جزئیات بررسی کردیم. این ساختارهای داده برای نوشتن برنامه هایی با اندازه قابل توجه، ضروری هستند. 
 
-Now that we have a lot of the basics of Python in place, we will next see how to design and write a real-world Python program.
+اکنون که بخش عظیمی از مبانی پایتون را آموخته ایم، در ادامه به سراغ نحوۀ طراحی و نوشتن یک برنامۀ واقعی در پایتون خواهیم رفت. 
