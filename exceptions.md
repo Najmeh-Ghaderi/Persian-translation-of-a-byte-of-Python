@@ -1,12 +1,12 @@
-# Exceptions
+# استثناها 
 
-Exceptions occur when _exceptional_ situations occur in your program. For example, what if you are going to read a file and the file does not exist? Or what if you accidentally deleted it when the program was running? Such situations are handled using **exceptions**.
+استثناها هنگامی رخ می دهند که در برنامۀ شما شرایطی _استثنایی_ رخ دهد. برای مثال، اگر بخواهید فایلی را بخوانید، اما فایلی وجود نداشته باشد چه؟ یا اگر در حین اجرای برنامه، آن را به طور تصادفی حذف کرده باشید چه؟ چنین موقعیت هایی با استفاده از **استثناها** مدیریت می شوند. 
 
-Similarly, what if your program had some invalid statements? This is handled by Python which **raises** its hands and tells you there is an **error**.
+به طور مشابه، اگر برنامۀ شما شامل دستوراتی نا معتبر باشد جه؟ در این حالت، پایتون این وضع را مدیریت می کند؛ یعنی به اصطلاح دست هایش را **بالا می برد** و به شما اعلام می کند که یک **خطا** رخ داده است. 
 
-## Errors
+## خطاها (Errors) 
 
-Consider a simple `print` function call. What if we misspelt `print` as `Print`? Note the capitalization. In this case, Python _raises_ a syntax error.
+یک فراخوانی ساده تابع `print` را در نظر بگیرید. اگر `print` را به اشتباه به صورت `Print` بنویسیم چه؟ به حروف بزرگ و کوچک توجه کنید. در این شرایط، پایتون یک خطای نحوی _بالا می برد_. 
 
 ```python
 >>> Print("Hello World")
@@ -17,11 +17,11 @@ NameError: name 'Print' is not defined
 Hello World
 ```
 
-Observe that a `NameError` is raised and also the location where the error was detected is printed. This is what an **error handler** for this error does.
+همانطور که مشاهده می کنید، یک `NameError` ایجاد شده است و همچنین موقعیت تشخیص خطا نیز نمایش داده می شود. این همان کاری است که **مدیریت کنندۀ خطا** برای این خطا انجام می دهد. 
 
-## Exceptions
+## استثناها
 
-We will **try** to read input from the user.  Enter the first line below and hit the `Enter` key.  When your computer prompts you for input, instead press `[ctrl-d]` on a Mac or `[ctrl-z]` with Windows and see what happens.  (If you're using Windows and neither option works, you can try `[ctrl-c]` in the Command Prompt to generate a KeyboardInterrupt error instead).
+بیایید **تلاش کنیم** یک ورودی از کاربر دریافت کنیم. خط اول زیر را وارد کرده و کلید `Enter` را فشار دهید. هنگامی که رایانه از شما ورودی می خواهد، به جای وارد کردن چیزی در سیستم Mac کلیدهای `[ctrl-d]` و در windows کلیدهای `[ctrl-z]` را فشار دهید و ببینید چه اتفاقی می افتد. (اگر از ویندوز استفاده می کنید و هیچکدام از این کلیدها کار نکرد، می توانید در Command Prompt کلیدهای `[ctrl-c]` را فشار دهید تا به جای آن خطای KeyboardInterrupt ایجاد شود). 
 
 ```python
 >>> s = input('Enter something --> ')
@@ -30,96 +30,96 @@ Enter something --> Traceback (most recent call last):
 EOFError
 ```
 
-Python raises an error called `EOFError` which basically means it found an *end of file* symbol (which is represented by `ctrl-d`) when it did not expect to see it.
+پایتون خطایی به نام `EOFError` ایجاد می کند که اساساً به این معناست که در جایی که انتظار نداشته با نماد `ctrl-d` مواجه شده است؛ این نماد *انتهای فایل(end of file)* را نشان می دهد. 
 
-## Handling Exceptions
+## مدیریت استثناها
 
-We can handle exceptions using the `try..except` statement.  We basically put our usual statements within the try-block and put all our error handlers in the except-block.
+می توانیم با استفاده از دستور `try..except` استثناها را مدیریت کنیم. دستورات معمول خود را در بلوک try قرار می دهیم و تمام مدیریت کننده های خطا را در بلوک except قرار می دهیم. 
 
-Example (save as `exceptions_handle.py`):
+مثال را تحت عنوان `exceptions_handle.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/exceptions_handle.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/exceptions_handle.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-We put all the statements that might raise exceptions/errors inside the `try` block and then put handlers for the appropriate errors/exceptions in the `except` clause/block. The `except` clause can handle a single specified error or exception, or a parenthesized list of errors/exceptions. If no names of errors or exceptions are supplied, it will handle _all_ errors and exceptions.
+تمام دستوراتی را که ممکن است باعث ایجاد خطا یا استثنا شوند را داخل بلوک `try` قرار می دهیم و سپس مدیریت کننده های خطا و استثناهای مربوطه را در بند/بلوک `except` قرار می دهیم. بند `except` می تواند یک خطا یا استثنای مشخص را مدیریت کند، یا لیستی از خطاها و استثناها را که درون پرانتز قرار گرفته اند را مدیریت کند. اگر هیچ نامی برای خطاها یا استثناها مشخص نشود، این بند _تمام_ خطاها و استثناها را کنترل می کند. 
 
-Note that there has to be at least one `except` clause associated with every `try` clause. Otherwise, what's the point of having a try block?
+توجه داشته باشید که هر بند `try` باید حداقل یک بند `except` مرتبط با خود داشته باشد. در غیر این صورت، اصلاً داشتن یک بلوک try چه فایده ای خواهد داشت؟ 
 
-If any error or exception is not handled, then the default Python handler is called which just stops the execution of the program and prints an error message. We have already seen this in action above.
+اگر هیچ خطا یا استثنایی مدیریت نشود، مدیریت کننده پیش فرض پایتون فراخوانی می شود؛ این مدیریت کننده اجرای برنامه را متوقف می کند و یک پیام خطا نمایش می دهد. نمونه ای از این عمل را بالاتر مشاهده کردیم.
 
-You can also have an `else` clause associated with a `try..except` block. The `else` clause is executed if no exception occurs.
+همچنین می توانید یک بند `else` را به یک بلوک `try..except` مرتبط کنید. بند `else` زمانی اجرا می شود که هیچ استثنایی رخ ندهد.
 
-In the next example, we will also see how to get the exception object so that we can retrieve additional information.
+در مثال بعد، خواهیم دید که چگونه می توانیم به شئ استثنا دسترسی پیدا کنیم تا اطلاعات بیشتری از آن به دست آوریم. 
 
-## Raising Exceptions
+## ایجاد استثناها
 
-You can _raise_ exceptions using the `raise` statement by providing the name of the error/exception and the exception object that is to be _thrown_.
+با استفاده از دستور `raise` می توانید استثنا _ایجاد کنید_. برای این کار، نام خطا یا استثنا یا شئ استثنایی را که قرار است _پرتاب شود_ را مشخص می کنید. 
 
-The error or exception that you can raise should be a class which directly or indirectly must be a derived class of the `Exception` class.
+خطا یا استثنایی که ایجاد می کنید باید یک کلاس باشد که به طور مستقیم یا غیر مستقیم از کلاس `Exception` مشتق شده باشد. 
 
-Example (save as `exceptions_raise.py`):
+مثال را با عنوان `exception_raise.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/exceptions_raise.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/exceptions_raise.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-Here, we are creating our own exception type. This new exception type is called `ShortInputException`. It has two fields - `length` which is the length of the given input, and `atleast` which is the minimum length that the program was expecting.
+در اینجا نوعی استثنای مخصوص خودمان را ایجاد می کنیم. این نوع جدید از استثنا را `ShortInputException` می نامیم. این استثنا دارای دو فیلد است - `length` که طول ورودی داده شده است و `atleast` که حداقل طول مورد انتظار برنامه را مشخص می کند. 
 
-In the `except` clause, we mention the class of error which will be stored `as` the variable name to hold the corresponding error/exception object. This is analogous to parameters and arguments in a function call. Within this particular `except` clause, we use the `length` and `atleast` fields of the exception object to print an appropriate message to the user.
+در بند `except`، کلاس خطایی را مشخص می کنیم که به عنوان نام متغیر ذخیره می شود تا شئ خطا یا استثنای مربوطه را نگه دارد. این کار مشابه پارامترها و آرگومان ها در فراخوانی یک تابع است. در بند `except`، از فیلدهای `length` و `atleast` شئ استثنا استفاده می کنیم تا پیام مناسبی برای کاربر نمایش دهیم. 
 
 ## Try ... Finally {#try-finally}
 
-Suppose you are reading a file in your program. How do you ensure that the file object is closed properly whether or not an exception was raised? This can be done using the `finally` block.
+فرض کنید درحال خواندن یک فایل در برنامه خود هستید. چگونه مطمئن شوید که شئ فایل چه استثنایی رخ داده باشد و چه رخ نداده باشد، به درستی بسته می شود؟ این کار را میتوان با استفاده از بلوک `finally` انجام دهیم. 
 
-Save this program as `exceptions_finally.py`:
+این برنامه را با نام `exception_finally.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/exceptions_finally.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/exceptions_finally.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-We do the usual file-reading stuff, but we have arbitrarily introduced sleeping for 2 seconds after printing each line using the `time.sleep` function so that the program runs slowly (Python is very fast by nature). When the program is still running, press `ctrl + c` to interrupt/cancel the program.
+کارهای معمول مربوط به خواندن فایل را انجام می دهیم، اما عمداً بعد از پرینت هر خط، با استفاده از تابع `time.sleep` به مدت 2 ثانیه مکث ایجاد کرده ایم تا برنامه با سرعت کمتری ایجاد شود(پایتون ذاتاً بسیار سریع است). هنگامی که برنامه همچنان درحال اجراست، کلید `ctrl + c` را فشار دهید تا اجرای برنامه متوقف/لغو شود. 
 
-Observe that the `KeyboardInterrupt` exception is thrown and the program quits. However, before the program exits, the finally clause is executed and the file object is always closed.
+مشاهده می کنید که استثنای `KeyboardInterrupt` ایجاد شده و برنامه به پایان می رسد. با این حال، پیش از خروج برنامه، بند finally اجرا می شود و شئ فایل در هر صورت بسته خواهد شد. 
 
-Notice that a variable assigned a value of 0 or `None` or a variable which is an empty sequence or collection is considered `False` by Python.  This is why we can use `if f:` in the code above.
+توجه داشته باشید که متغیری که مقدار 0 یا `None` دارد یا متغیری که یک دنبالۀ یا مجموعه خالی از دیدگاه پایتون مقدار `False` در نظر گرفته می شود. به همین دلیل است که در کد بالا می توانیم از `:if f` استفاده کنیم. 
 
-Also note that we use `sys.stdout.flush()` after `print` so that it prints to the screen immediately.
+همچنین توجه کنید که پس از `print` از `()sys.stdout.flush` استفاده کردیم تا خروجی بلافاصله بر روی صفحه نمایش داده شود. 
 
-## The with statement {#with}
+## دستور with
 
-Acquiring a resource in the `try` block and subsequently releasing the resource in the `finally` block is a common pattern. Hence, there is also a `with` statement that enables this to be done in a clean manner:
+به دست آوردن یک منبع در بلوک `try` و سپس آزادسازی آن منبع در بلوک `finally` یک الگوی رایج است. بنابراین، دستور `with` نیز وجود دارد که امکان انجام این کار را به شکلی ساده فراهم می کند: 
 
-Save as `exceptions_using_with.py`:
+با نام `exceptions_using_with.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/exceptions_using_with.py" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-The output should be same as the previous example. The difference here is that we are using the `open` function with the `with` statement - we leave the closing of the file to be done automatically by `with open`.
+خروجی باید با مثال قبلی یکسان باشد. تفاوت در اینجاست که از تابع `open` با دستور `with` استفاده می کنیم - بستن فایل را به `with open` می سپاریم تا به صورت خودکار انجام شود. 
 
-What happens behind the scenes is that there is a protocol used by the `with` statement. It fetches the object returned by the `open` statement, let's call it "thefile" in this case.
+چیزی که در پشت صحنه اتفاق می افتد این است که دستور `with` از پروتکلی استفاده می کند. این دستور یک شئ را که دستور `open` بر می گرداند، دریافت می کند. در اینجا فرض می کنیم نام آن را "thefile" بگذاریم. 
 
-It _always_ calls the `thefile.__enter__` function before starting the block of code under it and _always_ calls `thefile.__exit__` after finishing the block of code.
+دستور with _همیشه_ تابع `_thefile._enter` را پیش از شروع اجرای بلوک کد زیر خود را فراخوانی می کند و پس از پایان بلوک کد نیز _همیشه_ تابع `_thefile._exit` را فراخوانی می کند. 
 
-So the code that we would have written in a `finally` block should be taken care of automatically by the `__exit__` method. This is what helps us to avoid having to use explicit `try..finally` statements repeatedly.
+بنابراین، کدی که در یک بلوک `finally` می نوشتیم، به طور خودکار توسط روش `__exit__` مدیریت می شود. این ویژگی به ما کمک می کند تا مجبور نباشیم بارها از دستورات صریح `try..finally` استفاده کنیم. 
 
-More discussion on this topic is beyond scope of this book, so please refer [PEP 343](http://www.python.org/dev/peps/pep-0343/) for a comprehensive explanation.
+بحث بیشتر دربارۀ این موضوع خارج از محدودۀ کتاب است، برای توضیح جامع تر لطفاً به [PEP 343](http://www.python.org/dev/peps/pep-0343/) مراجعه کنید. 
 
-## Summary
+## جمع بندی
 
-We have discussed the usage of the `try..except` and `try..finally` statements. We have seen how to create our own exception types and how to raise exceptions as well.
+در این بخش کاربردهای دستورات `try..except` و `try..finally` را بررسی کردیم. همچنین دیدیم که چگونه می توانیم انواع استثنای مخصوص خودمان را ایجاد کنیم و چگونه استثناها را ایجاد کنیم. 
 
-Next, we will explore the Python Standard Library.
+در بخش بعد، به بررسی کتابخانه استاندارد پایتون می پردازیم. 
