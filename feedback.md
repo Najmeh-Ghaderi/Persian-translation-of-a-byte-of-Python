@@ -1,3 +1,3 @@
-# Feedback
+# بازخورد
 
-The book needs the help of its readers such as yourselves to point out any parts of the book which are not good, not comprehensible or are simply wrong. Please [write to the main author]({{ book.contactUrl }}) or the respective [translators](./translations.md#translations) with your comments and suggestions.
+این کتاب برای بهبود خود به کمک خوانندگانی مانند شما نیاز دارد تا بخش هایی از کتاب را که مناسب نیستند، به خوبی قابل درک نیستند یا اساساً نادرست هستند را مشخص کند. لطفاً دیدگاه و پیشنهادهای خود را از طریق ({{ book.contactUrl }})[write to the main author] یا [translators](./translations.md#translations) با ما در میان بگذارید.
