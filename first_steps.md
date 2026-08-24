@@ -1,24 +1,25 @@
-# First Steps
+# گام های نخست
 
-We will now see how to run a traditional 'Hello World' program in Python. This will teach you how to write, save and run Python programs.
+اکنون خواهیم دید که چگونه یک برنامۀ سنتی 'Hello World' را در پایتون اجرا کنیم. در این بخش یاد می گیرید که چگونه برنامه های پایتون را بنویسید، ذخیره و اجرا کنید. 
 
-There are two ways of using Python to run your program - using the interactive interpreter prompt or using a source file. We will now see how to use both of these methods.
+برای اجرای یک برنامه در پایتون دو روش وجود دارد - استفاده از خط فرمان مفسر تعاملی یا استفاده از یک فایل منبع. اکنون هر دو روش را بررسی خواهیم کرد. 
 
-## Using The Interpreter Prompt
+## استفاده از خط فرمان مفسر
 
-Open the terminal in your operating system (as discussed previously in the [Installation](./installation.md#installation) chapter) and then open the Python prompt by typing `python3` and pressing `[enter]` key.
+ترمینال سیستم عامل خود را باز کنید (همانطور که در [Installation](./installation.md#installation) توضیح داده شد). و سپس `python3` را تایپ کنید و کلید `[enter]` را فشار دهید. 
 
-Once you have started Python, you should see `>>>` where you can start typing stuff. This is called the _Python interpreter prompt_.
+پس از اجرای پایتون، باید `<<<` را ببینید که می توانید شروع به وارد کردن دستورات در آن کنید. این قسمت _خط فرمان مفسر پایتون_ نام دارد. 
 
-At the Python interpreter prompt, type:
+در خط فرمان مفسر پایتون عبارت زیر را تایپ کنید: 
 
 ```python
 print("Hello World")
 ```
 
-followed by the `[enter]` key. You should see the words `Hello World` printed to the screen.
+سپس کلید `[enter]` را فشار دهید. باید عبارت `Hello World` را بر روی صفحه نمایش مشاهده کنید. 
 
-Here is an example of what you should be seeing, when using a Mac OS X computer. The details about the Python software will differ based on your computer, but the part from the prompt (i.e. from `>>>` onwards) should be the same regardless of the operating system.
+
+در اینجا نمونه ای از چیزی را می بینید که هنگام استفاده از یک رایانه Mac OS X باید مشاهده کنید. جزئیات مربوط به نرم افزار پایتون، با توجه به رایانه شما متفاوت خواهد بود، اما بخش مربوط به خط فرمان (یعنی از `<<<` به بعد) صرف نظر از سیستم عامل باید یکسان باشد. 
 
 <!-- The output should match pythonVersion variable in book.json -->
 ```python
@@ -30,131 +31,130 @@ Type "help", "copyright", "credits" or "license" for more information.
 Hello World
 ```
 
-Notice that Python gives you the output of the line immediately! What you just entered is a single Python _statement_. We use `print` to (unsurprisingly) print any value that you supply to it. Here, we are supplying the text `Hello World` and this is promptly printed to the screen.
+توجه داشته باشید که پایتون بدون درنگ خروجی را به شما نشان می دهد! چیزی که الان وارد کردید، یک _دستور_ ساده پایتون است. ما از `print` برای چاپ هر مقداری که به آن می دهیم استفاده می کنیم (همان طور که از نامش پیداست). در اینجا، متن 'Hello World' را به آن داده ایم و این متن نیز بلافاصله بر روی صفحه چاپ می شود. 
 
-### How to Quit the Interpreter Prompt
+### چگونه از خط فرمان مفسر خارج شویم
 
-If you are using a GNU/Linux or OS X shell, you can exit the interpreter prompt by pressing `[ctrl + d]` or entering `exit()` (note: remember to include the parentheses, `()`) followed by the `[enter]` key.
+اگر از یک GNU/Linux یا OS X استفاده می کنید، می توانید با فشردن `[ctrl + d]` یا وارد کردن `()exit` (نکته: به یاد داشته باشید که حتماً پرانتزها باید وارد شود، `()`) و سپس با فشردن کلید `[enter]` از خط فرمان مفسر خارج شوید. 
 
-If you are using the Windows command prompt, press `[ctrl + z]` followed by the `[enter]` key.
+اگر از خط فرمان ویندوز استفاده می کنید، `[ctrl + z]` را وارد کنید و کلید `[enter]` را بزنید. 
 
-## Choosing An Editor
+## انتخاب یک ویرایشگر
 
-We cannot type out our program at the interpreter prompt every time we want to run something, so we have to save them in files and can run our programs any number of times.
+نمی توانیم هر بار که می خواهیم چیزی را اجرا کنیم، برنامۀ خود را در خط فرمان مفسر تایپ کنیم. بنابراین باید برنامه ها را در فایل ها ذخیره کنیم تا بتوانیم هر بار که خواستیم آن ها را اجرا کنیم. 
 
-To create our Python source files, we need an editor software where you can type and save. A good programmer's editor will make your life easier in writing the source files. Hence, the choice of an editor is crucial indeed. You have to choose an editor as you would choose a car you would buy. A good editor will help you write Python programs easily, making your journey more comfortable and helps you reach your destination (achieve your goal) in a much faster and safer way.
+برای ایجاد فایل های منبع پایتون، به یک نرم افزار ویرایشگر نیاز داریم که بتوانیم در آن کد را تایپ و ذخیره کنیم. یک ویرایشگر مناسب برای برنامه نویسی، کار شما را هنگام نوشتن فایل های منبع بسیار آسان تر می کند. بنابراین، انتخاب ویرایشگر واقعاً مهم است. باید ویرایشگر را همان طوری انتخاب کنید که خودرویی را که می خواهید بخرید انتخاب می کنید. یک ویرایشگر خوب به شما کمک می کند برنامه های پایتون را به سادگی بنویسید، مسیر برنامه نویسی را برایتان راحت تر می کند و به شما کمک می کند سریع تر و ایمن تر به مقصد خود، یعنی رسیدن به هدفتان، 
+برسید. 
 
-One of the very basic requirements is _syntax highlighting_ where all the different parts of your Python program are colorized so that you can _see_ your program and visualize its running.
+یکی از ابتدایی ترین قابلیت های مورد نیاز، _هایلات کردن نحوی (syntax highlighting)_ است که بخش های مختلف برنامه پایتون شما را با رنگ های گوناگونی نشان می دهد تا بتوانید برنامه خود را بهتر _ببینید_ و نحوۀ اجرای آن را درک کنید. 
 
-If you have no idea where to start, I would recommend using [PyCharm Educational Edition](https://www.jetbrains.com/pycharm-edu/) software which is available on Windows, Mac OS X and GNU/Linux. Details in the next section.
+اگر نمی دانید از کجا شروع کنید، استفاده از نرم افزار [PyCharm Educational Edition](https://www.jetbrains.com/pycharm-edu/) را به شما پیشنهاد می کنم که در ویندوز، Mac OS X و GNU/Linux در دسترس است. جزئیات بیشتر در بخش بعد آمده است. 
 
-If you are using Windows, *do not use Notepad* - it is a bad choice because it does not do syntax highlighting and also importantly it does not support indentation of the text which is very important in our case as we will see later. Good editors will automatically do this.
+اگر از ویندوز استفاده می کنید، *از Notepad استفاده نکنید* - این نرم افزار انتخاب مناسبی نیست زیرا هایلات کردن نحوی ندارد و مهم تر از آن از تورفتگی متن نیز پشتیبانی نمی کند، درحالی که همانطور که بعداً خواهیم دید، تورفتگی در شرایط ما امری بسیار مهم است. ویرایشگرهای مناسب این کار را به صورت خودکار انجام می دهند. 
 
-If you are an experienced programmer, then you must be already using [Vim](http://www.vim.org) or [Emacs](http://www.gnu.org/software/emacs/). Needless to say, these are two of the most powerful editors and you will benefit from using them to write your Python programs. I personally use both for most of my programs, and have even written an [entire book on Vim]({{ book.vimBookUrl }}).
+اگر برنامه نویس باتجربه ای هستید، احتمالاً از [Vim](http://www.vim.org) یا [Emacs](http://www.gnu.org/software/emacs/) استفاده می کنید.نیازی به گفتن نیست که این دو از قدرتمندترین ویرایشگرها هستند و استفاده از آنها برای نوشتن برنامه های پایتون برای شما بسیار مفید خواهد بود. من شخصاً برای بیشتر برنامه هایم از هردوی آنها استفاده می کنم، و حتی یک ({{ book.vimBookUrl }})[کتاب کامل دربارۀ Vim] نوشته ام. 
 
-In case you are willing to take the time to learn Vim or Emacs, then I highly recommend that you do learn to use either of them as it will be very useful for you in the long run. However, as I mentioned before, beginners can start with PyCharm and focus the learning on Python rather than the editor at this moment.
+اگر مایل باشید برای یادگیری Vim یا Emacs وقت بگذارید، اکیداً توصیه می کنم کار با یکی از آنها را خیلی خوب یاد بگیرید زیرا در بلند مدت برایتان مفید واقع خواهد شد. با این حال، همانگونه که پیش تر گفتم، افراد مبتدی می توانند کار خود را با PyCharm آغاز کنند و در حال حاضر به جای تمرکز بر ویرایشگر، تمرکز خود را بر یادگیری پایتون بگذارند. 
 
-To reiterate, please choose a proper editor - it can make writing Python programs more fun and easy.
+بار دیگر تاکید می کنم که لطفاً یک ویرایشگر مناسب انتخاب کنید؛ یک ویرایشگر خوب می تواند نوشتن برنامه های پایتون را لذت بخش تر و آسان تر کند. 
 
-If you are interested in a detailed discussion on this topic, check out [Finding the Perfect Python Code Editor](https://realpython.com/courses/finding-perfect-python-code-editor/).
+اگر به بررسی مفصل تر دربارۀ این موضوع علاقه مند هستید، [Finding the Perfect Python Code Editor](https://realpython.com/courses/finding-perfect-python-code-editor/) را مطالعه کنید. 
 
 ## PyCharm {#pycharm}
 
-[PyCharm Educational Edition](https://www.jetbrains.com/pycharm-edu/) is a free editor which you can use for writing Python programs.
+ویرایشگر [PyCharm Educational Edition](https://jetbrains.com/pycharm-edu/) رایگان است که می توانید از آن برای نوشتن برنامه های پایتون استفاده کنید.  
 
-When you open PyCharm, you'll see this, click on `Create New Project`:
+هنگامی که PyCharm را باز می کنید، چنین صفحه ای را خواهید دید. روی `Create New Project` کلیک کنید: 
 
 ![When you open PyCharm](./img/pycharm_open.png)
 
-Select `Pure Python`:
+گزینه `Pure Python` را انتخاب کنید: 
 
 ![PyCharm New Project](./img/pycharm_create_new_project.png)
 
-Change `untitled` to `helloworld` as the location of the project, you should see details similar to this:
+عبارت `untitled` را به عنوان محل پروژه به `helloworld` تغییر دهید، باید جزئیاتی مشابه تصویر زیر را مشاهده کنید: 
 
 ![PyCharm project details](./img/pycharm_create_new_project_pure_python.png)
 
-Click the `Create` button.
+بر روی دکمۀ `Create` کلیک کنید.
 
-Right-click on the `helloworld` in the sidebar and select `New` -> `Python File`:
+در نوار کناری، روی `helloworld` راست کلیک کنید و گزینۀ `New` -> `Python File` را انتخاب کنید: 
 
 ![PyCharm -> New -> Python File](./img/pycharm_new_python_file.png)
 
-You will be asked to type the name, type `hello`:
+از شما خواسته می شود نام فایل را تایپ کنید، `hello` را وارد کنید: 
 
 ![PyCharm New File dialog box](./img/pycharm_new_file_input.png)
 
-You can now see a file opened for you:
+اکنون می بینید که یک فایل برای شما باز شده است: 
 
 ![PyCharm hello.py file](./img/pycharm_hello_open.png)
 
-Delete the lines that are already present, and now type the following:
+خطوطی را که از قبل در فایل وجود دارد را پاک کنید، سپس عبارت زیر را وارد کنید: 
 
 <!-- TODO: Update screenshots for Python 3 -->
 
 ```python
 print("hello world")
 ```
-Now right-click on what you typed (without selecting the text), and click on `Run 'hello'`.
+اکنون روی کدی که تایپ کردید راست کلیک کنید (بدون اینکه متن را انتخاب کنید)، و بر روی `'Run 'hello` کلیک کنید. 
 
 ![PyCharm Run 'hello'](./img/pycharm_run.png)
 
-You should now see the output (what it prints) of your program:
+اکنون باید خروجی برنامۀ خود (چیزی را که برنامه چاپ می کند) را مشاهده کنید: 
 
 ![PyCharm output](./img/pycharm_output.png)
 
-Phew! That was quite a few steps to get started, but henceforth, every time we ask you to create a new file, remember to just right-click on `helloworld` on the left -> `New` -> `Python File` and continue the same steps to type and run as shown above.
+خب! برای شروع کار مراحل زیادی را پشت سر گذاشتیم، اما از اینجا به بعد، هر زمان از شما خواستیم فایل جدیدی ایجاد کنید، به خاطر داشته باشید که در سمت چپ روی `helloworld` کلیک راست کنید -> `Python File` <- `New` و همان مراحلی را که در بالا برای وارد کردن و اجرای برنامه توضیح دادیم، دنبال کنید. 
 
-You can find more information about PyCharm in the [PyCharm Quickstart](https://www.jetbrains.com/pycharm-educational/quickstart/) page.
+می توانید برای اطلاعات بیشتر دربارۀ PyCharm به صفحۀ [PyCharm Quickstart](https://www.jetbrains.com/pycharm-educational/quickstart/) مراجعه کنید. 
 
 ## Vim
 
-1. Install [Vim](http://www.vim.org)
-    * Mac OS X users should install `macvim` package via [HomeBrew](http://brew.sh/)
-    * Windows users should download the "self-installing executable" from [Vim website](http://www.vim.org/download.php)
-    * GNU/Linux users should get Vim from their distribution's software repositories, e.g. Debian and Ubuntu users can install the `vim` package.
-2. Install [jedi-vim](https://github.com/davidhalter/jedi-vim) plugin for autocompletion.
-3. Install corresponding `jedi` python package : `pip install -U jedi`
+1. برای شروع [Vim](http://www.vim.org) را نصب کنید. 
+    * کاربران Mac OS X باید بستۀ `macvim` را از طریق [HomeBrew](http://brew.sh/) نصب کنند. 
+    * کاربران ویندوز باید "Self-installing executable" را از [Vim website](http://www.vim.org/download.php) دانلود کنند. 
+    * کاربران GNU/Linux باید Vim را از مخازن نرم افزاری توزیع خود دریافت کنند؛ برای مثال، کاربران Debian و Ubuntu می توانند بستۀ `vim` را نصب کنند. 
+2. افزونۀ [jedi-vim](https://github.com/davidhalter/jedi-vim) را برای تکمیل خودکار نصب کنید. 
+3. بستۀ پایتون مربوط به `jedi` را نصب کنید: `pip install -U jedi` 
 
 ## Emacs
 
-1. Install [Emacs 24+](http://www.gnu.org/software/emacs/).
-    * Mac OS X users should get Emacs from http://emacsformacosx.com
-    * Windows users should get Emacs from http://ftp.gnu.org/gnu/emacs/windows/
-    * GNU/Linux users should get Emacs from their distribution's software repositories, e.g. Debian and Ubuntu users can install the `emacs24` package.
-2. Install [ELPY](https://github.com/jorgenschaefer/elpy/wiki)
+1. نرم افزار [+Emacs 24](http://www.gnu.org/software/emacs/) را نصب کنید. 
+    * کاربران Mac OS X باید Emacs را از http://emacsformcosx.com دریافت کنند. 
+    * کاربران ویندوز باید Emacs را از طریق http://ftp.gnu.org/gnu/emacs/windows/ دانلود کنند.
+    * کاربران GNU/Linux باید Emacs را از مخازن نرم افزاری توزیع خود دریافت کنند؛ برای مثال کاربران Debian و Ubuntu می توانند بستۀ `emacs24` را نصب کنند. 
+2. در مرحلۀ بعد، [ELPY](https://github.com/jorgenschaefer/elpy/wiki) را نصب کنید. 
 
-## Using A Source File
+## استفاده از یک فایل منبع
 
-Now let's get back to programming. There is a tradition that whenever you learn a new programming language, the first program that you write and run is the 'Hello World' program - all it does is just say 'Hello World' when you run it. As Simon Cozens[^1] says, it is the "traditional incantation to the programming gods to help you learn the language better."
+اکنون به برنامه نویسی برگردیم. یک رسم قدیمی وجود دارد که هرگاه زبان برنامه نویسی جدیدی را می آموزید، نخستین برنامه ای که می نویسید و اجرا می کنید، برنامه 'Hello World' است - برنامه ای که هنگام اجرا تنها عبارت 'Hello World' را نمایش می دهد. همانطور که Simon Cozens[^1] می گوید: «دعای سنتی برای خدایان برنامه نویسی است که تا به شما کمک کنند زبان را بهتر یاد بگیرید ». 
 
-Start your choice of editor, enter the following program and save it as `hello.py`.
+ویرایشگر موردنظر خود را باز کنید، برنامۀ زیر را وارد کنید و آن را با نام `hello.py` ذخیره کنید. 
 
-If you are using PyCharm, we have already [discussed how to run from a source file](#pycharm).
+اگر از PyCharm استفاده می کنید، پیش تر [نحوۀ اجرای برنامه را از فایل منبع](#pycharm) را توضیح داده ایم.
 
-For other editors, open a new file `hello.py` and type this:
+برای سایر ویرایشگرها، یک فایل جدید به نام `hello.py` باز کنید و عبارت زیر را تایپ کنید: 
 
 ```python
 print("hello world")
 ```
 
-Where should you save the file? To any folder for which you know the location of the folder. If you
-don't understand what that means, create a new folder and use that location to save and run all
-your Python programs:
+فایل را کجا باید ذخیره کنید؟ در هر پوشه ای که محل آن را می دانید. اگر متوجه منظور این جمله نمی شوید، یک پوشه جدید ایجاد کنید و از آن محل برای ذخیره و اجرای تمام برنامه های پایتون خود استفاده کنید: 
 
-- `/tmp/py` on Mac OS X
-- `/tmp/py` on GNU/Linux
-- `C:\py` on Windows
+- در Mac OS X عبارت `tmp/py/`
+- در GNU/Linux عبارت `tmp/py/` 
+- در Windows عبارت `C:\py`
 
-To create the above folder (for the operating system you are using), use the `mkdir` command in the terminal, for example, `mkdir /tmp/py`.
+برای ایجاد پوشۀ بالا (متناسب با سیستم عاملی که استفاده می کنید)، از دستور `mkdir` در ترمینال استفاده کنید، برای مثال: `mkdir /tmp/py`. 
 
-IMPORTANT: Always ensure that you give it the file extension of `.py`, for example, `foo.py`.
+مهم: همیشه مطمئن شوید که پسوند فایل را `py.` قرار داده اید، به عنوان مثال: `foo.py`. 
 
-To run your Python program:
+برای اجرای برنامۀ پایتون خود: 
 
-1. Open a terminal window (see the previous [Installation](./installation.md#installation) chapter on how to do that)
-2. **C**hange **d**irectory to where you saved the file, for example, `cd /tmp/py`
-3. Run the program by entering the command `python hello.py`. The output is as shown below.
+1. یک پنجرۀ ترمینال باز کنید (برای نحوه انجام این کار به بخش [Installation](./installation.md#installation) مراجعه کنید). 
+2. با استفاده از **C**hange **d**irectory به پوشه ای بروید که فایل را در آن ذخیره کردید، برای مثال: `cd /tmp/py` 
+3. برنامه را با استفاده از وارد کردن دستور `python hello.py` اجرا کنید. خروجی به شکل زیر خواهد بود: 
 
 ```
 $ python hello.py
@@ -163,30 +163,30 @@ hello world
 
 ![Screenshot of running program in terminal](./img/terminal_screenshot.png)
 
-If you got the output as shown above, congratulations! - you have successfully run your first Python program. You have successfully crossed the hardest part of learning programming, which is, getting started with your first program!
+اگر یک خروجی مانند بالا دریافت کردید، تبریک می گویم! شما با موفقیت اولین برنامۀ پایتون خود را اجرا کردید. شما با موفقیت سخت ترین بخش یادگیری برنامه نویسی، یعنی شروع و اجرای اولین برنامه،را پشت سر گذاشتید! 
 
-In case you got an error, please type the above program _exactly_ as shown above and run the program again. Note that Python is case-sensitive i.e. `print` is not the same as `Print` - note the lowercase `p` in the former and the uppercase `P` in the latter. Also, ensure there are no spaces or tabs before the first character in each line - we will see [why this is important](./basics.md#indentation) later.
+اگر با خطا مواجه شدید، برنامه را _دقیقاً_ همان طوری که در بالا نشان داده شد وارد کنید و دوباره آن را اجرا کنید. توجه کنید که پایتون به حروف بزرگ و کوچک حساس است یعنی `print` با `Print` برابر نیست - به حرف کوچک `p` مورد اول و حرف بزرگ `P` مورد دوم توجه کنید. همچنین مطمئن شوید پیش از نخستین کاراکتر در هر خط، هیچ فاصله یا یک Tab وجود نداشته باشد؛ بعداً خواهیم دید که [چرا این موضوع مهم است](./basics.md#indentation). 
 
-**How It Works**
+**نحوۀ عملکرد**
 
-A Python program is composed of _statements_. In our first program, we have only one statement. In this statement, we call the `print` _statement_ to which we supply the text "hello world".
+یک برنامۀ پایتون از مجموعه ای از _دستورات_ تشکیل شده است. در نخستین برنامۀ ما فقط یک دستور وجود دارد. در این دستور، دستور `print` را فراخوانی می کنیم و متن "hello world" را به آن می دهیم. 
 
-## Getting Help
+## دریافت کمک
 
-If you need quick information about any function or statement in Python, then you can use the built-in `help` functionality. This is very useful especially when using the interpreter prompt. For example, run `help('len')` - this displays the help for the `len` function which is used to count number of items.
+اگر به اطلاعات سریعی دربارۀ هر تابع یا دستوری در پایتون نیاز دارید، می توانید از قابلیت داخلی `help` استفاده کنید. این قابلیت به ویژه هنگام استفاده از خط فرمان مفسر، بسیار مفید است. برای مثال، `help('len')` را اجرا کنید، این دستور راهنمای تابع `len` را نمایش می دهد که برای شمارش تعداد آیتم ها استفاده می شود. 
 
-TIP: Press `q` to exit the help.
+نکته: برای خروج از بخش راهنما (help)، کلید `q` را فشار دهید. 
 
-Similarly, you can obtain information about almost anything in Python. Use `help()` to learn more about using `help` itself!
+به طور مشابه، می توانید دربارۀ تقریباً هر چیزی در پایتون اطلاعات به دست آورید. بررای آشنایی بیشتر دربارۀ خود قابلیت `help` از دستور `()help` استفاده کنید! 
 
-In case you need to get help for operators like `return`, then you need to put those inside quotes such as `help('return')` so that Python doesn't get confused on what we're trying to do.
+اگر لازم است دربارۀ عملگرهایی مانند `return` کمک دریافت کنید، باید آن ها را داخل علامت نقل قول (' ')قرار دهید، برای مثال، `help('return')` تا پایتون در تشخیص اینکه دربارۀ چه چیزی سوال می کنیم دچار سردرگمی نشود. 
 
-## Summary
+## جمع بندی
 
-You should now be able to write, save and run Python programs at ease.
+اکنون باید بتوانید برنامه های پایتون را به آسانی بنویسید، ذخیره کنید و اجرا کنید. 
 
-Now that you are a Python user, let's learn some more Python concepts.
+حالا که یک کاربر پایتون هستید، بیایید با مفاهیم بیشتری از پایتون آشنا شویم.
 
 ---
 
-[^1]: the author of the amazing 'Beginning Perl' book
+[1^]: نویسندۀ کتاب شگفت انگیز 'Beginning Perl' 
