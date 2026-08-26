@@ -1,41 +1,41 @@
-# Appendix: FLOSS {#floss}
+# پیوست: FLOSS 
 
-> NOTE: Please note that this section was written in 2003, so some of this will sound quaint to you :-)
+> توجه: لطفاً در نظر داشته باشید که این بخش در سال 2003 نوشته شده است، بنابراین ممکن است برخی از مطالب آن از دیدگاه امروزی قدیمی یا حتی عجیب به نظر برسند :-) 
 
-"Free/Libre and Open Source Software", in short, [FLOSS](http://en.wikipedia.org/wiki/FLOSS) is based on the concept of a community, which itself is based on the concept of sharing, and particularly the sharing of knowledge. FLOSS are free for usage, modification and redistribution.
+«نرم افزار آزاد/لیبر و متن باز»، یا به اختصار [FLOSS](http://en.wikipedia.org/wiki/FLOSS) بر مفهوم جامعه استوار است؛ مفهومی که خود بر پایۀ اشتراک گذاری و به طور ویژه اشتراک گذاری دانش شکل گرفته است. نرم افزارهای FLOSS امکان استفاده، تغییر و بازتوزیع را مطابق شرایط مجوزهای آزاد فراهم می کنند. 
 
-If you have already read this book, then you are already familiar with FLOSS since you have been using *Python* all along and Python is an open source software!
+اگر تاکنون این کتاب را مطالعه کرده اید، پس با FLOSS نیز آشنایی دارید، زیرا در سر تا سر این کتاب از *پایتون* استفاده کرده اید و پایتون یک نرم افزار متن باز است! 
 
-Here are some examples of FLOSS to give an idea of the kind of things that community sharing and building can create:
+در ادامه چند نمونه از FLOSS معرفی می شود تا تصویری از آنچه اشتراک دانش و توسعۀ جمعی می تواند ایجاد کند، به دست آید: 
 
-[Linux](http://www.kernel.org): This is a FLOSS OS kernel used in the GNU/Linux operating system. Linux, the kernel, was started by Linus Torvalds as a student. Android is based on Linux. Any website you use these days will mostly be running on Linux.
+نرم افزار [Linux](http://www.kernel.org): یک هستۀ سیستم عامل FLOSS است که در سیستم عامل GNU/Linux استفاده می شود. Linux، یعنی هسته سیستم عامل، توسط Linus Torvalds در دوران دانشجویی او آغاز شد. اندروید نیز بر پایۀ Linux است. امروزه بخش بزرگی از وب سایت هایی که از آن ها استفاده می کنید، بر روی سرورهای مبتنی بر Linux اجرا می شوند. 
 
-[Ubuntu](http://www.ubuntu.com): This is a community-driven distribution, sponsored by Canonical and it is the most popular GNU/Linux distribution today. It allows you to install a plethora of FLOSS available and all this in an easy-to-use and easy-to-install manner. Best of all, you can just reboot your computer and run GNU/Linux off the CD! This allows you to completely try out the new OS before installing it on your computer. However, Ubuntu is not entirely free software; it contains proprietary drivers, firmware, and applications.
+نرم افزار [Ubuntu](http://www.ubuntu.com): یک توزیع جامعه محور است که توسط Canonical پشتیبانی می شود و شناخته شده ترین توزیع GNU/Linux به شمار می رود. این نرم افزار این امکان را به شما می دهد که مجموعۀ گسترده ای از FLOSS را نصب کنید و همچنین فرآیند نصب و استفاده از آن نیز نسبتاً ساده است. یکی از مهم ترین مزایای آن این است که می توانید کامپیوتر خود را راه اندازی مجدد کنید و GNU/Linux را مستقیماً از روی یک CD اجرا کنید! بدین ترتیب، می توانید پیش از نصب سیستم عامل آن را به طور کامل آزمایش کنید. با این حال، Ubuntu به طور کامل یک نرم افزار آزاد نیست و برخی از اجزای آن؛ از جمله برخی درایورها، میان افزارها و برنامه های کاربردی ممکن است مالکیتی باشد. 
 
-[LibreOffice](http://www.libreoffice.org/): This is an excellent community-driven and developed office suite with a writer, presentation, spreadsheet and drawing components among other things. It can even open and edit MS Word and MS PowerPoint files with ease. It runs on almost all platforms and is entirely free, libre and open source software.
+نرم افزار [LibreOffice](http://www.libreoffice.org/): یک مجموعۀ قدرتمند جامعه محور است که به صورت اداری توسعه می یابد و اجزایی همچون واژه پرداز، نرم افزار، صفخه گسترده و ابزار های ترسیم را در بر می گیرد. این مجموعه حتی می تواند فایل های Microsoft Word و Microsoft Powerpoint را به راحتی باز و ویرایش کند. این نرم افزار بر روی تمامی پلتفرم ها اجرا می شود و یک نرم افزار کاملاً آزاد، لیبر و متن باز محسوب می شود. 
 
-[Mozilla Firefox](http://www.mozilla.org/products/firefox): This is _the_ best web browser. It is blazingly fast and has gained critical acclaim for its sensible and impressive features. The extensions concept allows any kind of plugins to be used.
+نرم افزار [Mozilla Firefox](http://www.mozilla.org/products/firefox): _بهترین_ مرورگر وب است. این مرورگر به دلیل سرعت بالا و قابلیت های کاربردی و سنجیدۀ خود مورد توجه قرار گرفته است. ویژگی افزونه ها به کاربران اجازه می دهد که قابلیت های جدیدی به مرورگر خود اضافه کنند. 
 
-[Mono](http://www.mono-project.com): This is an open source implementation of the Microsoft .NET platform.  It allows .NET applications to be created and run on GNU/Linux, Windows, FreeBSD, Mac OS and many other platforms as well.
+نرم افزار [Mono](http://www.mono-project.com): یک پیاده سازی متن باز از پلتفرم Microsoft .NET است. امکان ایجاد و اجرای برنامه های GNU/Linus,Windows,FreeBSD,Mac OS و دیگر پلتفرم ها را به برنامه های NET. می دهد.  
 
-[Apache web server](http://httpd.apache.org): This is the popular open source web server. In fact, it is _the_ most popular web server on the planet! It runs nearly more than half of the websites out there. Yes, that's right - Apache handles more websites than all the competition (including Microsoft IIS) combined.
+نرم افزار [Apache web server](http://httpd.apache.org): یک وب سرور متن باز و شناخته شده است. در واقع، *معروف ترین* وب سرور این جهان است! این وب سرور بیش از نیمی از وب سایت های موجود را اجرا می  کند. بله درست متوجه شدید، Apache وب سایت های بیشتری را نسبت به مجموع رقبای خود از جمله Microsoft IIS، سرویس دهی می کرد. 
 
-[VLC Player](http://www.videolan.org/vlc/): This is a video player that can play anything from DivX to MP3 to Ogg to VCDs and DVDs to ... who says open source ain't fun? ;-)
+نرم افزار [VLC Player](http://www.videolan.org/vlc/): یک پخش کنندۀ ویدیو است که هر چیزی را از DivX,MP3,Ogg تا VCDs و DVD و موارد دیگر را پخش می کند.... چه کسی گفته است نرم افزارهای متن باز نمی توانند سرگرم کننده باشند ؟ ؛-)
 
-This list is just intended to give you a brief idea - there are many more excellent FLOSS out there, such as the Perl language, PHP language, Drupal content management system for websites, PostgreSQL database server, TORCS racing game, KDevelop IDE, Xine - the movie player, VIM editor, Quanta+ editor, Banshee audio player, GIMP image editing program, ... This list could go on forever.
+این فهرست صرفاً جهت ارائه تصویری اجمالی از FLOSS است. نرم افزارهای بیشتری هم وجود دارند، مانند زبان برنامه نویسی Perl، زبان برنامه نویسی PHP، سیستم مدیریت محتوای Drupal برای وب سایت ها، پایگاه داده PostgreSQL، بازی مسابقه ای TORCS، محیط توسعۀ یکپارچۀ KDevelop، پخش کننده فیلم Xine، ویرایشگر VIM، ویرایشگر +Quanta، پخش کنندۀ صوتی Banshee، برنامۀ ویرایش تصویر GIMP و این فهرست می تواند تا بی نهایت ادامه پیدا کند. 
 
-To get the latest buzz in the FLOSS world, check out the following websites:
+برای اطلاع از جدیدترین تحولات دنیای FLOSS، وب سایت های زیر را چک کنید: 
 
 - [OMG! Ubuntu!](http://www.omgubuntu.co.uk/)
 - [Web Upd8](http://www.webupd8.org/)
 - [DistroWatch](http://www.distrowatch.com)
 - [Planet Debian](http://planet.debian.org/)
 
-Visit the following websites for more information on FLOSS:
+برای کسب اطلاعات بیشتر دربارۀ FLOSS به وب سایت های زیر مراجعه کنید: 
 
 - [GitHub Explore](http://github.com/explore)
 - [Code Triage](http://www.codetriage.com/)
 - [SourceForge](http://www.sourceforge.net)
 - [FreshMeat](http://www.freshmeat.net)
 
-So, go ahead and explore the vast, free and open world of FLOSS!
+بنابراین، پیش بروید و این دنیای گستردۀ ، آزاد و متن باز FLOSS را کشف کنید! 
