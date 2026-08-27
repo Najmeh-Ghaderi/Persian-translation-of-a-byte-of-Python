@@ -1,78 +1,78 @@
-# Installation {#installation}
+# نصب پایتون 
 
-When we refer to "Python 3" in this book, we will be referring to any version of Python equal to or greater than version [Python {{ book.pythonVersion }}](https://www.python.org/downloads/).
+هرگاه در این کتاب از «پایتون 3» صحبت می کنیم، منظورمان هر نسخه ای از پایتون است که برابر یا جدیدتر از نسخۀ [Python {{ book.pythonVersion }}](https://www.python.org/downloads/) باشد. 
 
-## Installation on Windows
+## نصب در ویندوز 
 
-Visit https://www.python.org/downloads/ and download the latest version. At the time of this writing, it was Python 3.5.1 
-The installation is just like any other Windows-based software.
+به وب سایت https://www.python.org/downloads/ مراجعه کنید و آخرین نسخه را دانلود کنید. در زمان نگارش این کتاب، نسخۀ Python 3.5.1 آخرین نسخه بوده است. 
+فرآیند نصب آن مانند نصب سایر نرم افزارهای ویندوزی است. 
 
-Note that if your Windows version is pre-Vista, you should [download Python 3.4 only](https://www.python.org/downloads/windows/) as later versions require newer versions of Windows.
+توجه داشته باشید که اگر نسخۀ ویندوز شما قدیمی تر از Vista است، باید [download Python 3.4](https://www.python.org/downloads/windows/) را دانلود کنید؛ زیرا نسخه های جدیدتر به نسخه های جدیدتری از ویندوز نیاز دارند. 
 
-CAUTION: Make sure you check option `Add Python 3.5 to PATH`.
+هشدار: مطمئن شوید گزینۀ `Add Python 3.5 to PATH` را انتخاب کرده اید. 
 
-To change install location, click on `Customize installation`, then `Next` and enter `C:\python35` (or another appropriate location) as the install location.
+اگر می خواهید محل نصب را تغییر دهید، گزینۀ `Customize installation` را انتخاب کنید و سپس `Next` را بزنید و `C:\python35` (یا مسیر مناسب دیگری) را به عنوان محل نصب وارد کنید. 
 
-If you didn�t check the `Add Python 3.5 PATH` option earlier, check `Add Python to environment variables`. This does the same thing as `Add Python 3.5 to PATH` on the first install screen.
+اگر در مرحلۀ اول گزینۀ `Add Python 3.5 PATH` را علامت نزده اید، گزینۀ `Add Python to enviroment variables` را بزنید. این گزینه همان کاری را انجام می دهد که `Add Python 3.5 to PATH` در صفحۀ اول نصب انجام می دهد. 
 
-You can choose to install Launcher for all users or not, it does not matter much. Launcher is used to switch between different versions of Python installed.
+می توانید گزینۀ نصب Launcher برای همۀ کاربران را انتخاب کنید یا نکنید؛ اهمیت چندانی ندارد. گزینه Launcher برای جا به جایی بین نسخه های مختلف پایتون که روی سیستم نصب شده اند، استفاده می شود. 
 
-If your path was not set correctly (by checking the `Add Python 3.5 Path` or `Add Python to environment variables` options), then follow the steps in the next section (`DOS Prompt`) to fix it. Otherwise, go to the `Running Python prompt on Windows` section in this document.
+اگر مسیر به درستی انتخاب نشده است (با انتخاب گزینه های `Add Python 3.5 Path` یا `Add Python to enviroment variables`)، مراحل بخش بعدی یعنی، `DOS Prompt`، را دنبال کنید تا آن را اصلاح کنید. در غیر این صورت، به بخش `Running Python prompt on Windows` بروید. 
 
-NOTE: For people who already know programming, if you are familiar with Docker, check out [Python in Docker](https://hub.docker.com/_/python/) and [Docker on Windows](https://docs.docker.com/windows/).
+نکته: اگر با برنامه نویسی آشنایی دارید و با Docker کار کرده اید، می توانید نگاهی به [Python in Docker](https://hub.docker.com/_/python/) و [Docker on windows](https://docs.docker.com/windows/) بیندازید. 
 
 ### DOS Prompt {#dos-prompt}
 
-If you want to be able to use Python from the Windows command line i.e. the DOS prompt, then you need to set the PATH variable appropriately.
+اگر می خواهید بتوانید از طریق خط فرمان ویندوز، یعنی DOS prompt، از پایتون استفاده کنید، باید متغیر PATH را به درستی تنظیم کنید. 
 
-For Windows 2000, XP, 2003 , click on `Control Panel` -> `System` -> `Advanced` -> `Environment Variables`. Click on the variable named `PATH` in the _System Variables_ section, then select `Edit` and add `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate directory name.
+برای ویندوزهای 2000، XP، 2003، مسیر `Control Panel` -> `System` -> `Advanced` -> `Enviroment Variables` را دنبال کنید. در بخش _System Variables_ متغیری به نام `PATH` را پیدا کنید و بر روی آن کلیک کنید، سپس `Edit` را انتخاب کنید و عبارت `C:\Python35;` را به انتهای مقدار موجود اضافه کنید (لطفاً ابتدا بررسی کنید که این پوشه واقعاً وجود داشته باشد، در نسخه های جدیدتر پایتون مسیر نصب ممکن است متفاوت باشد). بنابراین باید مسیر مناسب را وارد کنید. 
 
 <!-- The directory should match pythonVersion variable in book.json -->
-For older versions of Windows, open the file `C:\AUTOEXEC.BAT` and add the line `PATH=%PATH%;C:\Python35` and restart the system. For Windows NT, use the `AUTOEXEC.NT` file.
+برای نسخه های قدیمی تر ویندوز، فایل `C:\AUTOEXEC.BAT` را باز کنید و خط `PATH=%PATH%;C:\python35` را اضافه کنید و سیستم خود را راه اندازی مجدد کنید. برای ویندوز NT، فایل `AUTOEXEC.NT` را باز کنید. 
 
-For Windows Vista:
+برای ویندوز Vista: 
 
-- Click Start and choose `Control Panel`
-- Click System, on the right you'll see "View basic information about your computer"
-- On the left is a list of tasks, the last of which is `Advanced system settings`. Click that.
-- The `Advanced` tab of the `System Properties` dialog box is shown. Click the `Environment Variables` button on the bottom right.
-- In the lower box titled `System Variables` scroll down to Path and click the `Edit` button.
-- Change your path as need be.
-- Restart your system. Vista didn't pick up the system path environment variable change until I restarted.
+- روی Start کلیک کنید و `Control Panel` را انتخاب کنید. 
+- روی System کلیک کنید، در سمت راست گزینۀ "View basic information about your computer" را خواهید دید 
+- در سمت چپ، یک لیست از وظایف وجود دارد، آخرین گزینۀ آن `Advanced system settings` است؛ بر روی آن کلیک کنید.  
+- تب `Advanced` از پنجرۀ `System Properties` نشان داده خواهد شد. دکمۀ `Enviroment Variables` را در پایین صفحۀ سمت راست کلیک کنید. 
+- در پنجره ای با عنوان `System Variables` به پایین اسکرول کنید و Path را پیدا کنید و دکمۀ `Edit` را بزنید. 
+- در صورت نیاز مسیر را تغییر دهید. 
+- سیستم خود را راه اندازی مجدد کنید. ویندوز Vista تغییرات را تا زمانی که راه اندازی مجدد نکنید، ذخیره نمی کند. 
 
-For Windows 7 and 8:
+برای ویندوزهای 7 و 8: 
 
-- Right click on Computer from your desktop and select `Properties` or click `Start` and choose `Control Panel` -> `System and Security` -> `System`. Click on `Advanced system settings` on the left and then click on the `Advanced` tab. At the bottom click on `Environment Variables` and under `System variables`, look for the `PATH` variable, select and then press `Edit`.
-- Go to the end of the line under Variable value and append `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate folder name.
-- If the value was `%SystemRoot%\system32;` It will now become `%SystemRoot%\system32;C:\Python36` <!-- The directory should match pythonVersion variable in book.json -->
-- Click `OK` and you are done. No restart is required, however you may have to close and reopen the command line.
+- روی Computer در دسکتاپ خود راست کلیک کنید و `Properties` را انتخاب کنید یا بر روی `Start` کلیک کرده و `Control Panel` -> `System and Security` -> `System` را انتخاب کنید. در سمت چپ بر روی `Advanced system settings` کلیک کنید و سپس بر روی تب `Advanced` بزنید. در پایین پنجره بر روی `Enviroment Variables` کلیک کنید و در زیر `System Variables`، به دنبال متغیر `PATH` بگردیدآن را انتخاب کنید و سپس `Edit` را بزنید.  
+- به انتهای خط در زیر مقدار متغیر بروید و در انتهای مقدار موجود عبارت `C:\Python35;` را وارد کنید (لطفاً بررسی کنید که این پوشه وجود داشته باشد، چون ممکن است مسیر در نسخه های جدیدتر متفاوت باشد). بنابراین نام پوشه را درست وارد کنید. 
+- اگر مقدار `;%SystemRoot%\system32` بود، اکنون به `%SystemRoot%\system32;C:\python36` تبدیل می شود.  <!-- The directory should match pythonVersion variable in book.json -->
+- روی `OK` کلیک کنید و کار شما تمام می شود. نیازی به راه اندازی مجدد نیست. با این حال، ممکن است لازم باشد یک بار خط فرمان را ببندید و دوباره آن را باز کنید. 
 
-For Windows 10:
+برای ویندوز 10: 
 
-Windows Start Menu > `Settings` > `About` > `System Info` (this is all the way over to the right) > `Advanced System Settings` > `Environment Variables` (this is towards the bottom) > (then highlight `Path` variable and click `Edit`) > `New` > (type in whatever your python location is.  For example, `C:\Python35\`)
+بر روی Start Menu کلیک کنید و سپس مسیر `Settings` > `About` > `System Info` را که همگی در سمت راست قرار دارند را دنبال کنید. مسیر `Advanced System Settings` > `Enviroment Variables` را پیش ببرید. سپس متغیر `Path` را انتخاب کنید و `Edit` را بزنید > بر روی `New` کلیک کنید > محل پایتون خود را هر چیزی که هست وارد کنید. برای مثال، `C:\python35\`. 
 
 
-### Running Python prompt on Windows
+### اجرای Python prompt در ویندوز 
 
-For Windows users, you can run the interpreter in the command line if you have [set the `PATH` variable appropriately](#dos-prompt).
+برای کاربران ویندوز، اگر [متغیر `PATH` را به درستی تنظیم کرده باشید](#dos-prompt)، می توانید مفسر پایتون را از طریق خط فرمان اجرا کنید. 
 
-To open the terminal in Windows, click the start button and click `Run`. In the dialog box, type `cmd` and press `[enter]` key.
+برای باز کردن terminal در ویندوز، روی دکمه Start کلیک کنید و روی `Run` بزنید. در پنجرۀ باز شده، `cmd` را تایپ کنید و کلید `[enter]` را بزنید. 
 
-Then, type `python` and ensure there are no errors.
+سپس، `python` را تایپ کنید و مطمئن شوید که خطایی نمایش داده نمی شود. 
 
-## Installation on Mac OS X
+## نصب بر روی Mac OS X 
 
-For Mac OS X users, use [Homebrew](http://brew.sh): `brew install python3`.
+برای کاربران Mac OS X، از [Homebrew](http://brew.sh): `brew install python3` استفاده کنید. 
 
-To verify, open the terminal by pressing `[Command + Space]` keys (to open Spotlight search), type `Terminal` and press `[enter]` key. Now, run `python3` and ensure there are no errors.
+برای بررسی نصب، ترمینال را با استفاده از فشردن کلید `[Command + Space]` باز کنید (تا جست و جوی Spotlight را باز کنید) `Terminal` را تایپ کنید و کلید `[enter]` را بزنید. اکنون، `python3` را اجرا کنید و مطمئن شوید خطایی نمایش داده نمی شود. 
 
-## Installation on GNU/Linux
+## نصب بر روی GNU/Linux 
 
-For GNU/Linux users, use your distribution's package manager to install Python 3, e.g. on Debian & Ubuntu: `sudo apt-get update && sudo apt-get install python3`.
+برای کاربران GNU/Linux، از مدیر بسته توزیع لینوکس خود برای نصب python3 استفاده کنید.  برای مثال در Debian و Ubuntu از `sudo apt-get update && sudo apt-get install python3` استفاده کنید. 
 
-To verify, open the terminal by opening the `Terminal` application or by pressing `Alt + F2` and entering `gnome-terminal`. If that doesn't work, please refer the documentation of your particular GNU/Linux distribution. Now, run `python3` and ensure there are no errors.
+برای بررسی نصب، ترمینال را با استفاده از باز کردن برنامه `Terminal` باز کنید یا با فشردن کلید `Alt + F2` و وارد کردن `gnome-terminal`. اگر این روش کار نکرد، لطفاً به مستندات مربوط به لینوکس خود مراجعه کنید. اکنون، `python3` را اجرا کنید و مطمئن شوید خطایی رخ نمی دهد. 
 
-You can see the version of Python on the screen by running:
+می توانید نسخۀ پایتون را با وارد کردن عبارت زیر متوجه شوید: 
 
 <!-- The output should match pythonVersion variable in book.json -->
 ```
@@ -80,12 +80,12 @@ $ python3 -V
 Python 3.6.0
 ```
 
-NOTE: `$` is the prompt of the shell. It will be different for you depending on the settings of the operating system on your computer, hence I will indicate the prompt by just the `$` symbol.
+نکته: علامت `$` همان prompt خط فرمان است. این علامت با توجه به تنظیمات سیستم عامل کامپیوتر خود متفاوت خواهد بود. بنابراین، من برای نمایش prompt از نماد `$` استفاده می کنم. 
 
-CAUTION: Output may be different on your computer, depending on the version of Python software installed on your computer.
+هشدار: خروجی نمایش داده شده با توجه به نسخه نصب شده نرم افزار پایتون بر روی کامپیوتر شما، متفاوت خواهد بود. 
 
-## Summary
+## جمع بندی
 
-From now on, we will assume that you have Python installed on your system.
+از الان به بعد، فرض می کنیم شما پایتون را بر روی سیستم خود نصب کرده اید. 
 
-Next, we will write our first Python program.
+در فصل بعد، اولین برنامۀ پایتون خود را خواهیم نوشت. 
