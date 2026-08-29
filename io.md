@@ -1,82 +1,82 @@
-# Input and Output {#io}
+# ورودی و خروجی {io#} 
 
-There will be situations where your program has to interact with the user. For example, you would want to take input from the user and then print some results back. We can achieve this using the `input()` function and `print` function respectively.
+موقعیت هایی وجود خواهد داشت که در آن برنامۀ شما باید با کاربر تعامل داشته باشد. برای مثال، ممکن است بخواهید ورودی را از کاربر دریافت کرده و سپس برخی نتایج را برای او بازگردانید. می توانیم به ترتیب این کار را با استفاده از توابع `input` و `print` انجام دهیم. 
 
-For output, we can also use the various methods of the `str` (string) class. For example, you can use the `rjust` method to get a string which is right justified to a specified width. See `help(str)` for more details.
+برای خروجی، همچنین می توانیم از روش های مختلف کلاس `str` (رشته) استفاده کنیم. برای مثال، می توانید از روش `rjust` استفاده کنید تا رشته ای به دست آورید که نسبت به عرض مشخص شده، راست چین شده است. برای جزئیات بیشتر `help(str)` را مشاهده کنید. 
 
-Another common type of input/output is dealing with files. The ability to create, read and write files is essential to many programs and we will explore this aspect in this chapter.
+یکی دیگر از انواع رایج ورودی/خروجی کار با فایل ها است. توانایی ایجاد، خواندن و نوشتن فایل ها برای بسیاری از برنامه ها ضروری است و در این فصل این جنبه را بررسی خواهیم کرد. 
 
-## Input from user
+## دریافت ورودی از کاربر 
 
-Save this program as `io_input.py`:
+این برنامه را با نام `io_input.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/io_input.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/io_input.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-We use the slicing feature to reverse the text. We've already seen how we can make [slices from sequences](./data_structures.md#sequence) using the `seq[a:b]` code starting from position `a` to position `b`. We can also provide a third argument that determines the _step_ by which the slicing is done. The default step is `1` because of which it returns a continuous part of the text. Giving a negative step, i.e., `-1` will return the text in reverse.
+برای معکوس کردن متن از قابلیت برش (slicing) استفاده می کنیم. پیش تر دیدیم که چگونه می توانیم با استفاده از کد `seq[a:b]` از دنباله ها برش ایجاد کرد [slices from sequences](./data_structures.md#swquences)؛ به این صورت که برش از موقعیت `a` شروع شده و تا موقعیت `b` ادامه پیدا می کند. همچنین می توانیم آرگومان سومی را مشخص کنیم که _گام_ برش را تعیین کند. مقدار پیش فرض گام `1` است و به همین دلیل این عبارت بخش پیوسته ای از متن را بر می گرداند. تعیین یک گام منفی،یعنی `1-`، متن را به صورت معکوس بر می گرداند. 
 
-The `input()` function takes a string as argument and displays it to the user. Then it waits for the user to type something and press the return key. Once the user has entered and pressed the return key, the `input()` function will then return that text the user has entered.
+تابع `()input` یک رشته را به عنوان آرگومان دریافت کرده و آن را به کاربر نمایش می دهد. سپس منتظر می ماند تا کاربر چیزی تایپ کند و کلید return را فشار دهد. هنگامی که کاربر متن مورد نظر خود را وارد کرد و کلید return را فشار داد، تابع `()input` آن متن وارد شده توسط کاربر را باز می گرداند. 
 
-We take that text and reverse it. If the original text and reversed text are equal, then the text is a [palindrome](http://en.wiktionary.org/wiki/palindrome).
+ما آن متن را دریافت کرده و معکوس می کنیم. اگر متن اصلی و متن معکوس شده برابر باشند، آن متن یک [palindrome](http://en.wiktionary.org/wiki/palindrome) است. 
 
-### Homework exercise
+### تمرین تکمیلی 
 
-Checking whether a text is a palindrome should also ignore punctuation, spaces and case. For example, "Rise to vote, sir." is also a palindrome but our current program doesn't say it is. Can you improve the above program to recognize this palindrome?
+بررسی اینکه آیا یک متن palindrome است یا خیر، باید علائم نگارشی، فاصله ها و بزرگی و کوچکی حروف را نادیده بگیرد. برای نمونه، ".Rise to vote, sir" نیز یک پالیندروم است اما برنامه فعلی ما آن را تشخیص نمی دهد. آیا می توانید برنامۀ بالا را بهبود بخشید تا بتواند این پالیندروم را نیز تشخیص دهد؟ 
 
-If you need a hint, the idea is that...[^1]
+اگر به راهنمایی نیاز دارید، ایده این است که ... [1^] 
 
-## Files
+## فایل ها
 
-You can open and use files for reading or writing by creating an object of the `file` class and using its `read`, `readline` or `write` methods appropriately to read from or write to the file. The ability to read or write to the file depends on the mode you have specified for the file opening. Then finally, when you are finished with the file, you call the `close` method to tell Python that we are done using the file.
+می توانید با ایجاد یک شئ از کلاس `file` و استفاده از روش های `read` , `readline` یا `write`، فایل ها را برای خواندن یا نوشتن باز کرده و از آن استفاده کنید. توانایی خواندن و نوشتن در یک فایل، به حالتی که برای باز کردن فایل مشخص کرده اید، بستگی دارد. در نهایت، وقتی کار شما با فایل به اتمام رسید، روش `close` را فراخوانی می کنید تا به پایتون اعلام کند که دیگر با فایل کاری نداریم. 
 
-Example (save as `io_using_file.py`):
+مثال را با نام `io_using_file.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/io_using_file.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/io_using_file.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-Note that we can create a new file object simply by using the `open` method.  We open (or create it if it doesn't already exist) this file by using the built-in `open` function and specifying the name of the file and the mode in which we want to open the file. The mode can be a read mode (`'r'`), write mode (`'w'`) or append mode (`'a'`). We can also specify whether we are reading, writing, or appending in text mode (`'t'`) or binary mode (`'b'`). There are actually many more modes available and `help(open)` will give you more details about them. By default, `open()` considers the file to be a 't'ext file and opens it in 'r'ead mode.
+توجه داشته باشید که می توانیم به سادگی با استفاده از روش `open` یک شئ فایل جدید ایجاد کنیم. ما این فایل را با استفاده از تابع داخلی `open` و با مشخص کردن نام فایل و حالتی را که می خواهیم در آن فایل باز شود، باز کنیم (یا اگر از قبل وجود نداشته باشد، آن را ایجاد می کنیم). حالت می تواند حالت خواندن (`'r'`)، حالت نوشتن (`'w'`) یا حالت الحاق (`'a'`) باشد. همچنین می توانیم مشخص کنیم که خواندن، نوشتن یا الحاق در حالت متنی (`'t'`) یا حالت باینری (`'b'`) انجام شود. در واقع، حالت های بسیار بیشتری وجود دارد و `help(open)` جزئیات بیشتری دربارۀ آنها ارائه می دهد. به طور پیش فرض، `()open` فایل را یک فایل متنی در نظر می گیرد و آن را در حالت خواندن باز می کند.   
 
-In our example, we first open/create the file in write text mode and use the `write` method of the file object to write  our string variable `poem` to the file and then we finally `close` the file.
+در مثال ما، ابتدا فایل را در حالت نوشتن متنی باز یا ایجاد می کنیم و از روش `write` شئ فایل استفاده می کنیم تا متغیر رشته ای `poem` را در فایل بنویسیم و در نهایت فایل را با `close` می بندیم. 
 
-Next, we open the same file again for reading. We don't need to specify a mode because 'read text file' is the default mode. We read in each line of the file using the `readline` method in a loop. This method returns a complete line including the newline character at the end of the line. When an _empty_ string is returned, it means that we have reached the end of the file and we 'break' out of the loop.
+سپس همان فایل را دوباره برای خواندن باز می کنیم. نیازی نیست حالتی را مشخص کنیم، زیرا 'read text file' حالت پیش فرض است. با استفاده از روش `readline` هر خط از فایل را در یک حلقه می خوانیم. این روش یک خط کامل را از جمله کاراکتر خط جدید در انتهای آن باز می گرداند. زمانی که یک رشتۀ _خالی_ باز گردانده می شود، بدین معناست که به انتهای فایل رسیده ایم و از حلقه خارج می شویم. 
 
-In the end, we finally `close` the file.
+در آخر، بالاخره با `close` فایل را می بندیم. 
 
-We can see from our `readline` output that this program has indeed written to and read from our new `poem.txt` file.
+از خروجی `readline` می توان مشاهده کرد که این برنامه واقعاً داده ها را در فایل جدید `poem.txt` نوشته و آنها را از آن فایل خوانده است. 
 
 ## Pickle
 
-Python provides a standard module called `pickle` which you can use to store _any_ plain Python object in a file and then get it back later. This is called storing the object *persistently*.
+پایتون یک ماژول استاندارد به نام `pickle` ارائه می دهد که می توانید از آن برای ذخیره _هر_ شئ معمولی پایتون در یک فایل و سپس بازیابی در زمان دیگری استفاده کنید. به این فرآیند ذخیره سازی *پایدار* شئ گفته می شود.
 
-Example (save as `io_pickle.py`):
+مثال را تحت عنوان `io_pickle.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/io_pickle.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/io_pickle.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-To store an object in a file, we have to first `open` the file in __w__rite __b__inary mode and then call the `dump` function of the `pickle` module. This process is called _pickling_.
+برای ذخیرۀ یک شئ در یک فایل، ابتدا باید فایل را در حالت نوشتن باینری یعنی (wb) با استفاده از `open` باز کنیم و سپس تابع `dumb` را از ماژول `pickle` فراخوانی کنیم. به این فرآیند _pickling_ گفته می شود. 
 
-Next, we retrieve the object using the `load` function of the `pickle` module which returns the object. This process is called _unpickling_.
+سپس با استفاده از تابع `load` از ماژول `pickle`، شئ را بازیابی کنیم؛ این تابع شئ ذخیره شده را بر می گرداند. این فرآیند _unpickling_ نام دارد. 
 
 ## Unicode
 
-So far, when we have been writing and using strings, or reading and writing to a file, we have used simple English characters only.  Both English and non-English characters can be represented in Unicode (please see the articles at the end of this section for more info), and Python 3 by default stores string variables (think of all that text we wrote using single or double or triple quotes) in Unicode.  
+تا اینجا، هنگام نوشتن و استفاده از رشته ها یا هنگام خواندن و نوشتن در یک فایل، تنها از کاراکترهای سادۀ انگلیسی استفاده کردیم. هم کاراکترهای انگلیسی و هم کاراکترهای غیر انگلیسی را می توان در یونیکد (Unicode) نمایش داد (برای اطلاعات بیشتر، لطفاً مقالات ارائه شده در آخر این بخش را مطالعه کنید). پایتون 3 به طور پیش فرض متغیر های رشته ای را (یعنی تمام متن هایی را که با استفاده از نقل قول تکی،دوتایی یا سه تایی نوشته ایم) به صورت یونیکد ذخیره می کند.  
 
-> NOTE: If you are using Python 2, and we want to be able to read and write other non-English languages, we need to use the `unicode` type, and it all starts with the character `u`, e.g. `u"hello world"`
+> توجه: اگر از پایتون 2 استفاده می کنید و می خواهید زبان های غیر انگلیسی را نیز بخوانید و بنویسید، باید از نوع `unicode` استفاده کنید و این نوع با کاراکتر `u` آغاز می شود، برای مثال: `"u"hello world`. 
 
 ```python
 >>> "hello world"
@@ -89,28 +89,28 @@ So far, when we have been writing and using strings, or reading and writing to a
 <class 'str'>
 ```
 
-When data is sent over the Internet, we need to send it in bytes... something your computer easily understands.  The rules for translating Unicode (which is what Python uses when it stores a string) to bytes is called encoding.  A popular encoding to use is UTF-8.  We can read and write in UTF-8 by using a simple keyword argument in our `open` function.
+هنگامی که داده از طریق اینترنت فرستاده می شود، باید آنها را به صورت بایت ها (bytes) ارسال کنیم... چیزی که کامپیوتر شما می توند به راحتی آن را درک کند. قواعد تبدیل یونیکد (که پایتون هنگام ذخیرۀ یک رشته از آن استفاده می کند). به بایت ها، رمزگذاری (encoding) نامیده می شود. یکی از رمزگذاری های معروف، UTF-8 است. میتوانیم با استفاده از یک آرگومان کلیدی ساده در تابع `open` داده ها را با UTF-8 بخوانیم و بنویسیم.
 
 <pre><code class="lang-python">{% include "./programs/io_unicode.py" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-We use `io.open` and then use the `encoding` argument in the first open statement to encode the message, and then again in the second open statement when decoding the message.  Note that we should only use encoding in the open statement when in text mode.
+از `io.open` استفاده می کنیم و سپس در اولین دستور open از آرگومان `encoding` برای رمزگذاری پیام استفاده می کنیم و در دومین دستور open نیز از آن برای رمزگشایی (decoding) پیام استفاده می کنیم. توجه داشته باشید که هنگام استفاده از حالت متنی، باید در دستور open از encoding استفاده کنیم. 
 
-Whenever we write a program that uses Unicode literals (by putting a `u` before the string) like we have used above, we have to make sure that Python itself is told that our program uses UTF-8, and we have to put  `# encoding=utf-8`  comment at the top of our program.  
+هر زمان برنامه ای می نویسیم که از لیترال های یونیکد (Unicode Literals) یعنی رشته هایی که با قرار دادن `u` پیش از آنها مشخص می شوند، استفاده می کند، همانند آنچه در بالا به کار بردیم، باید مطمئن شویم که خود پایتون نیز از UTF-8 بودن برنامۀ ما آگاه است. برای این منظور، باید کامنت `encoding=utf-8 #` را در ابتدای برنامه قرار دهیم. 
 
-You should learn more about this topic by reading:
+برای کسب اطلاعات بیشتر دربارۀ این موضوع، مطالب زیر را مطالعه کنید: 
 
 - ["The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets"](http://www.joelonsoftware.com/articles/Unicode.html)
 - [Python Unicode Howto](http://docs.python.org/3/howto/unicode.html)
 - [Pragmatic Unicode talk by Nat Batchelder](http://nedbatchelder.com/text/unipain.html)
 
-## Summary
+## جمع بندی
 
-We have discussed various types of input/output, about file handling, about the pickle module and about Unicode.
+در این فصل انواع مختلف ورودی/خروجی، کار با فایل ها، ماژول pickle و یونیکد را بررسی کردیم.
 
-Next, we will explore the concept of exceptions.
+در ادامه، مفهوم استثناها (exceptions) را بررسی خواهیم کرد. 
 
 ---
 
-[^1]: Use a tuple (you can find a list of _all_ [punctuation marks here](http://grammar.ccc.commnet.edu/grammar/marks/marks.htm)) to hold all the forbidden characters, then use the membership test to determine whether a character should be removed or not, i.e. forbidden = (`!`, `?`, `.`, ...).
+[1^]: از یک تاپل (می توانید لیستی کامل از _تمام_ [علائم نگارشی](http://grammar.ccc.comment.edu/grammar/marks.htm) را پیدا کنید) و تمام کاراکترهای غیر مجاز را در آن قرار دهید. سپس از آزمون عضویت برای تعیین اینکه آیا یک کاراکتر باید حذف شود یا خیر استفاده کنید؛  یعنی:  (... , `.`, `?`, `!`) = forbidden. 
