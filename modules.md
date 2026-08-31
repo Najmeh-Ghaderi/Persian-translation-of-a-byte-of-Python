@@ -1,56 +1,56 @@
-# Modules
+# ماژول ها (Modules) 
 
-You have seen how you can reuse code in your program by defining functions once. What if you wanted to reuse a number of functions in other programs that you write? As you might have guessed, the answer is modules.
+دیدید که چگونه می توان با تعریف یک بارۀ توابع، کد را در برنامۀ خود مجدداً مورد استفاده قرار دهید. اما اگر بخواهید تعدادی از توابع را در برنامه های دیگری که می نویسید نیز دوباره استفاده کنید، چه؟ همانطور که احتمالاً حدس زده اید، پاسخ ماژول ها هستند. 
 
-There are various methods of writing modules, but the simplest way is to create a file with a `.py` extension that contains functions and variables.
+روش های متفاوتی برای نوشتن ماژول ها وجود دارد، اما ساده ترین روش ایجاد فایلی با پسوند `py.` است که شامل متغیرها و توابع نیز باشد. 
 
-Another method is to write the modules in the native language in which the Python interpreter itself was written. For example, you can write modules in the [C programming language](http://docs.python.org/3/extending/) and when compiled, they can be used from your Python code when using the standard Python interpreter.
+روش دیگر، نوشتن ماژول ها  به زبان بومی ای است که خود مفسر پایتون با آن نوشته شده است. برای مثال، می توانید ماژول ها را در [C programming language](http://docs.python.org/3/extending/) بنویسید و پس از کامپایل، هنگام استفاده از مفسر پایتون، آنها را از داخل کد پایتون خود استفاده کنید. 
 
-A module can be *imported* by another program to make use of its functionality. This is how we can use the Python standard library as well. First, we will see how to use the standard library modules.
+یک ماژول می تواند از طریق برنامۀ دیگری *وارد شود* تا بتوان از قابلیت های آن استفاده کرد. به همین روش کتابخانۀ استاندارد پایتون نیز مورد استفاده قرار می گیرد. ابتدا نحوۀ استفاده از ماژول های کتابخانۀ استاندارد پایتون را مورد بررسی قرار می دهیم. 
 
-Example (save as `module_using_sys.py`):
+مثال را با نام `module_using_sys.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/module_using_sys.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/module_using_sys.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-First, we *import* the `sys` module using the `import` statement. Basically, this translates to us telling Python that we want to use this module. The `sys` module contains functionality related to the Python interpreter and its environment i.e. the **sys**tem.
+ابتدا با استفاده از دستور `import`، ماژول `sys` را *وارد می کنیم* . در اصل، این کار به معنای این است که به پایتون اعلام می کنیم می خواهیم از این ماژول استفاده کنیم. ماژول `sys` شامل قابلیت هایی مرتبط با مفسر پایتون و محیط آن است؛ یعنی قابلیت هایی مربوط به سیستم (**sys**tem). 
 
-When Python executes the `import sys` statement, it looks for the `sys` module. In this case, it is one of the built-in modules, and hence Python knows where to find it.
+زمانی که پایتون دستور `import sys` را اجرا می کند، به دنبال ماژول `sys` می گردد. در این حالت، sys یکی از ماژول های داخلی است. بنابراین، پایتون می داند آن را از کجا پیدا کند. 
 
-If it was not a compiled module i.e. a module written in Python, then the Python interpreter will search for it in the directories listed in its `sys.path` variable. If the module is found, then the statements in the body of that module are run and the module is made *available* for you to use. Note that the initialization is done only the *first* time that we import a module.
+اگر این ماژول یک ماژول کامپایل شده نباشد، یعنی ماژولی باشد که با زبان پایتون نوشته شده است، مفسر پایتون آن را در پوشه هایی که در متغیر `sys.path` لیست شده اند جست و جو می کند. اگر ماژول پیدا شود، دستورات موجود در بدنۀ آن اجرا می شود و ماژول برای استفادۀ شما *در دسترس* قرار می گیرد. توجه داشته باشید که مقدار دهی اولیه ماژول تنها در *اولین* باری که آن را وارد می کنیم، انجام می شود. 
 
-The `argv` variable in the `sys` module is accessed using the dotted notation i.e. `sys.argv`. It clearly indicates that this name is part of the `sys` module. Another advantage of this approach is that the name does not clash with any `argv` variable used in your program.
+متغیر `argv` در ماژول `sys` با استفاده از نشانه گذاری نقطه ای یعنی `sys.argv` در دسترس قرار می گیرد. این شیوه به روشنی نشان می دهد که این نام بخشی از ماژول `sys` است. مزیت دیگر این رویکرد این است که این نام با هیچ متغیر `argv` ای که در برنامۀ خود استفاده کرده اید، تداخل پیدا نمی کند. 
 
-The `sys.argv` variable is a *list* of strings (lists are explained in detail in a [later chapter](./data_structures.md#data-structures)). Specifically, the `sys.argv` contains the list of *command line arguments* i.e. the arguments passed to your program using the command line.
+متغیر `sys.argv` یک لیست (list) از رشته ها است (لیست ها در [later chapter](./data_structures.md#data-structures) به طور مفصل بررسی خواهد شد). به طور مشخص، `sys.argv` شامل لیستی از *آرگومان های خط فرمان* است؛ یعنی آرگومان هایی که با استفاده از خط فرمان به برنامۀ شما فرستاده می شود. 
 
-If you are using an IDE to write and run these programs, look for a way to specify command line arguments to the program in the menus.
+اگر برای نوشتن و اجرای این برنامه ها از IDE استفاده می کنید، در منو های آن به دنبال راهی برای مشخص کردن آرگومان های خط فرمان برنامه باشید. 
 
-Here, when we execute `python module_using_sys.py we are arguments`, we run the module `module_using_sys.py` with the `python` command and the other things that follow are arguments passed to the program. Python stores the command line arguments in the `sys.argv` variable for us to use.
+در اینجا، هنگامی که دستور `python module_using_sys.py` را اجرا می کنیم، ماژول `module_using_sys.py` را با دستور `python` اجرا کرده ایم و سایر مواردی که پس از آن آمده اند، آرگومان هایی هستند که به برنامه ارسال شده اند. پایتون این آرگومان های خط فرمان را در متغیر `sys.argv` ذخیره می کند تا بتوانیم از آنها استفاده کنیم. 
 
-Remember, the name of the script running is always the first element in the `sys.argv` list. So, in this case we will have `'module_using_sys.py'` as `sys.argv[0]`, `'we'` as `sys.argv[1]`, `'are'` as `sys.argv[2]` and `'arguments'` as `sys.argv[3]`. Notice that Python starts counting from 0 and not 1.
+به خاطر داشته باشید که نام اسکریپتی که در حال اجراست، همیشه اولین عنصر در لیست `sys.argv` است. بنابراین، در این مثال، `'module_using_sys.py'` در `sys.argv[0]`، مقدار `'we'` در `sys.argv[1]`، مقدار `'are'` در `sys.argv[2]` و مقدار `'arguments'` در `sys.argv[3]` قرار می گیرند. توجه کنید که پایتون شمارش را از 0 آغاز می کند و نه از 1. 
 
-The `sys.path` contains the list of directory names where modules are imported from. Observe that the first string in `sys.path` is empty - this empty string indicates that the current directory is also part of the `sys.path` which is same as the `PYTHONPATH` environment variable. This means that you can directly import modules located in the current directory. Otherwise, you will have to place your module in one of the directories listed in `sys.path`.
+ماژول `sys.path` شامل لیستی از نام پوشه هایی است که ماژول ها از آن ها وارد می شوند. توجه کنید که نخستین رشته در `sys.path` خالی است. این رشته خالی نشان می دهد که پوشۀ جاری نیز بخشی از `sys.path` است؛ این مورد با متغیر محیطی `PYTHONPATH` مرتبط است. بنابراین، این بدین معناست که می توانید مستقیماً ماژول هایی را که در پوشۀ جاری قرار گرفته اند را وارد کنید. در غیر این صورت، باید ماژول خود را در یکی از پوشه هایی قرار دهید که در `sys.path` فهرست شده اند. 
 
-Note that the current directory is the directory from which the program is launched. Run `import os; print(os.getcwd())` to find out the current directory of your program.
+توجه داشته باشید که پوشۀ جاری، پوشه ای است که برنامه از آن اجرا شده است. برای یافتن پوشۀ جاری برنامه خود، دستور `import os; print(os.getcwd())` را اجرا کنید. 
 
-## Byte-compiled .pyc files {#pyc}
+## فایل های Byte-compiled .pyc 
 
-Importing a module is a relatively costly affair, so Python does some tricks to make it faster. One way is to create *byte-compiled* files with the extension `.pyc` which is an intermediate form that Python transforms the program into (remember the [introduction section](./about_python.md#interpreted) on how Python works?). This `.pyc` file is useful when you import the module the next time from a different program - it will be much faster since a portion of the processing required in importing a module is already done. Also, these byte-compiled files are platform-independent.
+وارد کردن یک ماژول نسبتاً پر هزینه است؛ بنابراین پایتون برای سریع تر کردن این فرآیند، ترفندهایی را به کار می گیرد. یکی از روش ها ایجاد فایل های *byte-compiled* با پسوند `pyc.` است. این فایل ها شکلی میانی هستند که پایتون برنامه را به ([بخش مقدمه](./about_python.md#interpreted) را به خاطر داشته باشیدکه چگونه پایتون عمل می کند؟). فایل `pyc.` هنگام وارد کردن دوبارۀ ماژول از یک برنامۀ دیگر مفید تر است؛ زیرا این کار بسیار سریع تر انجام می شود، چرا که بخشی از پردازش مورد نیاز برای وارد کردن یک ماژول از قبل انجام شده است. علاوه بر این، این فایل های byte-compiled مستقل از پلتفرم هستند. 
 
-NOTE: These `.pyc` files are usually created in the same directory as the corresponding `.py` files. If Python does not have permission to write to files in that directory, then the `.pyc` files will _not_ be created.
+توجه: این فایل های `pyc.` معمولاً در همان پوشه ای ایجاد می شوند که فایل های `pyc.` متناظر در آن قرار دارند. اگر پایتون اجازۀ نوشتن فایل در آن پوشه را نداشته باشد، فایل های `pyc.` ایجاد _نخواهند شد_. 
 
-## The from..import statement {#from-import-statement}
+## دستور from..import 
 
-If you want to directly import the `argv` variable into your program (to avoid typing the `sys.` everytime for it), then you can use the `from sys import argv` statement.
+اگر می خواهید مستقیماً متغیر `argv` را به برنامه خود وارد کنید (تا مجبور نباشید هر بار `.sys` را تایپ کنید)، می توانید از دستور `from sys import argv` استفاده کنید. 
 
-> WARNING: In general, *avoid* using the `from..import` statement, use the `import` statement instead. This is because your program will avoid name clashes and will be more readable.
+> هشدار: به طور کلی، از دستور `from..import` *اجتناب کنید* و به جای آن از دستور `import` استفاده کنید. دلیل این موضوع آن است که برنامۀ شما از تداخل نام ها پرهیز می کند و خوانایی بیشتری خواهد داشت. 
 
-Example:
+مثال:
 
 ```python
 from math import sqrt
@@ -59,131 +59,129 @@ print("Square root of 16 is", sqrt(16))
 
 ## A module's `__name__` {#module-name}
 
-Every module has a name and statements in a module can find out the name of their module. This is handy for the particular purpose of figuring out whether the module is being run standalone or being imported. As mentioned previously, when a module is imported for the first time, the code it contains gets executed. We can use this to make the module behave in different ways depending on whether it is being used by itself or being imported from another module. This can be achieved using the `__name__` attribute of the module.
+هر ماژول دارای یک نام است و دستورات موجود در یک ماژول می توانند نام ماژول خود را تشخیص دهند. این قابلیت به طور خاص برای تشخیص اینکه آیا ماژول به صورت مستقل در حال اجراست یا توسط ماژول دیگری وارد شده است، مفید واقع می شود. همان طور که پیش تر اشاره شد، هنگامی که یک ماژول برای نخستین بار وارد می شود، کدی که در آن قرار دارد اجرا می شود. می توانیم از این ویژگی استفاده کنیم تا ماژول با توجه به اینکه به صورت مستقل مورد استفاده قرار گرفته یا از ماژول دیگری وارد می شود، رفتار متفاوتی داشته باشد. این امر با استفاده از ویژگی `__name__` ماژول امکان پذیر است. 
 
-Example (save as `module_using_name.py`):
+مثال را با نام `module_using_name.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/module_using_name.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/module_using_name.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-Every Python module has its `__name__` defined. If this is `'__main__'`, that implies that the module is being run standalone by the user and we can take appropriate actions.
+هر ماژول پایتون دارای `__name__` تعریف شده است. اگر مقدار آن `'__main__'` باشد، به این معناست که ماژول توسط کاربر به صورت مستقل در حال اجراست و می توانیم اقدامات مناسب را انجام دهیم. 
 
-## Making Your Own Modules
+## ساخت ماژول های خودتان 
 
-Creating your own modules is easy, you've been doing it all along!  This is because every Python program is also a module. You just have to make sure it has a `.py` extension. The following example should make it clear.
+ایجاد ماژول های شخصی آسان است، در واقع، شما تمام مدت مشغول انجام همین کار بودید! دلیل آن این است که هر برنامۀ پایتون، خود یک ماژول نیز هست. تنها کافیست مطمئن شوید که فایل دارای پسوند `py.` باشد. مثال زیر این موضوع را روشن تر خواهد کرد. 
 
-Example (save as `mymodule.py`):
+مثال را تحت عنوان `mymodule_demo.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/mymodule.py" %}</code></pre>
 
-The above was a sample *module*. As you can see, there is nothing particularly special about it compared to our usual Python program. We will next see how to use this module in our other Python programs.
+نمونۀ بالا یک ماژول بود. همان طور که مشاهده می کنید، در مقایسه با برنامه های معمول پایتونی که تاکنون نوشته ایم، چیز خاصی در آن وجود ندارد. در ادامه خواهیم دید که چگونه از این ماژول در سایر برنامه های پایتون خود استفاده کنیم. 
 
-Remember that the module should be placed either in the same directory as the program from which we import it, or in one of the directories listed in `sys.path`.
+به خاطر داشته باشید که ماژول باید یا در همان پوشه ای قرار داشته باشد که برنامه ای که آن را وارد می کند در آن قرار دارد، یا در یکی از پوشه هایی باشد که در `sys.path` لیست شده اند. 
 
-Another module (save as `mymodule_demo.py`):
+ماژول دیگر را با نام `mymodule_demo.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/mymodule_demo.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/mymodule_demo.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-Notice that we use the same dotted notation to access members of the module. Python makes good reuse of the same notation to give the distinctive 'Pythonic' feel to it so that we don't have to keep learning new ways to do things.
+توجه کنید که برای دسترسی به اعضای ماژول، از همان نشانه گذاری نقطه ای استفاده می کنیم. پایتون از همین نشانه گذاری به خوبی و در بخش های مختلف استفاده می کند تا ویژگی متمایز 'Pythonic' خود را ایجاد کند؛ بنابراین مجبور نیستیم برای انجام کارهای مختلف، روش های جدید و متفاوتی را یاد بگیریم. 
 
-Here is a version utilising the `from..import` syntax (save as `mymodule_demo2.py`):
+در اینجا نسخه ای را می بینیم که از نحو `from..import` استفاده می کند (آن را با نام `mymodule_demo2.py` ذخیره کنید): 
 
 <pre><code class="lang-python">{% include "./programs/mymodule_demo2.py" %}</code></pre>
 
-The output of `mymodule_demo2.py` is same as the output of `mymodule_demo.py`.
+خروجی `mymodule_demo2.py` با خروجی `mymodule_demo.py` یکسان است.
 
-Notice that if there was already a `__version__` name declared in the module that imports mymodule, there would be a clash. This is also likely because it is common practice for each module to declare it's version number using this name. Hence, it is always recommended to prefer the `import` statement even though it might make your program a little longer.
+توجه داشته باشید که اگر در ماژولی که mymodule را وارد می کند، از قبل نامی به نام `__version__` تعریف شده باشد، تداخل نام ایجاد خواهد شد. این امر از آن جهت محتمل است که یک رویۀ رایج این است که هر ماژول شمارۀ نسخۀ خود را با استفاده از همین نام اعلام می کند. بنابراین، همواره پیشنهاد می شود که از دستور `import` استفاده کنید، حتی اگر این کار باعث می شود برناۀ شما کمی طولانی تر شود. 
 
-You could also use:
+همچنین می توانید از دستور زیر استفاده کنید: 
 
 ```python
 from mymodule import *
 ```
 
-This will import all public names such as `say_hi` but would not import `__version__` because it starts with double underscores.
+این دستور تمام نام های عمومی، مانند `say_hi` را وارد می کند؛ اما `__version__` را وارد نمی کند، زیرا این نام با دو زیرخط آغاز می شود.
 
-> WARNING: Remember that you should avoid using import-star, i.e. `from mymodule import *`.
+> هشدار: به یاد داشته باشید که باید از استفاده از import-star، یعنی `*from mymodule import`، پرهیز کنید. 
 
 <!-- -->
 
 > **Zen of Python**
 > 
-> One of Python's guiding principles is that "Explicit is better than Implicit". Run `import this` in Python to learn more.
+> یکی از اصول راهنمای پایتون این است که «صریح بودن بهتر از ضمنی بودن است». برای یادگیری بیشتر با این اصول، دستور `import this` را در پایتون اجرا کنید. 
 
-## The `dir` function {#dir-function}
+## تابع `dir` 
 
-The built-in `dir()` function returns the list of names defined by an object.
-If the object is a module, this list includes functions, classes and variables, defined inside that module.
+تابع داخلی `()dir` لیستی از نام هایی را که توسط یک شئ تعریف شده اند را باز می گرداند. اگر شئ مورد نظر یک ماژول باشد، این لیست شامل توابع، کلاس ها  و متغیرهایی است که درون آن ماژول تعریف شده اند. 
 
-This function can accept arguments.
-If the argument is the name of a module, the function returns the list of names from that specified module.
-If there is no argument, the function returns the list of names from the current module.
+این تابع می تواند آرگومان ها را دریافت کند. 
+اگر آرگومان، نام یک ماژول باشد، تابع لیستی از نام های موجود در همان ماژول مشخص شده را بر می گرداند. اگر هیچ آرگومانی ارائه نشود، تابع لیستی از نام های موجود در ماژول جاری را باز می گرداند. 
 
-Example:
+مثال: 
 
 ```python
 $ python
 >>> import sys
 
-# get names of attributes in sys module
+# sys دریافت نام ویژگی های موجود در ماژول 
 >>> dir(sys)
 ['__displayhook__', '__doc__',
 'argv', 'builtin_module_names',
 'version', 'version_info']
-# only few entries shown here
+# در اینجا تنها چند مورد از لیست نمایش داده شده است
 
-# get names of attributes for current module
+# دریافت نام ویژگی های ماژول جاری
 >>> dir()
 ['__builtins__', '__doc__',
 '__name__', '__package__', 'sys']
 
-# create a new variable 'a'
+# 'a' ایجاد یک متغیر جدید با نام 
 >>> a = 5
 
 >>> dir()
 ['__builtins__', '__doc__', '__name__', '__package__', 'sys', 'a']
 
-# delete/remove a name
+# حذف یک نام
 >>> del a
 
 >>> dir()
 ['__builtins__', '__doc__', '__name__', '__package__', 'sys']
 ```
 
-**How It Works**
+**نحو عملکرد**
 
-First, we see the usage of `dir` on the imported `sys` module. We can see the huge list of attributes that it contains.
+ابتدا کاربرد `dir` را بر روی ماژول وارد شدۀ `sys`، مشاهده می کنیم. می توانیم لیست بسیار بزرگی از ویژگی هایی را که در این ماژول قرار دارد ببینیم. 
 
-Next, we use the `dir` function without passing parameters to it. By default, it returns the list of attributes for the current module. Notice that the list of imported modules is also part of this list.
+سپس از تابع `dir` بدون ارسال هیچ پارامتری استفاده می کنیم. این تابع به طور پیش فرض لیستی از ویژگی های ماژول جاری را باز می گرداند. توجه کنید که ماژول های وارد شده نیز بخشی از این لیست هستند. 
 
-In order to observe `dir` in action, we define a new variable `a` and assign it a value and then check `dir` and we observe that there is an additional value in the list of the same name. We remove the variable/attribute of the current module using the `del` statement and the change is reflected again in the output of the `dir` function.
+برای مشاهدۀ عملکرد `dir`، یک متغیر جدید با نام `a` تعریف می کنیم، مقداری را به آن نسبت می دهیم و سپس `dir` را بررسی می کنیم. مشاهده می کنیم که مقدار جدیدی با همان نام نیز در لیست ظاهر شده است. سپس متغیر/ویژگی ماژول جاری را با استفاده از دستور `del` حذف می کنیم و این تغییر نیز بار دیگر در خروجی تابع `dir` منعکس می شود. 
 
-A note on `del`: This statement is used to *delete* a variable/name and after the statement has run, in this case `del a`, you can no longer access the variable `a` - it is as if it never existed before at all.
+یک نکته دربارۀ `del`: این دستور برای *حذف* یک متغیر/نام استفاده می شود و پس از اجرای دستور، در اینجا `del a`، دیگر نمی توانید به متغیر `a` دسترسی داشته باشید؛ گویی این متغیر هرگز وجود نداشته است. 
 
-Note that the `dir()` function works on *any* object. For example, run `dir(str)` for the attributes of the `str` (string) class.
+توجه داشته باشید که تابع `()dir` بر روی *هر* شئ ای کار می کند. برای مثال، `dir(str)` را اجرا کنید تا ویژگی های کلاس `str` (رشته) را مشاهده کنید. 
 
-There is also a [`vars()`](http://docs.python.org/3/library/functions.html#vars) function which can potentially give you the attributes and their values, but it will not work for all cases.
+همچنین تابع [`()vars`](http://docs.python.org/3/library/functions.html#vars) وجود دارد که می تواند ویژگی ها و مقادیر آن ها را در اختیار شما قرار دهد، اما در همۀ موارد قابل استفاده نیست. 
 
-## Packages
+## بسته ها (Packages) 
 
-By now, you must have started observing the hierarchy of organizing your programs. Variables usually go inside functions. Functions and global variables usually go inside modules. What if you wanted to organize modules? That's where packages come into the picture.
+تا اینجا، احتمالاً متوجۀ سلسله مراتب نظم دهی برنامه های خود شده اید. متغیرها معمولاً درون توابع قرار می گیرند. توابع و متغیرهای سراسری معمولاً درون ماژول ها قرار می گیرند. اما اگر بخواهید ماژول ها را سازماندهی کنید، چه؟ اینجاست که بسته ها (packages) وارد می شوند.
 
-Packages are just folders of modules with a special `__init__.py` file that indicates to Python that this folder is special because it contains Python modules.
+بسته ها در اصل پوشه هایی از ماژول ها هستند که دارای یک فایل ویژۀ `init__.py__` هستند. این فایل به پایتون نشان می دهد که این پوشه از اهمیت ویژه ای برخوردار است زیرا شامل ماژول های پایتون است. 
 
-Let's say you want to create a package called 'world' with subpackages 'asia', 'africa', etc. and these subpackages in turn contain modules like 'india', 'madagascar', etc.
+فرض کنید می خواهید بسته ای به نام 'world' ایجاد کنید که دارای زیر بسته های 'asia' , 'africa' و غیره باشد و این زیر بسته ها نیز به نوبۀ خود شامل ماژول هایی مانند 'india' , 'madagascar' و غیره باشند. 
 
-This is how you would structure the folders:
+ساختار پوشه ها به این صورت خواهد بود: 
 
 ```
 - <some folder present in the sys.path>/
@@ -201,12 +199,12 @@ This is how you would structure the folders:
                 - bar.py
 ```
 
-Packages are just a convenience to organize modules hierarchically. You will see many instances of this in the [standard library](./stdlib.md#stdlib).
+بسته ها در واقع راهی برای سازماندهی سلسله مراتبی ماژول ها هستند. نمونه های بسیاری از این ساختار را در [کتابخانۀ استاندارد](./stdlib.md#stdlib) مشاهده خواهید کرد. 
 
-## Summary
+## جمع بندی
 
-Just like functions are reusable parts of programs, modules are reusable programs. Packages are another hierarchy to organize modules. The standard library that comes with Python is an example of such a set of packages and modules.
+همانطور که توابع بخش های قابل استفادۀ مجدد برنامه ها هستند، ماژول ها نیز برنامه هایی با قابلیت استفاده مجدد هستند. بسته ها نیز سطح دیگری از سلسله مراتب را برای سازماندهی ماژول ها فراهم می کنند. کتابخانۀ استانداردی که همراه پایتون ارائه می شود، نمونه ای از چنین مجموعه ای از بسته ها و ماژول هاست. 
 
-We have seen how to use these modules and create our own modules.
+در این بخش دیدیم که چگونه از این ماژول ها استفاده کنیم و ماژول های خودمان را ایجاد کنیم. 
 
-Next, we will learn about some interesting concepts called data structures.
+در بخش بعدی، با مفاهیم جذابی به نام ساختارهای داده (data structures) آشنا خواهیم شد.
