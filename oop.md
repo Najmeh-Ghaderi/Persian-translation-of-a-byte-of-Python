@@ -1,183 +1,184 @@
-# Object Oriented Programming {#oop}
+# برنامه نویسی شئ گرا (oop) 
 
-In all the programs we wrote till now, we have designed our program around functions i.e. blocks of statements which manipulate data. This is called the _procedure-oriented_ way of programming. There is another way of organizing your program which is to combine data and functionality and wrap it inside something called an object. This is called the _object oriented_ programming paradigm. Most of the time you can use procedural programming, but when writing large programs or have a problem that is better suited to this method, you can use object oriented programming techniques.
+در تمام برنامه هایی که تاکنون نوشته ایم، برنامۀ خود را حول تابع طراحی کرده ایم؛ یعنی بلوک هایی از دستورات که داده ها را دست کاری می کنند. این شیوۀ برنامه نویسی، _برنامه نویسی روبه محور_ نامیده می شود. روش دیگری برای سازماندهی برنامه وجود دارد که در آن داده ها و قابلیت های مرتبط با یکدیگر را با هم ترکیب می کنند و و درون چیزی به نام شئ (object) قرار می دهیم. این شیوه، الگوی _برنامه نویسی شئ گرا_ نامیده می شود. در بیشتر مواقع می توانید از برنامه نویسی رو به محور استفاده کنید؛ اما هنگام نوشتن برنامه های بزرگ و یا زمانی که با برنامه ای مواجه هستید که با این روش سازگاری بیشتری دارد، می توانید از تکنیک برنامه نویسی شئ گرا استفاده کنید. 
 
-Classes and objects are the two main aspects of object oriented programming. A **class** creates a new _type_ where **objects** are **instances** of the class. An analogy is that you can have variables of type `int` which translates to saying that variables that store integers are variables which are instances (objects) of the `int` class.
+کلاس ها و اشیا دو جنبۀ اصلی برنامه نویسی شئ گرا هستند. یک **کلاس**، یک _نوع (type)_ جدید ایجاد می کند که **اشیا** **نمونه هایی** از آن کلاس هستند. برای درک بهتر، می توان اینگونه تشبیه کرد که می توانید متغیرهایی از نوع `int` داشته باشید؛ بدین معنا که متغیرهایی که اعداد صحیح را ذخیره می کنند، نمونه ها (اشیائی) از کلاس `int` هستند. 
 
-> **Note for Static Language Programmers**
+> **نکته ای برای برنامه نویسان زبان ایستا**
 > 
-> Note that even integers are treated as objects (of the `int` class). This is unlike C++ and Java (before version 1.5) where integers are primitive native types.
+> توجه داشته باشید که که حتی اعداد صحیح نیز مانند اشیا (از کلاس `int`) در نظر گرفته می شوند. این موضوع با ++C و Java (قبل از نسخه 1.5) متفاوت است؛ زیرا اعداد صحیح از نوع اولیه بومی (primitive native types) هستند.
 > 
-> See `help(int)` for more details on the class.
+> برای اطلاعات بیشتر دربارۀ کلاس، `help(int)` را ببینید. 
 > 
-> C# and Java 1.5 programmers will find this similar to the _boxing and unboxing_ concept.
+> برنامه نویسان #C و Java 1.5 این مفهوم را مشابه مفهوم _boxing and unboxing_ خواهند یافت. 
 
-Objects can store data using ordinary variables that _belong_ to the object. Variables that belong to an object or class are referred to as **fields**. Objects can also have functionality by using functions that _belong_ to a class. Such functions are called **methods** of the class. This terminology is important because it helps us to differentiate between functions and variables which are independent and those which belong to a class or object. Collectively, the fields and methods can be referred to as the **attributes** of that class.
+اشیا می توانند با استفاده از متغیرهای معمولی، داده هایی را ذخیره کنند که به شئ _تعلق دارند_. متغیرهایی که به یک شئ یا کلاس تعلق دارند، **فیلدها** نامیده می شوند. اشیا همچنین می توانند با استفاده از توابعی که به کلاس _تعلق دارند_، دارای قابلیت و عملکرد باشند. چنین توابعی **روش های** آن کلاس نامیده می شوند. این اصلاحات اهمیت دارند، زیرا به ما کمک می کنند میان توابع و متغیرهایی که مستقل هستند و آنهایی که به یک کلاس یا شئ تعلق دارند، تمایز قائل شویم. مجموعۀ فیلدها و روش ها را می توان در مجموع **ویژگی های** آن کلاس نامیم. 
 
-Fields are of two types - they can belong to each instance/object of the class or they can belong to the class itself. They are called **instance variables** and **class variables** respectively.
+فیلدها دو نوع هستند - ممکن است به هر نمونه/شئ از کلاس تعلق داشته باشند یا می توانند به خود کلاس تعلق داشته باشند. این دو نوع به ترتیب **متغیرهای نمونه** و **متغیرهای کلاس** نامیده می شوند. 
 
-A class is created using the `class` keyword. The fields and methods of the class are listed in an indented block.
+یک کلاس با استفاده از کلمۀ کلیدی `class` ایجاد می شود. فیلدها و روش های کلاس در یک بلوک دارای تورفتگی لیست می شوند. 
 
 ## The `self` {#self}
 
-Class methods have only one specific difference from ordinary functions - they must have an extra first name that has to be added to the beginning of the parameter list, but you **do not** give a value for this parameter when you call the method, Python will provide it. This particular variable refers to the object _itself_, and by convention, it is given the name `self`.
+روش های کلاس تنها یک تفاوت مشخص با توابع معمولی دارند - آنها باید یک نام اضافی در  ابتدای لیست پارامترهای خود داشته باشند؛ اما هنگام فراخوانی روش، مقداری به این پارامتر **نمی دهید**، پایتون این مقدار را فراهم می کند. این متغیر به _خود_ شئ اشاره می کند و طبق قرارداد، نام آن `self` است. 
 
-Although, you can give any name for this parameter, it is _strongly recommended_ that you use the name `self` - any other name is definitely frowned upon. There are many advantages to using a standard name - any reader of your program will immediately recognize it and even specialized IDEs (Integrated Development Environments) can help you if you use `self`.
+اگرچه می توانید هر نامی به این پارامتر بدهید، _اکیداً توصیه می کنم_ از نام `self`استفاده کنید؛ هر نام دیگری نا مناسب تلقی می شود. استفاده از یک نام استاندارد، مزایای زیادی دارد - خوانندۀ برنامه شما بی درنگ آن را تشخیص می دهد و حتی IDE ها (محیط های توسعۀ یکپارچه) نیز در صورت استفاده از `self` می توانند به شما کمک کنند. 
 
-> **Note for C++/Java/C# Programmers**
+> **نکته ای برای برنامه نویسان ++C#/Java/C**
 > 
-> The `self` in Python is equivalent to the `this` pointer in C++ and the `this` reference in Java and C#.
+>  نام`self` در پایتون معادل اشاره گر `this` در ++C و مرجع `this` در Java و #C است. 
 
-You must be wondering how Python gives the value for `self` and why you don't need to give a value for it. An example will make this clear. Say you have a class called `MyClass` and an instance of this class called `myobject`. When you call a method of this object as `myobject.method(arg1, arg2)`, this is automatically converted by Python into `MyClass.method(myobject, arg1, arg2)` - this is all the special `self` is about.
+ممکن است برایتان این سؤال پیش آمده باشد که پایتون چگونه مقدار `self` را فراهم می کند و چرا لازم نیست شما مقداری به آن ارائه دهید. یک مثال این مفهوم را روشن می کند. فرض کنید کلاسی به نام `MyClass` و نمونه ای از این کلاس به نام `myobject` دارید. وقتی روشی از این شئ را به صورت `myobject.method(arg1 , arg2)` را فراخوانی می کنید، پایتون این عبارت را به صورت خودکار به `MyClass.method(myobject, arg1, arg2)` تبدیل می کند. تمام مفهوم ویژۀ `self` همین است. 
 
-This also means that if you have a method which takes no arguments, then you still have to have one argument - the `self`.
+این همچنین بدین معناست که اگر روشی داشته باشید که هیچ آرگومانی دریافت نمی کند، باز هم باید یک آرگومان داشته باشید؛ یعنی `self`. 
 
-## Classes {#classes}
+## کلاس ها (Classes) 
 
-The simplest class possible is shown in the following example (save as `oop_simplestclass.py`).
+ساده ترین کلاس ممکن در مثال زیر نشان داده شده است (آن را با نام `oop_simplestclass.py` ذخیره کنید): 
 
 <pre><code class="lang-python">{% include "./programs/oop_simplestclass.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/oop_simplestclass.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-We create a new class using the `class` statement and the name of the class. This is followed by an indented block of statements which form the body of the class. In this case, we have an empty block which is indicated using the `pass` statement.
+با استفاده از دستور `class` و نام کلاس، یک کلاس جدید ایجاد می کنیم. پس از آن، یک بلوک از دستورات دارای تورفتگی قرار می گیرد که بدنۀ کلاس را تشکیل می دهد. در این مثال، یک بلوک خالی داریم که با استفاده از دستور `pass` مشخص شده است. 
 
-Next, we create an object/instance of this class using the name of the class followed by a pair of parentheses. (We will learn [more about instantiation](#init) in the next section). For our verification, we confirm the type of the variable by simply printing it. It tells us that we have an instance of the `Person` class in the `__main__` module.
+سپس با استفاده از نام کلاس و به دنبال آن یک جفت پرانتز، یک شئ/نمونه از این کلاس را ایجاد می کنیم. (در بخش بعدی [درباره نمونه سازی بیشتر خواهیم آموخت](#init) ). برای بررسی، نوع متغیر را به سادگی با پرینت کردن آن بررسی می کنیم. خروجی به ما می گوید که یک نمونه از کلاس `Person` در ماژول `__main__` داریم. 
 
-Notice that the address of the computer memory where your object is stored is also printed. The address will have a different value on your computer since Python can store the object wherever it finds space.
+توجه کنید که آدرس حافظۀ کامپیوتر که شئ شما در آن ذخیره شده است نیز چاپ می شود. این آدرس در رایانۀ شما مقدار متفاوتی خواهد داشت، زیرا پایتون می تواند شئ را هر جایی که فضای کافی پیدا کند، ذخیره کند. 
 
-## Methods
+## روش ها (Methods)
 
-We have already discussed that classes/objects can have methods just like functions except that we have an extra `self` variable. We will now see an example (save as `oop_method.py`).
+پیش تر بررسی کردیم که کلاس ها/اشیا می توانند همچون توابع دارای روش باشند، با این تفاوت که یک متغیر اضافی به نام `self` دارند. اکنون مثالی را بررسی می کنیم (آن را با نام `oop_method.py` ذخیره کنید).
 
 <pre><code class="lang-python">{% include "./programs/oop_method.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/oop_method.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-Here we see the `self` in action. Notice that the `say_hi` method takes no parameters but still has the `self` in the function definition.
+در اینجا `self` را در عمل مشاهده می کنید. توجه داشته باشید که روش `say_hi` پارامتری دریافت نمی کند، اما هنوز `self` در تعریف تابع قرار دارد. 
 
-## The `__init__` method {#init}
+## روش `__init__` 
 
-There are many method names which have special significance in Python classes. We will see the significance of the `__init__` method now.
+نام روش های زیادی در کلاس های پایتون وجود دارند که اهمیت ویژه ای دارند. اکنون اهمیت روش `__init__` را بررسی می کنیم. 
 
-The `__init__` method is run as soon as an object of a class is instantiated (i.e. created). The method is useful to do any *initialization* (i.e. passing initial values to your object) you want to do with your object. Notice the double underscores both at the beginning and at the end of the name.
+روش `__init__` به محض اینکه یک شئ از یک کلاس نمونه سازی  (ایجاد)شود، اجرا می شود. این روش برای انجام هرگونه *مقداردهی اولیه* (اختصاص مقادیر اولیه به شئ) که می خواهید روی شئ انجام دهید، مفید است. توجه کنید که که در ابتدا و انتهای نام این روش، دو زیرخط وجود دارد. 
 
-Example (save as `oop_init.py`):
+مثال را تحت عنوان `oop_init.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/oop_init.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/oop_init.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-Here, we define the `__init__` method as taking a parameter `name` (along with the usual `self`). Here, we just create a new field also called `name`. Notice these are two different variables even though they are both called 'name'. There is no problem because the dotted notation `self.name` means that there is something called "name" that is part of the object called "self" and the other `name` is a local variable. Since we explicitly indicate which name we are referring to, there is no confusion.
+در اینجا، روش `__init__` را به گونه ای تعریف می کنیم که یک پارامتر `name` (علاوه بر `self` معمول) دریافت کند. در اینجا یک فیلد جدید نیز ایجاد می کنیم که آن هم `name` نام دارد. توجه کنید که این ها دو متغیر متفاوت هستند، حتی اگر هر دو 'name' نامیده شوند. هیچ مشکلی وجود ندارد، زیرا نشانه گذاری نقطه ای `self.name` به این معناست که چیزی به نام "name" وجود دارد که بخشی از شئ موسوم به "self" است؛ درحالی که `name` دیگر یک متغیر محلی است. از آنجا که به صراحت مشخص می کنیم به کدام name اشاره داریم، هیچ ابهامی ایجاد نمی شود. 
 
-When creating new instance `p`, of the class `Person`, we do so by using the class name, followed by the arguments in the parentheses: p = Person('Swaroop').
+هنگام ایجاد نمونۀ جدید `p` از کلاس `Person`، این کار را با استفاده از نام کلاس و سپس آرگومان های موجود در پرانتز انجام می دهیم: p = Person('Swaroop'). 
 
-We do not explicitly call the `__init__` method.
-This is the special significance of this method.
+ما روش `__init__` را به صورت آشکار فراخوانی نمی کنیم. 
 
-Now, we are able to use the `self.name` field in our methods which is demonstrated in the `say_hi` method.
+اهمیت ویژۀ این روش دقیقاً در همین موضوع است. 
 
-## Class And Object Variables {#class-obj-vars}
+اکنون می توانبم از فیلد `self.name` در روش های خود استفاده کنیم؛ همانطور که در روش `say_hi` نشان داده شده است. 
 
-We have already discussed the functionality part of classes and objects (i.e. methods), now let us learn about the data part. The data part, i.e. fields, are nothing but ordinary variables that are _bound_ to the **namespaces** of the classes and objects. This means that these names are valid within the context of these classes and objects only. That's why they are called _name spaces_.
+## متغیر های کلاس و شئ {class-obj-vars#}
 
-There are two types of _fields_ - class variables and object variables which are classified depending on whether the class or the object _owns_ the variables respectively.
+پیش تر دربارۀ قابلیت های کلاس ها و اشیا (یعنی روش ها)، بحث کردیم. اکنون بیایید بخش داده ای آن را بررسی کنیم. بخش داده ای، یعنی فیلدها، چیزی جز متغیرهای معمولی نیستند که به **فضاهای نام (namespaces)** کلاس ها و اشیا _متصل شده اند_. این بدان معناست که این نام ها تنها در چارچوب همین کلاس ها و اشیا معتبر هستند. به همین دلیل به آنها _فضاهای نام_ گفته می شود. 
 
-**Class variables** are shared - they can be accessed by all instances of that class. There is only one copy of the class variable and when any one object makes a change to a class variable, that change will be seen by all the other instances.
+دو نوع فیلد وجود دارد - متغیرهای کلاس و متغیرهای شئ؛ این دو بر اساس اینکه متغیرها به ترتیب _متعلق_ به کلاس یا شئ هستند، طبقه بندی می شوند. 
 
-**Object variables** are owned by each individual object/instance of the class. In this case, each object has its own copy of the field i.e. they are not shared and are not related in any way to the field by the same name in a different instance. An example will make this easy to understand (save as `oop_objvar.py`):
+**متغیرهای کلاس** به صورت مشترک مورد استفاده قرار می گیرند - یعنی تمام نمونه های آن کلاس می توانند به آنها دسترسی داشته باشند. تنها یک کپی از متغیر کلاس وجود دارد و هنگامی که هر یک از اشیا تغییری در متغیر کلاس ایجاد کند، این تغییر توسط تمام نمونه های دیگر نیز قابل مشاهده خواهد شد. 
+
+**متغیرهای شئ** متعلق به هر شئ/نمونه منفرد از کلاس هستند. در این حالت، هر شئ کپی مخصوص به خود را از فیلد دارد؛ یعنی این متغیرها با یکدیگر به اشتراک گذاشته نمی شوند و به هیچ شکلی با فیلدی همنام در یک نمونۀ دیگر مرتبط نیستند. مثال زیر در درک بهتر این موضوع به شما کمک می کند (آن را با نام `oop_objvar.py` ذخیره کنید): 
 
 <pre><code class="lang-python">{% include "./programs/oop_objvar.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/oop_objvar.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-This is a long example but helps demonstrate the nature of class and object variables. Here, `population` belongs to the `Robot` class and hence is a class variable. The `name` variable belongs to the object (it is assigned using `self`) and hence is an object variable.
+این مثال نسبتاً طولانی است، اما به خوبی ماهیت متغیرهای کلاس و شئ را نمایش می دهد. در اینجا `population` به کلاس `Robot` تعلق دارد و بنابراین یک متغیر کلاس است. متغیر `name` به شئ تعلق دارد (با استفاده از `self` به آن اختصاص داده شده است) و بنابراین یک متغیر شئ است. 
 
-Thus, we refer to the `population` class variable as `Robot.population` and not as `self.population`. We refer to the object variable `name` using `self.name` notation in the methods of that object. Remember this simple difference between class and object variables. Also note that an object variable with the same name as a class variable will hide the class variable!
+بنابراین، به متغیر کلاس `population` به صورت `Robot.population` ارجاع می دهیم، نه `self.population`. در روش های آن شئ به متغیر شئ `name` با استفاده از نشانه گذاری `self.name` ارجاع می دهیم. این تفاوت ساده میان متغیرهای کلاس و شئ را به خاطر داشته باشید. همچنین توجه کنید که اگر یک متغیر شئ با متغیر کلاس همنام باشد، متغیر شئ، متغیر کلاس را پنهان خواهد کرد! 
 
-Instead of `Robot.population`, we could have also used `self.__class__.population` because every object refers to its class via the `self.__class__` attribute.
+به جای `Robot.population` می توانستیم از `self.__class__.population` نیز استفاده کنیم؛ زیرا هر شئ از طریق ویژگی `self.__class__` به کلاس خود ارجاع داده می شود. 
 
-The `how_many` is actually a method that belongs to the class and not to the object. This means we can define it as either a `classmethod` or a `staticmethod` depending on whether we need to know which class we are part of. Since we refer to a class variable, let's use `classmethod`.
+عبارت `hoe_many` در واقع روشی است که به کلاس تعلق دارد نه به شئ. بنابراین بسته به اینکه لازم باشد بدانیم عضو کدام کلاس هستیم، می توانیم آن را به صورت یک `classmethod` یا `staticmethod` تعریف کنیم. از آنجا که به یک متغیر کلاس ارجاع می دهیم، بیایید از `classmethod` استفاده کنیم. 
 
-We have marked the `how_many` method as a class method using a [decorator](./more.md#decorator).
+ما روش `how_many` را با استفاده از یک [decorator](./more.md#decorator) به عنوان روش کلاس علامت گذاری کرده ایم. 
 
-Decorators can be imagined to be a shortcut to calling a wrapper function (i.e. a function that "wraps" around another function so that it can do something before or after the inner function), so applying the `@classmethod` decorator is the same as calling:
+می توانیم دکوراتورها را به عنوان یک میان بر برای فراخوانی یک تابع پوشاننده در نظر گرفت؛ یعنی تابعی که تابع دیگر را «می پوشاند» تا بتواند پیش یا پس از تابع داخلی، عملی انجام دهد. بنابراین اعمال دکوراتور `classmethod@` معادل فراخوانی عبارت زیر است: 
 
 ```python
 how_many = classmethod(how_many)
 ```
 
-Observe that the `__init__` method is used to initialize the `Robot` instance with a name. In this method, we increase the `population` count by 1 since we have one more robot being added. Also observe that the values of `self.name` is specific to each object which indicates the nature of object variables.
+مشاهده می کنید که روش `__init__` برای مقداردهی اولیۀ نمونۀ `Robot` با یک نام استفاده می شود. در این روش، مقدار `population` را 1 واحد افزایش می دهیم، زیرا یک ربات دیگر به مجوعه اضافه شده است. همچنین توجه کنید که مقادیر `self.name` برای هر شئ اختصاصی هستند که این موضوع ماهیت متغیرهای شئ را نمایش می دهد. 
 
-Remember, that you must refer to the variables and methods of the same object using the `self` *only*. This is called an *attribute reference*.
+به خاطر داشته باشید که باید *تنها* با استفاده از `self` به متغیرها و روش های همان شئ ارجاع دهید. این کار *ارجاع به ویژگی* نامیده می شود.
 
-In this program, we also see the use of *docstrings* for classes as well as methods. We can access the class docstring at runtime using `Robot.__doc__` and the method docstring as `Robot.say_hi.__doc__`
+در این برنامه، استفاده از *docstrings* را نیز برای کلاس ها و روش ها مشاهده می کنیم. می توانیم در زمان اجرا به docstring کلاس با استفاده از `__Robot.__doc` و به docstring روش با استفاده از `__Robot.say_hi.__doc` دسترسی پیدا کنیم. 
 
-In the `die` method, we simply decrease the `Robot.population` count by 1.
+در روش `die`، مقدار شمارندۀ `Robot.population` را به سادگی یک واحد کاهش می دهیم. 
 
-All class members are public. One exception: If you use data members with names using the _double underscore prefix_ such as `__privatevar`, Python uses name-mangling to effectively make it a private variable.
+تمام اعضای کلاس عمومی هستند. یک استثنا وجود دارد: اگر از اعضای داده ای با نام هایی استفاده کنید که با _دو زیرخط_ در ابتدای نام آغاز می شوند، مانند `privatevar__`، پایتون از ساز وکاری به نام تغییر نام (name-mangling) استفاده می کند تا این متغیر عملاً به یک متغیر خصوصی تبدیل شود. 
 
-Thus, the convention followed is that any variable that is to be used only within the class or object should begin with an underscore and all other names are public and can be used by other classes/objects. Remember that this is only a convention and is not enforced by Python (except for the double underscore prefix).
+بنابراین، قراردادی که در پایتون دنبال می شود این است که هر متغیری که قرار است تنها در داخل کلاس یا شئ مورد استفاده قرار گیرد، باید با یک زیرخط شروع شود و تمام نام های دیگر عمومی هستند و می توانند توسط کلاس ها/اشیای دیگر مورد استفاده قرار گیرند. به خاطر داشته باشید که این تنها یک قرارداد است و پایتون آن را اجبار نمی کند (به جز مورد پیشوند دو زیرخط). 
 
-> **Note for C++/Java/C# Programmers**
+> **یک نکته برای برنامه نویسان ++C#/Java/C**
 > 
-> All class members (including the data members) are _public_ and all the methods are _virtual_ in Python.
+> تمام اعضای کلاس (از جمله اعضای داده ای) _عمومی_ هستند و تمام روش ها در پایتون _مجازی_ هستند. 
 
-## Inheritance
+## وراثت (Inheritance) 
 
-One of the major benefits of object oriented programming is **reuse** of code and one of the ways this is achieved is through the **inheritance** mechanism. Inheritance can be best imagined as implementing a **type and subtype** relationship between classes.
+یکی از مزایای اصلی برنامه نویسی شئ گرا، **استفاده مجدد** از کد است و یکی از روش های دستیابی به این هدف، ساز و  کار **وراثت** است. وراثت را می توان به بهترین شکل به صورت ایجاد رابطۀ **نوع و زیرنوع** میان کلاس ها تصور کرد. 
 
-Suppose you want to write a program which has to keep track of the teachers and students in a college. They have some common characteristics such as name, age and address. They also have specific characteristics such as salary, courses and leaves for teachers and, marks and fees for students.
+فرض کنید می خواهید برنامه ای بنویسید که باید معلمان و دانش آموزان یک کالج را پیگیری کند. آن ها برخی ویژگی های مشترک مانند نام، سن و آدرس دارند. در عین حال ویژگی های خاصی مانند حقوق، دوره ها و مرخصی ها برای معلمان و نمرات و شهریه برای دانش آموزان نیز دارند. 
 
-You can create two independent classes for each type and process them but adding a new common characteristic would mean adding to both of these independent classes. This quickly becomes unwieldy.
+می توانید برای هر نوع، دو کلاس مستقل ایجاد کرده و آن ها را پردازش کنید؛ اما اضافه کردن یک ویژگی مشترک جدید به این معنا خواهد بود که باید آن ویژگی را به هر دو کلاس مستقل اضافه کنید. این کار خیلی زود به ساختاری دست و پاگیر تبدیل می شود. 
 
-A better way would be to create a common class called `SchoolMember` and then have the teacher and student classes _inherit_ from this class, i.e. they will become sub-types of this type (class) and then we can add specific characteristics to these sub-types.
+راهکار بهتر این است که یک کلاس به نام `SchoolMember` ایجاد کنیم و سپس کلاس های معلمان و دانش آموز را از این کلاس _به ارث ببریم_؛ یعنی آن ها را به زیرنوع های این نوع (کلاس) تبدیل کنیم و سپس می توانیم ویژگی های خاصی را به این زیرنوع ها اضافه کنیم.
 
-There are many advantages to this approach. If we add/change any functionality in `SchoolMember`, this is automatically reflected in the subtypes as well. For example, you can add a new ID card field for both teachers and students by simply adding it to the SchoolMember class. However, changes in the subtypes do not affect other subtypes. Another advantage is that you can refer to a teacher or student object as a `SchoolMember` object which could be useful in some situations such as counting of the number of school members. This is called **polymorphism** where a sub-type can be substituted in any situation where a parent type is expected, i.e. the object can be treated as an instance of the parent class.
+این رویکرد مزایای زیادی دارد. اگر هر قابلیت را در `SchoolMember` اضافه یا تغییر دهیم، این تغییر به صورت خودکار در زیرنوع ها نیز منعکس می شود. برای مثال، می توانیم یک فیلد جدید برای کارت شناسایی معلمان و دانش آموزان اضافه کنیم، برای این کار لازم است آن را به کلاس SchoolMember بیفزاییم. با این حال، تغییرات در زیرنوع ها بر سایر زیرنوع ها تاثیری نمی گذارند. مزیت دیگر این است که می توانید به یک شئ معلم یا دانش آموز به عنوان یک شئ `SchoolMember` ارجاع دهید؛ این قابلیت در برخی موقعیت ها، مانند شمارش تعداد اعضای مدرسه، می تواند مفید واقع شود. این مفهوم **چندریختی (polymorphism)** نامیده می شود؛ یعنی یک زیرنوع می تواند در هر موقعیتی که انتظار یک نوع والد وجود دارد، جایگزین آن شود. به عبارت دیگر، می توان با شئ به عنوان نمونه ای از کلاس والد رفتار کرد. 
 
-Also observe that we reuse the code of the parent class and we do not need to repeat it in the different classes as we would have had to in case we had used independent classes.
+همچنین توجه کنید که در اینجا کد کلاس والد را مجدداً استفاده می کنیم و نیازی به به تکرار آن در کلاس های مختلف نداریم؛ کاری که در صورت استفاده از کلاس های مستقل مجبور به انجام آن بودیم. 
 
-The `SchoolMember` class in this situation is known as the **base class** or the **superclass**. The `Teacher` and `Student` classes are called the **derived classes** or **subclasses**.
+کلاس `SchoolMembeer` در این موقعیت **کلاس پایه** یا **فراکلاس** نامیده می شود. کلاس های `Teacher` و `Student` نیز **کلاس های مشتق شده** یا **زیرکلاس ها** نامیده می شوند. 
 
-We will now see this example as a program (save as `oop_subclass.py`):
+اکنون این مثال را به صورت یک برنامه مشاهده می کنیم (آن را با نام `oop_subclass.py` ذخیره کنید): 
 
 <pre><code class="lang-python">{% include "./programs/oop_subclass.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/oop_subclass.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-To use inheritance, we specify the base class names in a tuple following the class name in the class definition (for example, `class Teacher(SchoolMember)`).   Next, we observe that the `__init__` method of the base class is explicitly called using the  `self`  variable so that we can initialize the base class part of an instance in the subclass. This is very important to remember- Since we are defining a  `__init__`  method in `Teacher`  and  `Student`  subclasses, Python does not automatically call the constructor of the base class  `SchoolMember`, you have to explicitly call it yourself.
+برای استفاده از وراثت، نام کلاس پایه را در یک تاپل قرار می دهیم و آن را پس از نام کلاس در تعریف کلاس می نویسیم؛ برای مثال، `class Teacher(SchoolMember)`. سپس مشاهده می کنیم که روش `__init__` از کلاس پایه به طور صریح و با استفاده از متغیر `self` فراخوانی می شود تا بتوانیم بخش مربوط به کلاس پایه را در یک نمونه از زیرکلاس مقداردهی اولیه کنیم. به خاطر سپردن این نکته بسیار مهم است - از آنجایی که ما یک روش `__init__` در زیرکلاس های `Teacher` و `Student` تعریف می کنیم، پایتون سازندۀ کلاس پایه `SchoolMember` را به صورت خودکار فراخوانی نمی کند، باید خودتان آن را به صورت صریح فراخوانی کنید. 
 
-In contrast, if we have not defined an  `__init__`  method in a subclass, Python will call the constructor of the base class automatically.
+در مقابل، اگر در یک زیرکلاس روش `__init__` را تعریف نکرده باشیم، پایتون سازندۀ کلاس پایه را به طور خودکار فراخوانی خواهد کرد. 
 
-While we could treat instances of `Teacher` or `Student` as we would an instance of `SchoolMember` and access the `tell` method of `SchoolMember` by simply typing `Teacher.tell` or `Student.tell`, we instead define another `tell` method in each subclass (using the `tell` method of `SchoolMember` for part of it) to tailor it for that subclass.  Because we have done this, when we write `Teacher.tell` Python uses the `tell` method for that subclass vs the superclass.  However, if we did not have a `tell` method in the subclass, Python would use the `tell` method in the superclass.  Python always starts looking for methods in the actual subclass type first, and if it doesnt find anything, it starts looking at the methods in the subclasss base classes, one by one in the order they are specified in the tuple (here we only have 1 base class, but you can have multiple base classes) in the class definition.
+اگرچه می توانستیم با نمونه های `Teacher` یا `Student` همانند یک نمونه از `SchoolMember` رفتار کنیم و با نوشتن `Teacher.tell` یا `Student.tell` به روش `tell` از `SchoolMember` دسترسی پیدا کنیم، در عوض در هر زیرکلاس یک روش `tell` دیگر تعریف می کنیم (که بخشی از آن از روش `tell` کلاس `SchoolMember` استفاده می کند) تا این روش را متناسب با همان زیرکلاس تنظیم کنیم. از آنجا که این کار را انجام داده ایم، هنگامی که `Teacher.tell` را می نویسیم، پایتون از روش `tell` برای آن زیرکلاس استفاده می کند در مقابل فراکلاس. با این حال، اگر در زیر کلاس روش `tell` وجود نداشته باشد، پایتون از روش `tell` در فراکلاس استفاده می کند. پایتون همیشه جست وجوی روش ها را ابتدا از نوع واقعی زیر کلاس آغاز می کند و اگر چیزی پیدا نکند، روش ها را در کلاس پایۀ زیرکلاس، یکی پس از دیگری، بررسی می کند؛ ترتیب بررسی همان ترتیبی است که کلاس های پایه در تاپل تعریف کلاس مشخص شده اند (در اینجا تنها یک کلاس پایه داریم، اما می توانید چندین کلاس پایه داشته باشید). 
 
-A note on terminology - if more than one class is listed in the inheritance tuple, then it is called **multiple inheritance**.
+نکته ای دربارۀ اصطلاحات: اگر بیش از یک کلاس در تاپل وراثت لیست شده باشد، به آن **وراثت چندگانه** گفته می شود. 
 
-The `end` parameter is used in the `print` function in the superclass's `tell()` method to print a line and allow the next print to continue on the same line. This is a trick to make `print` not print a `\n` (newline) symbol at the end of the printing.
+پارامتر `end` در تابع `print` موجود در روش `()tell` فراکلاس استفاده شده است تا یک خط پرینت شود و به print بعدی اجازه دهد تا چاپ خود را در همان خط ادامه دهد. این ترفندی است برای جلوگیری از اینکه `print` در انتهای خروجی خود نماد `n\` (کاراکتر خط جدید) را پرینت کند. 
 
 
-## Summary
+## جمع بندی
 
-We have now explored the various aspects of classes and objects as well as the various terminologies associated with it. We have also seen the benefits and pitfalls of object-oriented programming. Python is highly object-oriented and understanding these concepts carefully will help you a lot in the long run.
+اکنون جنبه های مختلفی از کلاس ها و اشیا و همچنین اصطلاحات گوناگون مرتبط با آن ها را بررسی کردیم. همچنین با مزایا و کاستی های برنامه نویسی شئ گرا آشنا شدیم. پایتون زبانی به شدت شئ گرا است و درک دقیق این مفاهیم در بلند مدت کمک شایانی به شما خواهد کرد. 
 
-Next, we will learn how to deal with input/output and how to access files in Python.
+در ادامه، خواهیم آموخت که چگونه با ورودی/خروجی کار کنیم و چگونه به فایل ها در پایتون دسترسی داشته باشیم. 
