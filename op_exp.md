@@ -1,14 +1,14 @@
-# Operators and Expressions {#op-exp}
+# عملگرها و عبارت ها {op-exp#} 
 
-Most statements (logical lines) that you write will contain _expressions_. A simple example of an expression is `2 + 3`. An expression can be broken down into operators and operands.
+بیشتر دستورها (خطوط منطقی) که می نویسید شامل _عبارات (expressions)_ هستند. یک مثال ساده از عبارت، `3 + 2` است. یک عبارت را می توان به عملگرها و عملوندها تجزیه کرد. 
 
-_Operators_ are functionality that do something and can be represented by symbols such as `+` or by special keywords. Operators require some data to operate on and such data is called _operands_. In this case, `2` and `3` are the operands.
+_عملگرها_ قابلیتی هستند که کاری را انجام می دهند و می توان آنها را با نمادهایی مانند `+` یا با کلمات کلیدی خاص نمایش داد. عملگرها برای انجام عملیات خود به داده هایی نیاز دارند و این داده ها _عملوند_ نامیده می شوند. در این مثال، `2` و `3` عملوند هستند. 
 
-## Operators
+## عملگرها
 
-We will briefly take a look at the operators and their usage.
+در این بخش نگاهی کوتاه و مختصر به عملگرها و کاربرد آنها خواهیم داشت. 
 
-Note that you can evaluate the expressions given in the examples using the interpreter interactively. For example, to test the expression `2 + 3`, use the interactive Python interpreter prompt:
+توجه داشته باشید که می توانید عبارات داده شده در مثال ها را با استفاده از مفسر و به صورت تعاملی ارزیابی کنید. برای مثال، برای آزمایش عبارت `3 + 2`، از خط فرمان مفسر تعاملی پایتون استفاده کنید: 
 
 ```python
 >>> 2 + 3
@@ -18,163 +18,163 @@ Note that you can evaluate the expressions given in the examples using the inter
 >>>
 ```
 
-Here is a quick overview of the available operators:
+در اینجا، مروری سریع بر عملگرهای موجود ارائه شده است: 
 
-- `+` (plus)
-    - Adds two objects
-    - `3 + 5` gives `8`. `'a' + 'b'` gives `'ab'`.
+- `+` (جمع) 
+    - دو شئ را با یکدیگر جمع می کند. 
+    - `5 + 3` مقدار `8` را می دهد. عبارت `'a' + 'b'` مقدار `'ab'` را ایجاد می کند. 
 
-- `-` (minus)
-    - Gives the subtraction of one number from the other; if the first operand is absent it is assumed to be zero.
-    - `-5.2` gives a negative number and `50 - 24` gives `26`.
+- `-` (تفریق) 
+    - تفریق یک عدد از عدد دیگر را انجام می دهد؛ اگر عملوند اول موجود نباشد، مقدار آن صفر در نظر گرفته می شود. 
+    - `-5.2` یک عدد منفی ایجاد می کند و عبارت `24 - 50` مقدار `26` را می دهد. 
 
-- `*` (multiply)
-    - Gives the multiplication of the two numbers or returns the string repeated that many times.
-    - `2 * 3` gives `6`. `'la' * 3` gives `'lalala'`.
+- `*` (ضرب) 
+    - حاصل ضرب دو عدد را بر می گرداند یا رشته را به همان تعداد مشخص تکرار می کند. 
+    - `3 * 2` مقدار `6` را ایجاد می کند. عبارت `'la' * 3'` مقدار `'lalala'` را می دهد. 
 
-- `**` (power)
-    - Returns x to the power of y
-    - `3 ** 4` gives `81` (i.e. `3 * 3 * 3 * 3`)
+- `**` (توان ) 
+    - مقدار x را به توان y بر می گرداند. 
+    - `4**3` مقدار `81` را می دهد (یعنی `3 * 3 * 3 * 3`) 
 
-- `/` (divide)
-    - Divide x by y
-    - `13 / 3` gives `4.333333333333333`
+- `/` (تقسیم) 
+    - مقدار x را بر y تقسیم می کند. 
+    - `3 / 13` مقدار `4.333333333333333` را ایجاد می کند. 
 
-- `//` (divide and floor)
-    - Divide x by y and round the answer _down_ to the nearest integer value. Note that if one of the values is a float, you'll get back a float.
-    - `13 // 3` gives `4`
-    - `-13 // 3` gives `-5`
-    - `9//1.81` gives `4.0`
+- `//` (تقسیم و کف)
+    - مقدار x را بر y تقسیم می کند و پاسخ را به سمت _پایین_ تا نزدیک ترین مقدار صحیح گرد می کند. توجه داشته باشید که اگر یکی از مقادیر از نوع اعشاری باشد، نتیجه نیز از نوع اعشاری خواهد بود. 
+    - `3 // 13` مقدار `4` را ایجاد می کند. 
+    - `3 // 13-` مقدار `5-` را می دهد. 
+    - `1.81 // 9` مقدار `4.0` را می دهد. 
 
-- `%` (modulo)
-    - Returns the remainder of the division
-    - `13 % 3` gives `1`. `-25.5 % 2.25` gives `1.5`.
+- `%` (باقی مانده)
+    - باقی مانده حاصل از تقسیم را بر می گرداند.
+    - `3 % 13` مقدار `1` را می دهد. `2.25 % 25.5-` مقدار `1.5` را ایجاد می کند. 
 
-- `<<` (left shift)
-    - Shifts the bits of the number to the left by the number of bits specified. (Each number is represented in memory by bits or binary digits i.e. 0 and 1)
-    - `2 << 2` gives `8`. `2` is represented by `10` in bits.
-    - Left shifting by 2 bits gives `1000` which represents the decimal `8`.
+- `>>` (شیفت به چپ )
+    - بیت های یک عدد را به اندازۀ تعداد بیت های مشخص شده به چپ جا به جا می کند ( هر عدد در حافظه توسط بیت ها یا ارقام باینری یعنی 0 و 1، نمایش داده می شود). 
+    - `2 >> 2` مقدار `8` را می دهد. `2` در نمایش بیتی با `10` مشخص می شود. 
+    - با شیفت دادن 2 بیت به چپ، مقدار `1000` به دست می آید که نشان دهندۀ عدد `8` است. 
 
-- `>>` (right shift)
-    - Shifts the bits of the number to the right by the number of bits specified.
-    - `11 >> 1` gives `5`.
-    - `11` is represented in bits by `1011` which when right shifted by 1 bit gives `101`which is the decimal `5`.
+- `<<` (شیفت به راست )
+    - بیت های یک عدد را به اندازۀ تعداد بیت های مشخص شده به سمت راست جا به جا می کند. 
+    - `1 << 11` مقدار `5` را می دهد. `11 >> 1` gives `5`.
+    - عدد `11` در نمایش بیتی به صورت `1011` است که با شیفت 1 بیت به سمت راست، به `101` تبدیل می شود که همان عدد `5` است. 
 
-- `&` (bit-wise AND)
-    - Bit-wise AND of the numbers: if both bits are `1`, the result is `1`. Otherwise, it's `0`.
-    - `5 & 3` gives `1` (`0101 & 0011` gives `0001`)
+- `&` (AND)
+    - عمل AND بیتی را روی اعداد انجام می دهد: اگر هر دو عدد `1` باشند، نتیجه `1` خواهد بود. در غیر این صورت، نتیجه `0` می شود. 
+    - عبارت `3 & 5` مقدار `1` را می دهد. (عبارت `0011 & 0101` مقدار `0001` را می دهد)
     
-- `|` (bit-wise OR)
-    - Bitwise OR of the numbers: if both bits are `0`, the result is `0`. Otherwise, it's `1`. 
-    - `5 | 3` gives `7` (`0101 | 0011` gives `0111`)
+- `|` (OR)
+    - عمل OR بیتی را روی اعداد انجام می دهد: اگر هر دو عدد `1` باشند، نتیجه `0` خواهد بود. در غیر این صورت، `1` خواهد بود.  
+    - عبارت `3 | 5` مقدار `7` را می دهد. (`0011 | 0101` مقدار `0111` را ایجاد می کند). 
     
-- `^` (bit-wise XOR) 
-    - Bitwise XOR of the numbers: if both bits (`1 or 0`) are the same, the result is `0`. Otherwise, it's `1`.
-    - `5 ^ 3` gives `6` (`O101 ^ 0011` gives `0110`)
+- `^` (XOR)
+    - عمل XOR بیتی را روی اعداد انجام می دهد: اگر هر دو بیت (`0` یا `1`) یکسان باشند، نتیجه `0` می شود. در غیر این صورت، `1` می شود. 
+    - `3 ^ 5` مقدار `6` را می دهد (`0011 ^ 0101` مقدار `0110` را ایجاد می کند). 
 
-- `~` (bit-wise invert)
-    - The bit-wise inversion of x is -(x+1)
-    - `~5` gives `-6`. More details at http://stackoverflow.com/a/11810203
+- `~` (معکوس بیتی)
+    - معکوس بیتی x برابر با (x+1)- است.
+    - عبارت `5~` مقدار `6-` را می دهد. جزئیات بیشتر را می توانید در http://stackoverflow.com/a/11810203 مشاهده کنید. 
 
-- `<` (less than)
-    - Returns whether x is less than y. All comparison operators return `True` or `False`. Note the capitalization of these names.
-    - `5 < 3` gives `False` and `3 < 5` gives `True`.
-    - Comparisons can be chained arbitrarily: `3 < 5 < 7` gives `True`.
+- `>` (کوچک تر از)
+    - بررسی می کند که آیا x از y کوچکتر است یا خیر. تمام عملگرهای مقایسه ای مقدار `True` یا `False` را بر می گردانند. به بزرگ و کوچک بودن حروف در این نام ها توجه کنید. 
+    - `3 > 5` مقدار `False` و `5 > 3` مقدار `True` باز می گرداند. 
+    - مقایسه ها را می توان به صورت زنجیره ای و بدون محدودیت خاصی انجام داد: `3 < 5 < 7` مقدار `True` را ایجاد می کند. 
 
-- `>` (greater than)
-    - Returns whether x is greater than y
-    - `5 > 3` returns `True`. If both operands are numbers, they are first converted to a common type. Otherwise, it always returns `False`.
+- `<` (بزرگ تر از)
+    - بررسی می کند که آیا x بزرگتر از y است یا خیر. 
+    - عبارت `3 < 5` مقدار `True` را بر می گرداند. اگر هردو عملوند عدد باشند، ابتدا به یک نوع مشترک تبدیل می شوند. در غیر این صورت، مقدار `False` را بر می گرداند. 
 
-- `<=` (less than or equal to)
-    - Returns whether x is less than or equal to y
-    - `x = 3; y = 6; x <= y` returns `True`
+- `=>` (کوچک تر یا مساوی) 
+    - بررسی می کند که آیا x کوچکتر یا مساوی با y است یا خیر. 
+    - عبارت `x = 3; y = 6; x <= y` مقدار `True` را ایجاد می کند. 
 
-- `>=` (greater than or equal to)
-    - Returns whether x is greater than or equal to y
-    - `x = 4; y = 3; x >= 3` returns `True`
+- `>=` (بزرگتر یا مساوی)`>=` 
+    - بررسی می کند که آیا x از y بزرگتر یا مساوی است یا خیر. 
+    - عبارت `x = 4; y = 3; x >= 3` مقدار `True` را بر می گرداند. 
 
-- `==` (equal to)
-    - Compares if the objects are equal
-    - `x = 2; y = 2; x == y` returns `True`
-    - `x = 'str'; y = 'stR'; x == y` returns `False`
-    - `x = 'str'; y = 'str'; x == y` returns `True`
+- `==` (مساوی)
+    - بررسی می کند که آیا دو شئ با یکدیگر برابر هستند یا خیر. 
+    - عبارت `x = 2; y = 2; x == y` مقدار `True` را بر می گرداند. 
+    - عبارت `x = 'str'; y = 'stR'; x == y` مقدار `False` را بر می گرداند. 
+    - عبارت `x = 'str'; y = 'str'; x == y` مقدار `True` را بر می گرداند. 
 
-- `!=` (not equal to)
-    - Compares if the objects are not equal
-    - `x = 2; y = 3; x != y` returns `True`
+- `=!` (نا مساوی)
+    - بررسی می کند که آیا دو شئ با یکدیگر برابر نیستند. 
+    - عبارت `x = 2; y = 3; x != y` مقدار `True` را بر می گرداند. 
 
 - `not` (boolean NOT)
-    - If x is `True`, it returns `False`. If x is `False`, it returns `True`.
-    - `x = True; not x` returns `False`.
+    - اگر x برابر `True` باشد، مقدار `False` را بر می گرداند. اگر x برابر `False` باشد، مقدار `True` را بر می گرداند. 
+    - عبارت `x = True; not x` مقدار `False` را باز می گرداند. 
 
 - `and` (boolean AND)
-    - `x and y` returns `False` if x is `False`, else it returns evaluation of y
-    - `x = False; y = True; x and y` returns `False` since x is False. In this case, Python will not evaluate y since it knows that the left hand side of the 'and' expression is `False` which implies that the whole expression will be `False` irrespective of the other values. This is called short-circuit evaluation.
+    - اگر x برابر `False` باشد، عبارت `x and y` مقدار `False` را بر می گرداند. در غیر این صورت، نتیجۀ ارزیابی y را بر می گرداند. 
+    - عبارت `x = False; y = True; x and y` مقدار `False` را بر می گرداند زیرا x برابر False است. در این شرایط، پایتون y را ارزیابی نمی کند زیرا می داند سمت چپ عبارت 'and' برابر `False` است بنابراین صرف نظر از مقادیر دیگر کل عبارت `False` خواهد بود. این رفتار ارزیابی اتصال کوتاه (short-circuit evaluation) نامیده می شود.
 
 - `or` (boolean OR)
-    - If x is `True`, it returns True, else it returns evaluation of y
-    - `x = True; y = False; x or y` returns `True`. Short-circuit evaluation applies here as well.
+    - اگر x برابر `True` باشد، مقدار True را بر می گرداند. در غیر این صورت، نتیجۀ ارزیابی y را بر می گرداند. 
+    - عبارت `x = True; y = False; x or y` مقدار `True` را باز می گرداند. در اینجا نیز ارزیابی اتصال کوتاه اعمال می شود. 
 
-## Shortcut for math operation and assignment
+## میان بر برای عملیات ریاضی و انتساب 
 
-It is common to run a math operation on a variable and then assign the result of the operation back to the variable, hence there is a shortcut for such expressions:
+معمول است که یک عملیات ریاضی را روی یک متغیر اجرا کنیم و سپس نتیجۀ آن عملیات را دوباره به همان متغیر نسبت دهیم. بنابراین، برای چنین عباراتی یک میان بر وجود دارد: 
 
 ```python
 a = 2
 a = a * 3
 ```
 
-can be written as:
+را نیز می توان به صورت زیر نوشت: 
 
 ```python
 a = 2
 a *= 3
 ```
 
-Notice that `var = var operation expression` becomes `var operation= expression`.
+توجه کنید که عبارت `var = var operation expression` به صورت `var operation = expression` نوشته می شود. 
 
-## Evaluation Order
+## ترتیب ارزیابی 
 
-If you had an expression such as `2 + 3 * 4`, is the addition done first or the multiplication? Our high school maths tells us that the multiplication should be done first. This means that the multiplication operator has higher precedence than the addition operator.
+اگر عبارتی مانند `4 * 3 + 2` داشته باشید، ابتدا جمع انجام می شود یا ضرب؟ ریاضیات دبیرستان به ما می آموزد که ابتدا ضرب باید انجام شود. این بدان معناست که عملگر ضرب نسبت به عملگر جمع تقدم دارد. 
 
-The following table gives the precedence table for Python, from the lowest precedence (least binding) to the highest precedence (most binding). This means that in a given expression, Python will first evaluate the operators and expressions lower in the table before the ones listed higher in the table.
+جدول زیر ترتیب تقدم عملگرها در پایتون را نشان می دهد؛ این جدول از کمترین تقدم (کمترین میزان اتصال) تا بیشترین تقدم (بیشترین مقدار اتصال) مرتب شده است. این بدان معناست که در یک عبارت مشخص، پایتون ابتدا عملگرها و عباراتی را ارزیابی می کند که در بخش پایین تر جدول قرار دارند و سپس به مواردی می پردازد که در بخش بالاتر جدول آمده اند. 
 
-The following table, taken from the [Python reference manual](http://docs.python.org/3/reference/expressions.html#operator-precedence), is provided for the sake of completeness. It is far better to use parentheses to group operators and operands appropriately in order to explicitly specify the precedence. This makes the program more readable. See [Changing the Order of Evaluation](#changing-order-of-evaluation) below for details.
+جدول زیر که از [راهنمای مرجع پایتون](http://docs.python.org/3/reference/expressions.html#operator-precedence)  گرفته شده است، برای کامل بودن مطالب ارائه شده است. بسیار بهتر است که برای گروه بندی مناسب عملگرها و عملوندها از پرانتز استفاده کنید تا تقدم آنها را به صورت آشکار مشخص کنید. این کار باعث خوانایی بیشتر برنامه می شود. برای جزئیات بیشتر به [تغییر ترتیب ارزیابی](#changing-order-of-evaluation) مراجعه کنید. 
 
-- `lambda` : Lambda Expression
-- `if - else` : Conditional expression
+- `lambda` : lambda عبارت 
+- `if - else` : عبارت شرطی 
 - `or` : Boolean OR
 - `and` : Boolean AND
 - `not x` : Boolean NOT
-- `in, not in, is, is not, <, <=, >, >=, !=, ==` : Comparisons, including membership tests and identity tests
+- `in, not in, is, is not, <, <=, >, >=, !=, ==` : مقایسه ها، شامل آزمون های عضویت و آزمون های هویتی 
 - `|` : Bitwise OR
 - `^` : Bitwise XOR
 - `&` : Bitwise AND
-- `<<, >>` : Shifts
-- `+, -` : Addition and subtraction
-- `*, /, //, %` : Multiplication, Division, Floor Division and Remainder
+- `<<, >>` : شیفت ها 
+- `+, -` : جمع و تفریق 
+- `*, /, //, %` : ضرب، تقسیم، تقسیم و کف و باقی مانده 
 - `+x, -x, ~x` : Positive, Negative, bitwise NOT
-- `**` : Exponentiation
-- `x[index], x[index:index], x(arguments...), x.attribute` : Subscription, slicing, call, attribute reference
-- `(expressions...), [expressions...], {key: value...}, {expressions...}` : Binding or tuple display, list display, dictionary display, set display
+- `**` : توان رسانی 
+- `x[index], x[index:index], x(arguments...), x.attribute` : دسترسی به عنصر، برش، فراخوانی و ارجاع به ویژگی 
+- `(expressions...), [expressions...], {key: value...}, {expressions...}` : ایجاد اتصال یا تاپل، ایجاد لیست، ایجاد دیکشنری، ایجاد مجموعه 
 
-The operators which we have not already come across will be explained in later chapters.
+عملگرهایی که تاکنون با آنها آشنا نشده ایم، در فصل های بعدی توضیح داده خواهند شد.
 
-Operators with the _same precedence_ are listed in the same row in the above table. For example, `+` and `-` have the same precedence.
+عملگرهایی که _تقدم یکسانی_ دارند در یک ردیف از جدول بالا قرار گرفته اند. برای مثال، `+` و `-` تقدم یکسانی دارند. 
 
-## Changing the Order Of Evaluation {#changing-order-of-evaluation}
+## تغییر ترتیب ارزیابی {changing-order-of-evaluation#}
 
-To make the expressions more readable, we can use parentheses. For example, `2 + (3 * 4)` is definitely easier to understand than `2 + 3 * 4` which requires knowledge of the operator precedences. As with everything else, the parentheses should be used reasonably (do not overdo it) and should not be redundant, as in `(2 + (3 * 4))`.
+برای خواناتر کردن عبارات، می توانیم از پرانتزها استفاده کنیم. برای مثال، `(4 * 3) + 2` قطعاً درک ساده تری نسبت به `4 * 3 + 2` دارد، زیرا عبارت دوم به دانستن تقدم عملگرها نیاز دارد. همانند هر چیز دیگری، پرانتزها باید به اندازه و به صورت منطقی استفاده شوند (در استفاده از آنها زیاده روی نکنید) و نباید اضافی باشند؛ مانند `((4 * 3) + 2)`. 
 
-There is an additional advantage to using parentheses - it helps us to change the order of evaluation. For example, if you want addition to be evaluated before multiplication in an expression, then you can write something like `(2 + 3) * 4`.
+استفاده از پرانتز یک مزیت دیگر نیز دارد - به ما اجازه می دهد ترتیب ارزیابی را تغییر دهیم. برای مثال، اگر بخواهید در یک عبارت، جمع پیش از ضرب انجام شود، می توانید چیزی مانند `4 * (3 + 2)` بنویسید. 
 
-## Associativity
+## شرکت پذیری
 
-Operators are usually associated from left to right. This means that operators with the same precedence are evaluated in a left to right manner. For example, `2 + 3 + 4` is evaluated as `(2 + 3) + 4`.
+عملگرها معمولاً از چپ به راست با یکدیگر ترکیب می شوند. این بدان معناست که عملگرهایی با تقدم یکسان، به ترتیب از چپ به راست ارزیابی می شوند.  برای مثال، `4 + 3 + 2` به صورت `4 + (3 + 2)` ارزیابی می شود. 
 
-## Expressions
+## عبارات 
 
-Example (save as `expression.py`):
+مثال را با نام `expression.py` ذخیره کنید: 
 
 ```python
 length = 5
@@ -185,7 +185,7 @@ print('Area is', area)
 print('Perimeter is', 2 * (length + breadth))
 ```
 
-Output:
+خروجی: 
 
 ```
 $ python expression.py
@@ -193,12 +193,12 @@ Area is 10
 Perimeter is 14
 ```
 
-**How It Works**
+**نحوۀ عملکرد**
 
-The length and breadth of the rectangle are stored in variables by the same name. We use these to calculate the area and perimeter of the rectangle with the help of expressions. We store the result of the expression `length * breadth` in the variable `area` and then print it using the `print` function. In the second case, we directly use the value of the expression `2 * (length + breadth)` in the print function.
+طول و عرض مستطیل در متغیرهایی با همین نام ذخیره می شوند. از این متغیرها برای مساحبۀ مساحت و محیط مستطیل با کمک عبارت ها استفاده می کنیم. نتیجۀ عبارت `length * breadth` را در متغیر `area` ذخیره کرده و سپس با استفاده از تابع `print` آن را چاپ می کنیم. در حالت دوم، مستقیماً از مقدار عبارت `(length + breadth) * 2` در تابع print استفاده  می کنیم. 
 
-Also, notice how Python _pretty-prints_ the output. Even though we have not specified a space between `'Area is'` and the variable `area`, Python puts it for us so that we get a clean nice output and the program is much more readable this way (since we don't need to worry about spacing in the strings we use for output). This is an example of how Python makes life easy for the programmer.
+همچنین توجه کنید که پایتون خروجی را _به شکلی مرتب و خوانا چاپ می کند_. اگرچه فاصله ای بین `'Area is'` و متغیر `area` مشخص نکرده ایم، پایتون این فاصله را برای ما قرار می دهد تا خروجی مرتبی داشته باشیم و برنامه نیز به این شکل خواناتر باشد؛ زیرا دیگر لازم نیست نگران فاصله گذاری در رشته هایی باشیم که برای خروجی استفاده می کنیم. این نمونه ای از این است که چگونه پایتون کار برنامه نویس را آسان می کند. 
 
-## Summary
+## جمع بندی
 
-We have seen how to use operators, operands and expressions - these are the basic building blocks of any program. Next, we will see how to make use of these in our programs using statements.
+دیدیم که چگونه از عملگرها، عملوندها و عبارات استفاده کنیم؛ این ها اجزای سازندۀ اساسی هر برنامه هستند. در ادامه، خواهیم دید که چگونه با استفاده از دستورها از این موارد در برنامه های خود بهره بگیریم. 
