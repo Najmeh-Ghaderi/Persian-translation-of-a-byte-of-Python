@@ -1,23 +1,23 @@
-# Preface
+# پیشگفتار 
 
-Python is probably one of the few programming languages which is both simple and powerful. This is good for beginners as well as for experts, and more importantly, is fun to program with. This book aims to help you learn this wonderful language and show how to get things done quickly and painlessly - in effect 'The Anti-venom to your programming problems'.
+پایتون احتمالاً یکی از معدود زبان های برنامه نویسی است که در عین سادگی، قدرتمند نیز هست. این ویژگی هم برای مبتدیان و هم برای متخصصان مفید است و از همه مهم تر، برنامه نویسی با آن لذت بخش است. هدف این کتاب کمک به شما برای یادگیری این زبان شگفت انگیز و نشان دادن این موضوع است که چگونه می توان کارها را به سرعت و بدون دردسر انجام داد؛ در واقع، این کتاب «پادزهر مشکلات برنامه نویسی شما است». 
 
-## Who This Book Is For
+## این کتاب برای چه کسانی است؟ 
 
-This book serves as a guide or tutorial to the Python programming language. It is mainly targeted at newbies. It is useful for experienced programmers as well.
+این کتاب به عنوان یک راهنما یا آموزش برای زبان برنامه نویسی پایتون ارائه شده است. مخاطب اصلی آن افراد تازه کار هستند. اما برای برنامه نویسان با تجربه نیز مفید است. 
 
-The aim is that if all you know about computers is how to save text files, then you can learn Python from this book. If you have previous programming experience, then you can also learn Python from this book.
+هدف این است که اگر تنها چیزی که دربارۀ کامپیوتر می دانید، نحوۀ ذخیره فایل های متنی باشد، بتوانید با استفاده از این کتاب پایتون را یاد بگیرید. اگر تجربۀ قبلی در برنامه نویسی داشته باشید، می توانید از این کتاب نیز برای یادگیری پایتون استفاده کنید. 
 
-If you do have previous programming experience, you will be interested in the differences between Python and your favorite programming language - I have highlighted many such differences. A little warning though, Python is soon going to become your favorite programming language!
+اگر از قبل تجربۀ برنامه نویسی داشته باشید، احتمالاً به تفاوت های میان پایتون و زبان برنامه نویسی مورد علاقه خود علاقه مند خواهید بود؛ من بسیاری از این تفاوت ها را برای شما برجسته کرده ام. البته یک هشدار کوچک، پایتون قرار است به زودی به زبان برنامه نویسی مورد علاقۀ شما تبدیل شود! 
 
-## Official Website
+## وب سایت رسمی 
 
-The official website of the book is {{ book.officialUrl }} where you can read the whole book online, download the latest versions of the book, [buy a printed hard copy]({{ book.buyBookUrl }}) and also send me feedback.
+وب سایت رسمی کتاب {{ book.officialUrl }} است. در این وب سایت می توانید کتاب را به طور کامل به صورت آنلاین مطالعه کنید، آخرین نسخه های کتاب را دانلود کنید [نسخۀ چاپی و جلد سخت کتاب را خریداری کنید]({{ book.buyBookUrl }}) و همچنین می توانید برای من بازخورد ارسال کنید. 
 
-## Something To Think About
+## نکته ای برای تأمل 
 
-> There are two ways of constructing a software design: one way is to make it so simple that there are obviously no deficiencies; the other is to make it so complicated that there are no obvious deficiencies. -- C. A. R. Hoare
+> دو روش برای طراحی یک نرم افزار وجود دارد: یک روش این است که آن را آنقدر ساده بسازیم که هیچ کاستی آشکاری نداشته باشذ، روش دیگر این است که آن را آنقدر پیچیده بسازیم که هیچ کاستی آشکاری در آن وجود نداشته باشد. -- C. A. R. Hoare 
 
 <!-- -->
 
-> Success in life is a matter not so much of talent and opportunity as of concentration and perseverance. -- C. W. Wendte
+> موفقیت در زندگی بیش از آنکه به استعداد و فرصت وابسته باشد، به تمرکز و پشتکار بستگی دارد. -- C. W. Wendte 
