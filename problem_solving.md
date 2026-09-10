@@ -1,157 +1,157 @@
-# Problem Solving
+# حل مسئله 
 
-We have explored various parts of the Python language and now we will take a look at how all these parts fit together, by designing and writing a program which _does_ something useful. The idea is to learn how to write a Python script on your own.
+تا اینجا بخش های مختلف زبان پایتون را بررسی کردیم و اکنون می خواهیم ببینیم چگونه همۀ این بخش ها در کنار یکدیگر قرار می گیرند؛ به این منظور، برنامه ای طراحی و پیاده سازی خواهیم کرد که مفید واقع شود. هدف این است که یاد بگیریم چگونه به تنهایی یک اسکریپت پایتون بنویسیم. 
 
-## The Problem
+## مسئله 
 
-The problem we want to solve is:
+مسئله ای که می خواهیم حل کنیم این است: 
 
-> I want a program which creates a backup of all my important files.
+> برنامه ای می خواهم که از تمام فایل های مهم من یک نسخۀ پشتیبان تهیه کند.
 
-Although, this is a simple problem, there is not enough information for us to get started with the solution. A little more *analysis* is required. For example, how do we specify _which_ files are to be backed up? _How_ are they stored? _Where_ are they stored?
+اگرچه این یک برنامۀ ساده است، اطلاعات کافی برای شروع در اختیار ما قرار نمی دهد. بنابراین، به مقدار بیشتری *تحلیل* نیاز داریم. برای مثال، چگونه مشخص کنیم _کدام_ فایل ها باید پشتیبان گیری شوند؟ _چگونه_ ذخیره شوند؟ _کجا_ ذخیره شوند؟ 
 
-After analyzing the problem properly, we *design* our program. We make a list of things about how our program should work. In this case, I have created the following list on how _I_ want it to work. If you do the design, you may not come up with the same kind of analysis since every person has their own way of doing things, so that is perfectly okay.
+پس از تحلیل دقیق مسئله، برنامۀ خود را *طراحی می کنیم*. لیستی از نحوۀ عملکرد برنامه تهیه می کنیم. در این مورد، من لیست زیر را بر اساس نحوه ای که می خواهم برنامه عمل کند، تهیه کرده ام. اگر شما این طراحی را انجام دهید، ممکن است به همان نوع تحلیل نرسید، زیرا هر فرد روش خاص خودش را برای انجام کارها دارد؛ بنابراین این موضوع کاملاً طبیعی است. 
 
-- The files and directories to be backed up are specified in a list.
-- The backup must be stored in a main backup directory.
-- The files are backed up into a zip file.
-- The name of the zip archive is the current date and time.
-- We use the standard `zip` command available by default in any standard GNU/Linux or Unix distribution. Note that you can use any archiving command you want as long as it has a command line interface.
+- فایل ها و پوشه هایی که باید از آنها نسخۀ پشتیبان تهیه کرد، در یک لیست مشخص می شوند. 
+- نسخۀ پشتیبان باید در یک پوشۀ اصلی پشتیبان ذخیره شود. 
+- از فایل ها در قالب یک فایل zip نسخۀ پشتیبان تهیه می شود. 
+- نام بایگانی zip، تاریخ و زمان فعلی خواهد بود. 
+- از دستور استاندارد `zip` استفاده می کنیم که به طور پیش فرض در هر توزیع استاندارد GNU/Linux یا Unix در دسترس است. توجه داشته باشید که می توانید از هر دستور بایگانی که می خواهید استفاده کنید، به شرط آنکه رابط خط فرمان داشته باشد. 
 
-> **For Windows users**
+> **برای کاربران ویندوز**
 > 
-> Windows users can [install](http://gnuwin32.sourceforge.net/downlinks/zip.php) the `zip` command from the [GnuWin32 project page](http://gnuwin32.sourceforge.net/packages/zip.htm) and add `C:\Program Files\GnuWin32\bin` to your system `PATH` environment variable, similar to [what we did for recognizing the python command itself](./installation.md#dos-prompt).
+> کاربران ویندوز می توانند دستور `zip` را از [GnuWin32 project page](http://gnuwin32.sourceforge.net/packages/zip.htm) بر روی رایانه خود [نصب کنند](http://gnuwin32.sourceforge.net/downlinks/zip.php) و مسیر `C:\Program Files\GnuWin32\bin` را به متغیر محیطی `PATH` سیستم خود اضافه کنند؛ مشابه [کاری که برای شناسایی خود دستور پایتون انجام دادیم](./installation.md#dos-prompt) . 
 
-## The Solution
+## راه حل
 
-As the design of our program is now reasonably stable, we can write the code which is an *implementation* of our solution.
+اکنون که طراحی برنامۀ ما تا حد قابل قبولی تثبیت شده است، می توانیم کدی که *پیاده سازی* راه حل ماست، بنویسیم. 
 
-Save as `backup_ver1.py`:
+با نام `backup_ver1.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/backup_ver1.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/backup_ver1.txt" %}</code></pre>
 
-Now, we are in the *testing* phase where we test that our program works properly. If it doesn't behave as expected, then we have to *debug* our program i.e. remove the *bugs* (errors) from the program.
+اکنون وارد مرحلۀ *آزمون* شدیم؛ در این مرحله بررسی می کنیم که آیا برنامۀ ما به درستی کار می کند یا خیر. اگر برنامه مطابق انتظار رفتار نکرد، باید آن را *اشکال زدایی (debug)* کنیم؛ یعنی *باگ های* (خطاهای) موجود در برنامه را بر طرف کنیم. 
 
-If the above program does not work for you, copy the line printed after the `Zip command is` line in the output, paste it in the shell (on GNU/Linux and Mac OS X) / `cmd` (on Windows), see what the error is and try to fix it. Also check the zip command manual on what could be wrong. If this command succeeds, then the problem might be in the Python program itself, so check if it exactly matches the program written above.
+اگر برنامۀ بالا برای شما کار نکرد، خطی را که پس از عبارت `zip command is` در خروجی چاپ شده است کپی کنید و آن را در shell (در GNU/Linux و Mac OS X) یا `cmd` (در ویندوز) قرار دهید، ببینید خطا چیست و سعی کنید آن را بر طرف کنید. همچنین راهنمای دستور zip را بررسی کنید تا ببینید مشکل احتمالی چیست. اگر این دستور با موفقیت اجرا شد، ممکن است مشکل در خود برنامۀ پایتون باشد؛ بنابراین بررسی کنید که برنامه دقیقاً با برنامه ای که در بالا نوشته شده است مطابقت داشته باشد. 
 
-**How It Works**
+**نحوۀ عملکرد**
 
-You will notice how we have converted our *design* into *code* in a step-by-step manner.
+متوجه خواهید شد که چطور *طراحی* خود را مرحله به مرحله به *کد* تبدیل کردیم. 
 
-We make use of the `os` and `time` modules by first importing them. Then, we specify the files and directories to be backed up in the `source` list. The target directory is where we store all the backup files and this is specified in the `target_dir` variable. The name of the zip archive that we are going to create is the current date and time which we generate using the `time.strftime()` function. It will also have the `.zip` extension and will be stored in the `target_dir` directory.
+ابتدا با وارد کردن ماژول های `os` و `time` از آنها استفاده می کنیم. سپس فایل ها و پوشه هایی را که باید از آنها نسخۀ پستیبان تهیه شود، در لیست `source` مشخص می کنیم. پوشۀ مقصد، محلی است که تمام فایل های پشتیبان را در آن ذخیره می کنیم و این پوشه در متغیر `target_dir` مشخص شده است. نام بایگانی zip که قصد ایجاد آن را داریم، تاریخ و زمان فعلی است که با استفاده از تابع `()time.strftime` تولید می کنیم. این فایل همچنین دارای پسوند `zip.` خواهدبود و در پوشۀ `target_dir` ذخیره خواهد شد. 
 
-Notice the use of the `os.sep` variable - this gives the directory separator according to your operating system, i.e. it will be `'/'` in GNU/Linux, Unix, macOS, and will be `'\\'` in Windows. Using `os.sep` instead of these characters directly will make our program portable and work across all of these systems.
+به استفاده از متغیر `os.sep` توجه کنید؛ این متغیر جداکنندۀ پوشه ها را متناسب با سیستم عامل شما ارائه می کند؛ یعنی در GNU/Linux, Unix, macOS `'/'` خواهد بود و در ویندوز `'//'` خواهد بود. استفاده از `os.sep` به جای نوشتن مستقیم این کاراکترها باعث می شود برنامه ما قابل انتقال باشد و در تمام این سیستم ها کار کند. 
 
-The `time.strftime()` function takes a specification such as the one we have used in the above program. The `%Y` specification will be replaced by the year with the century. The `%m` specification will be replaced by the month as a decimal number between `01` and `12` and so on. The complete list of such specifications can be found in the [Python Reference Manual](http://docs.python.org/3/library/time.html#time.strftime).
+تابع `()time.strftime` مشخصه ای مانند آنچه در برنامۀ بالا استفاده کردیم دریافت می کند. مشخصۀ `Y%` با سال به همراه قرن جایگزین می شود. مشخصۀ `m%` با ماه به صورت یک عدد اعشاری بین `01` و `12` جایگزین می شود و به همین ترتیب ادامه پیدا می کند. فهرست کامل این مشخصه ها را می توانید در [راهنمای مرجع پایتون](http://docs.python.org/3/library/time.html#time.strftime) مشاهده کنید. 
 
-We create the name of the target zip file using the addition operator which _concatenates_ the strings i.e. it joins the two strings together and returns a new one. Then, we create a string `zip_command` which contains the command that we are going to execute. You can check if this command works by running it in the shell (GNU/Linux terminal or DOS prompt).
+نام فایل zip مقصد را با استفاده از عملگر جمع ایجاد می کنیم که رشته ها را به یکدیگر _الحاق می کند_؛ یعنی دو رشته را به هم متصل کرده و یک رشتۀ جدید بر می گرداند. سپس رشته ای با نام `zip_command` ایجاد می کنیم که شامل دستوری است که قصد اجرای آن را داریم. می توانید با اجرای این دستور در shell (ترمینال GNU/Linux یا خط فرمان DOS) بررسی کنید که آیا به درستی کار می کند یا خیر. 
 
-The `zip` command that we are using has some options available, and one of these options is `-r`.  The `-r` option specifies that the zip command should work **r**ecursively for directories, i.e. it should include all the subdirectories and files. Options are followed by the name of the zip archive to create, followed by the list of files and directories to backup. We convert the `source` list into a string using the `join` method of strings which we have already seen how to use.
+دستور `zip` که استفاده می کنیم، چند گزینه دارد که یکی از آنها `r-` است. گزینۀ `r-` مشخص می کند که دستور zip باید به صورت بازگشتی (*r*ecursively) برای پوشه ها عمل کند؛ یعنی شامل تمام زیرپوشه ها و فایل های موجود نیز می شود. پس از گزینه ها، نام بایگانی zip که باید ایجاد شود و سپس لیست فایل ها و پوشه هایی که باید از آن ها نسخۀ پشتیبان تهیه شود قرار می گیرد. لیست `source` را با استفاده از روش `join` مربوط به رشته ها، که پیش تر نحوۀ استفاده از آنها را دیده ایم، به یک رشته تبدیل می کنیم. 
 
-Then, we finally *run* the command using the `os.system` function which runs the command as if it was run from the *system* i.e. in the shell - it returns `0` if the command was successfully, else it returns an error number.
+در ادامه، سرانجام با استفاده از تابع `os.system` دستور را اجرا می کنیم. این تابع دستور را به گونه ای اجرا می کند که گویی از خود *سیستم* یعنی در shell، اجرا شده است. اگر اجرای دستور موفقیت آمیز باشد، مقدار `0` را بر می گرداند . در غیر این صورت یک شمارۀ خطا بر می گرداند. 
 
-Depending on the outcome of the command, we print the appropriate message that the backup has failed or succeeded.
+بسته به خروجی دستور، پیام مناسبی پرینت می کنیم که نشان می دهد عملیات پشتیبان گیری ناموفق بوده یا با موفقیت انجام شده است. 
 
-That's it, we have created a script to take a backup of our important files!
+همین، ما یک اسکریپت ایجاد کردیم که از فایل های مهم ما نسخۀ پشتیبان تهیه می کند! 
 
-> **Note to Windows Users**
+> **نکته ای برای کاربران ویندوز**
 > 
-> Instead of double backslash escape sequences, you can also use raw strings. For example, use `'C:\\Documents'` or `r'C:\Documents'`. However, do *not* use `'C:\Documents'` since you end up using an unknown escape sequence `\D`.
+> به جای استفاده از دنباله های escape شامل دو بک اسلش، می توانید از رشته های خام نیز استفاده کنید. برای مثال، از `'C:\\Documents'` یا `'r'C:\Documents` استفاده کنید. با این حال، از `'C:\Documents'` *استفاده نکنید*، زیرا  در این حالت از یک دنبالۀ escape ناشناخته، یعنی `D\`، استفاده خواهید کرد. 
 
-Now that we have a working backup script, we can use it whenever we want to take a backup of the files. This is called the *operation* phase or the *deployment* phase of the software.
+اکنون که یک اسکریپت پشتیبان گیری عملیاتی در اختیار داریم، می توانیم هر زمان که بخواهیم از فایل های خود نسخۀ پشتیبان تهیه کنیم. این مرحله، مرحلۀ *عملیات* یا مرحلۀ *استقرار* نرم افزار نامیده می شود. 
 
-The above program works properly, but (usually) first programs do not work exactly as you expect. For example, there might be problems if you have not designed the program properly or if you have made a mistake when typing the code, etc. Appropriately, you will have to go back to the design phase or you will have to debug your program.
+برنامۀ بالا به طور دقیق کار می کند، اما برنامه های اولیه (معمولاً) دقیقاً مطابق انتظار شما عمل نمی کنند. برای مثال، اگر برنامه را به درستی طراحی نکرده باشید یا هنگام تایپ کد اشتباهی کرده باشید و مواردی همچون این موارد، مشکلاتی ایجاد می شوند. در چنین شرایطی، باید به مرحلۀ طراحی بازگردید یا باگ های برنامۀ خود را رفع کنید. 
 
-## Second Version
+## نسخۀ دوم
 
-The first version of our script works. However, we can make some refinements to it so that it can work better on a daily basis. This is called the *maintenance* phase of the software.
+نسخۀ اول اسکریپت ما کار می کند. با این حال، می توانیم اصلاحاتی را در آن انجام دهیم تا برای استفادۀ روزمرره عملکرد بهتری داشته باشد. این مرحله، مرحلۀ *نگهداری* نرم افزار نام دارد. 
 
-One of the refinements I felt was useful is a better file-naming mechanism - using the _time_ as the name of the file within a directory with the current _date_ as a directory within the main backup directory. The first advantage is that your backups are stored in a hierarchical manner and therefore it is much easier to manage. The second advantage is that the filenames are much shorter. The third advantage is that separate directories will help you check if you have made a backup for each day since the directory would be created only if you have made a backup for that day.
+یکی از اصلاحاتی که در نظر من مفید بود، استفاده از ساز و کار بهتری برای نام گذاری فایل هاست؛ به این صورت که از _زمان (time)_ به عنوان نام فایل درون پوشه ای استفاده کنیم که _تاریخ_ فعلی نام آن پوشه باشد و این پوشه نیز درون پوشۀ اصلی پشتیبان قرار داشته باشد. مزیت اول این است که نسخه های پشتیبان شما به شکل سلسله مراتبی ذخیره می شوند و در نتیجه مدیریت آنها بسیار آسان تر خواهد بود. مزیت دوم این است که نام فایل ها بسیار کوتاه تر می شوند. مزیت سوم این است که پوشه های جداگانه به شما کمک می کنند بررسی کنید که آیا برای هر روز نسخۀ پشتیبان تهیه کرده اید یا خیر؛ زیرا پوشه تنها در صورتی ایجاد می شود که در آن روز نسخۀ پشتیبان تهیه کرده باشید. 
 
-Save as `backup_ver2.py`:
+با نام `backup_ver2.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/backup_ver2.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/backup_ver2.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-Most of the program remains the same. The changes are that we check if there is a directory with the current day as its name inside the main backup directory using the `os.path.exists` function. If it doesn't exist, we create it using the `os.mkdir` function.
+بخش عمدۀ برنامه همچنان بدون تغییر باقی مانده است. تغییرات این است که با استفاده از تابع `os.path.exists` بررسی می کنیم آیا درون پوشۀ اصلی پشتیبان، پوشه ای با نام روز فعلی وجود دارد یا خیر. اگر وجود نداشته باشد، آن را با استفاده از تابع `os.mkdir` ایجاد می کنیم. 
 
-## Third Version
+## نسخۀ سوم
 
-The second version works fine when I do many backups, but when there are lots of backups, I am finding it hard to differentiate what the backups were for! For example, I might have made some major changes to a program or presentation, then I want to associate what those changes are with the name of the zip archive. This can be easily achieved by attaching a user-supplied comment to the name of the zip archive.
+نسخۀ دوم هنگامی که نسخه های پشتیبان زیادی تهیه میکنم به خوبی کار می کند، اما وقتی تعداد پشتیبان ها زیاد می شود، تشخیص اینکه هر نسخۀ پشتیبان مربوط به چه کاری بوده برایم دشوار است! برای مثال، ممکن است تغییراتی اساسی در یک برنامه یا ارائه ایجاد کرده باشم و سپس بخواهم این تغییرات را با نام بایگانی zip مرتبط کنم. این کار را می توان به سادگی با افزودن یک توضیح وارد شده توسط کاربر به نام بایگانی zip انجام داد. 
 
-WARNING: The following program does not work, so do not be alarmed, please follow along because there's a lesson in here.
+هشدار: برنامه زیر کار نمی کند، بنابراین نگران نشوید؛ ادامه دهید، زیرا نکته ای برای یادگیری در اینجا وجود دارد. 
 
-Save as `backup_ver3.py`:
+تحت عنوان `backup_ver3.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/backup_ver3.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/backup_ver3.txt" %}</code></pre>
 
-**How This (does not) Work**
+**چگونه این برنامه کار نمی کند**
 
-*This program does not work!* Python says there is a syntax error which means that the script does not satisfy the structure that Python expects to see. When we observe the error given by Python, it also tells us the place where it detected the error as well. So we start *debugging* our program from that line.
+*این برنامه کار نمی کند!* پایتون اعلام می کند که یک خطای نحوی (syntax error) وجود دارد؛ یعنی اسکریپت ساختاری را که پایتون انتظار دارد مشاهده کند را رعایت نکرده است. هنگامی که خطایی را که پایتون اعلام کرده بررسی می کنیم، محل تشخیص خطا را نیز به ما نمایش می دهد. بنابراین، *اشکال زدایی* برنامه خود را از همان خط آغاز می کنیم. 
 
-On careful observation, we see that the single logical line has been split into two physical lines but we have not specified that these two physical lines belong together. Basically, Python has found the addition operator (`+`) without any operand in that logical line and hence it doesn't know how to continue. Remember that we can specify that the logical line continues in the next physical line by the use of a backslash at the end of the physical line. So, we make this correction to our program. This correction of the program when we find errors is called *bug fixing*.
+با دقت بیشتر متوجه می شویم که یک خط منطقی به دو خط فیزیکی تقسیم شده است، اما مشخص نکرده ایم که این دو خط فیزیکی به یکدیگر تعلق دارند. در واقع، پایتون عملگر جمع (`+`) را بدون هیچ عملوندی در آن خط منطقی پیددا کرده است و بنابراین نمی داند که چگونه به کار خود ادامه دهد. به خاطر داشته باشید که می توانیم با استفاده از یک بک اسلش در آخر خط فیزیکی مشخص کنیم که خط منطقی در خط فیزیکی بعدی ادامه پیدا می کند. بنابراین، این اصلاح را در برنامه انجام می دهیم. اصلاح برنامه هنگام یافتن خطاها *رفع باگ (bug fixing)* نام دارد. 
 
-## Fourth Version
+## نسخۀ چهارم
 
-Save as `backup_ver4.py`:
+با نام `backup_ver4.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/backup_ver4.py" %}</code></pre>
 
-Output:
+خروجی: 
 
 <pre><code>{% include "./programs/backup_ver4.txt" %}</code></pre>
 
-**How It Works**
+**نحوۀ عملکرد**
 
-This program now works! Let us go through the actual enhancements that we had made in version 3. We take in the user's comments using the `input` function and then check if the user actually entered something by finding out the length of the input using the `len` function. If the user has just pressed `enter` without entering anything (maybe it was just a routine backup or no special changes were made), then we proceed as we have done before.
+این برنامه اکنون کار می کند! بیایید بهبودهایی را که در نسخۀ 3 ایجاد کرده ایم، بررسی کنیم. توضیحات کاربر را با استفاده از تابع `input` دریافت می کنیم و سپس با استفاده از تابع `len` طول ورودی را محاسبه می کنیم و بررسی می کنیم که آیا کاربر واقعاً چیزی را وارد کرده است یا خیر. اگر کاربر بدون وارد کردن چیزی کلید `enter` را بزند (شاید فقط یک پشتیبان گیری معمولی بوده یا تغییر خاصی ایجاد نشده باشد)، مانند قبل ادامه می دهیم. 
 
-However, if a comment was supplied, then this is attached to the name of the zip archive just before the `.zip` extension.  Notice that we are replacing spaces in the comment with underscores - this is because managing filenames without spaces is much easier.
+با این وجود، اگر توضیحی وارد شده باشد، آن را درست پیش از پسوند `zip.` به نام آرشیو zip اضافه می کنیم. توجه داشته باشید که فاصله های موجود در توضیح را با زیرخط جایگزین می کنیم؛ دلیل این کار این است که مدیریت نام فایل هایی که فاقد فاصله هستند بسیار آسان تر است. 
 
-## More Refinements
+## اصلاحات بیشتر 
 
-The fourth version is a satisfactorily working script for most users, but there is always room for improvement. For example, you can include a _verbosity_ level for the zip command by specifying a `-v` option to make your program become more talkative or a `-q` option to make it _quiet_.
+نسخۀ چهارم برای بیشتر کاربران اسکریپتی است که به طور رضایت بخشی کار می کند، اما همیشه جا برای بهبود وجود دارد. برای مثال، می توانید با مشخص کردن گزینۀ `v-` برای دستور zip، سطح _verbosity_ یا میزان جزئیات خروجی را افزایش دهید تا برنامۀ شما اطلاعات بیشتری را نشان دهد، یا با استفاده از گزینۀ `q-` آن را _ساکت کنید_ (تا خروجی کمتری ارائه دهد). 
 
-Another possible enhancement would be to allow extra files and directories to be passed to the script at the command line. We can get these names from the `sys.argv` list and we can add them to our `source` list using the `extend` method provided by the `list` class.
+یکی دیگر از راه های بهبود ممکن این است که اجازه دهیم فایل ها و پوشه های اضافی از طریق خط فرمان به اسکریپت داده شوند. می توانیم نام این موارد را از لیست `sys.argv` تهیه کنیم و با استفاده از روش `extend` که توسط کلاس `list` ارائه شده است، آنها را به لیست `source` اضافه کنیم. 
 
-The most important refinement would be to not use the `os.system` way of creating archives and instead using the [zipfile](http://docs.python.org/3/library/zipfile.html) or [tarfile](http://docs.python.org/3/library/tarfile.html) built-in modules to create these archives. They are part of the standard library and available already for you to use without external dependencies on the zip program to be available on your computer.
+مهم ترین اصلاح این خواهد بود که به جای استفاده از روش `os.system` برای ایجاد بایگانی ها، از ماژول های داخلی [zipfile](http://docs.python.org/3/library/zipfile.html) یا [tarfile](http://docd.python.org/3/library/tarfile.html) برای ایجاد این بایگانی ها استفاده کنیم. این ماژول ها بخشی از کتابخانۀ استاندارد هستند و از قبل در اختیار شما قرار دارند و برای استفاده از آن ها نیازی به وابستگی خارجی به برنامۀ zip که باید بر روی کامپیوتر شما موجود باشد، نخواهید داشت. 
 
-However, I have been using the `os.system` way of creating a backup in the above examples purely for pedagogical purposes, so that the example is simple enough to be understood by everybody but real enough to be useful.
+با این حال، من در مثال های بالا صرفاً برای آموزش از روش `os.system` برای ایجاد نسخۀ پشتیبان استفاده کرده ام تا مثال به اندازۀ کافی ساده باشد که برای همه قابل درک باشد، اما در عین حال به اندازۀ کافی واقعی باشد که کاربردی و مفید نیز واقع شود. 
 
-Can you try writing the fifth version that uses the [zipfile](http://docs.python.org/3/library/zipfile.html) module instead of the `os.system` call?
+آیا می توانید نسخۀ پنجم را خودتان بنویسید که به جای فراخوانی `os.system` از ماژول [zipfile](http://docs.python.org/3/library/zipfile.html) استفاده کند؟ 
 
-## The Software Development Process
+## فرآیند توسعۀ نرم افزار 
 
-We have now gone through the various *phases* in the process of writing a software. These phases can be summarised as follows:
+اکنون از *مراحل* مختلف فرآیند نوشتن یک نرم افزار گذر کرده ایم. این مراحل را می توانیم به شکل زیر خلاصه سازی کنیم: 
 
-1. What (Analysis)
-2. How (Design)
-3. Do It (Implementation)
-4. Test (Testing and Debugging)
-5. Use (Operation or Deployment)
-6. Maintain (Refinement)
+1. چه چیزی (تحلیل) 
+2. چگونه (طراحی) 
+3. انجامش دهید (پیاده سازی) 
+4. آزمون (آزمون و اشکال زدایی) 
+5. استفاده (عملیات یا استقرار) 
+6. نگهداری (اصلاح و بهبود) 
 
-A recommended way of writing programs is the procedure we have followed in creating the backup script: Do the analysis and design. Start implementing with a simple version. Test and debug it. Use it to ensure that it works as expected. Now, add any features that you want and continue to repeat the Do It-Test-Use cycle as many times as required.
+یک روش پیشنهادی برای نوشتن برنامه ها، همان روشی است که به هنگام ایجاد اسکریپت پشتیبان گیری دنبال کردیم: تحلیل و طراحی را انجام دهید. با یک نسخۀ ساده پیاده سازی را شروع کنید. آن را آزمایش و اشکال زدایی کنید. از آن استفاده کنید تا مطمئن شوید مطابق انتظار کار می کند. اکنون، هر ویژگی ای را که می خواهید به آن اضافه کنید و چرخۀ انجامش دهید - آزمون - استفاده را به تعداد لازم تکرار کنید. 
 
-Remember:
+به خاطر داشته باشید: 
 
-> Software is grown, not built.
+> نرم افزار رشد می کند، ساخته نمی شود. 
 > -- [Bill de hÓra](http://97things.oreilly.com/wiki/index.php/Great_software_is_not_built,_it_is_grown)
 
-## Summary
+## جمع بندی
 
-We have seen how to create our own Python programs/scripts and the various stages involved in writing such programs. You may find it useful to create your own program just like we did in this chapter so that you become comfortable with Python as well as problem-solving.
+دیدیم که چگونه برنامه ها/ اسکریپت های پایتون خودمان را ایجاد کنیم و با مراحل مختلفی که در فرآیند نوشتن چنین برنامه هایی دخیل هستند آشنا شدیم. شاید برایتان مفید باشد که درست مانند کاری که در این فصل انجام دادیم، برنامۀ خودتان را ایجاد کنید تا هم با پایتون راحت تر شوید و هم مهارت حل مسئله خود را تقویت کنید. 
 
-Next, we will discuss object-oriented programming.
+در ادامه، به بررسی برنامه نویسی شئ گرا خواهیم پرداخت. 
