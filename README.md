@@ -1,293 +1,293 @@
 # A Byte of Python
 
-"A Byte of Python" is a free book on programming using the Python language. It serves as a tutorial or guide to the Python language for a beginner audience. If all you know about computers is how to save text files, then this is the book for you.
+کتاب "A Byte of Python"، کتابی رایگان دربارۀ برنامه نویسی با استفاده از زبان پایتون است. این کتاب به عنوان یک منبع آموزشی یا راهنما برای زبان پایتون، برای مخاطبان مبتدی نگارش شده است. اگر تنها چیزی که دربارۀ کامپیوترها می دانید نحوۀ ذخیرۀ فایل های متنی است، این کتاب برای شماست. 
 
-## For Python version 3
+## برای نسخۀ 3 پایتون 
 
-This book will teach you to use Python version 3. There will also be guidance for you to adapt to the older and more common Python version 2 in the book.
+این کتاب نحوۀ استفاده از نسخۀ 3 پایتون را به شما می آموزد. همچنین در طول کتاب راهنمایی هایی برای سازگار شدن با نسخۀ قدیمی تر و رایج تر پایتون، یعنی پایتون نسخۀ 2، ارائه خواهد شد. 
 
-## Who reads A Byte of Python? {#who-reads-bop}
+## چه کسانی "A Byte of Python" می خوانند؟ {who-reads-bop#} 
 
-Here are what people are saying about the book:
+در ادامه، نظراتی که افراد دربارۀ این کتاب بیان کرده اند را می خوانید: 
 
-> Somewhere around 2004 - 05 when I was convinced I wasn’t smart enough to be a programmer , I came came across the original A Byte of #Python, and that changed my entire perspective on computing and life , I owe a lot to that book @swaroopch had written.
-> -- [Rahul](https://twitter.com/unrahu1/status/1288743029637959682) on Jul 30, 2020
+> جایی حدود سال های 05 - 2004، زمانی که متقاعد شده بودم آنقدر باهوش نیستم که برنامه نویس شوم، با نسخۀ اصلی A Byte of #Python مواجه شدم و آن کتاب تمام دیدگاه من را نسبت به رایانش و زندگی تغییر داد. من چیزهای زیادی را مدیون کتابی هستم که swaroopch@ نوشته است. 
+> -- [Rahul](https://twitter.com/unrahu1/status/1288743029637959682)  ، Jul 30, 2020 
 
-> This is the book that got me into programming almost a decade ago.
-> Thank you @swaroopch. You changed my life.
-> -- [Stefan Froelich](https://twitter.com/TheDumbTechGuy/status/1157245235052929024) on Aug 2, 2019
-
-<!-- -->
-
-> I am writing this email to thank you for the great help your book has done for me! It was a really good book that I enjoyed thoroughly. As a 15 year old who has never done programming before, trying to learn Python online was difficult and I couldn't understand anything. But I felt like your book gave was much easier to understand and eased me into the whole new world of programming. Thanks to you, I can now write a high level language with ease. I thought programming would be hard and boring, but with your book's help, I realised how fun and interesting yet simple it can be! I would like to thank you again for your hard work on helping out beginners like me.
-> -- [Prottyashita Tahiyat](mailto:protahiyat@gmail.com) on Sep 17, 2019
+> این کتاب همان کتابی است که تقریباً یک دهه پیش مرا به دنیای برنامه نویسی وارد کرد.
+> با تشکر از swaroopch@. شما زندگی مرا تغییر دادید. 
+> -- [Stefan Froelich](https://twitter.com/TheDumbTechGuy/status/1157245235052929024) ،  Aug 2, 2019
 
 <!-- -->
 
-> This is the best beginner's tutorial I've ever seen! Thank you for your effort.
+> من این ایمیل را می نویسم تا بابت کمک بزرگی که کتاب شما به من کرده است از شما تشکر کنم! کتاب واقعاً خوبی بود و از خواندن آن بسیار لذت بردم. به عنوان یک فرد 15 ساله که هیچ تجربه ای در برنامه نویسی نداشتم، تلاش برای یادگیری آنلاین پایتون برایم دشوار بود و نمی توانستم متوجه هیچ چیزی شوم. اما احساس کردم کتاب شما بسیار قابل فهم تر است و به من کمک کرد به تدریج وارد دنیای جدید برنامه نویسی شوم. از شما متشکرم، اکنون می توانم به راحتی با یک زبان سطح بالا برنامه نویسی کنم. من گمان می کردم برنامه نویسی دشوار و خسته کننده باشد، اما با کمک کتاب شما متوجه شدم که برنامه نویسی می تواند در عین سادگی، بسیار سرگرم کننده و جذاب باشد! بار دیگر می خواهم بابت تلاشی که برای کمک به مبتدیانی مثل من کرده اید، تشکر کنم. 
+> -- [Prottyashita Tahiyat](mailto:protahiyat@gmail.com) ،  Sep 17, 2019
+
+<!-- -->
+
+> این بهترین آموزش مقدماتی ای است که تاکنون دیده ام، از تلاش شما متشکرم. 
 > -- [Walt Michalik](mailto:wmich50@theramp.net)
 
 <!-- -->
 
-> The best thing i found was "A Byte of Python", which is simply a brilliant book for a beginner. It's well written, the concepts are well explained with self evident examples.
+> بهترین چیزی که پیدا کردم "A Byte of Python" بود؛ کتابی واقعاً عالی برای افراد مبتدی. کتاب به خوبی نوشته شده است و مفاهیم با مثال هایی قابل فهم و واضح توضیح داده شده اند. 
 > -- [Joshua Robin](mailto:joshrob@poczta.onet.pl)
 
 <!-- -->
 
-> Excellent gentle introduction to programming #Python for beginners
+> مقدمه ای عالی برای برنامه نویسی با Python# برای مبتدیان. 
 > -- [Shan Rajasekaran](https://twitter.com/ShanRajasekaran/status/268910645842423809)
 
 <!-- -->
 
-> start to love python with every single page read
+> با خواندن هر صفحه از این کتاب، بیشتر عاشق پایتون می شوم. 
 > -- [Herbert Feutl](https://twitter.com/HerbertFeutl/status/11901471389913088)
 
 <!-- -->
 
-> perfect beginners guide for python, will give u key to unlock magical world of python
+> یک راهنمای عالی برای مبتدیان پایتون، کلیدی برای گشودن درهای دنیای جادویی پایتون. 
 > -- [Dilip](https://twitter.com/Dili_mathilakam/status/220033783066411008)
 
 <!-- -->
 
-> I should be doing my actual "work" but just found "A Byte of Python". A great guide with great examples.
+> باید مشغول «کار» واقعی خودم باشم، اما تازه "A Byte of Python" را پیدا کردم. راهنمایی عالی با مثال هایی فوق العاده. 
 > -- [Biologist John](https://twitter.com/BiologistJohn/statuses/194726001803132928)
 
 <!-- -->
 
-> Recently started reading a Byte of python. Awesome work. And that too for free. Highly recommended for aspiring pythonistas.
+> اخیراً شروع به خواندن A Byte of Python کرده ام. کار خیلی خوبی است، و آن هم به صورت رایگان. به شدت آن را به علاقه مندان پایتون توصیه می کنم.
 > -- [Mangesh](https://twitter.com/mangeshnanoti/status/225680668867321857)
 
 <!-- -->
 
-> A Byte of Python, written by Swaroop. (this is the book I'm currently reading). Probably the best to start with, and probably the best in the world for every newbie or even a more experienced user.
+> کتاب A Byte of Python به نویسندگی Swaroop (کتابی که در حال حاضر می خوانم). بهترین کتاب برای شروع و شاید بهترین کتاب دنیا برای هر مبتدی یا حتی کاربر با تجربه است. 
 > -- [Apostolos](http://apas.gr/2010/04/27/learning-python/)
 
 <!-- -->
 
-> Enjoying Reading #ByteOfPython by @swaroopch best book ever
+> از خواندن ByteOfPython# نوشتۀ swaroopch@ لذت می برم؛ بهترین کتاب دنیاست. 
 > -- [Yuvraj Sharma](https://twitter.com/YuvrajPoudyal/status/448050415356346368)
 
 <!-- -->
 
-> A Byte of Python by @swaroopch is still the "Best newbie guide to python"
+> کتاب A Byte of Python نوشتۀ swaroopch@ همچنان «بهترین راهنمای پایتون برای تازه کارهاست». 
 > -- [Nickson Kaigi](https://twitter.com/nickaigi/status/1136963950711648256)
 
 <!-- -->
 
-> Thank you so much for writing A Byte Of Python. I just started learning how to code two days ago and I'm already building some simple games. Your guide has been a dream and I just wanted to let you know how valuable it has been.
+> از شما بسیار متشکرم که کتاب A Byte of Python را نوشتید. من فقط دو روز است که یادگیری کد نویسی را آغاز کرده ام و همین حالا هم در حال ساخت چند بازی هستم. راهنمای شما برای من رویایی بوده است و فقط می خواستم بدانید که چقدر برایم ارزشمند بوده است. 
 > -- Franklin
 
 <!-- -->
 
-> I'm from Dayanandasagar College of Engineering (7th sem, CSE). Firstly i want to say that your book "The byte of python" is too good a book for a beginner in python like me.The concepts are so well explained with simple examples that helped me to easily learn python. Thank you so much.
+> من دانشجوی ترم هفتم رشتۀ CSE در Dayanandasgar College of Engineering هستم. ابتدا می خواهم بگویم که کتاب شما، "The byte of python"، برای افراد مبتدی همچون من کتاب بسیار خوبی است. مفاهیم با مثال های ساده به خوبی توضیح داده شده اند و این موضوع به من کمک کرد پایتون را به راحتی یاد بگیرم. از شما سپاسگزارم. 
 > -- Madhura
 
 <!-- -->
 
-> I am a 18 year old IT student studying at University in Ireland. I would like to express my gratitude to you for writing your book "A Byte of Python", I already had knowledge of 3 programming langagues - C, Java and Javascript, and Python was by far the easiest langague I have ever learned, and that was mainly because your book was fantastic and made learning python very simple and interesting. It is one of the best written and easy to follow programming books I have ever read. Congratulations and keep up the great work.
+> من یک دانشجوی 18 سالۀ IT هستم که در دانشگاهی در ایرلند مشغول تحصیل هستم. می خواهم بابت نوشتم کتابتان، "A Byte of Python"، از شما قدردانی کنم. من پیش از این با سه زبان C, Java و Javascript آشنا بودم و پایتون با فاصله، آسان ترین زبانی بود که تاکنون یاد گرفته ام و دلیل اصلی آن کتاب فوق العادۀ شما بود که یادگیری پایتون را بسیار ساده و جذاب کرد. این کتاب یکی از بهترین کتاب های برنامه نویسی ای است که تا به حال خوانده ام؛ هم از نظر نگارش و هم از نظر سهولت دنبال کردن مطالب. تبریک می گویم و به کار عالی خود ادامه دهید. 
 > -- Matt
 
 <!-- -->
 
-> Hi, I'm from Dominican Republic. My name is Pavel, recently I read your book _A Byte of Python_ and I consider it excellent!!  :). I learnt much from all the examples. Your book is of great help for newbies like me...
+> سلام، من از جمهوری دومینیکن هستم. نام من Pavel است. به تازگی کتاب _A Byte of Python_ شما را خواندم و آن را فوق العاده تفسیر می کنم !! :). از تمام مثال ها چیزهای عالی یاد گرفتم. کتاب شما برای تازه کارانی مثل من کمک بسیار بزرگی است... 
 > -- [Pavel Simo](mailto:pavel.simo@gmail.com)
 
 <!-- -->
 
-> I am a student from China, Now ,I have read you book A byte of Python, Oh it's beautiful. The book is very simple but can help all the first learnners. You know I am interesting in Java and cloud computing many times, i have to coding programm for the server, so i think python is a good choice, finish your book, i think its not only a good choice its must use the Python. My English is not very well, the email to you, i just wanna thank you! Best Wishes for you and your family.
+> من دانشجویی از چین هستم. اکنون کتاب A byte of Python شما را خوانده ام، اوه، فوق العاده است. کتاب بسیار ساده است، اما می تواند به تمام افرادی که یادگیری را تازه شروع کرده اند، کمک کند. می دانید من به Java و رایانش   ابری علاقه مند هستم و باید برای سرور برنامه بنویسم؛ بنابراین گمان می کنم پایتون انتخاب خوبی است. تمام کردن کتاب شما نه تنها خوب است بلکه برای استفاده از پایتون ضروری است. زبان انگلیسی من زیاد خوب نیست؛ با این ایمیل فقط می خواهم از شما تشکر کنم! با آرزوی بهترین ها برای خودتان و خانواده تان.  
 > -- Roy Lau
 
 <!-- -->
 
-> I recently finished reading Byte of Python, and I thought I really ought to thank you. I was very sad to reach the final pages as I now have to go back to dull, tedious oreilly or etc.  manuals for learning about python. Anyway, I really appreciate your book.
+> اخیراً خواندن Byte of Python را تمام کردم و احساس کردم واقعاً باید از شما تشکر کنم. وقتی به صفحات پایانی رسیدم بسیار ناراحت شدم، چون حالا باید دوباره برای یادگیری پایتون سراغ راهنماهای خسته کننده و پیچیدۀ oreilly و منابع مشابه بروم. به هر حال، واقعاً از کتاب شما قدردانی می کنم.  
 > [Samuel Young](mailto:sy137@gmail.com)
 
 <!-- -->
 
-> Dear Swaroop, I am taking a class from an instructor that has no interest in teaching. We are using Learning Python, second edition, by O'Reilly. It is not a text for beginner without any programming knowledge, and an instructor that should be working in another field.  Thank you very much for your book, without it I would be clueless about Python and programming. Thanks a million, you are able to _break the message down_ to a level that beginners can understand and not everyone can.
+> آقای Swaroop عزیز، من در کلاسی شرکت می کنم که مدرس آن علاقه ای به تدریس ندارد. ما از کتاب Learning Python، ویرایش دوم، نوشتۀ O'Reilly استفاده می کنیم. این کتاب برای مبتدیانی که هیچ دانش قبلی در برنامه نویسی ندارند مناسب نیست و به نظر می رسد مدرس نیز باید در حوزه ای دیگر شروع به فعالیت کند. از شما برای کتابتان بسیار متشکرم، بدون آن دربارۀ پایتون و برنامه نویسی هیچ ایده ای نداشتم. از شما بسیار متشکرم، شما توانسته اید مطلب را به سطحی ساده و قابل فهم برای مبتدیان _تبدیل کنید_، و هر کسی قادر به انجام چنین کاری نیست. 
 > -- [Joseph Duarte](mailto:jduarte1@cfl.rr.com)
 
 <!-- -->
 
-> I love your book! It is the greatest Python tutorial ever, and a very useful reference. Brilliant, a true masterpiece! Keep up the good work!
+> من عاشق کتاب شما هستم! این بهترین آموزش پایتونی است که تا به حال دیده ام و یک مرجع بسیار مفید نیز هست. فوق العاده، یک شاهکار به تمام معنا و واقعی! به کار خوب خود ادامه دهید!
 > -- Chris-André Sommerseth
 
 <!-- -->
 
-> First of all, I want to say thanks to you for this great book. I think it is a good book for those who are looking for a beginner's tutorial for Python.
-> It is about two or there years ago, I think, when I first heard of this book. At that time, I was unable to read books in English yet, so I got a chinese translation, which took me into the gate of Python programming.
-> Recently, I reread this book. This time, of course, the english version. I couldn't believe that I can read the whole book without my dictionary at hand. Of course, it all dues to your effort to make this book an easy-to-understand one.
+> پیش از هر چیزی می خواهم از شما بابت این کتاب عالی تشکر کنم. گمان می کنم کتاب خوبی برای تمام کسانی است که به دنبال یک آموزش مقدماتی برای پایتون هستند. 
+> فکر می کنم حدود دو یا سه سال پیش بود که برای نخستین بار دربارۀ این کتاب شنیدم. در آن زمان هنوز نمی توانستم کتاب های انگلیسی را بخوانم، بنابراین یک ترجمۀ چینی آن را تهیه کردم که مرا به دنیای برنامه نویسی پایتون وارد کرد.  
+> اخیراً، دوباره این کتاب را خواندم؛ البته این بار نسخۀ انگلیسی را. باورم نمی شد که بتوانم تمام کتاب را بدون داشتن دیکشنری در دستم بخوانم. البته همۀ اینها به دلیل تلاش شما برای تبدیل این کتاب به اثری قابل فهم است. 
 > -- [myd7349](https://github.com/swaroopch/byte_of_python/pull/13)
 
 <!-- -->
 
-> I'm just e-mailing you to thank you for writing Byte of Python online.  I had been attempting Python for a few months prior to stumbling across your book, and although I made limited success with pyGame, I never completed a program.
-> Thanks to your simplification of the categories, Python actually seems a reachable goal. It seems like I have finally learned the foundations and I can continue into my real goal, game development.
+> فقط برای تشکر از شما بابت نوشتن آنلاین Byte of Python ایمیل می زنم. پیش از آنکه با کتاب شما مواجه شوم، چند ماهی بود که تلاش می کردم پایتون را یاد بگیرم و اگرچه با pyGame موفقیت محدودی داشتم، هرگز نتوانسته بودم یک برنامه را کامل کنم. 
+> به لطف ساده سازی دسته بندی ها در کتاب شما، پایتون واقعاً به هدفی دست یافتنی تبدیل شد. به نظر می رسد بالاخره مبانی را یاد گرفته ام و اکنون می توانم به سمت هدف اصلی خودم، یعنی توسعۀ بازی، پیش بروم.
 > ...
-> Once again, thanks VERY much for placing such a structured and helpful guide to basic programming on the web.  It shoved me into and out of OOP with an understanding where two text books had failed.
+> بار دیگر از شما بسیار متشکرم که چنین راهنمای ساختار یافته و مفیدی برای برنامه نویسی مقدماتی را در وب قرار دادید. این کتاب باعث شد با درک مناسبی وارد مبحث برنامه نویسی شئ گرا شوم و از آن خارج شوم؛ چیزی که دو کتاب درسی نتوانسته بودند برایم انجام دهند. 
 > -- [Matt Gallivan](mailto:m_gallivan12@hotmail.com)
 
 <!-- -->
 
-> I would like to thank you for your book _A Byte of Python_ which i myself find the best way to learn python. I am a 15 year old i live in egypt my name is Ahmed. Python was my second programming language i learn visual basic 6 at school but didn't enjoy it, however i really enjoyed learning python. I made the addressbook program and i was sucessful. i will try to start make more programs and read python programs (if you could tell me source that would be helpful). I will also start on learning java and if you can tell me where to find a tutorial as good as yours for java that would help me a lot. Thanx.
+> می خواهم بابت کتاب _A Byte of Python_ از شما تشکر کنم؛ من خودم آن را بهترین روش برای یادگیری پایتون می دانم. من احمد هستم، 15 ساله و ساکن مصر. پایتون دومین زبان برنامه نویسی ای بود که یاد گرفتم؛ من visual basic 6 را در مدرسه آموختم، اما از آن لذت نبردم. با این حال، یادگیری پایتون را واقعاً دوست داشتم. برنامۀ دفترچۀ آدرس را ساختم و موفق شدم. تلاش می کنم برنامه های بیشتری بسازم و برنامه های پایتون را بخوانم (اگر بتوانید منبعی معرفی کنید؛ بسیار کمک کننده خواهد بود). همچنین می خواهم یادگیری Java را نیز شروع کنم و اگر بتوانید راهنمایی به خوبی راهنمای خودتان برای Java معرفی کنید، کمک بزرگی به من خواهد کرد. ممنون 
 > -- [Ahmed Mohammed](mailto:sedo_91@hotmail.com)
 
 <!-- -->
 
-> A wonderful resource for beginners wanting to learn more about Python is the 110-page PDF tutorial A Byte of Python by Swaroop C H. It is well-written, easy to follow, and may be the best introduction to Python programming available.
+> یکی از منابع فوق العاده برای مبتدیانی که می خواهند دربارۀ پایتون بیشتر یاد بگیرند، آموزش پی دی اف حدوداً 110 صفحه ای، A Byte of Python نوشتۀ Swaroop C H است. این کتاب به خوبی نوشته شده است، دنبال کردن آن آسان است و شاید بهترین مقدمۀ موجود برای برنامه نویسی پایتون باشد. 
 > -- [Drew Ames](http://www.linux.com/feature/126522)
 
 <!-- -->
 
-> Yesterday I got through most of Byte of Python on my Nokia N800 and it's the easiest and most concise introduction to Python I have yet encountered. Highly recommended as a starting point for learning Python.
+> دیروز بیشتر بخش های Byte of Python را روی Nokia N800 خواندم و این آسان ترین و مختصرترین مقدمه برای پایتون است که تاکنون با آن مواجه شده ام. آن را به شدت به عنوان نقطۀ شروع یادگیری پایتون پیشنهاد می دهم.
 > -- [Jason Delport](http://paxmodept.com/telesto/blogitem.htm?id=627)
 
 <!-- -->
 
-> Byte of Vim and Python by @swaroopch is by far the best works in technical writing to me. Excellent reads #FeelGoodFactor
-> -- [Surendran](http://twitter.com/suren/status/12840485454)
+> کتاب های Byte of Vim و Python نوشتۀ swaroopch@ از نظر من، با فاصله، بهترین آثار در زمینه نگارش فنی هستند. خواندن آن بسیار خوب بود. FeelGoodFactor
+> -- [Surendran](http://twitter.com/suren/status/12840485454)#
 
 <!-- -->
 
-> "Byte of python" best one by far man
-> (in response to the question "Can anyone suggest a good, inexpensive resource for learning the basics of Python? ")
+> بدون شک "Byte of Python" بهترین گزینه است. 
+> (در پاسخ به آیا کسی می تواند یک منبع خوب و ارزان برای یادگیری مبانی پایتون پیشنهاد کند؟) 
 > -- [Justin LoveTrue](http://www.facebook.com/pythonlang/posts/406873916788)
 
 <!-- -->
 
-> The Book Byte of python was very helpful ..Thanks bigtime :)
+> کتاب Byte of python بسیار کمک کننده بود ..ممنون :) 
 > [Chinmay](https://twitter.com/a_chinmay/status/258822633741762560)
 
 <!-- -->
 
-> Always been a fan of A Byte of Python - made for both new and experienced programmers.
+> همیشه طرفدار A Byte of Python بوده ام - کتابی که هم برای برنامه نویسان مبتدی و هم باتجربه نوشته شده است. 
 > -- [Patrick Harrington](http://stackoverflow.com/a/457785/4869)
 
 <!-- -->
 
-> I started learning python few days ago from your book..thanks for such a nice book. it is so well written, you made my life easy..so you found a new fan of yours..thats me :) tons of thanks.
+> چند روز پیش یادگیری پایتون را با کتاب شما آغاز کردم.. بابت چنین کتاب خوبی سپاسگزارم. این کتاب بسیار خوب نوشته شده است و زندگی من را آسان تر کرده است.. بنابراین یک طرفدار جدید پیدا کرده اید؛ آن هم من هستم :) از شما بی نهایت متشکرم. 
 > -- [Gadadhari Bheem](https://twitter.com/Pagal_e_azam/statuses/242865885256232960)
 
 <!-- -->
 
-> Before I started to learn Python, I've acquired basic programming skills in Assembly, C, C++, C# and Java. The very reason I wanted to learn Python is it's popular (people are talking about it) and powerful (reality). This book written by Mr. Swaroop is a very good guide for both brand-new programmers and new python programmers. Took 10 half days to go through it. Great Help!
+> پیش از شروع یادگیری پایتون، مهارت های مقدماتی برنامه نویسی را در Assembly, C++, #C, C , Java به دست آورده بودم. دلیل اصلی علاقه ام به یادگیری پایتون این بود که محبوب است (مردم دربارۀ آن صحبت می کنند) و قدرتمند است (در واقعیت هم همینطور است). این کتاب که توسط آقای Swaroop نوشته شده است، راهنمای بسیار خوبی هم برای برنامه نویسان کاملاً تازه کار و هم برای برنامه نویسان تازه وارد به پایتون است. در ده و نیم روز آن را مطالعه کردم. کمک بزرگی بود! 
 > -- [Fang Biyi (PhD Candidate ECE, Michigan State University)](mailto:fangbiyi@gmail.com)
 
 <!-- -->
 
-> Thank you ever so much for this book!!
-> This book cleared up many questions I had about certain aspects of Python such as object oriented programming.
-> I do not feel like an expert at OO but I know this book helped me on a first step or two.
-> I have now written several python programs that actually do real things for me as a system administrator. They are all procedural oriented but they are small by most peoples standards.
-> Again, thanks for this book. Thank you for having it on the web.
+> از شما برای این کتاب بسیار متشکرم!! 
+> این کتاب بسیاری از پرسش هایی را که دربارۀ جنبه های خاصی از پایتون، مانند برنامه نویسی شئ گرا داشتم برایم روشن کرد. 
+> احساس نمی کنم در برنامه نویسی شئ گرا متخصص شده باشم، اما می دانم که این کتاب به من کمک کرد اولین قدم ها را در این مسیر بردارم. 
+> اکنون چندین برنامۀ پایتون نوشته ام که واقعاً برای من، به عنوان یک مدیر سیستم، کارهای مفیدی انجام می دهند. همۀ آنها رویه محور هستند، اما از نظر معیارهای بیشتر افراد، برنامه های کوچکی محسوب می شوند. 
+> بار دیگر بابت این کتاب تشکر می کنم. ممنون که آن را در وب قرار دادید . 
 > -- Bob
 
 <!-- -->
 
-> I just want to thank you for writing the first book on programming I've ever really read. Python is now my first language, and I can just imagine all the possibilities. So thank you for giving me the tools to create things I never would have imagined I could do before.
+> فقط می خواهم بابت نوشتن نخستین کتاب برنامه نویسی ای که واقعاً خوانده ام از شما تشکر می کنم. اکنون پایتون نخستین زبان برنامه نویسی من است و می توانم تمام امکاناتی را که پیش رو دارم تصور کنم. بنابراین، از شما متشکرم که ابزارهایی را در اختیارم قرار دادید تا بتوانم چیزهایی را خلق کنم که پیش از این حتی تصور نمی کردم قادر به ساختنشان باشم. 
 > -- "The Walrus"
 
 <!-- -->
 
-> I wanted to thank you for writing _A Byte Of Python_ (2 & 3 Versions).  It has been invaluable to my learning experience in Python & Programming in general.
-> Needless to say, I am a beginner in the programming world, a couple of months of self study up to this point. I had been using youtube tutorials & some other online tutorials including other free books. I decided to dig into your book yesterday, & I've learned more on the first few pages than any other book or tutorial. A few things I had been confused about, were cleared right up with a GREAT example & explanation. Can't wait to read (and learn) more!!
-> Thank you so much for not only writing the book, but for putting it under the creative commons license (free). Thank goodness there are unselfish people like you out there to help & teach the rest of us.
+> می خواستم بابت نوشتن _A Byte Of Python_ (نسخه های 2 و 3) از شما تشکر کنم. این کتاب برای تجربۀ یادگیری من در زمینۀ پایتون و به طور کلی برنامه نویسی، بسیار ارزشمند بوده است. 
+> بدون شک، من در دنیای برنامه نویسی مبتدی هستم و تا اینجا چند ماه به صورت خودآموز مطالعه کرده ام. پیش از این از آموزش های یوتیوب و برخی آموزش های آنلاین دیگر، از جمله کتاب های رایگان دیگر استفاده می کردم. دیروز تصمیم گرفتم کتاب شما را جدی مطالعه کنم و در همان چند صفحۀ اول، بیشتر از هر کتاب یا آموزش دیگری یاد گرفتم. چند موردی که برایم گیج کننده بودند، با یک مثال و توضیح عالی روشن شدند. بی صبرانه منتظرم که مطالب بیشتری بخوانم و یاد بگیرم!! 
+> از شما متشکرم که نه تنها کتاب را نوشتید، بلکه آن را تحت مجوز creative common (به صورت رایگان) منتشر کردید. خدا را شکر که هنوز افراد فداکاری مانند شما وجود دارند که به بقیه کمک می کنند و آموزش می دهدند. 
 > -- Chris
 
 <!-- -->
 
-> I wrote you back in 2011 and I was just getting into Python and wanted to thank you for your tutorial "A Byte of Python".  Without it, I would have fallen by the wayside.  Since then I have gone on to program a number of functions in my organization with this language with yet more on the horizon.  I would not call myself an advanced programmer by any stretch but I notice the occasional request for assistance now from others since I started using it.  I discovered, while reading "Byte" why I had ceased studying C and C\++ and it was because the book given to me started out with an example containing an augmented assignment.  Of course, there was no explanation for this arrangement of operators and I fell on my head trying to make sense of what was on the written page.  As I recall it was a most frustrating exercise which I eventually abandoned. Doesn't mean C or C++ is impossible to learn, or even that I am stupid, but it does mean that the documentation I worked my way through did not define the symbols and words which is an essential part of any instruction. Just as computers will not be able to understand a computer word or computer symbol that is outside the syntax for the language being used, a student new to any field will not grasp his subject if he encounters words or symbols for which there are no definitions.  You get a "blue screen" as it were in either case.  The solution is simple, though: find the word or symbol and get the proper definition or symbol and lo and behold,the computer or student can proceed.  Your book was so well put together that I found very little in it I couldn't grasp.  So, thank you.  I encourage you to continue to include full definitions of terms.  The documentation with Python is good, once you know, (the examples are its strength from what I see) but in many cases it seems that you have to know in order to understand the documentation which to my mind is not what should be.  Third party tutorials express the need for clarification of the documentation and their success largely depends on the words that are used to describe the terminology.  I have recommended your book to many others. Some in Australia, some in the Caribbean and yet others in the US. It fills a niche no others do.  I hope you are doing well and wish you all the success in the future.
+> من در سال 2011 برایتان نوشتم؛ در آن زمان تازه وارد دنیای پایتون شده بودم و می خواستم بابت آموزش "A Byte of Python" از شما تشکر کنم. بدون آن احتمالاً در میانۀ راه کنار می کشیدم. از آن زمان تاکنون، با این زبان چندین تابع را در سازمان خود برنامه نویسی کرده ام و کارهای بیشتری نیز در آینده دارم. به هیچ وجه خودم را یک برنامه نویس پیشرفته نمی دانم، اما حالا گاهی دیگران برای کمک گرفتن به سراغ من می آیند. هنگام خواندن "Byte" متوجه شدم چرا مطالعۀ C و ++C را رها کرده بودم. دلیلش این بود که کتابی که در اختیار داشتم، با مثالی شروع می شد و شامل یک انتساب ترکیبی بود. البته هیچ توضیحی دربارۀ این شکل از استفاده از عملگرها وجود نداشت و من در تلاش برای فهم آنچه در صفحه نوشته شده بود، سردرگم شدم. تا جایی که به یاد دارم، تجربه ای بسیار خسته کننده بود و در نهایت آن را رها کردم. این بدین معنا نیست که یادگیری C و ++C غیرممکن است یا حتی اینکه من فرد باهوشی نیستم؛ بلکه بدین معناست مستنداتی که با آنها کار می کردم، نماد ها و واژه هایی را که بخش ضروری هر آموزشی است، توضیح نداده بودند. همانطور که کامپیوترها هم نیز نمی توانند یک واژه یا نماد رایانه ای را که خارج از نحو زبان مورد استفاده باشد، درک کند، دانش آموزی که تازه وارد یک حوزه شده نیز اگر با واژه ها یا نمادهایی رو به رو شود که تعریفی برایشان ارائه نشده است، نمی تواند موضوع را درک کند. در هر دو حالت، گویی با یک «صفحۀ آبی» مواجه شده اید. البته راه حل ساده است؛ واژه یا نماد را پیدا کنید و تعریف درست آن را به دست آورید؛ آنگاه کامپیوتر یا دانش آموز می تواند به مسیر خود ادامه دهد. کتاب شما به خوبی تدوین شده بود که تقریباً هیچ بخشی از آن را پیدا نکردم که نتوانم درک کنم. بنابراین از شما متشکرم. شما را تشویق می کنم همچنان به ارائه تعریف کامل اصطلاحات ادامه دهید. مستندات پایتون خوب هستند، البته وقتی بدانید چه چیزی را می خوانید (از آنچه من می بینم، مثال ها نقطۀ قوت آنها هستند)، اما در بسیاری موارد به نظر می رسد برای فهمیدن مستندات باید از قبل چیزی بدانید، که از نظر من نباید چنین باشد. آموزش های شخص ثالث نیاز به توضیح بیشتر مستندات را نشان می دهند و موفقیت آنها تا حد زیادی به واژه هایی بستگی دارد که برای توضیح اصطلاحات استفاده می کنند. من کتاب شما را به افراد زیادی پیشنهاد کرده ام؛ برخی در استرالیا، برخی در منطقۀ کارائیب و برخی دیگر در ایالات متحده. این کتاب جایگاهی را پر می کند که آثار دیگری آن را پر نکرده اند. امیدوارم حالتان خوب باشد و برایتان در آینده آرزوی موفقیت دارم. 
 > -- Nick
 
 <!-- -->
 
-> hey, this is ankush(19). I was facing a great difficulty to start with python. I tried a lot of books but all were bulkier and not target oriented; and then i found this lovely one, which made me love python in no time. Thanks a lot for this "beautiful piece of book".
+> سلام، من ankush (19 ساله) هستم. برای شروع کار با پایتون با دشواری زیادی مواجه بودم. کتاب های زیادی را امتحان کردم، اما همه حجیم بودند و مسیر مشخصی نداشتند؛ سپس این کتاب دوست داشتنی را پیدا کردم که باعث شد در کمترین زمان عاشق پایتون شوم. بابت این «اثر زیبا» بسیار سپاسگزارم. 
 > -- Ankush
 
 <!-- -->
 
-> I would like to thank you for your excellent guide on Python. I am a molecular biologist (with little programming background) and for my work I need to handle big datasets of DNA sequences and to analyse microscope images. For both things, programming in python has been useful, if not essential to complete and publish a 6-years project.
-> That such a guide is freely available is a clear sign that the forces of evil are not yet ruling the world! :)
+> می خواهم بابت راهنمای عالی شما دربارۀ پایتون تشکر کنم. من زیست شناس مولکولی هستم (با پیش زمینۀ کمی در برنامه نویسی) و برای کارم لازم است مجموعه داده های بزرگ مربوط به دنباله های DNA را پردازش کنم و تصاویر میکروسکوپی را تحلیل کنم. برای هر دو اینها، برنامه نویسی در پایتون مفید بود و حتی برای تکمیل و انتشار یک پروژۀ 6 ساله ضروری بوده است. 
+> اینکه چنین راهنمایی به صورت رایگان دردسترس است، نشانۀ روشنی است که نیروهای شر هنوز بر جهان حکومت نمی کنند :)
 > -- Luca
 
 <!-- -->
 
-> Since this is going to be the first language you learn, you should use A Byte of Python. It really gives a proper introduction into programming in Python and it is paced well enough for the average beginner. The most important thing from then on will be actually starting to practice making your own little programs.
+> از آنجایی که این قرار است اولین زبانی باشد که یاد می گیرید، باید از A Byte of Python استفاده کنید. این کتاب واقعاً مقدمۀ مناسبی برای برنامه نویسی با پایتون ارائه می دهد و سرعت پیشروی مطالب برای یک مبتدی نیز مناسب است. مهمترین کاری که پس از آن باید انجام دهید، این است که واقعاً شروع به تمرین و ساختن برنامه های کوچک خودتان کنید. 
 > -- ["{Unregistered}"](http://www.overclock.net/t/1177951/want-to-learn-programming-where-do-i-start#post_15837176)
 
 <!-- -->
 
-> Just to say a loud and happy _thank you very much_ for publishing "A Byte of Python" and "A Byte of Vim". Those books were very useful to me four or five years ago when I starting learning programming. Right now I'm developing a project that was a dream for a long, long time and just want to say _thank you_. Keep walking. You are a source of motivation. All the best.
+> فقط می خواستم با صدای بلند و با خوشحالی بگویم _خیلی ممنونم_ که "A Byte of Python" و "A Byte of Vim" را منتشر کردید. این کتاب ها چهار یا پنج سال پیش، هنگامی که شروع به یادگیری برنامه نویسی کردم، بسیار برایم مفید بودند. در حال حاضر در حال توسعۀ پروژه ای هستم که مدت بسیار طولانی برایم همچون آرزو بود و فقط می خواستم بگویم _متشکرم_. به مسیر خود ادامه دهید. شما منبع انگیزه هستید. بهترین ها را برایتان آرزو می کنم. 
 > -- Jocimar
 
 <!-- -->
 
-> Finished reading A byte of Python in 3 days. It is thoroughly interesting. Not a single page was boring. I want to understand the Orca screen reader code. Your book has hopefully equipped me for it.
+> خواندن A byte of Python را در سه روز تمام کردم. کتاب واقعاً جذاب است. حتی یک صفحه هم خسته کننده نبود. می خواهم کد مربوط به screen reader نرم افزار Orca را درک کنم. امیدوارم کتاب شما مرا برای انجام این کار آماده کرده باشد. 
 > -- Dattatray
 
 <!-- -->
 
-> Hi, 'A byte of python' is really a good reading for python beginners. So, again, NICE WORK!
-> i'm a 4 years experienced Java&C developer from China. Recently, i want to do some work on zim-wiki note project which uses pygtk to implement.
-> i read your book in 6 days, and i can read and write python code examples now.
-> thx for your contribution.
-> plz keep your enthusiasm to make this world better, this is just a little encourage from China.
+> سلام، 'A byte of python' کتاب واقعاً خوبی برای مبتدیان است. بنابراین یک بار دیگر می گویم: «کارتان عالی است!» 
+> من یک توسعه دهندۀ Java و C با چهار سال سابقه از چین هستم. اخیراً می خواهم روی پروژۀ یادداشت برداری zim-wiki کار کنم که برای پیاده سازی از pygtk استفاده می کند. 
+> کتاب شما را در 6 روز خواندم و الان می توانم مثال های کد پایتون را بخوانم و بنویسم. 
+> از مشارکت شما متشکرم. 
+> لطفاً با همین اشتیاق به بهتر کردن دنیا ادامه دهید؛ این تنها یک تشویق کوچک از طرف من از چین است. 
 > -- Lee
 
 <!-- -->
 
-> I am Isen from Taiwan, who is a graduating PhD student in Electrical Engineering Department of National Taiwan University. I would like to thank you for your great book. I think it is not only just easy to read but also comprehensive and complete for a new comer of Python. The reason I read your book is that I am starting to work on the GNU Radio framework. Your book let me catch most of important core ideas and skill of Python with a minimum time.
-> I also saw that you do not mind that readers send you a thank note in your book. So I really like your book and appreciate it. Thanks.
+> من Isen از تایوان هستم و دانشجوی دکتری در حال فارغ التحصیلی از گروه مهندسی برق دانشگاه ملی تایوان هستم. می خواهم از شما بابت کتاب فوق العاده تان تشکر کنم. فکر می کنم این کتاب نه تنها خواندن آسانی دارد، بلکه برای یک تازه وارد به پایتون جامع و کامل نیز هست. دلیل من برای مطالعۀ کتاب شما این است که در حال شروع کار با چارچوب GNU Radio هستم. کتاب شما به من کمک کرد بیشتر ایده ها و مهارت های اصلی پایتون را در کمترین زمان ممکن فرا بگیرم. 
+> همچنین دیدم مخالفتی با ارسال پیام تشکر خوانندگان در کتاب ندارید. بنابراین من واقعاً کتابتان را دوست دارم و از شما قدردانی می کنم. ممنونم.
 > -- [Isen I-Chun Chao](mailto:chao926@gmail.com)
 
-The book is even used by NASA! It is used in their [Jet Propulsion Laboratory](https://web.archive.org/web/20130614003212/http://dsnra.jpl.nasa.gov/software/Python/byte-of-python/output/byteofpython_html/) with their Deep Space Network project.
+این کتاب حتی در ناسا نیز مورد استفاده قرار گرفته است! این کتاب در [آزمایشگاه پیرانش جت](https://web.archive.org/web/20130614003212/http://dsnra.jpl.nasa.gov/software/Python/byte-of-python/output/byteofpython_html/) در پروژۀ شبکۀ اعماق فضا (Deep Space Networke project) مورد استفاده قرار گرفته است. 
 
-## Academic Courses
+## دوره های آکادمیک 
 
-This book is/was being used as instructional material in various educational institutions:
+این کتاب در مؤسسات آموزشی مختلف، به عنوان محتوای آموزشی مورد استفاده قرار گرفته است یا می گیرد: 
 
-- 'Principles of Programming Languages' course at [Vrije Universiteit, Amsterdam](http://www.few.vu.nl/~nsilvis/PPL/2007/index.html)
-- 'Basic Concepts of Computing' course at [University of California, Davis](http://www.cs.ucdavis.edu/courses/exp_course_desc/10.html)
-- 'Programming With Python' course at [Harvard University](http://www.people.fas.harvard.edu/~preshman/python_winter.html)
-- 'Introduction to Programming' course at [University of Leeds](http://www.comp.leeds.ac.uk/acom1900/)
-- 'Introduction to Application Programming' course at [Boston University](http://www.cs.bu.edu/courses/cs108/materials.html)
-- 'Information Technology Skills for Meteorology' course at [University of Oklahoma](http://gentry.metr.ou.edu/byteofpython/)
-- 'Geoprocessing' course at [Michigan State University](http://www.msu.edu/~ashton/classes/825/index.html)
-- 'Multi Agent Semantic Web Systems' course at the [University of Edinburgh](http://homepages.inf.ed.ac.uk/ewan/masws/)
-- 'Introduction to Computer Science and Programming' at [MIT OpenCourseWare](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/references/)
-- 'Basic programming at the Faculty of Social Sciences, University of Ljubljana, Slovenia' -- [Aleš Žiberna](mailto:ales.ziberna@fdv.uni-lj.si) says _"I (and my predecessor) have been using your book as the main literature for this course"_
--  'Introduction to programming', Department of Information Sciences, University of Zadar, Croatia -- Krešimir Zauder says _"I would like to inform you that A Byte of Python is a mandatory read at my course"_
+- دورۀ «اصول زبان های برنامه نویسی» در [Vrije Universiteit, Amsterdam](http://www.few.vu.nl/~nsilvis/PPL/2007/index.html)
+- دورۀ «مفاهیم پایۀ رایانش» در [University of California, Davis](http://www.cs.ucdavis.edu/courses/exp_course_desc/10.html)
+- دورۀ «برنامه نویسی با پایتون» در [Harvard University](http://www.people.fas.harvard.edu/~preshman/python_winter.html)
+- دورۀ «مقدمه ای بر برنامه نویسی» در [University of Leeds](http://www.comp.leeds.ac.uk/acom1900/)
+- دورۀ «مقدمه ای بر برنامه نویسی کاربردی» در [Boston University](http://www.cs.bu.edu/courses/cs108/materials.html)
+- دورۀ «مهارت های فناوری اطلاعات برای هواشناسی» در [University of Oklahoma](http://gentry.metr.ou.edu/byteofpython/)
+- دورۀ «پردازش مکانی» در [Michigan State University](http://www.msu.edu/~ashton/Classes/825/index.html)
+- دورۀ «سیستم های وب معنایی چند عاملی» در [University of Edinburgh](http://homepages.inf.ed.ac.uk/ewan/masws)
+- دورۀ «مقدمه ای بر علوم کامپیوتر و برنامه نویسی» در [MIT OpenCourseWare](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/references/)
+- «برنامه نویسی مقدماتی در دانشکدۀ علوم اجتماعی، دانشگاه Ljubljana، اسلوونی» -- [Aleš Žiberna](mailto:ales.ziberna@fdv.uni-lj.si) _می گوید:«_من و (جانشینم) از کتاب شما به عنوان منبع اصلی این درس استفاده کردیم._» 
+-  «مقدمه ای بر برنامه نویسی، دپارتمان علوم اطلاعات، دانشگاه زادار ، کرواسی » -- Krešimir Zauder می گوید:«_می خواهم اطلاع دهم که A Byte of Python مطالعه ای اجباری در درس من است._» 
 
-## License
+## مجوز
 
-This book is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+این کتاب تحت مجوز بین المللی [Creative Commons Attribution-ShareAlike 4.0](http://creativecommons.org/licenses/by-sa/4.0/) منتشر شده است.
 
-This means:
+این بدان معناست که:
 
-- You are free to Share i.e. to copy, distribute and transmit this book
-- You are free to Remix i.e. to make changes to this book (especially translations)
-- You are free to use it for commercial purposes
+- شما آزاد هستید که کتاب را به اشتراک بگذارید یعنی آن را کپی،توزیع و منتقل کنید. 
+- شما آزاد هستید که کتاب را بازترکیب کنید یعنی تغییراتی در آن ایجاد کنید (به ویژه ترجمه ها) 
+- شما آزاد هستید که از آن برای اهداف تجاری استفاده کنید. 
 
-Please note:
+لطفاً توجه داشته باشید: 
 
-- Please do *not* sell electronic or printed copies of the book unless you have clearly and prominently mentioned in the description that these copies are *not* from the original author of this book.
-- Attribution *must* be shown in the introductory description and front page of the document by linking back to {{ book.officialUrl }} and clearly indicating that the original text can be fetched from this location.
-- All the code/scripts provided in this book is licensed under the [3-clause BSD License](http://www.opensource.org/licenses/bsd-license.php) unless otherwise noted.
+- لطفاً نسخه های الکترونیکی یا چاپی کتاب را _نفروشید_، مگر آنکه در توضیحات به صورت واضح و برجسته ذکر کرده باشید که این نسخه ها متعلق به نویسنده اصلی این کتاب _نیستند_. 
+- ذکر منبع _باید_ در توضیحات ابتدایی و صفحۀ نخست سند درج شود و با پیوند دادن به {{ book.officialUrl }} و مشخص کردن صریح اینکه متن اصلی را می توان از این نشانی دریافت کرد، انجام شود. 
+- تمام کدها/اسکریپت های ارائه شده در این کتاب، مگر آنکه خلاف آن ذکر شده باشد، تحت مجوز [3-clause BSD License](http://www.opensource.org/licenses/bsd-license.php) منتشر شده اند. 
 
-## Read Now
+## همین الان بخوانید
 
-You can read it online at {{ book.officialUrl }}
+می توانید کتاب را به صورت آنلاین در {{ book.officialUrl }} مطالعه کنید. 
 
-## Buy The Book
+## خرید کتاب 
 
-A printed hardcopy of the book can be purchased at {{ book.buyBookUrl }} for your offline reading pleasure, and to support the continued development and improvement of this book.
+نسخۀ چاپی کتاب را می توان از {{ book.buyBookUrl }} خریداری کرد تا بتوانید از مطالعۀ آفلاین آن لذت ببرید و از ادامۀ توسعه و بهبود این کتاب حمایت کنید. 
 
-## Download
+## دانلود
 
-Visit {{ book.downloadUrl }} to download a PDF file (best for desktop reading) or an EPUB file (best for devices such as mobile, tablet, ebook readers).
+برای دانلود فایل پی دی اف (مناسب تر برای مطالعه روی کامپیوتر) یا فایل EPUB (مناسب تر برای دستگاه هایی مانند تلفن همراه، تبلت و کتاب خوان های الکترونیکی)، به {{ book.downloadUrl }} مراجعه کنید. V
 
-Visit {{ book.sourceUrl }} for the raw content (for suggesting corrections, changes, translating, etc.)
+برای دسترسی به محتوای خام کتاب (جهت پیشنهاد اصلاحات، تغییرات، ترجمه و موارد مشابه)، به {{ book.sourceUrl }} مراجعه کنید. 
 
-## Read the book in your native language
+## مطالعۀ کتاب به زبان مادری خود 
 
-If you are interested in reading or contributing translations of this book to other human languages, please see [Translations](./translations.md#translations).
+اگر علاقه مند به مطالعه یا مشارکت در ترجمۀ این کتاب به زبان های دیگر هستید، لطفاً [ترجمه ها](./translations.md#translations) را مشاهده کنید. 
