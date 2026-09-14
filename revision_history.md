@@ -1,109 +1,109 @@
-# Appendix: History Lesson {#history-lesson}
+ پیوست: درس تاریخ {history-lesson#} 
 
-I first started with Python when I needed to write an installer for software I had written called 'Diamond' so that I could make the installation easy. I had to choose between Python and Perl bindings for the Qt library. I did some research on the web and I came across [an article by Eric S. Raymond](http://www.python.org/about/success/esr/), a famous and respected hacker, where he talked about how Python had become his favorite programming language. I also found out that the PyQt bindings were more mature compared to Perl-Qt. So, I decided that Python was the language for me.
+اولین بار زمانی با پایتون شروع به کار کردم که نیاز داشتم برای نرم افزاری که خودم نوشته بودم به نام 'Diamond'، یک نصب کننده بنویسم تا فرآیند نصب آن را آسان تر کنم. باید بین اتصال های پایتون و Perl برای کتابخانۀ Qt یکی را انتخاب می کردم. در وب کمی تحقیق کردم و به [مقاله ای از Eric S. Raymond](http://www.python.org/about/success/esr/) برخورد کردم؛ اوهکری مشهور و قابل احترام است که در آن مقاله دربارۀ اینکه چگونه پایتون به زبان برنامه نویسی موردعلاقه او تبدیل شده است، صحبت کرده است. بنابراین متوجه شدم که اتصال های PyQt در مقایسه با Perl-Qt بهتر هستند. بنابراین تصمیم گرفتم که پایتون زبان مناسبی برای من است. 
 
-Then, I started searching for a good book on Python. I couldn't find any!  I did find some O'Reilly books but they were either too expensive or were more like a reference manual than a guide. So, I settled for the documentation that came with Python. However, it was too brief and small. It did give a good idea about Python but was not complete. I managed with it since I had previous programming experience, but it was unsuitable for newbies.
+سپس شروع به جست و جو برای یافتن کتاب خوب دربارۀ پایتون کردم. اما نتوانستم هیچ کتاب مناسبی پیدا کنم! چند کتاب از O'Reilly پیدا کردم، اما یا بیش از حد گران بودند یا بیشتر شبیه یک کتاب مرجع بودند تا یک راهنما. بنابراین به مستنداتی که همراه پایتون ارائه می شد بسنده کردم. با این حال، آن مستندات بیش از حد مختصر و کوتاه بودند. اطلاعات خوبی دربارۀ پایتون ارائه می دادند، اما کامل نبودند. از آنجا که پیش تر تجربۀ برنامه نویسی داشتم، توانستم با همان مستندات کارم را پیش ببرم؛ اما برای تازه کاران مناسب نبودند. 
 
-About six months after my first brush with Python, I installed the (then) latest Red Hat 9.0 Linux and I was playing around with KWord. I got excited about it and suddenly got the idea of writing some stuff on Python. I started writing a few pages but it quickly became 30 pages long. Then, I became serious about making it more useful in a book form. After a _lot_ of rewrites, it has reached a stage where it has become a useful guide to learning the Python language.  I consider this book to be my contribution and tribute to the open source community.
+حدود شش ماه پس از نخستین آشنایی من با پایتون، جدیدترین نسخۀ آن زمان Red Hat 9.0 Linux را نصب کردم و مشغول کار با KWord شدم. از این موضوع هیجان زده شدم و ناگهان ایدۀ نوشتن مطالبی دربارۀ پایتون به ذهنم رسید. شروع به نوشتن چند صفحه کردم، اما این مطالب خیلی زود به 30 صفحه رسیدند. سپس تصمیمم برای تبدیل آن به کتابی مفید جدی تر شد. پس از بازنویسی های _بسیار زیاد_، این اثر به مرحله ای رسید که به راهنمایی مفید برای یادگیری زبان پایتون تبدیل شد. من این کتاب را یک همکاری و ادای احترامی به جامعۀ متن باز می دانم.  
 
-This book started out as my personal notes on Python and I still consider it in the same way, although I've taken a lot of effort to make it more palatable to others :)
+این کتاب در ابتدا به عنوان یادداشت های شخصی من دربارۀ پایتون آغاز شد و هنوز هم آن را به همین شکل در نظر می گیرم، هرچند برای اینکه مطالعۀ آن برای دیگران نیز خوشایندتر و قابل استفاده تر باشد، تلاش زیادی کرده ام:) 
 
-In the true spirit of open source, I have received lots of constructive suggestions, criticisms and [feedback](./README.md#who-reads-bop) from enthusiastic readers which has helped me improve this book a lot.
+در روح واقعی جنبش متن باز، پیشنهاد ها، انتقادها و [بازخوردهای](./README.md#who-reads-bop) سازندۀ زیادی از خوانندگان مشتاق دریافت کردم که کمک زیادی به بهبود این کتاب کردند.
 
-## Status Of The Book
+## وضعیت کتاب 
 
-The book needs the help of its readers such as yourselves to point out any parts of the book which are not good, not comprehensible or are simply wrong. Please [write to the main author]({{ book.contactUrl }}) or the respective [translators](./translations.md#translations) with your comments and suggestions.
+این کتاب برای شناسایی بخش هایی که ممکن است خوب نباشند، قابل درک نباشند یا حتی اشتباه باشند، به کمک خوانندگانی مانند شما نیاز دارد. لطفاً نظرات و پیشنهادات خود را برای [نویسندۀ اصلی]({{ book.contactUrl }}) یا [مترجمان](./translations.md#translations) مربوطه ارسال کنید. 
 
-# Appendix: Revision History {#revision-history}
+# پیوست: تاریخچۀ ویرایش {revision-history#} 
 
-- No version change
-    - 06 Nov 2020
-    - Migrated from abandoned GitBook to [community-maintained Honkit, a fork of GitBook legacy](https://github.com/honkit/honkit)
+- بدون تغییر در نسخه 
+    - 06 نوامبر 2020 
+    - انتقال از GitBook متروک شده به [Honkit که توسط جامعه نگهداری می شود و شاخه ای از نسخۀ قدیمی گیت بوک است](https://github.com/honkit/honkit) 
 
 - 4.0
-    - 19 Jan 2016
-    - Switched back to Python 3
-    - Switched back to Markdown, using [GitBook](https://www.gitbook.com) and [Spacemacs](http://spacemacs.org)
+    - 19 ژانویه 2016 
+    - بازگشت مجدد به پایتون 3 
+    - بازگشت مجدد Markdown، با استفاده از [GitBook](https://www.gitbook.com) و [Spacemacs](http://spacemacs.org) 
 
 - 3.0
-    - 31 Mar 2014
-    - Rewritten for Python 2 using [AsciiDoc](http://asciidoctor.org/docs/what-is-asciidoc/) and [adoc-mode](https://github.com/sensorflo/adoc-mode/wiki).
+    - 31 مارس 2014 
+    - بازنویسی برای پایتون 2 با استفاده از [AsciiDoc](http://asciidoctor.org/docs/what-is-asciidoc/) و [adoc-mode](https://github.com/sensorflo/adoc-mode/wiki). 
 
 - 2.1
-    - 03 Aug 2013
-    - Rewritten using Markdown and [Jason Blevins' Markdown Mode](http://jblevins.org/projects/markdown-mode/)
+    - 03 اوت 2013 
+    - بازنویسی با استفاده از Markdown و [Jason Blevins' Markdown Mode](http://jblevins.org/projects/markdown-mode/) 
 
 - 2.0
-    - 20 Oct 2012
-    - Rewritten in [Pandoc format](http://johnmacfarlane.net/pandoc/README.html), thanks to my wife who did most of the conversion from the Mediawiki format
-    - Simplifying text, removing non-essential sections such as `nonlocal` and metaclasses
+    - 20 اکتبر 2012 
+    - بازنویسی به [Pandoc format](http://johnmacfarlane.net/pandoc/README.html)، باتشکر از همسرم که بیشتر فرآیند تبدیل فرمت از Mediawiki را انجام داد. 
+    - ساده سازی متن و حذف بخش های غیرضروی مانند `nonlocal` و metaclasses 
 
 - 1.90
-    - 04 Sep 2008 and still in progress
-    - Revival after a gap of 3.5 years!
-    - Rewriting for Python 3.0
-    - Rewrite using [MediaWiki](http://www.mediawiki.org) (again)
+    - 04 سپتامبر 2008 و همچنان در حال انجام 
+    - احیای پروژه پس از وقفۀ 3.5 ساله! 
+    - بازنویسی برای پایتون 3.0 
+    - بازنویسی با استفاده از [MediaWiki](http://www.mediawiki.org) (دوباره) 
 
 - 1.20
-    - 13 Jan 2005
-    - Complete rewrite using [Quanta+](https://en.wikipedia.org/wiki/Quanta_Plus) on [Fedora](http://fedoraproject.org/) Core 3 with lot of corrections and updates. Many new examples. Rewrote my DocBook setup from scratch.
+    - 13 ژانویه 2005 
+    - بازنویسی کامل با استفاده از [+Quanta](https://en.wikipedia.org/wiki/Quanta_Plus) در [Fedora](http://fedoraproject.org/) Core 3 همراه با اصلاحات و بروزرسانی های فراوان. مثال های جدید زیادی اضافه شد. پیکربندی DocBook خودم را از ابتدا بازنویسی کردم. 
 
 - 1.15
-    - 28 Mar 2004
-    - Minor revisions
+    - 28 مارس 2004 
+    - بازبینی های جزئی 
 
 - 1.12
-    - 16 Mar 2004
-    - Additions and corrections
+    - 16 مارس 2004 
+    - افزودنی ها و اصلاحات 
 
 - 1.10
-    - 09 Mar 2004
-    - More typo corrections, thanks to many enthusiastic and helpful readers.
+    - 09 مارس 2004 
+    - اصلاح اشتباهات تایپی بیشتر، باتشکر از بسیاری از خوانندگان مشتاق و یاری رسان. 
 
 - 1.00
-    - 08 Mar 2004
-    - After tremendous feedback and suggestions from readers, I have made significant revisions to the content along with typo corrections.
+    - 08 مارس 2004 
+    - پس از دریافت بازخوردها و پیشنهادات فراوان از خوانندگان، اصلاحات قابل توجهی در محتوای کتاب انجام دادم و اشتباهات تایپی را نیز اصلاح کردم. 
 
 - 0.99
-    - 22 Feb 2004
-    - Added a new chapter on modules. Added details about variable number of arguments in functions.
+    - 22 فوریه 2004 
+    - فصل جدیدی دربارۀ ماژول ها اضافه شد. جزئیاتی دربارۀ تعداد متغیر آرگومان ها در توابع نیز اضافه شد. 
 
 - 0.98
-    - 16 Feb 2004
-    - Wrote a Python script and CSS stylesheet to improve XHTML output, including a crude-yet-functional lexical analyzer for automatic VIM-like syntax highlighting of the program listings.
+    - 16 فوریه 2004 
+    - یک اسکریپت پایتون و یک شیوه نامۀ CSS نوشتم تا خروجی XHTML را بهبود دهم. این کار شامل یک تحلیلگر واژگانی ساده اما کاربردی نیز بود که برای برجسته سازی نحوی خودکار و شبیه به Vim در فهرست های کد برنامه مورد استفاده قرار می گرفت.
 
 - 0.97
-    - 13 Feb 2004
-    - Another completely rewritten draft, in DocBook XML (again). Book has improved a lot - it is more coherent and readable.
+    - 13 فوریه 2004 
+    - پیش نویس دیگری که به طور کامل بازنویسی شده بود، این بار در قالب DocBook XML (دوباره). کتاب بسیار بهبود یافت و انسجام و خوانایی بیشتری پیدا کرد. 
 
 - 0.93
-    - 25 Jan 2004
-    - Added IDLE talk and more Windows-specific stuff
+    - 25 ژانویه 2004 
+    - مطالب مربوط به IDLE و همچنین مطالب بیشتری دربارۀ ویندوز اضافه شد. 
 
 - 0.92
-    - 05 Jan 2004
-    - Changes to few examples.
+    - 05 ژانویه 2004 
+    - تغییراتی در چند مثال. 
 
 - 0.91
-    - 30 Dec 2003
-    - Corrected typos. Improvised many topics.
+    - 30 دسامبر 2003 
+    - اشتباهات تایپی اصلاح شد. بسیاری از موضوعات نیز بهبود داده شدند. 
 
 - 0.90
-    - 18 Dec 2003
-    - Added 2 more chapters. [OpenOffice](https://en.wikipedia.org/wiki/OpenOffice) format with revisions.
+    - 18 دسامبر 2003 
+    - دو فصل دیگر اضافه شد. فرمت [OpenOffice](https://en.wikipedia.org/wiki/OpenOffice) با بازبینی ها. 
 
 - 0.60
-    - 21 Nov 2003
-    - Fully rewritten and expanded.
+    - 21 نوامبر 2003 
+    - بازنویسی و گسترش کامل. 
 
 - 0.20
-    - 20 Nov 2003
-    - Corrected some typos and errors.
+    - 20 نوامبر 2003 
+    - اصلاح برخی اشتباهات تایپی و خطاها. 
 
 - 0.15
-    - 20 Nov 2003
-    - Converted to [DocBook XML](https://en.wikipedia.org/wiki/DocBook) with XEmacs.
+    - 20 نوامبر 2003 
+    - تبدیل به [DocBook XML](https://en.wikipedia.org/wiki/DocBook) با استفاده از XEmacs. 
 
 - 0.10
-    - 14 Nov 2003
-    - Initial draft using [KWord](https://en.wikipedia.org/wiki/Kword).
+    - 14 نوامبر 2003 
+    - نخستین پیش نویس با استفاده از [KWord](https://en.wikipedia.org/wiki/Kword). 
