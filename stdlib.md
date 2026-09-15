@@ -1,18 +1,18 @@
-# Standard Library {#stdlib}
+# کتابخانۀ استاندارد {stdlib#} 
 
-The Python Standard Library contains a huge number of useful modules and is part of every standard Python installation. It is important to become familiar with the Python Standard Library since many problems can be solved quickly if you are familiar with the range of things that these libraries can do.
+کتابخانۀ استاندارد پایتون شامل تعداد بسیار زیادی ماژول مفید است و بخشی از هر نصب استاندارد پایتون محسوب می شود. آشنایی با کتابخانۀ استاندارد پایتون اهمیت زیادی دارد، زیرا اگر با دامنۀ قابلیت هایی که این کتابخانه ها ارائه می کنند آشنا یاشید، بسیاری از مسائل را می توان به سرعت حل کرد. 
 
-We will explore some of the commonly used modules in this library. You can find complete details for all of the modules in the Python Standard Library in the ['Library Reference' section](http://docs.python.org/3/library/) of the documentation that comes with your Python installation.
+در این بخش، برخی از ماژول هایی که معمولاً مورد استفاده قرار می گیرند را بررسی خواهیم کرد. می توانید جزئیات کامل مربوط به تمام ماژول های موجود در کتابخانۀ استاندارد پایتون را در بخش ['مرجع کتابخانه'](http://docs.python.org/3/library/) از مستنداتی که همراه نصب پایتون شما ارائه می شود، پیدا کنید. 
 
-Let us explore a few useful modules.
+بیایید چند ماژول مفید را مورد بررسی قرار دهیم. 
 
-> CAUTION: If you find the topics in this chapter too advanced, you may skip this chapter. However, I highly recommend coming back to this chapter when you are more comfortable with programming using Python.
+> هشدار: اگر مطالب این فصل بیش از حد برایتان پیشرفته است، می توانید از این فصل بگذرید. با این حال، اکیداً توصیه می کنم هر زمانی که در کار با پایتون احساس راحتی بیشتری کردید، به این فصل بازگردید. 
 
-## `sys` module {#sys}
+## ماژول `sys`
 
-The `sys` module contains system-specific functionality. We have already seen that the `sys.argv` list contains the command-line arguments.
+ماژول `sys` قابلیت هایی را در اختیارمان قرار می دهد که به سیستم عامل و محیط اجرای سیستم وابسته هستند. پیش تر مشاهده کردیم که لیست `sys.argv` شامل آرگومان های خط فرمان است. 
 
-Suppose we want to check the version of the Python software being used, the `sys` module gives us that information.
+فرض کنید می خواهیم نسخۀ نرم افزار پایتونی را که از آن استفاده می کنیم، بررسی کنیم. ماژول `sys` این اطلاعات را در اختیار ما قرار می دهد. 
 
 <!-- The output should match pythonVersion variable in book.json -->
 ```python
@@ -23,45 +23,44 @@ sys.version_info(major=3, minor=6, micro=0, releaselevel='final', serial=0)
 True
 ```
 
-**How It Works**
+**نحوۀ عملکرد**
 
-The `sys` module has a `version_info` tuple that gives us the version information. The first entry is the major version. We can pull out this information to use it.
+ماژول `sys` دارای یک تاپل `version_info` است که اطلاعات مربوط به نسخه را در اختیار ما قرار می دهد. اولین عضو این تاپل، شمارۀ نسخۀ اصلی است. می توانیم این اطلاعات را استخراج و از آنها استفاده کنیم.
 
-## `logging` module {#logging}
+## ماژول `logging` 
 
-What if you wanted to have some debugging messages or important messages to be stored somewhere so that you can check whether your program has been running as you would expect it? How do you "store somewhere" these messages? This can be achieved using the `logging` module.
+اگر بخواهید برخی از مشکلات مربوط به اشکال زدایی یا پیام های مهم درجایی ذخیره شوند تا بتوانید بررسی کنید که آیا برنامۀ شما مطابق انتظار اجرا شده است یا خیر، چطور؟ چگونه می توان این پیام ها را در «جایی ذخیره کرد»؟ این امر می تواند با استفاده از ماژول `logging` انجام شود. 
 
-Save as `stdlib_logging.py`:
+با نام `stdlib_logging.py` ذخیره کنید: 
 
 <pre><code class="lang-python">{% include "./programs/stdlib_logging.py" %}</code></pre>
 
-Output:
+خروجی:
 
 <pre><code>{% include "./programs/stdlib_logging.txt" %}</code></pre>
 
-The `cat` command is used in the command line to read the 'test.log' file.  If the `cat` command is not available, you can open the `test.log` file in a text editor instead.
+از دستور `cat` در خط فرمان برای خواندن فایل 'test.log' استفاده می کنیم. اگر دستور `cat` دردسترس نیست، می توانید به جای آن فایل `test.log` را در یک ویرایشگر متن باز کنید. 
 
-**How It Works**
+**نحوۀ عملکرد**
 
-We use three modules from the standard library - the `os` module for interacting with the operating system, the `platform` module for information about the platform i.e. the operating system and the `logging` module to *log* information.
+ما از سه ماژول موجود در کتابخانۀ استاندارد استفاده می کنیم _ ماژول `os` برای تعامل با سیستم عامل، ماژول `platform` برای دریافت اطلاعات مربوط به محیط سیستم یعنی سیستم عامل و ماژول `logging` برای *ثبت* اطلاعات. 
 
-First, we check which operating system we are using by checking the string returned by `platform.platform()` (for more information, see `import platform; help(platform)`). If it is Windows, we figure out the home drive, the home folder and the filename where we want to store the information. Putting these three parts together, we get the full location of the file. For other platforms, we need to know just the home folder of the user and we get the full location of the file.
+ابتدا با بررسی رشته ای که `()platform.platform` باز می گرداند، مشخص می کنیم از چه سیستم عاملی استفاده می کنیم (برای اطلاعات بیشتر به `import platform; help(platform)` مراجعه کنید). اگر سیستم عامل ویندوز باشد، درایو اصلی، پوشۀ اصلی و نام فایلی را که می خواهیم اطلاعات در آن ذخیره شود، مشخص می کنیم. با کنار هم قرار دادن این سه بخش، مسیر کامل فایل به دست می آید. برای سایر محیط ها، کافیست پوشۀ اصلی کاربر را بدانیم تا مسیر کامل فایل را به دست آوریم. 
 
-We use the `os.path.join()` function to put these three parts of the location together. The reason to use a special function rather than just adding the strings together is because this function will ensure the full location matches the format expected by the operating system.  Note: the `join()` method we use here that's part of the `os` module is different from the string method `join()` that we've used elsewhere in this book.
+از تابع `()os.path.join` برای کنار هم قرار دادن این سه بخش استفاده می کنیم. دلیل استفاده از یک تابع خاص به جای اینکه صرفاً رشته ها را با یکدیگر جمع کنیم، این است  که این تابع تضمین می کند مسیر کامل با فرمت مورد نظر سیستم عامل مطابقت داشته باشد.  نکته: روش `()join` که در اینجا استفاده می کنیم و بخشی از ماژول `os` است، با روش رشته ای `()join` که در بخش های دیگر این کتاب استفاده کرده ایم، متفاوت است. 
 
-We configure the `logging` module to write all the messages in a particular format to the file we have specified.
+ماژول `logging` را پیکربندی می کنیم تا تمام پیام ها را با فرمتی مشخص در فایلی که تعیین کرده ایم، بنویسید.
 
-Finally, we can put messages that are either meant for debugging, information, warning or even critical messages. Once the program has run, we can check this file and we will know what happened in the program, even though no information was displayed to the user running the program.
+در نهایت، می توانیم پیام هایی را ثبت کنیم که برای اشکال زدایی، اطلاع رسانی، هشدار یا حتی اعلام خطاهای بحرانی در نظر گرفته شده اند. پس از اجرای برنامه، می توانیم این فایل را بررسی کنیم و متوجه شویم در برنامه چه اتفاقی افتاده است؛ حتی اگر هیچ اطلاعاتی به کاربری که برنامه را اجرا کرده نمایش داده نشده باشد. 
 
-## Module of the Week Series {#motw}
+## مجموعۀ ماژول هفته {motw#} 
 
-There is much more to be explored in the standard library such as [debugging](http://docs.python.org/3/library/pdb.html),
-[handling command line options](http://docs.python.org/3/library/argparse.html), [regular expressions](http://docs.python.org/3/library/re.html) and so on.
+در کتابخانۀ استاندارد مطالب بسیار بیشتری برای بررسی وجود دارد؛ از جمله [اشکال زدایی](http://docs.python.org/3/library/pdb.html)، [مدیریت گزینه های خط فرمان](http://docs.python.org/3/library/argparse.html)، [عبارات باقاعده](http://docs.python.org/3/library/re.html) و موارد دیگر. 
 
-The best way to further explore the standard library is to read Doug Hellmann's excellent [Python Module of the Week](http://pymotw.com/2/contents.html) series (also available as a [book](http://amzn.com/0321767349)) and reading the [Python documentation](http://docs.python.org/3/).
+بهترین راه برای بررسی بیشتر کتابخانۀ استاندارد، مطالعۀ مجموعۀ عالی [Python Module of the week](http://pymotw.com/2/contents.html) نوشتۀ Doug Hellmann است که به صورت [کتاب](http://amzn.com/0321767349) نیز دردسترس است؛ و مطالعۀ [مستندات پایتون](http://docs.python.org/3/) نیز مفید خواهد بود. 
 
-## Summary
+## خلاصه
 
-We have explored some of the functionality of many modules in the Python Standard Library. It is highly recommended to browse through the [Python Standard Library documentation](http://docs.python.org/3/library/) to get an idea of all the modules that are available.
+در این فصل، برخی از قابلیت های بسیاری از ماژول های موجود در کتابخانۀ استاندارد پایتون را بررسی کردیم. اکیداً توصیه می شود نگاهی به [مستندات کتابخانۀ استاندارد پایتون](http://docs.python.org/3/library/) بیندازید تا با ماژول های مختلف دیگر آشنا شوید. 
 
-Next, we will cover various aspects of Python that will make our tour of Python more _complete_.
+در ادامه، جنبه های مختلفی از پایتون را بررسی خواهیم کرد که باعث می شوند سفر ما در دنیای پایتون _کامل تر_ شود. 
