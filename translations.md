@@ -1,235 +1,246 @@
-# Translations
+# ترجمه ها 
 
-There are many translations of the book available in different human languages, thanks to many tireless volunteers!
+به لطف داوطلبان پرتلاش و خستگی ناپذیر، ترجمه های بسیاری از این کتاب به زبان های مختلف انسانی دردسترس است! 
 
-If you want to help with these translations, please see the list of volunteers and languages below and decide if you want to start a new translation or help in existing translation projects.
+اگر می خواهید در این ترجمه ها مشارکت کنید، فهرست داوطلبان و زبان های زیر را بررسی کنید و تصمیم بگیرید که آیا می خواهید ترجمۀ جدیدی را آغاز کنید یا به پروژه های ترجمۀ موجود کمک کنید. 
 
-If you plan to start a new translation, please read the [Translation how-to](./translation_howto.md#translation-howto).
+اگر قصد دارید ترجمۀ جدیدی را آغاز کنید، لطفاً [راهنمای ترجمه](./translation_howto.md#translation-howto) را مطالعه کنید. 
 
-## Arabic
+## عربی
 
-Below is the link for the Arabic version. Thanks to Ashraf Ali Khalaf for translating the book, you can read the whole book online at <http://www.khaledhosny.org/byte-of-python/index.html> or you can download it from [sourceforge.net](http://downloads.sourceforge.net/omlx/byteofpython_arabic.pdf?use_mirror=osdn) for more info see <http://itwadi.com/byteofpython_arabi>.
+در ادامه لینک نسخۀ عربی قرار دارد. باتشکر از Ashraf Ali Khalaf برای ترجمۀ کتاب، می توانید کتاب را به صورت آنلاین در <http://www.khaledhosny.org/byte-of-python/index.html> مطالعه کنید یا آن را از [sourceforge](http://downloads.sourceforge.net/omlx/byteofpython_arabic.pdf?use_mirror=osdn) دانلود کنید. برای اطلاعات بیشتر به <http://itwadi.com/byteofpython_arabi> مراجعه کنید. 
 
-## Azerbaijani
+## آذربایجانی 
 
-Jahangir Shabiyev (c.shabiev@gmail.com) has volunteered to translate the book to Azerbaijani. The translation is in progress at https://www.gitbook.com/book/jahangir-sh/piton-sancmasi
+مترجم Jahangir Shabiyev (c.shabiyev@gmail.com) داوطلب شده است تا کتاب را به زبان آذربایجانی ترجمه کند. این ترجمه در https://www.gitbook.com/book/jahangir-sh/piton-sancmasi در حال انجام است. 
 
 
-## Brazilian Portuguese
+## پرتغالی برزیلی 
 
-There are two translations in various levels of completion and accessibility. The older translation is now missing/lost, and newer translation is incomplete.
+دو ترجمه با سطوح متفاوتی از تکمیل و دسترسی وجود دارد. ترجمۀ قدیمی تر اکنون مفقود یا از دسترس خارج شده است و ترجمۀ جدیدتر هنوز کامل نشده است. 
 
-Samuel Dias Neto (samuel.arataca@gmail.com) made the first Brazilian Portuguese translation (older translation) of this book when Python was in 2.3.5 version. This is no longer publicly accessible.
+داوطلب Samuel Dias Neto (samuel.arataca@gmail.com) نخستین ترجمۀ برزیلی پرتغالی این کتاب (نسخۀ قدیمی تر) را در زمانی که نسخۀ پایتون 2.3.5 بود، انجام داد. این ترجمه دیگر به صورت عمومی دردسترس نیست. 
 
-[Rodrigo Amaral](http://rodrigoamaral.net) (rodrigoamaral@gmail.com) has volunteered to translate the book to Brazilian Portuguese, (newer translation) which still remains to be completed.
+مترجم [Rodrigo Amaral](http://rodrigoamaral.net) (rodrigoamaral@gmail.com) داوطلب شده است تا کتاب را به زبان پرتغالی برزیلی ترجمه کند (ترجمۀ جدیدتر)؛ این ترجمه همچنان ناتمام است. 
 
-## Catalan
+## کاتالان 
 
-Moises Gomez (moisesgomezgiron@gmail.com) has volunteered to translate the book to Catalan. The translation is in progress.
+مترجم Moises Gomez (moisesgomezgiron@gmail.com) داوطلب شده است که کتاب را به زبان کاتالان ترجمه کند. ترجمه در حال انجام است. 
 
-> Moisès Gómez - I am a developer and also a teacher of programming (normally for people without any previous experience).
+> Moisès Gómez :
+
+> من یک توسعه دهنده هستم و همچنین به تدریس برنامه نویسی می پردازم (معمولاً برای افرادی که هیچ تجربه ای ندارند). 
 >
-> Some time ago I needed to learn how to program in Python, and Swaroop's work was really helpful. Clear, concise, and complete enough. Just what I needed.
+> مدتی پیش لازم بود یاد بگیرم چگونه با پایتون کار کنم . کار Swaroop واقعاً برایم کمک کننده بود؛ واضح، مختصر و به اندازۀ کافی کامل. دقیقاً همان چیزی که نیاز داشتم. 
 >
-> After this experience, I thought some other people in my country could take benefit from it too. But English language can be a barrier.
+> پس از این تجربه، فکر کردم شاید افراد دیگری در کشور من نیز بتوانند از آن بهره ببرند. اما زبان انگلیسی می تواند مانعی باشد. 
 >
-> So, why not try to translate it? And I did for a previous version of BoP.
+> بنابراین، چرا ترجمۀ آن را امتحان نکنم؟ من این کار را برای نسخۀ قبلی BoP انجام دادم. 
 >
-> I my country there are two official languages. I selected the Catalan language assuming that others will translate it to the more widespread Spanish.
+> در کشور من دو زبان رسمی وجود دارد. من زبان کاتالان را انتخاب کردم، با این فرض که افراد دیگری آن را به زبان اسپانیایی که رایج تر است ترجمه خواهند کرد. 
 
-## Chinese
+## چینی
 
-In 2017 which is after 11 years, Mo Lun (i@molun.net) re-translated the book from the beginning based on Version 4.0. And the translation is storaged in GitHub and Gitbook. He is keeping follow this translated edition and ready to fix it if there is any wrong or mistake in the translated BoP.
+در سال 2017 پس از گذشت 11 سال، Mo Lun (i@molun.net) ترجمۀ کتاب را از ابتدا و براساس نسخۀ 4.0 بازترجمه کرد. این ترجمه در گیت هاب و گیت بوک ذخیره شده است. او همچنان این نسخۀ ترجمه شده را دنبال می کند و آماده است در صورت وجود هرگونه خطا یا اشتباه در ترجمه BoP، آن را اصلاح کند. 
 
-The 2017 translation edition is available in <https://bop.molun.net>.
+نسخۀ ترجمۀ سال 2017 در <https://bop.molun.net> دردسترس است. 
 
-Mo Lun Says:
+ او می گوید:  
 
-> I am a common journalism student from CYU, Beijing. And actually, I am an absolute newbie in Python programming when I start to translate this book. Initially, it was just a whim, but when I done this work, I realized that a decision triggered by interest had prompted me to go so far.
+> من یک دانشجوی معمولی روزنامه نگاری از CYU در پکن هستم. در واقع، زمانی که ترجمۀ این کتاب را آغاز کردم، یک تازه کار مطلق در برنامه نویسی پایتون بودم. در ابتدا، این کار یک تصمیم ناگهانی و از روی هوس بود، اما زمانی که آن را به پایان رساندم، متوجه شدم تصمیمی که از روی علاقه گرفته شده بود، مرا تا این اندازه پیش برده است. 
 >
-> With the help of my predecessors’ translations and the vast amount of information provided by the developed Internet, and with the help of my friends, I prudently presented this translation edition. I just hope my translation work will help other newcomers in learning Python.
+> با کمک تجربه های پیشینیانم، حجم عظیم اطلاعاتی که اینترنت توسعه یافته در اختیارم قرار می داد و همچنین کمک دوستانم، این نسخۀ ترجمه را با دقت آماده کردم. امیدوارم کار ترجمۀ من به تازه واردان دیگر در یادگیری پایتون کمک کند. 
 >
-> At the same time, I am always waiting for my translation of the comments and suggestions, and ready to change or improve this superficial work.
+> در عین حال، همواره منتظر دریافت نظرات و پیشنهادها دربارۀ ترجمه ام هستم و آماده ام این کار سطحی و ابتدایی را تغییر داده  یا بهبود دهم. 
 
-### Earlier Chinese translation
+### ترجمۀ چینی قدیمی تر 
 
-In 2005, Shen Jieyuan translated this book with version 1.20 to Chinese and published it to the Internet. This is the first Chinese edition. In BoP official site, he was called Juan Shen, with Email adderss orion_val@163.com。This edition has been disseminated on the network widely, and the links provided by BoP official site are not available anymore, so that its original source is unable to find. Therefore in here can’t provide a certain address. But you can try to search keywords like “简明Python教程 沈洁元” to find a copy.
+در سال 2005، Shen Jieyuan این کتاب را بر اساس نسخۀ 1.20 به زبان چینی ترجمه کرد و آن را در اینترنت منتشر کرد. این نخستین نسخۀ چینی بود. در سایت رسمی BoP، او با نام Juan Shen یاد شده است و ایمیل او orion_val@163.com بوده است. این نسخه به طور گسترده ای در شبکه منتشر شد و از آنجایی که لینک هایی که وب سایت رسمی BoP ارائه می کرد دیگر در دسترس نیستند، یافتن منبع اصلی آن امکان پذیر نیست. بنابراین، در اینجا نمی توان نشانی مشخصی ارائه کرد. با این حال، می توانید برای یافتن نسخه ای از آن، کلید واژه های “简明Python教程 沈洁元” را جست و جو کنید. 
 
-Juan Shen says:
+Juan Shen می گوید: 
 
-> I am a postgraduate at Wireless Telecommunication Graduate School, Beijing University of Technology, China PR. My current research interest is on the synchronization, channel estimation and multi-user detection of multicarrier CDMA system. Python is my major programming language for daily simulation and research job, with the help of Python Numeric, actually. I learned Python just half a year before, but as you can see, it's really easy-understanding, easy-to-use and productive. Just as what is ensured in Swaroop's book, 'It's my favorite programming language now'.
+> من دانشجوی تحصیلات تکمیلی در دانشکدۀ تحصیلات تکمیلی مخابرات بی سیم دانشگاه صنعتی پکن، جمهوری خلق چین هستم. حوزۀ پژوهشی فعلی من هم زمان سازی تخمین کانال و آشکارسازی چندکاربره در سامانه های CDMA چند حاملی است. پایتون زبان اصلی برنامه نویسی من برای شبیه سازی ها و فعالیت های پژوهشی روزمره است که البته با کمک Python Numeric انجام می شود. تنها نیم سال پیش پایتون را یاد گرفتم، اما همانطور که می بینید، واقعاً زبان آسانی برای درک، آسان برای استفاده و بهره ور است. درست همانطور که در کتاب Swaroop تأکید شده است: «اکنون زبان برنامه نویسی مورد علاقۀ من است».
 >
-> 'A Byte of Python' is my tutorial to learn Python. It's clear and effective to lead you into a world of Python in the shortest time. It's not too long, but efficiently covers almost all important things in Python. I think 'A Byte of Python' should be strongly recommendable for newbies as their first Python tutorial. Just dedicate my translation to the potential millions of Python users in China.
+> کتاب 'A Byte of Python' منبع آموزش من برای یادگیری پایتون است. این کتاب به صورت واضع و مؤثر شما را در کوتاه ترین زمان ممکن وارد دنیای پایتون می کند. بیش از اندازه طولانی نیست، اما تقریباً تمام مباحث مهم پایتون را به شکلی کارآمد پوشش می دهد. 'A Byte of Python' باید به شدت به عنوان نخستین منبع آموزش پایتون برای تازه کاران توصیه شود. ترجمۀ خود را به میلیون ها کاربر بالقوۀ پایتون در چین تقدیم می کنم. 
 
-## Chinese Traditional
+## چینی سنتی
 
-Fred Lin (gasolin@gmail.com) has volunteered to translate the book to Chinese Traditional.
+مترجم Fred Lin (gasolin@gmail.com) داوطلب شده است تا کتاب را به زبان چینی سنتی ترجمه کند. 
 
-It is available at <http://code.google.com/p/zhpy/wiki/ByteOfZhpy>.
+این ترجمه در <http://code.google.com/p/zhpy/wiki/ByteOfZhpy> در دسترس است. 
 
-An exciting feature of this translation is that it also contains the _executable chinese python sources_ side by side with the original python sources.
+یکی از ویژگی های جالب این ترجمه آن است که علاوه بر متن اصلی، شامل _کدهای منبع اجرایی پایتون به زبان چینی_ نیز در کنار کدهای منبع اصلی پایتون است. 
 
-> Fred Lin - I'm working as a network firmware engineer at Delta Network, and I'm also a contributor of TurboGears web framework.
+> Fred Lin : 
+
+> من به عنوان مهندس میان افزار شبکه در Delta Network فعالیت می کنم و همچنین یکی از مشارکت کنندگان چارچوب وب TurboGears هستم. 
 >
-> As a python evangelist (:-p), I need some material to promote python language. I found 'A Byte of Python' hit the sweet point for both newbies and experienced programmers. 'A Byte of Python' elaborates the python essentials with affordable size.
+> به عنوان یک مروج پایتون (p-:)، به مطالبی برای معرفی و ترویج زبان پایتون نیاز داشتم. متوجه شدم 'A Byte of Python' برای تازه کاران و برنامه نویسان با تجربه، نقطه تعادل مناسبی ایجاد کرده است. 'A Byte of Python' مفاهیم اساسی پایتون را در حجمی مناسب و قابل قبول ارائه می کند. 
 >
-> The translation are originally based on simplified chinese version, and soon a lot of rewrite were made to fit the current wiki version and the quality of reading.
+> ترجمه در اصل براساس نسخۀ چینی ساده شده انجام شد و سپس بازنویسی های فراوانی روی آن صورت گرفت تا با نسخۀ فعلی ویکی و کیفیت مطالعه سازگار شود. 
 >
-> The recent chinese traditional version also featured with executable chinese python sources, which are achieved by my new 'zhpy' (python in chinese) project (launch from Aug 07).
+> نسخۀ اخیر چینی سنتی نیز دارای کدهای منبع اجرایی پایتون به زبان چینی است که با استفاده از پروژۀ جدید من با نام 'zhpy' (پایتون به زبان چینی) ایجاد شده اند؛ این پروژه از اوت 07 آغاز شد. 
 >
-> zhpy(pronounce (Z.H.?, or zippy) build a layer upon python to translate or interact with python in chinese(Traditional or Simplified). This project is mainly aimed for education.
+> پروژۀ zhpy (تلفظ آن (Z.H.?, یا zippy))، لایه ای بر روی پایتون ایجاد می کند تا امکان ترجمه یا تعامل با پایتون را به زبان چینی (سنتی یا ساده شده) فراهم کند. هدف اصلی این پروژه آموزش است.
 
-## French
+## فرانسوی
 
-Gregory (coulix@ozforces.com.au) has volunteered to translate the book to French.
+مترجم Gregory (coulix@ozforces.com.au) داوطلب شده است تا کتاب را به زبان فرانسوی ترجمه کند. 
 
-Gérard Labadie (gerard.labadie@gmail.com) has completed to translate the book to French.
+مترجم Gérard Labadie (gerard.labadie@gmail.com) ترجمۀ کتاب را به زبان فرانسوی به پایان رسانیده است. 
 
-This translation was later ported to the markdown format, updated to match the last version of the book, and published on GitBook by Romain Gilliotte (rgilliotte@gmail.com).
+این ترجمه بعدها توسط Romain Gilliotte (rgilliotte@gmail.com) به قالب Markdown منتقل شد، برای مطابقت با آخرین نسخۀ کتاب بروزرسانی شد و در گیت بوک منتشر شد. 
 
-It can be found at https://rgilliotte.gitbook.io/byte-of-python/
+می توانید آن را در https://rgilliotte.gitbook.io/byte-of-python/ پیدا کنید. 
 
-## German
+## آلمانی 
 
-Lutz Horn (lutz.horn@gmx.de), Bernd Hengelein (bernd.hengelein@gmail.com) and Christoph Zwerschke (cito@online.de) have volunteered to translate the book to German.
+مترجمان Lutz Horn (lutz.horn@gmx.de)، Bernd Hengelein (bernd.hengelein@gmail.com) و Christoph Zwerschke (cito@online.de) داوطلب شده اند تا کتاب را به زبان آلمانی ترجمه کنند. 
 
-Translation can be found at http://cito.github.io/byte_of_python/
+ترجمه در http://cito.github.io/byte-of-python/ قابل دسترس است. 
 
 <!-- Their translation was located at http://ftp.jaist.ac.jp/pub//sourceforge/a/ab/abop-german.berlios/ -->
 
-Lutz Horn says:
+Lutz Horn می گوید:
 
-> I'm 32 years old and have a degree of Mathematics from University of Heidelberg, Germany. Currently I'm working as a software engineer on a publicly funded project to build a web portal for all things related to computer science in Germany.The main language I use as a professional is Java, but I try to do as much as possible with Python behind the scenes. Especially text analysis and conversion is very easy with Python. I'm not very familiar with GUI toolkits, since most of my programming is about web applications, where the user interface is build using Java frameworks like Struts. Currently I try to make more use of the functional programming features of Python and of generators.  After taking a short look into Ruby, I was very impressed with the use of blocks in this language. Generally I like the dynamic nature of languages like Python and Ruby since it allows me to do things not possible in more static languages like Java.I've searched for some kind of introduction to programming, suitable to teach a complete non-programmer. I've found the book 'How to Think Like a Computer Scientist: Learning with Python', and 'Dive into Python'. The first is good for beginners but to long to translate. The second is not suitable for beginners. I think 'A Byte of Python' falls nicely between these, since it is not too long, written to the point, and at the same time verbose enough to teach a newbie. Besides this, I like the simple DocBook structure, which makes translating the text a generation the output in various formats a charm.
+> من 32 سال دارم و مدرک ریاضی خود را از دانشگاه هایدلبرگ آلمان دریافت کرده ام. در حال حاضر به عنوان مهندس نرم افزار در یک پروژه با بودجۀ عمومی کار می کنم که هدف آن ایجاد یک پرتال وب برای همۀ موضوعات با علوم کامپیوتر در آلمان است. زبان اصلی مورد استفادۀ حرفه ای من Java است، اما سعی می کنم تا حد امکان در پشت صحنه از پایتون استفاده کنم. به ویژه، تحلیل و تبدیل متن با پایتون بسیار آسان است. با ابزارهای ساخت رابط کاربری گرافیکی چندان آشنا نیستم، زیرا بیشتر برنامه نویسی من مربوط به برنامه های وب است که رابط کاربری آنها با استفاده از چارچوب های جاوا مانند Struts ساخته می شود. در حال حاضر تلاش می کنم بیشتر از قابلیت های برنامه نویسی تابعی پایتون و تولیدکننده ها استفاده کنم. پس از بررسی کوتاه Ruby، از نحوۀ استفاده از بلوک ها در این زبان بسیار شگفت زده شدم. به طور کلی، ماهیت پویای زبان هایی مانند پایتون و Ruby را دوست دارم، زیرا به من اجازه می دهد کارهایی انجام دهم که در زبان های ایستاتیکی مانند جاوا امکان پذیر نیستند. به دنبال نوعی مقدمه برای برنامه نویسی بودم که برای آموزش به یک فرد کاملاً نا آشنا با برنامه نویسی مناسب باشد. کتاب های 'How to Think Like a Computer Scientist: Learning with Python' و 'Dive into Python' را پیدا کردم. کتاب اول برای مبتدیان مناسب است، اما ترجمۀ آن بیش از حد طولانی خواهد بود. کتاب دوم برای مبتدیان مناسب نیست. به نظرم 'A Byte of Python' به خوبی میان این دو قرار می گیرد، زیرا نه بیش از حد طولانی است، نه از اصل مطلب دور می شود و در عین حال به اندازۀ کافی توضیح دارد که یک تازه کار را آموزش دهد. علاوه بر این، ساختار سادۀ DocBook را دوست دارم که ترجمۀ متن و تولید خروجی در قالب های مختلف را بسیار آسان می کند. 
 
-Bernd Hengelein says:
+Bernd Hengelein می گوید:
 
-> Lutz and me are going to do the german translation together. We just started with the intro and preface but we will keep you informed about the progress we make. Ok, now some personal things about me. I am 34 years old and playing with computers since the 1980's, when the "Commodore C64" ruled the nurseries. After studying computer science I started working as a software engineer. Currently I am working in the field of medical imaging for a major german company. Although C++ is the main language I (have to) use for my daily work, I am constantly looking for new things to learn.Last year I fell in love with Python, which is a wonderful language, both for its possibilities and its beauty. I read somewhere in the net about a guy who said that he likes python, because the code looks so beautiful. In my opinion he's absolutly right. At the time I decided to learn python, I noticed that there is very little good documentation in german available. When I came across your book the spontaneous idea of a german translation crossed my mind. Luckily, Lutz had the same idea and we can now divide the work.I am looking forward to a good cooperation!
+> من و Lutz قصد داریم ترجمۀ آلمانی را با یکدیگر انجام دهیم. ما به تازگی کار را با مقدمه و پیشگفتار آغاز کرده ایم، اما شما را از روند پیشرفت مطلع خواهیم کرد. خب، حالا کمی اطلاعات دربارۀ خودم. من 34 سال دارم و از دهۀ 1980، زمانی که "Commodore C64" بر مهدکودک ها حکومت می کرد، با رایانه ها کار و بازی کرده ام. پس از تحصیل در رشتۀ علوم کامپیوتر، به عنوان یک مهندس نرم افزار کار خود را آغاز کردم. در حال حاضر در حوزۀ تصویربرداری پزشکی برای یک شرکت بزرگ آلمانی فعالیت می کنم. اگرچه ++C زبان اصلی ای است که در کار روزمره ام از آن استفاده می کنم (یا مجبورم استفاده کنم)، همواره به دنبال چیزهای جدیدی برای یادگیری هستم. سال گذشته عاشق پایتون شدم، که زبانی فوق العاده است، هم از نظر امکانات و هم از نظر زیبایی. جایی در اینترنت دربارۀ فردی خواندم که گفته بود پایتون را دوست دارد، چون کد آن بسیار زیبا به نظر می رسد. به نظر من او کاملاً درست می گوید. زمانی که تصمیم گرفتم پایتون را یاد بگیرم، متوجه شدم منابع آموزشی خوب به زبان آلمانی بسیار کم هستند. وقتی با کتاب شما مواجه شدم، ایدۀ ترجمۀ آلمانی آن به طور ناگهانی به ذهنم رسید. خوشبختانه، Lutz نیز همین ایده را داشت و اکنون می توانیم کار را میان خود تقسیم کنیم. مشتاق همکاری خوب هستم! 
 
-## Greek
+## یونانی 
 
-The Greek Ubuntu Community [translated the book in Greek](http://wiki.ubuntu-gr.org/byte-of-python-el), for use in our on-line asynchronous Python lessons that take place in our forums. Contact [@savvasradevic](https://twitter.com/savvasradevic) for more information.
+جامعۀ Ubuntu یونان [کتاب را به زبان یونانی ترجمه کرده است](http://wiki.ubuntu-gr.org/byte-of-python-el) تا از آن در درس های آنلاین و غیر هم زمان پایتون که در انجمن های ما برگزار می شوند، استفاده شود. برای اطلاعات بیشتر با [savvasradevic@](https://twitter.com/savvasradevic) تماس بگیرید. 
 
-## Indonesian
+## اندونزیایی 
 
-Daniel (daniel.mirror@gmail.com) is translating the book to Indonesian at <http://python.or.id/moin.cgi/ByteofPython>.
+مترجم Daniel (daniel.mirror@gmail.com) کتاب را به زبان اندونزیایی در <http://python.or.id/moin.cgi/ByteofPython> ترجمه می کند. 
 
-Wisnu Priyambodo (cibermen@gmail.com) also has volunteered to translate the book to Indonesian.
+مترجم Wisnu Priyambodo (cibermen@gmail.com) داوطلب شده است  تا کتاب را به اندونزیایی ترجمه کند. 
 
-Also, Bagus Aji Santoso (baguzzzaji@gmail.com) has volunteered.
+همچنین، Aji Santoso (baguzzzaji@gmail.com) نیز برای ترجمۀ کتاب به اندونزیایی داوطلب شده است. 
 
-## Italian (first)
+## ایتالیایی (اول) 
 
-Enrico Morelli (mr.mlucci@gmail.com) and Massimo Lucci (morelli@cerm.unifi.it) have volunteered to translate the book to Italian.
+مترجمان Enrico Morelli (mr.mlucci@gmail.com) و Massimo Lucci (morelli@cerm.unifi.it) برای ترجمۀ کتاب به زبان ایتالیایی داوطلب شده اند. 
 
-The Italian translation is present at <http://www.gentoo.it/Programmazione/byteofpython>.
+ترجمۀ ایتالیایی در <http://www.gentoo.it/Programmazione/byteofpython> قرار دارد. 
 
-> _Massimo Lucci and Enrico Morelli_ - we are working at the University of Florence (Italy) - Chemistry Department. I (Massimo) as service engineer and system administrator for Nuclear Magnetic Resonance Spectrometers; Enrico as service engineer and system administrator for our CED and parallel / clustered systems. We are programming on python since about seven years, we had experience working with Linux platforms since ten years. In Italy we are responsible and administrator for www.gentoo.it web site for Gentoo/Linux distrubution and www.nmr.it (now under construction) for Nuclear Magnetic Resonance applications and Congress Organization and Managements.That's all! We are impressed by the smart language used on your Book and we think this is essential for approaching the Python to new users (we are thinking about hundred of students and researcher working on our labs).
+> _Massimo Lucci and Enrico Morelli_ :
 
-## Italian (second)
+> ما در دانشگاه فلورانس (ایتالیا) در دپارتمان شیمی ، فعالیت می کنیم. من (Massimo)به عنوان مهندس خدمات و مدیر سیستم برای طیف سنج های تشدید مغناطیسی هسته ای کار می کنم؛ Enrico نیز به عنوان مهندس خدمات و مدیر سیستم برای CED و سیستم های موازی/خوشه ای فعالیت می کند. حدود هفت سال است که با پایتون برنامه نویسی می کنیم و حدود ده سال است که تجربۀ کار با محیط های Linux را داریم. در ایتالیا مسئول و مدیر وب سایت www.gentoo.it مربوط به توزیع Gentoo/Linux و وب سایت www.nmr.it (که در آن زمان در دست ساخت بود) برای کاربردها و سازماندهی و مدیریت همایش های تشدید مغناطیسی هسته ای هستیم. همین! از زبان هوشمندانه ای که در کتاب شما به کار رفته است تحت تأثیر قرار گرفتیم و گمان می کنیم این ویژگی برای آشنا کردن کاربران جدید با پایتون ضروری است (ما به صدها دانشجو و پژوهشگری که در آزمایشگاه های ما فعالیت می کنند، فکر می کنیم). 
 
-An Italian translation has been created by
-[Calvina Bice](http://besthcgdropswebsite.com/translate) & colleagues at <http://besthcgdropswebsite.com/translate/a-byte-of-python/>.
+## ایتالیایی (دوم) 
 
-## Japanese
+یک ترجمۀ ایتالیایی توسط [Calvina Bice](http://besthcgdropswebsite.com/translate) و همکارانش در <http://besthcgdropswebsite.com/translate/a-byte-of-python/> ایجاد شده است. 
 
-Shunro Dozono (dozono@gmail.com) is translating the book to Japanese.
+## ژاپنی 
 
-## Korean
+مترجم Shunro Dozono (dozono@gmail.com) در حال ترجمۀ کتاب به زبان ژاپنی است. 
+
+## کره ای
 
 ### Epsimatt (2019)
 
-Epsimatt has started a new Korean translation:
+مترجم Epsimatt ترجمۀ جدیدی را به زبان کره ای آغاز کرده است: 
 
-- Read online at https://epsimatt.gitbook.io/byte-of-python/
-- Follow progress at https://github.com/epsimatt/byte-of-python/issues/16
+- مطالعۀ آنلاین در https://epsimatt.gitbook.io/byte-of-python/ 
+- پیگیری روند پیشرفت در https://github.co/epsimatt/byte-of-python/issues/16 
 
-### Older
+### قدیمی تر
 
-Jeongbin Park (pjb7687@gmail.com) has translated the book to Korean - <https://github.com/pjb7687/byte_of_python>
+مترجم Jeongbin Park (pjb7687@gmail.com) کتاب را به زبان کره ای ترجمه کرده است - <https://github.com/pjb7687/byte_of_python> 
 
-> I am Jeongbin Park, currently working as a Biophysics & Bioinformatics researcher in Korea.
+> من Jeongbin Park هستم و در حال حاضر به عنوان پژوهشگر بیوفیزیک و بیوانفورماتیک در کره فعالیت می کنم. 
 >
-> A year ago, I was looking for a good tutorial/guide for Python to introduce it to my colleagues, because using Python in such research fields is becoming inevitable due to the user base is growing more and more.
+> یک سال پیش، به دنبال یک آموزش/راهنمای خوب برای پایتون بودم تا آن را به همکارانم معرفی کنم؛ زیرا با افزایش روز افزون تعداد کاربران، استفاده از پایتون در چنین حوزه های پژوهشی ای به امری اجتناب ناپذیر تبدیل می شود. 
 >
-> But at that time only few Python books are available in Korean, so I decided to translate your ebook because it looks like one of the best guides that I have ever read!
+> اما در آن زمان تنها تعداد کمی کتاب به زبان کره ای در دسترس بود؛ بنابراین تصمیم گرفتم کتاب الکترونیکی شما را ترجمه کنم ، زیرا به نظر می رسید یکی از بهترین راهنماهایی است که تاکنون خوانده ام! 
 >
-> Currently, the book is almost completely translated in Korean, except some of the text in introduction chapter and the appendixes.
+> در حال حاضر، کتاب تقریباً به طور کامل به زبان کره ای ترجمه شده است؛ به جز بخشی از متن فصل مقدمه و پیوست ها. 
 >
-> Thank you again for writing such a good guide!
+> بار دیگر از شما برای نوشتن چنین راهنمای خوبی تشکر می کنم! 
 
-## Mongolian
+## مغولی
 
-Ariunsanaa Tunjin (luftballons2010@gmail.com) has volunteered to translate the book to Mongolian.
+مترجم Ariunsanaa Tunjin (luftballons2010@gmail.com) برای ترجمۀ این کتاب به مغولی داوطلب شده است. 
 
-_Update on Nov 22, 2009_ : Ariunsanaa is on the verge of completing the translation.
+_بروزرسانی در 22 نوامبر 2009_: Ariunsanna در آستانۀ تکمیل ترجمه است. 
 
-## Norwegian (bokmål)
+## نروژی (بوکمول)
 
-Eirik Vågeskar is a high school student at [Sandvika videregående skole](http://no.wikipedia.org/wiki/Sandvika_videreg%C3%A5ende_skole) in Norway, a [blogger](http://forbedre.blogspot.com/) and currently translating the book to Norwegian (bokmål).
+مترجم Eirik Vågeskar یک دانش آموز دبیرستانی در [Sandvika Videregående skole](http://no.wikipedia.org/wiki/Sandvika_Videreg%C3%A5ende_skole) در نروژ، یک [بلاگر](http://forbeder.blogspot.com) و در حال حاضر مشغول ترجمۀ کتاب به زبان نروژی (بوکمول) است. 
 
-> _Eirik Vågeskar_: I have always wanted to program, but because I speak a small language, the learning process was much harder. Most tutorials and books are written in very technical English, so most high school graduates will not even have the vocabulary to understand what the tutorial is about. When I discovered this book, all my problems were solved. "A Byte of Python" used simple non-technical language to explain a programming language that is just as simple, and these two things make learning Python fun. After reading half of the book, I decided that the book was worth translating. I hope the translation will help people who have found themself in the same situation as me (especially young people), and maybe help spread interest for the language among people with less technical knowledge.
+> _Eirik Vågeskar_: 
 
-## Polish
+> من همیشه می خواستم برنامه نویسی کنم، اما از آنجا که به زبانی کم گویش صحبت می کنم، فرآیند یادگیری برایم بسیار دشوارتر بود. بیشتر منابع آموزشی و کتاب ها به زبان انگلیسی بسیار فنی نوشته شده اند، بنابراین بیشتر فارغ التحصیلان دبیرستان حتی واژگان لازم برای درک موضوع آموزش را ندارند. وقتی این کتاب را پیدا کردم، تمام مشکلاتم حل شد. "A Byte of Python" از زبانی ساده و غیر فنی برای توضیح یک زبان برنامه نویسی استفاده می کند که خود نیز به همان اندازه ساده است؛ و همین دو ویژگی یادگیری پایتون را لذت بخش می کند. پس از خواندن نیمی از کتاب، متوجه شدم این کتاب ارزش ترجمه کردن را دارد. امیدوارم این ترجمه به افرادی که شرایطی مانند من دارند (به ویژه جوانان) کمک کند و شاید باعث افزایش علاقه به این زبان در میان افرادی شود که دانش فنی کمتری دارند. 
 
-Dominik Kozaczko (dominik@kozaczko.info) has volunteered to translate the book to Polish. Translation is in progress and it's main page is available here: [Ukąś Pythona](http://python.edu.pl/byteofpython/).
+## لهستانی 
 
-_Update_ : The translation is complete and ready as of Oct 2, 2009. Thanks to Dominik, his two students and their friend for their time and effort!
+مترجم Dominik Kozaczko (dominik@kozaczko.info) داوطلب شده است تا این کتاب را به زبان لهستانی ترجمه کند. ترجمه در حال انجام است و صفحۀ اصلی آن در [UKąś Pythona](http://python.edu.pl/byteofpython/) در دسترس است.
 
-> _Dominik Kozaczko_ - I'm a Computer Science and Information Technology teacher.
+_بروزرسانی_: ترجمه تا 2 اکتبر 2009 کامل و آماده شده است. از Dominik، دو دانشجوی او و دوستشان برای زمانی که صرف کرده اند و تلاشی که انجام داده اند، سپاسگزاریم!
 
-## Portuguese
+> _Dominik Kozaczko_ :
 
-Artur Weber (arturweberguimaraes@gmail.com) has completed a translation of this book to Portuguese (as of Feb 21, 2018) at <https://www.homeyou.com/~edu/introducao>.
+> من مدرس علوم کامپیوتر و فناوری اطلاعات هستم. 
 
-> _Artur Weber_: My students study at the Polytechnic faculty in Ecological University in the city of Curitiba (Brazil) and some of them are interested in different papers.
+## پرتغالی
+
+مترجم Artur Weber (arturweberguimaraes@gmail.com) ترجمۀ این کتاب را به زبان پرتغالی تا تاریخ 21 فوریه 2018 در <https://www.homeyou.com/~edu/introducao> به پایان رسانده است. 
+
+> _Artur Weber_: 
+
+> دانشجویان من در دانشکدۀ پلی تکنیک، دانشگاه اکولوژیک در شهر Curitiba (برزیل) تحصیل می کنند و برخی از آنها به مقالات مختلف علاقه مند هستند. 
 > 
-> As they are writing course and academic papers, they always look for interesting articles and pages. I also do my best to find interesting materials which can be the sources for their university works.
+> از آنجا که آنها در حال نوشتن مقالات درسی و دانشگاهی هستند، همواره به دنبال مقالات و صفحات جالب می گردند. من    نیز تمام تلاش خود را می کنم تا مطالب جالبی پیدا کنم که بتوانند به عنوان منابعی برای کارهای دانشگاهی خود استفاده کنند.  
 >
-> I found the materials from your site useful for some of my students who are writing papers based on programming on Python. Actually, that is why I made a decision to perform a Portuguese translation to let my students who don't know English read exciting articles in their mother tongue ( in Portuguese).
+> مطالب موجود در وب سایت شما را برای برخی از دانشجویانی که در حال نوشتن مقالاتی دربارۀ برنامه نویسی با پایتون بودند، مفید یافتم. در واقع، به همین دلیل تصمیم گرفتم ترجمه ای به زبان پرتغالی تهیه کنم تا دانشجویانی که انگلیسی نمی دانند بتوانند مقالات جالب را به زبان مادری خود (پرتغالی) مطالعه کنند. 
 
-## Russian
+## روسی
 
-Vladimir Smolyar (v_2e@ukr.net) has completed a Russian translation at <http://wombat.org.ua/AByteOfPython/>.
+مترجم Vladimir Smolyar (v_2e@ukr.net) ترجمه ای به زبان روسی در <http://wombat.org.ua/AByteOfPython/> را کامل کرده است. 
 
-## Ukranian
+## اوکراینی 
 
-Averkiev Andrey (averkiyev@ukr.net) has volunteered to translate the book to Russian, and perhaps Ukranian (time permitting).
+مترجم Averkiev Andrey (averkiyev@ukr.net) داوطلب شده است تا کتاب را به زبان روسی و احتمالاً اوکراینی (در صورت امکان از نظر زمانی) ترجمه کند. 
 
-Daria JENS (jensdarya@gmail.com) has made a translation into Ukrainian language: <https://spielend-programmieren.at/byte_of_python_ukraine/>
+مترجم Daria JENS (jensdarya@gmail.com) ترجمه ای به زبان اوکراینی در <https://spielend-programmieren.at/byte_of_python_ukraine/> انجام داده است. 
 
-## Serbian
+## صربی
 
-"BugSpice" (amortizerka@gmail.com) has completed a Serbian translation:
+مترجم "BugSpice" (amortizerka@gmail.com) ترجمۀ صربی را به پایان رسانده است: 
 
-> This download link is no longer accessible.
+> این لینک دانلود دیگر قابل دسترس نیست. 
 
-More details at <http://forum.ubuntu-rs.org/Thread-zagrljaj-pitona>.
+جزئیات بیشتر در <http://forum.ubuntu-rs.org/Thread-zagrljaj-pitona>. 
 
-## Slovak
+## اسلواکی
 
-Albertio Ward (albertioward@gmail.com) has translated the book to Slovak at <http://www.fatcow.com/edu/python-swaroopch-sl/> :
+مترجم Albertio Ward (albertioward@gmail.com) کتاب را به زبان اسلواکی در <http://www.fatcow.com/edu/python-swaroopch-sl/> ترجمه کرده است:
 
-> We are a non-profit organization called "Translation for education". We represent a group of people, mainly students and professors, of the Slavonic University. Here are students from different departments: linguistics, chemistry, biology, etc. We try to find interesting publications on the Internet that can be relevant for us and our university colleagues. Sometimes we find articles by ourselves; other times our professors help us choose the material for translation. After obtaining permission from authors we translate articles and post them in our blog which is available and accessible to our colleagues and friends. These translated publications often help students in their daily study routine.
+> ما یک سازمان غیرانتفاعی به نام "Translation for education" هستیم. ما نمایندۀ گروهی از افراد، عمدتاً دانشجویان و استادان دانشگاه اسلاوونیک، هستیم. در میان اعضای گروه، دانشجویانی از بخش های مختلف مانند زبان شناسی، شیمی، زیست شناسی و غیره حضور دارند. تلاش می کنیم نشریات جالبی را در اینترنت پیدا کنیم که بتوانند برای ما و همکاران دانشگاهی مان مرتبط باشند. گاهی اوقات خودمان مقالات را پیدا می کنیم و گاهی استادانمان به ما در انتخاب مطالب برای ترجمه کمک می کنند. پس از دریافت اجازه از نویسندگان، مقالات را ترجمه می کنیم و در وبلاگمان منتشر می کنیم که برای همکاران و دوستانمان در دسترس است. این مطالب ترجمه شده اغلب به دانشجویان در روند مطالعۀ روزمره شان کمک می کنند. 
 
-## Spanish
+## اسپانیایی 
 
-Alfonso de la Guarda Reyes (alfonsodg@ictechperu.net), Gustavo Echeverria (gustavo.echeverria@gmail.com), David Crespo Arroyo (davidcrespoarroyo@hotmail.com) and Cristian Bermudez Serna (crisbermud@hotmail.com) have volunteered to translate the book to Spanish.
+مترجمان Alfonso de la Guarda Reyes (alfonsodg@ictechperu.net) ، Gustavo Echeverria (gustavo.echeverria@gmail.com) ، David Crespo Arroyo (davidcrespoarroyo@hotmail.com) و Cristian Bermudez Serna (crisbermund@hotmail.com) داوطلب شده اند تا کتاب را به زبان اسپانیایی ترجمه کنند. 
 
-Gustavo Echeverria says:
+Gustavo Echeverria می گوید:
 
-> I work as a software engineer in Argentina. I use mostly C# and .Net technologies at work but strictly Python or Ruby in my personal projects. I knew Python many years ago and I got stuck inmediately. Not so long after knowing Python I discovered this book and it helped me to learn the language. Then I volunteered to translate the book to Spanish. Now, after receiving some requests, I've begun to translate "A Byte of Python" with the help of Maximiliano Soler.
+> من به عنوان یک مهندس نرم افزار در آرژانتین کار می کنم. در محل کار بیشتر از فناوری های #C و Net. استفاده می کنم، اما در پروژه های شخصی ام صرفاً از پایتون و Ruby استفاده می کنم. سال ها پیش با پایتون آشنا شدم و بلافاصله به آن علاقه مند شدم. مدت زیادی از آشنایی من با پایتون نگذشته بود که این کتاب را پیدا کردم و به من در یادگیری زبان پایتون کمک کرد. سپس داوطلب شدم که کتاب را به زبان اسپانیایی ترجمه کنم. اکنون، پس از دریافت چند درخواست، ترجمۀ "A Byte of Python" را با کمک Maximiliano Soler آغاز کرده ام. 
 
-Cristian Bermudez Serna says:
+Cristian Bermudez Serna می گوید:
 
-> I am student of Telecommunications engineering at the University of Antioquia (Colombia). Months ago, i started to learn Python and found this wonderful book, so i volunteered to get the Spanish translation.
+> من دانشجوی مهندسی مخابرات در دانشگاه آنتیوکیا (کلمبیا) هستم. چند ماه پیش، شروع به یادگیری پایتون کردم و این کتاب فوق العاده را پیدا کردم؛ بنابراین داوطلب شدم ترجمۀ اسپانیایی آن را ارائه دهم. 
 
-## Swedish
+## سوئدی 
 
-Mikael Jacobsson (leochingkwake@gmail.com) has volunteered to translate the book to Swedish.
+مترجم Mikael Jacobsson (leochingkwake@gmail.com) برای ترجمۀ کتاب به زبان سوئدی داوطلب شده است. 
 
-## Turkish
+## ترکی 
 
-Türker SEZER (tsezer@btturk.net) and Bugra Cakir (bugracakir@gmail.com) have volunteered to translate the book to Turkish. "Where is Turkish version? Bitse de okusak."
+مترجمان Türker SEZER (tsezer@btturk.net) و Bugra Cakir (bugracakir@gmail.com) داوطلب شده اند تا کتاب را به زبان ترکی ترجمه کنند. «نسخۀ ترکی کجاست؟» کاش تمام شود تا بتوانیم آن را بخوانیم. 
 
-## Persian 
-Najmeh Ghaderi (najmeh.gh.7.2008@gmail.com) has volunteered to translate the book into Persian. The translation has just been started and is currently in progress.
+## فارسی 
+مترجم Najmeh Ghaderi (najmeh.gh.7.2008@gmail.com) برای ترجمۀ کتاب به زبان فارسی داوطلب شده است. ترجمه به تازگی آغاز شده است و در حال حاضر در دست انجام است. 
