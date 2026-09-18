@@ -1,148 +1,148 @@
-# What Next
+# گام بعدی چیست 
 
-If you have read this book thoroughly till now and practiced writing a lot of programs, then you must have become comfortable and familiar with Python. You have probably created some Python programs to try out stuff and to exercise your Python skills as well. If you have not done it already, you should. The question now is 'What Next?'.
+اگر تا اینجا این کتاب را به طور کامل مطالعه کرده اید و برنامه های زیادی نوشته و تمرین کرده اید، باید در کار با پایتون احساس راحتی و آشنایی کافی پیدا کرده باشید. احتمالاً برای آزمودن قابلیت های مختلف و تقویت مهارت های پایتون خود، چند برنامۀ پایتون نیز نوشته اید. اگر تاکنون این کار را انجام نداده اید، اکنون باید آن را انجام دهید. حالا پرسش این است: گام بعدی چیست؟ 
 
-I would suggest that you tackle this problem:
+پیشنهاد می کنم به نوشتن این برنامه سرگرم شوید: 
 
-> Create your own command-line *address-book* program using which you can browse, add, modify, delete or search for your contacts such as friends, family and colleagues and their information such as email address and/or phone number. Details must be stored for later retrieval.
+> برنامۀ خط فرمان *دفترچۀ آدرس* خودتان را ایجاد کنید؛ برنامه ای که با استفاده از آن بتوانید مخاطبان خود مانند دوستان، اعضای خانواده و همکاران و اطلاعات مربوط به آنها همچون نشانی ایمیل و/یا شمارۀ تلفن را مرور، اضافه، ویرایش، حذف یا جست و جو کنید. اطلاعات باید برای بازیابی در آینده ذخیره شوند. 
 
-This is fairly easy if you think about it in terms of all the various stuff that we have come across till now. If you still want directions on how to proceed, then here's a hint [^1].
+اگر این برنامه را با توجه به تمام مباحث مختلفی که تاکنون با آن ها آشنا شدیم بررسی کنید، انجام آن نسبتاً آسان است. اگر همچنان برای نحوۀ شروع کار به راهنمایی نیاز دارید، در اینجا یک راهنمایی کوچک ارائه شده است [1^]. 
 
-Once you are able to do this, you can claim to be a Python programmer. Now, immediately [send me an email]({{ book.contactUrl }}) thanking me for this great book ;-). This step is optional but recommended. Also, please consider [buying a printed copy]({{ book.buyBookUrl }}) to support the continued development of this book.
+هنگامی که بتوانید این کار را انجام دهید، می توانید ادعا کنید که یک برنامه نویس پایتون شده اید. حالا، بلافاصله [برای من یک ایمیل ارسال کنید]({{ book.contactUrl }}) و بابت این کتاب عالی از من تشکر کنید ;-). این مرحله اختیاری است، اما توصیه می شود. همچنین، لطفاً [خرید یک نسخۀ چاپی]({{ book.buyBookUrl }}) را برای حمایت از ادامۀ توسعۀ این کتاب در نظر داشته باشید. 
 
-If you found that program easy, here's another one:
+اگر نوشتن آن برنامه برایتان آسان بود، این برنامه را امتحان کنید: 
 
-> Implement the [replace command](http://unixhelp.ed.ac.uk/CGI/man-cgi?replace). This command will replace one string with another in the list of files provided.
+> [دستور replace](http://unixhelp.ed.ac.uk/CGI/man-cgi?replace) را پیاده سازی کنید. این دستور یک رشته را با رشته ای دیگر در فهرستی از فایل های ارائه شده جایگزین می کند. 
 
-The replace command can be as simple or as sophisticated as you wish, from simple string substitution to looking for patterns (regular expressions).
+دستور replace می تواند به هر اندازه ای که بخواهید ساده یا پیچیده باشد، از جست و جوی سادۀ رشته ها گرفته تا جست و جوی الگو ها (عبارات باقاعده). 
 
-## Next Projects
+## پروژه های بعدی
 
-If you found above programs easy to create, then look at this comprehensive list of projects and try writing your own programs: https://github.com/thekarangoel/Projects#numbers (the same list is also at [Martyr2's Mega Project List](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/)).
+اگر ایجاد برنامه های بالا برایتان آسان بود، نگاهی به این فهرست جامع پروژه ها بیندازید و سعی کنید برنامه های خودتان را بنویسید: https://gitthub.com/thekarangoel/Projects#numbers (فهرستی مشابه در [Martyr2's Mega Project List](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/) موجود است). 
 
-Also see:
+همچنین منابع زیر را مشاهده کنید: 
 
 - [Exercises for Programmers: 57 Challenges to Develop Your Coding Skills](https://pragprog.com/book/bhwb/exercises-for-programmers)
 - [Intermediate Python Projects](https://openhatch.org/wiki/Intermediate_Python_Workshop/Projects).
 
-## Example Code
+## کدهای نمونه
 
-The best way to learn a programming language is to write a lot of code and read a lot of code:
+بهترین روش برای یادگیری یک زبان برنامه نویسی، نوشتن و خواندن کدهای زیاد است: 
 
-- [Python Cookbook](http://code.activestate.com/recipes/langs/python/) is an extremely valuable collection of recipes or tips on how to solve certain kinds of problems using Python. This is a must-read for every Python user.
-- [Python Module of the Week](http://pymotw.com/2/contents.html) is another excellent must-read guide to the [Standard Library](./stdlib.md#stdlib).
+- مجموعۀ [Python Cookbook](http://code.activestate.com/recipes/langs/python/) مجموعه ای بسیار ارزشمند از دستورالعمل ها و نکات مربوط به روش حل انواع خاصی از مسائل با استفاده از پایتون است. مطالعۀ این منبع برای هر کاربر پایتون ضروری است. 
+- منبع [Python Module of the Week](http://pymotw.com/2/contents.html) راهنمای عالی دیگری دربارۀ [کتابخانه استاندارد](./stdlib.md#stdlib) است که مطالعۀ آن نیز به شدت توصیه می شود. 
 
-## Advice
+## توصیه ها 
 
 - [The Hitchhiker's Guide to Python!](http://docs.python-guide.org/en/latest/)
 - [The Elements of Python Style](https://github.com/amontalenti/elements-of-python-style)
 - [Python Big Picture](http://slott-softwarearchitect.blogspot.ca/2013/06/python-big-picture-whats-roadmap.html)
-- ["Writing Idiomatic Python" ebook](http://www.jeffknupp.com/writing-idiomatic-python-ebook/) (paid)
+- ["Writing Idiomatic Python" ebook](http://www.jeffknupp.com/writing-idiomatic-python-ebook/) (پولی)
 
-## Videos
+## ویدئوها
 
 - [Full Stack Web Development with Flask](https://github.com/realpython/discover-flask)
 - [PyVideo](http://www.pyvideo.org)
 
-## Questions and Answers
+## پرسش ها و پاسخ ها 
 
-- [Official Python Dos and Don'ts](http://docs.python.org/3/howto/doanddont.html)
-- [Official Python FAQ](http://www.python.org/doc/faq/general/)
-- [Norvig's list of Infrequently Asked Questions](http://norvig.com/python-iaq.html)
-- [Python Interview Q & A](http://dev.fyicenter.com/Interview-Questions/Python/index.html)
-- [StackOverflow questions tagged with python](http://stackoverflow.com/questions/tagged/python)
+- [بایدها و نبایدهای رسمی پایتون](http://docs.python.org/3/howto/doanddont.html) 
+- [پرسش های متداول رسمی پایتون](http://www.python.org/doc/faq/general/) 
+- [فهرست پرسش هایی که به ندرت پرسیده می شوند از Norvig](http://norvig.com/python-iaq.html) 
+- [مصاحبۀ پرسش و پاسخ های پایتون](http://dev.fyicenter.com/Interview-Questions/Python/index.html) 
+- [پرسش های StackOverflow با برچسب پایتون](http://stackoverflow.com/questions/tagged/python) 
 
-## Tutorials
+## آموزش ها
 
-- [Hidden features of Python](http://stackoverflow.com/q/101268/4869)
-- [What's the one code snippet/python trick/etc did you wish you knew when you learned python?](http://www.reddit.com/r/Python/comments/19dir2/whats_the_one_code_snippetpython_tricketc_did_you/)
-- [Awaretek's comprehensive list of Python tutorials](http://www.awaretek.com/tutorials.html)
+- [قابلیت های پنهان پایتون](http://stackoverflow.com/q/101268/4869) 
+- [وقتی پایتون را یاد گرفتید، آرزو می کردید چه قطعه کد یا ترفند پایتونی را از قبل می دانستید؟](http://www.reddit.com/r/Python/comments/19dir2/whats_the_one_code_snippetpython_tricketc_did_you/) 
+- [فهرست جامع آموزش های پایتون از Awaretek](http://www.awaretek.com/tutorials.html)
 
-## Discussion
+## بحث و گفت و گو 
 
-If you are stuck with a Python problem, and don't know whom to ask, then the [python-tutor list](http://mail.python.org/mailman/listinfo/tutor) is the best place to ask your question.
+اگر در حل یک مسئله پایتون مشکل دارید و نمی دانید از چه کسی سؤال کنید، [فهرست python-tutor](http://mail.python.org/mailman/listinfo/tutor) بهترین مکان برای مطرح کردن پرسش شماست. 
 
-Make sure you do your homework by trying to solving the problem yourself first and [ask smart questions](http://catb.org/~esr/faqs/smart-questions.html).
+پیش از هر چیز، مطمئن شوید تکلیف خود را انجام داده اید؛ یعنی ابتدا برای حل مسئله تلاش کنید و [سؤالات هوشمندانه بپرسید](http://catb.org/~esr/faqs/smart-questions.html). 
 
-## News
+## اخبار
 
-If you want to learn what is the latest in the world of Python, then follow the [Official Python Planet](http://planet.python.org).
+اگر می خواهید از جدیدترین اخبار و رویدادهای دنیای پایتون مطلع شوید، [Official Python Planet](http://planet.python.org) را دنبال کنید. 
 
-## Installing libraries
+## نصب کتابخانه ها
 
-There are a huge number of open source libraries at the [Python Package Index](http://pypi.python.org/pypi) which you can use in your own programs.
+تعداد بسیار زیادی کتابخانۀ متن باز در [Python Package Index](http://pypi.python.org/pypi) وجود دارد که می توانید در برنامه های خود از آن ها استفاده کنید. 
 
-To install and use these libraries, you can use [pip](http://www.pip-installer.org/en/latest/).
+برای نصب و استفاده از این کتابخانه ها می توانید از [pip](http://www.pip-istaller.org/en/latest/) استفاده کنید. 
 
-## Creating a Website
+## ایجاد یک وب سایت 
 
-Learn [Flask](http://flask.pocoo.org) to create your own website. Some resources to get started:
+برای ایجاد وب سایت خود، [Flask](http://flask.pocoo.org) را یاد بگیرید. برخی منابع برای شروع عبارت اند از: 
 
-- [Flask Official Quickstart](http://flask.pocoo.org/docs/quickstart/)
-- [The Flask Mega-Tutorial](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
-- [Example Flask Projects](https://github.com/mitsuhiko/flask/tree/master/examples)
+- [راهنمای شروع رسمی Flask](http://flask.pocoo.org/docs/quickstart/) 
+- [آموزش جامع Flask](http://blog.miguelgrinbeerg.com/post/the-flask-mega-tutorial-part-i-hello-world) 
+- [پروژه های نمونۀ Flask](https://github.com/mitsuhiko/flask/tree/master/examples) 
 
-## Graphical Software
+## نرم افزارهای گرافیکی 
 
-Suppose you want to create your own graphical programs using Python. This can be done using a GUI (Graphical User Interface) library with their Python bindings. Bindings are what allow you to write programs in Python and use the libraries which are themselves written in C or C++ or other languages.
+فرض کنید می خواهید با استفاده از پایتون برنامه های گرافیکی خودتان را ایجاد کنید. این کار با استفاده از یک GUI (رابط کاربر گرافیکی) و اتصال های پایتونی آن امکان پذیر است. اتصال ها ساز و کاری هستند که به شما اجازه می دهند برنامه ها را با پایتون بنویسید و از کتابخانه هایی استفاده کنید که خودشان با زبان هایی مانند C یا ++C یا زبان های دیگر نوشته شده اند. 
 
-There are lots of choices for GUI using Python:
+برای ایجاد GUI با پایتون، گزینه های زیادی وجود دارد: 
 
 - Kivy
     - http://kivy.org
 
 - PyGTK
-    - This is the Python binding for the GTK+ toolkit which is the foundation upon which GNOME is built. GTK+ has many quirks in usage but once you become comfortable, you can create GUI apps fast. The Glade graphical interface designer is indispensable. The documentation is yet to improve. GTK+ works well on GNU/Linux but its port to Windows is incomplete. You can create both free as well as proprietary software using GTK+. To get started, read the [PyGTK tutorial](http://www.pygtk.org/tutorial.html).
+    - این ابزار، اتصال پایتون برای جعبه ابزار +GTK است؛ جعبه ابزاری که زیربنای GNOME را تشکیل می دهد. +GTK در نحوۀ استفاده ظرافت های خاص زیادی دارد، اما پس از اینکه با آن راحت شدید، می توانید برنامه های GUI را به سرعت ایجاد کنید. طراح رابط گرافیکی Glade بسیار کاربردی است. مستندات آن هنوز جای بهبود دارند. +GTK بر روی GNU/Linux عملکرد خوبی دارند، اما انتقال آن به ویندوز هنوز کامل نیست. با استفاده از +GTK می توانید هم نرم افزارهای آزاد و هم نرم افزارهای اختصاصی ایجاد کنید. برای شروع، [PyGTK tutorial](http://www.pygtk.org/tutorial.html) را مطالعه کنید. 
 
 - PyQt
-    - This is the Python binding for the Qt toolkit which is the foundation upon which the KDE is built. Qt is extremely easy to use and very powerful especially due to the Qt Designer and the amazing Qt documentation. PyQt is free if you want to create open source (GPL'ed) software and you need to buy it if you want to create proprietary closed source software. Starting with Qt 4.5 you can use it to create non-GPL software as well. To get started, read about [PySide](http://qt-project.org/wiki/PySide).
+    - این ابزار، اتصال پایتون برای جعبه ابزار Qt است؛ جعبه ابزاری که زیربنای KDE را تشکیل می دهد. Qt بسیار آسان در عین حال بسیار قدرتمند است، به ویژه به دلیل Qt Designer و مستندات فوق العادۀ Qt. PyQt برای ایجاد نرم افزارهای متن باز (دارای مجوز GPL) رایگان است و اگر بخواهید نرم افزارهای اختصاصی و بسته ایجاد کنید، باید هزینۀ آن را بپردازید. از Qt 4.5 به بعد، می توان از آن برای ایجاد نرم افزارهای غیر GPL نیز استفاده کرد. برای شروع، دربارۀ [PySide](http://qt-project.org/wiki/PySide) را مطالعه کنید. 
 
 - wxPython
-    - This is the Python bindings for the wxWidgets toolkit. wxPython has a learning curve associated with it. However, it is very portable and runs on GNU/Linux, Windows, Mac and even embedded platforms. There are many IDEs available for wxPython which include GUI designers as well such as [SPE (Stani's Python Editor)](http://spe.pycs.net/) and the [wxGlade](http://wxglade.sourceforge.net/) GUI builder. You can create free as well as proprietary software using wxPython. To get started, read the [wxPython tutorial](http://zetcode.com/wxpython/). 
+    - این ابزار، اتصال های پایتون برای جعبه ابزار wxPython است. wxPython روش یادگیری خاص خود را دارد. با این حال، قابلیت حمل بسیار خوبی دارد و بر روی GNU/Linux, Windows, Mac و حتی پلتفرم های نهفته اجرا می شود. IDE های زیادی برای wxPython در دسترس است که برخی از آنها طراح GUI نیز دارند، از جمله [SPE (Stani's Python Editor)](http://spe.pycs.net/) و سازندۀ [wxGlade](http://wxglade.sourceforge.net/) ،GUI . می توانید با استفاده از wxPython هم نرم افزارهای آزاد و هم نرم افزارهای اختصاصی ایجاد کنید. برای شروع، [wxPython tutorial](http://zetcode.com/wxpython/) را مطالعه کنید. 
 
-### Summary of GUI Tools
+### خلاصه ای از ابزارهای GUI 
 
-For more choices, see the [GuiProgramming wiki page at the official python website](http://www.python.org/cgi-bin/moinmoin/GuiProgramming).
+برای گزینه های بیشتر، به [صفحۀ ویکی GuiProgramming در وب سایت رسمی پایتون](http://www.python.org/cgi-bin/moinmoin/GuiProgramming) مراجعه کنید. 
 
-Unfortunately, there is no one standard GUI tool for Python. I suggest that you choose one of the above tools depending on your situation. The first factor is whether you are willing to pay to use any of the GUI tools. The second factor is whether you want the program to run only on Windows or on Mac and GNU/Linux or all of them. The third factor, if GNU/Linux is a chosen platform, is whether you are a KDE or GNOME user on GNU/Linux.
+متأسفانه، ابزار استاندارد و واحد GUI برای پایتون وجود ندارد. پیشنهاد می کنم بسته به شرایط خود، یکی از ابزارهای بالا را انتخاب کنید. عامل اول این است که آیا مایل به پرداخت هزینه برای استفاده از ابزارهای GUI هستید یا خیر، عامل دوم این است که آیا می خواهید برنامه فقط روی ویندوز اجرا شود یا روی Mac و GNU/Linux نیز اجرا شود، یا تمایل دارید بر روی همۀ این سیستم عامل ها قابل اجرا باشد. عامل سوم، اگر GNU/Linux سیستم عامل منتخب شما باشد، این است که آیا در GNU/Linux کاربر KDE هستید یا از GNOME استفاده می کنید. 
 
-For a more detailed and comprehensive analysis, see Page 26 of the ['The Python Papers, Volume 3, Issue 1' (PDF)](http://archive.pythonpapers.org/ThePythonPapersVolume3Issue1.pdf).
+برای تحلیلی دقیق و جامع تر، به صفحۀ 26 از [The Python Papers, Volume 3, Issue 1'(PDF)'](http://archive.pythonpapers.org/ThePythonPapersVolume3Issue1.pdf) مراجعه کنید. 
 
-## Various Implementations
+## پیاده سازی های متفاوت 
 
-There are usually two parts a programming language - the language and the software. A language is _how_ you write something. The software is _what_ actually runs our programs.
+یک زبان برنامه نویسی معمولاً از دو بخش تشکیل شده است - زبان و نرم افزار. زبان مشخص می کند که _چگونه_ چیزی را می نویسید. نرم افزار مشخص می کند که برنامه های ما _چه چیزی_ را واقعاً اجرا می کند. 
 
-We have been using the _CPython_ software to run our programs. It is referred to as CPython because it is written in the C language and is the _Classical Python interpreter_.
+ما از نرم افزار _CPython_ برای اجرای برنامه هایمان استفاده کرده ایم. به آن CPython گفته می شود زیرا با زبان C نوشته شده است و _مفسر کلاسیک پایتون_ است. 
 
-There are also other software that can run your Python programs:
+نرم افزارهای دیگری نیز وجود دارند که می توانید برای اجرای برنامه های پایتون خود از آنها استفاده کنید: 
 
 - [Jython](http://www.jython.org)
-    - A Python implementation that runs on the Java platform. This means you can use Java libraries and classes from within Python language and vice-versa.
+    - یک پیاده سازی از پایتون است که روی پلتفرم Java اجرا می شود. این بدان معناست که می توانید از کتابخانه ها و کلاس های جاوا درون زبان پایتون استفاده کنید و برعکس. 
 
 - [IronPython](http://www.codeplex.com/Wiki/View.aspx?ProjectName=IronPython)
-    - A Python implementation that runs on the .NET platform. This means you can use .NET libraries and classes from within Python language and vice-versa.
+    - یک پیاده سازی از پایتون است که بر روی پلتفرم Net. اجرا می شود. این بدان معناست که می توانید از کتابخانه ها و کلاس های Net. درون زبان پایتون استفاده کنید و برعکس.
 
 - [PyPy](http://codespeak.net/pypy/dist/pypy/doc/home.html)
-    - A Python implementation written in Python! This is a research project to make it fast and easy to improve the interpreter since the interpreter itself is written in a dynamic language (as opposed to static languages such as C, Java or C# in the above three implementations)
+    - یک پیاده سازی از پایتون است که در پایتون نوشته شده است! این یک پروژۀ پژوهشی است که هدف آن سریع و آسان کردن بهبود مفسر است؛ زیرا خود مفسر با یک زبان پویا نوشته شده است (در مقابل زبان های ایستایی مانند جاوا، C یا #C در سه پیاده سازی بالا). 
 
-There are also others such as [CLPython](http://common-lisp.net/project/clpython/) - a Python implementation written in Common Lisp and [Brython](http://brython.info/) which is an implementation on top of a JavaScript interpreter which could mean that you can use Python (instead of JavaScript) to write your web-browser ("Ajax") programs.
+پیاده سازی های دیگری نیز وجود دارند مانند [CLPython](http://common-lisp.net/project/clpython.info/) - یک پیاده سازی از پایتون است که در Common Lisp و [Brython](http://brython.info/) است که یک پیاده سازی بر پایۀ مفسر JavaScript است. این امر می تواند به این معنا باشد که می توانید از پایتون (به جای جاوا اسکریپت) برای نوشتن برنامه های مرورگر وب  ("Ajax") خود استفاده کنید. 
 
-Each of these implementations have their specialized areas where they are useful.
+هر یک از این پیاده سازی ها حوزه های تخصصی خاص خود را دارند که در آنها کاربردی هستند. 
 
-## Functional Programming (for advanced readers) {#functional-programming}
+## برنامه نویسی تابعی (برای خوانندگان پیشرفته) {functional-programming#} 
 
-When you start writing larger programs, you should definitely learn more about a functional approach to programming as opposed to the class-based approach to programming that we learned in the [object-oriented programming chapter](./oop.md#oop):
+هنگامی که شروع به نوشتن برنامه های بزرگ تر کنید، باید حتماً دربارۀ رویکرد تابعی به برنامه نویسی، در مقابل رویکرد مبتنی بر کلاس که در [فصل برنامه نویسی شئ گرا](./oop.md#oop) آموختیم، بیشتر یاد بگیرید:
 
-- [Functional Programming Howto by A.M. Kuchling](http://docs.python.org/3/howto/functional.html)
-- [Functional programming chapter in 'Dive Into Python' book](http://www.diveintopython.net/functional_programming/index.html)
-- [Functional Programming with Python presentation](http://ua.pycon.org/static/talks/kachayev/index.html)
-- [Funcy library](https://github.com/Suor/funcy)
-- [PyToolz library](http://toolz.readthedocs.org/en/latest/)
+- [راهنمای برنامه نویسی تابعی نوشتۀ A.M. Kuchling](http://docs.python.org/3/howto/functional.html) 
+- [فصل برنامه نویسی تابعی در کتاب 'Dive Into Python'](http://www.diveintopython.net/functional_programming/index.html) 
+- [ارائۀ برنامه نویسی تابعی با پایتون](http://ua.pycon.org/static/talks/kachayev/index.html) 
+- [کتابخانۀ Funcy](https://github.com/Suor/funcy) 
+- [کتابخانۀ PyToolz](http://toolz.readthedocs.org/en/latest/) 
 
-## Summary
+## خلاصه
 
-We have now come to the end of this book but, as they say, this is the _the beginning of the end_!. You are now an avid Python user and you are no doubt ready to solve many problems using Python. You can start automating your computer to do all kinds of previously unimaginable things or write your own games and much much more. So, get started!
+اکنون به پایان این کتاب رسیده ایم، اما همانطور که می گویند _این آغاز پایان است_!. اکنون دیگر یک کاربر مشتاق پایتون هستید و بدون شک آماده هستید تا مسائل بسیاری را با استفاده از پایتون حل کنید. می توانید از همین حالا کامپیوتر خود را برای انجام انواع کارهایی که پیش تر تصورشان را هم نمی کردید خودکار کنید، یا بازی های خودتان را بنویسید و خیلی، خیلی کارهای دیگر انجام دهید. پس شروع کنید! 
 
 ---
 
-[^1]: Create a class to represent the person's information. Use a dictionary to store person objects with their name as the key. Use the pickle module to store the objects persistently on your hard disk. Use the dictionary built-in methods to add, delete and modify the persons.
+[1^]: کلاسی برای  نمایش اطلاعات شخص ایجاد کنید. از یک دیکشنری برای ذخیرۀ اشیای شخص استفلده کنید و نام دیکشنری را به عنوان کلید قرار دهید. از ماژول pickle برای ذخیرۀ دائمی اشیا روی هارد دیسک استفاده کنید. از روش های داخلی دیکشنری برای افزودن، حذف و ویرایش اشخاص استفاده کنید. 
