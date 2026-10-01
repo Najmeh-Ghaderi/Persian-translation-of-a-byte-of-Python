@@ -1,0 +1,732 @@
+
+<!DOCTYPE HTML>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exceptions · A Byte of Python</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="stdlib.html" />
+    
+    
+    <link rel="prev" href="io.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="چیزی برای جستجو بنویسید" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="dedication.html">
+            
+                <a href="dedication.html">
+            
+                    
+                    Dedication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="about_python.html">
+            
+                <a href="about_python.html">
+            
+                    
+                    About Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="first_steps.html">
+            
+                <a href="first_steps.html">
+            
+                    
+                    First Steps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="op_exp.html">
+            
+                <a href="op_exp.html">
+            
+                    
+                    Operators and Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="data_structures.html">
+            
+                <a href="data_structures.html">
+            
+                    
+                    Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="problem_solving.html">
+            
+                <a href="problem_solving.html">
+            
+                    
+                    Problem Solving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="oop.html">
+            
+                <a href="oop.html">
+            
+                    
+                    Object Oriented Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="io.html">
+            
+                <a href="io.html">
+            
+                    
+                    Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                    Exceptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="stdlib.html">
+            
+                <a href="stdlib.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="more.html">
+            
+                <a href="more.html">
+            
+                    
+                    More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="what_next.html">
+            
+                <a href="what_next.html">
+            
+                    
+                    What Next
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="floss.html">
+            
+                <a href="floss.html">
+            
+                    
+                    Appendix: FLOSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                    Appendix: About
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="revision_history.html">
+            
+                <a href="revision_history.html">
+            
+                    
+                    Appendix: Revision History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="translations.html">
+            
+                <a href="translations.html">
+            
+                    
+                    Appendix: Translations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="translation_howto.html">
+            
+                <a href="translation_howto.html">
+            
+                    
+                    Appendix: Translation How-to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="feedback.html">
+            
+                <a href="feedback.html">
+            
+                    
+                    Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            انتشار یافته توسط HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Exceptions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="استثناها">استثناها</h1>
+<p>استثناها هنگامی رخ می دهند که در برنامۀ شما شرایطی <em>استثنایی</em> رخ دهد. برای مثال، اگر بخواهید فایلی را بخوانید، اما فایلی وجود نداشته باشد چه؟ یا اگر در حین اجرای برنامه، آن را به طور تصادفی حذف کرده باشید چه؟ چنین موقعیت هایی با استفاده از <strong>استثناها</strong> مدیریت می شوند. </p>
+<p>به طور مشابه، اگر برنامۀ شما شامل دستوراتی نا معتبر باشد چه؟ در این حالت، پایتون این وضع را مدیریت می کند؛ یعنی به اصطلاح دست هایش را <strong>بالا می برد</strong> و به شما اعلام می کند که یک <strong>خطا</strong> رخ داده است. </p>
+<h2 id="خطاها-errors">خطاها (Errors)</h2>
+<p>یک فراخوانی ساده تابع <code>print</code> را در نظر بگیرید. اگر <code>print</code> را به اشتباه به صورت <code>Print</code> بنویسیم چه؟ به حروف بزرگ و کوچک توجه کنید. در این شرایط، پایتون یک خطای نحوی <em>بالا می برد</em>. </p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Print(<span class="hljs-string">"Hello World"</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">"&lt;stdin&gt;"</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">'Print'</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(<span class="hljs-string">"Hello World"</span>)
+Hello World
+</code></pre>
+<p>همانطور که مشاهده می کنید، یک <code>NameError</code> ایجاد شده است و همچنین موقعیت تشخیص خطا نیز نمایش داده می شود. این همان کاری است که <strong>مدیریت کنندۀ خطا</strong> برای این خطا انجام می دهد. </p>
+<h2 id="استثناها">استثناها</h2>
+<p>بیایید <strong>تلاش کنیم</strong> یک ورودی از کاربر دریافت کنیم. خط اول زیر را وارد کرده و کلید <code>Enter</code> را فشار دهید. هنگامی که رایانه از شما ورودی می خواهد، به جای وارد کردن چیزی در سیستم Mac کلیدهای <code>[ctrl-d]</code> و در windows کلیدهای <code>[ctrl-z]</code> را فشار دهید و ببینید چه اتفاقی می افتد. (اگر از ویندوز استفاده می کنید و هیچکدام از این کلیدها کار نکرد، می توانید در Command Prompt کلیدهای <code>[ctrl-c]</code> را فشار دهید تا به جای آن خطای KeyboardInterrupt ایجاد شود). </p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s = <span class="hljs-built_in">input</span>(<span class="hljs-string">'Enter something --&gt; '</span>)
+Enter something --&gt; Traceback (most recent call last):
+  File <span class="hljs-string">"&lt;stdin&gt;"</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+EOFError
+</code></pre>
+<p>پایتون خطایی به نام <code>EOFError</code> ایجاد می کند که اساساً به این معناست که در جایی که انتظار نداشته با نماد <code>ctrl-d</code> مواجه شده است؛ این نماد <em>انتهای فایل(end of file)</em> را نشان می دهد. </p>
+<h2 id="مدیریت-استثناها">مدیریت استثناها</h2>
+<p>می توانیم با استفاده از دستور <code>try..except</code> استثناها را مدیریت کنیم. دستورات معمول خود را در بلوک try قرار می دهیم و تمام مدیریت کننده های خطا را در بلوک except قرار می دهیم. </p>
+<p>مثال را تحت عنوان <code>exceptions_handle.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">try</span>:
+    text = <span class="hljs-built_in">input</span>(<span class="hljs-string">'Enter something --&gt; '</span>)
+<span class="hljs-keyword">except</span> EOFError:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Why did you do an EOF on me?'</span>)
+<span class="hljs-keyword">except</span> KeyboardInterrupt:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'You cancelled the operation.'</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'You entered {}'</span>.<span class="hljs-built_in">format</span>(text))
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code># Press ctrl + d
+$ python exceptions_handle.py
+Enter something --&gt; Why did you do an EOF on me?
+
+# Press ctrl + c
+$ python exceptions_handle.py
+Enter something --&gt; ^CYou cancelled the operation.
+
+$ python exceptions_handle.py
+Enter something --&gt; No exceptions
+You entered No exceptions
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>تمام دستوراتی را که ممکن است باعث ایجاد خطا یا استثنا شوند را داخل بلوک <code>try</code> قرار می دهیم و سپس مدیریت کننده های خطا و استثناهای مربوطه را در بند/بلوک <code>except</code> قرار می دهیم. بند <code>except</code> می تواند یک خطا یا استثنای مشخص را مدیریت کند، یا لیستی از خطاها و استثناها را که درون پرانتز قرار گرفته اند را مدیریت کند. اگر هیچ نامی برای خطاها یا استثناها مشخص نشود، این بند <em>تمام</em> خطاها و استثناها را کنترل می کند. </p>
+<p>توجه داشته باشید که هر بند <code>try</code> باید حداقل یک بند <code>except</code> مرتبط با خود داشته باشد. در غیر این صورت، اصلاً داشتن یک بلوک try چه فایده ای خواهد داشت؟ </p>
+<p>اگر هیچ خطا یا استثنایی مدیریت نشود، مدیریت کننده پیش فرض پایتون فراخوانی می شود؛ این مدیریت کننده اجرای برنامه را متوقف می کند و یک پیام خطا نمایش می دهد. نمونه ای از این عمل را بالاتر مشاهده کردیم.</p>
+<p>همچنین می توانید یک بند <code>else</code> را به یک بلوک <code>try..except</code> مرتبط کنید. بند <code>else</code> زمانی اجرا می شود که هیچ استثنایی رخ ندهد.</p>
+<p>در مثال بعد، خواهیم دید که چگونه می توانیم به شئ استثنا دسترسی پیدا کنیم تا اطلاعات بیشتری از آن به دست آوریم. </p>
+<h2 id="ایجاد-استثناها">ایجاد استثناها</h2>
+<p>با استفاده از دستور <code>raise</code> می توانید استثنا <em>ایجاد کنید</em>. برای این کار، نام خطا یا استثنا یا شئ استثنایی را که قرار است <em>پرتاب شود</em> را مشخص می کنید. </p>
+<p>خطا یا استثنایی که ایجاد می کنید باید یک کلاس باشد که به طور مستقیم یا غیر مستقیم از کلاس <code>Exception</code> مشتق شده باشد. </p>
+<p>مثال را با عنوان <code>exception_raise.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">ShortInputException</span>(<span class="hljs-title class_ inherited__">Exception</span>):
+    <span class="hljs-string">'''A user-defined exception class.'''</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, length, atleast</span>):
+        Exception.__init__(<span class="hljs-variable language_">self</span>)
+        <span class="hljs-variable language_">self</span>.length = length
+        <span class="hljs-variable language_">self</span>.atleast = atleast
+
+<span class="hljs-keyword">try</span>:
+    text = <span class="hljs-built_in">input</span>(<span class="hljs-string">'Enter something --&gt; '</span>)
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(text) &lt; <span class="hljs-number">3</span>:
+        <span class="hljs-keyword">raise</span> ShortInputException(<span class="hljs-built_in">len</span>(text), <span class="hljs-number">3</span>)
+    <span class="hljs-comment"># Other work can continue as usual here</span>
+<span class="hljs-keyword">except</span> EOFError:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Why did you do an EOF on me?'</span>)
+<span class="hljs-keyword">except</span> ShortInputException <span class="hljs-keyword">as</span> ex:
+    <span class="hljs-built_in">print</span>((<span class="hljs-string">'ShortInputException: The input was '</span> +
+           <span class="hljs-string">'{0} long, expected at least {1}'</span>)
+          .<span class="hljs-built_in">format</span>(ex.length, ex.atleast))
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'No exception was raised.'</span>)
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python exceptions_raise.py
+Enter something --&gt; a
+ShortInputException: The input was 1 long, expected at least 3
+
+$ python exceptions_raise.py
+Enter something --&gt; abc
+No exception was raised.
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>در اینجا نوعی استثنای مخصوص خودمان را ایجاد می کنیم. این نوع جدید از استثنا را <code>ShortInputException</code> می نامیم. این استثنا دارای دو فیلد است - <code>length</code> که طول ورودی داده شده است و <code>atleast</code> که حداقل طول مورد انتظار برنامه را مشخص می کند. </p>
+<p>در بند <code>except</code>، کلاس خطایی را مشخص می کنیم که به عنوان نام متغیر ذخیره می شود تا شئ خطا یا استثنای مربوطه را نگه دارد. این کار مشابه پارامترها و آرگومان ها در فراخوانی یک تابع است. در بند <code>except</code>، از فیلدهای <code>length</code> و <code>atleast</code> شئ استثنا استفاده می کنیم تا پیام مناسبی برای کاربر نمایش دهیم. </p>
+<h2 id="try-finally">Try ... Finally </h2>
+<p>فرض کنید درحال خواندن یک فایل در برنامه خود هستید. چگونه مطمئن شوید که شئ فایل چه استثنایی رخ داده باشد و چه رخ نداده باشد، به درستی بسته می شود؟ این کار را میتوان با استفاده از بلوک <code>finally</code> انجام دهیم. </p>
+<p>این برنامه را با نام <code>exception_finally.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">import</span> time
+
+f = <span class="hljs-literal">None</span>
+<span class="hljs-keyword">try</span>:
+    f = <span class="hljs-built_in">open</span>(<span class="hljs-string">"poem.txt"</span>)
+    <span class="hljs-comment"># Our usual file-reading idiom</span>
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        line = f.readline()
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(line) == <span class="hljs-number">0</span>:
+            <span class="hljs-keyword">break</span>
+        <span class="hljs-built_in">print</span>(line, end=<span class="hljs-string">''</span>)
+        sys.stdout.flush()
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Press ctrl+c now"</span>)
+        <span class="hljs-comment"># To make sure it runs for a while</span>
+        time.sleep(<span class="hljs-number">2</span>)
+<span class="hljs-keyword">except</span> IOError:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Could not find file poem.txt"</span>)
+<span class="hljs-keyword">except</span> KeyboardInterrupt:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"!! You cancelled the reading from the file."</span>)
+<span class="hljs-keyword">finally</span>:
+    <span class="hljs-keyword">if</span> f:
+        f.close()
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"(Cleaning up: Closed the file)"</span>)
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python exceptions_finally.py
+Programming is fun
+Press ctrl+c now
+^C!! You cancelled the reading from the file.
+(Cleaning up: Closed the file)
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>کارهای معمول مربوط به خواندن فایل را انجام می دهیم، اما عمداً بعد از پرینت هر خط، با استفاده از تابع <code>time.sleep</code> به مدت 2 ثانیه مکث ایجاد کرده ایم تا برنامه با سرعت کمتری ایجاد شود(پایتون ذاتاً بسیار سریع است). هنگامی که برنامه همچنان درحال اجراست، کلید <code>ctrl + c</code> را فشار دهید تا اجرای برنامه متوقف/لغو شود. </p>
+<p>مشاهده می کنید که استثنای <code>KeyboardInterrupt</code> ایجاد شده و برنامه به پایان می رسد. با این حال، پیش از خروج برنامه، بند finally اجرا می شود و شئ فایل در هر صورت بسته خواهد شد. </p>
+<p>توجه داشته باشید که متغیری که مقدار 0 یا <code>None</code> دارد یا متغیری که یک دنبالۀ یا مجموعه خالی از دیدگاه پایتون مقدار <code>False</code> در نظر گرفته می شود. به همین دلیل است که در کد بالا می توانیم از <code>:if f</code> استفاده کنیم. </p>
+<p>همچنین توجه کنید که پس از <code>print</code> از <code>()sys.stdout.flush</code> استفاده کردیم تا خروجی بلافاصله بر روی صفحه نمایش داده شود. </p>
+<h2 id="دستور-with">دستور with</h2>
+<p>به دست آوردن یک منبع در بلوک <code>try</code> و سپس آزادسازی آن منبع در بلوک <code>finally</code> یک الگوی رایج است. بنابراین، دستور <code>with</code> نیز وجود دارد که امکان انجام این کار را به شکلی ساده فراهم می کند: </p>
+<p>با نام <code>exceptions_using_with.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">"poem.txt"</span>) <span class="hljs-keyword">as</span> f:
+    <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> f:
+        <span class="hljs-built_in">print</span>(line, end=<span class="hljs-string">''</span>)
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>خروجی باید با مثال قبلی یکسان باشد. تفاوت در اینجاست که از تابع <code>open</code> با دستور <code>with</code> استفاده می کنیم - بستن فایل را به <code>with open</code> می سپاریم تا به صورت خودکار انجام شود. </p>
+<p>چیزی که در پشت صحنه اتفاق می افتد این است که دستور <code>with</code> از پروتکلی استفاده می کند. این دستور یک شئ را که دستور <code>open</code> بر می گرداند، دریافت می کند. در اینجا فرض می کنیم نام آن را "thefile" بگذاریم. </p>
+<p>دستور with <em>همیشه</em> تابع <code>_thefile._enter</code> را پیش از شروع اجرای بلوک کد زیر خود را فراخوانی می کند و پس از پایان بلوک کد نیز <em>همیشه</em> تابع <code>_thefile._exit</code> را فراخوانی می کند. </p>
+<p>بنابراین، کدی که در یک بلوک <code>finally</code> می نوشتیم، به طور خودکار توسط روش <code>__exit__</code> مدیریت می شود. این ویژگی به ما کمک می کند تا مجبور نباشیم بارها از دستورات صریح <code>try..finally</code> استفاده کنیم. </p>
+<p>بحث بیشتر دربارۀ این موضوع خارج از محدودۀ کتاب است، برای توضیح جامع تر لطفاً به <a href="http://www.python.org/dev/peps/pep-0343/" target="_blank">PEP 343</a> مراجعه کنید. </p>
+<h2 id="جمع-بندی">جمع بندی</h2>
+<p>در این بخش کاربردهای دستورات <code>try..except</code> و <code>try..finally</code> را بررسی کردیم. همچنین دیدیم که چگونه می توانیم انواع استثنای مخصوص خودمان را ایجاد کنیم و چگونه استثناها را ایجاد کنیم. </p>
+<p>در بخش بعد، به بررسی کتابخانه استاندارد پایتون می پردازیم. </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="io.html" class="navigation navigation-prev " aria-label="Previous page: Input and Output">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="stdlib.html" class="navigation navigation-next " aria-label="Next page: Standard Library">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Exceptions","level":"1.16","depth":1,"next":{"title":"Standard Library","level":"1.17","depth":1,"path":"stdlib.md","ref":"stdlib.md","articles":[]},"previous":{"title":"Input and Output","level":"1.15","depth":1,"path":"io.md","ref":"io.md","articles":[]},"dir":"rtl"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"authorUrl":"https://swaroopch.com/about/","buyBookUrl":"https://swaroopch.com/buybook/","contactUrl":"https://swaroopch.com/contact/","downloadUrl":"https://github.com/swaroopch/byte-of-python/releases/latest","officialUrl":"https://python.swaroopch.com","pythonVersion":"3.6.0","sourceUrl":"https://github.com/swaroopch/byte-of-python","vimBookUrl":"https://vim.swaroopch.com/"},"title":"A Byte of Python","language":"fa","gitbook":"*","direction":"rtl"},"file":{"path":"exceptions.md","mtime":"2026-10-01T20:53:21.037Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-10-01T20:53:33.324Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

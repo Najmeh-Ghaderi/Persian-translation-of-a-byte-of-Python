@@ -1,0 +1,786 @@
+
+<!DOCTYPE HTML>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Control flow · A Byte of Python</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="functions.html" />
+    
+    
+    <link rel="prev" href="op_exp.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="چیزی برای جستجو بنویسید" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="dedication.html">
+            
+                <a href="dedication.html">
+            
+                    
+                    Dedication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="about_python.html">
+            
+                <a href="about_python.html">
+            
+                    
+                    About Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="first_steps.html">
+            
+                <a href="first_steps.html">
+            
+                    
+                    First Steps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="op_exp.html">
+            
+                <a href="op_exp.html">
+            
+                    
+                    Operators and Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="data_structures.html">
+            
+                <a href="data_structures.html">
+            
+                    
+                    Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="problem_solving.html">
+            
+                <a href="problem_solving.html">
+            
+                    
+                    Problem Solving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="oop.html">
+            
+                <a href="oop.html">
+            
+                    
+                    Object Oriented Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="io.html">
+            
+                <a href="io.html">
+            
+                    
+                    Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                    Exceptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="stdlib.html">
+            
+                <a href="stdlib.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="more.html">
+            
+                <a href="more.html">
+            
+                    
+                    More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="what_next.html">
+            
+                <a href="what_next.html">
+            
+                    
+                    What Next
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="floss.html">
+            
+                <a href="floss.html">
+            
+                    
+                    Appendix: FLOSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                    Appendix: About
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="revision_history.html">
+            
+                <a href="revision_history.html">
+            
+                    
+                    Appendix: Revision History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="translations.html">
+            
+                <a href="translations.html">
+            
+                    
+                    Appendix: Translations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="translation_howto.html">
+            
+                <a href="translation_howto.html">
+            
+                    
+                    Appendix: Translation How-to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="feedback.html">
+            
+                <a href="feedback.html">
+            
+                    
+                    Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            انتشار یافته توسط HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Control flow</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="control-flow">جریان کنترل </h1>
+<p>در برنامه هایی که تاکنون دیده ایم، همیشه مجموعه ای از دستورات وجود داشته است که پایتون آن ها را به طور دقیق و از بالا به پایین اجرا می کرد. اما اگر بخواهید جریان یا ترتیب اجرای برنامه را تغییر دهید، چطور؟ برای مثال، می خواهید برنامه براساس شرایط مختلف تصمیم گیری کند و کارهای متقاوتی انجام دهد؛ مثلاً باتوجه به زمان روز، عبارت 'Good Morning' یا 'Good Evening' را پرینت کند. </p>
+<p>همان طور که احتمالاً حدس زده اید، این هدف با استفاده از دستورات جریان کنترل به دست می آید. در پایتون سه دستور برای کنترل جریان وجود دارد: <code>if</code>, <code>for</code> و <code>while</code>. </p>
+<h2 id="دستور-if">دستور <code>if</code></h2>
+<p>دستور <code>if</code> برای بررسی یک شرط استفاده می شود: <em>اگر(if)</em> شرط درست باشد، مجموعه ای از دستورات را اجرا می کنیم که <em>if-block</em> نام دارد؛ در غیر این صورت (<em>else</em>) مجموعه ای از دستورات دیگر را اجرا می کنیم که <em>else-block</em> نامیده می شود. بخش <em>else</em> اختیاری است. </p>
+<p>مثال را با نام <code>if.py</code> ذخیره کنید: </p>
+<!-- Tags expansion does not happen inside code blocks https://github.com/GitbookIO/gitbook/issues/707 -->
+<pre><code class="lang-python">number = <span class="hljs-number">23</span>
+guess = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">'Enter an integer : '</span>))
+
+<span class="hljs-keyword">if</span> guess == number:
+    <span class="hljs-comment"># New block starts here</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Congratulations, you guessed it.'</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'(but you do not win any prizes!)'</span>)
+    <span class="hljs-comment"># New block ends here</span>
+<span class="hljs-keyword">elif</span> guess &lt; number:
+    <span class="hljs-comment"># Another block</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'No, it is a little higher than that'</span>)
+    <span class="hljs-comment"># You can do whatever you want in a block ...</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'No, it is a little lower than that'</span>)
+    <span class="hljs-comment"># you must have guessed &gt; number to reach here</span>
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Done'</span>)
+<span class="hljs-comment"># This last statement is always executed,</span>
+<span class="hljs-comment"># after the if statement is executed.</span>
+</code></pre>
+
+<p>خروجی: </p>
+<pre><code>$ python if.py
+Enter an integer : 50
+No, it is a little lower than that
+Done
+
+$ python if.py
+Enter an integer : 22
+No, it is a little higher than that
+Done
+
+$ python if.py
+Enter an integer : 23
+Congratulations, you guessed it.
+(but you do not win any prizes!)
+Done
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>در این برنامه، از کاربر می خواهیم که حدس بزند و بررسی می کنیم که آیا حدس او همان عددی است که ما انتخاب کرده ایم یا خیر. متغیر <code>number</code> را روی یک عدد صحیح دلخواه، مثلاً <code>23</code>، قرار می دهیم. سپس، با استفاده از تابع <code>()input</code> حدس کاربر را دریافت می کنیم. توابع بخش هایی از برنامه هستند که می توان آنها را مجدد استفاده کرد. در <a href="functions.html#functions">next chapter</a> بیشتر دربارۀ آنها خواهیم خواند. </p>
+<p>ما یک رشته به تابع <code>input</code> می دهیم؛ این تابع رشته را روی صفحه نمایش می دهد و منتظر دریافت ورودی از کاربر می ماند.  هنگامی که چیزی را وارد کرده و کلید [enter] را فشار دهیم، تابع <code>()input</code> چیزی را که وارد کرده ایم به عنوان یک رشته بر می گرداند. سپس این رشته را با استفاده از <code>int</code> به یک عدد صحیح تبدیل کرده و آن را در متغیر <code>guess</code> ذخیره می کنیم. در واقع، <code>int</code> یک کلاس (class) است؛ اما در حال حاضر کافی است بدانید که می توانید از آن برای تبدیل یک رشته به عددی صحیح استفاده کنید ( فرض کنید رشته شامل یک عدد صحیح معتبر در متن است). </p>
+<p>سپس، حدس کاربر را با عددی که انتخاب کرده ایم، مقایسه می کنیم. اگر این دو عدد با هم مساوی باشند، یک پیام موفقیت پرینت می کنیم. توجه داشته باشید که ما از سطوح تورفتگی استفاده می کنیم تا به پایتون بگوییم هر دستور به کدام بلوک تعلق دارد. به همین دلیل تورفتگی در پایتون از اهمیت ویژه ای برخوردار است. امیدوارم همچنان قانون «تورفتگی یکسان» را رعایت کنید. آیا این کار را انجام می دهید؟ </p>
+<p>دقت کنید که دستور <code>if</code> در انتهای خود دارای یک دو نقطه (:) است. با این کار به پایتون نشان می دهیم که پس از آن یک بلوک از دستورات قرار خواهد گرفت. </p>
+<p>در مرحلۀ بعد، بررسی می کنیم که آیا حدس کاربر از عدد موردنظر کوچک تر است یا خیر. اگر چنین باشد، به کاربر اطلاع می دهیم که باید عددی بزرگنر را حدس بزند. در اینجا از عبارت <code>elif</code> استفاده کرده ایم. این عبارت در واقع دو ساختار ترکیبی <code>if else-if else</code> را در قالب یک ساختار ترکیبی <code>if-elif-else</code> ادغام می کند. این امر برنامه را ساده تر کرده و میزان تورفتگی موردنیاز را کاهش می دهد. </p>
+<p>دستورات <code>elif</code> و <code>else</code> نیز باید در انتهای خط منطقی خود یک دو نقطه داشته باشد و پس از آن دستورات مربوطه قرار گیرد؛ البته با رعایت تورفتگی صحیح. </p>
+<p>می توانید یک دستور <code>if</code> دیگر را درون بلوک if  یک دستور <code>if</code> قرار دهید و همین طور ادامه دهید. به چنین ساختاری دستور <code>if</code> تودرتو گفته می شود. </p>
+<p>به خاطر داشته باشید که بخش های <code>elif</code> و <code>else</code> اختیاری هستند. حداقل یک دستور <code>if</code> معتبر می تواند به شکل زیر باشد: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-literal">True</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Yes, it is true'</span>)
+</code></pre>
+<p>پس از آنکه پایتون اجرای کامل دستور <code>if</code> و بخش های مرتبط <code>elif</code> و <code>else</code> را به پایان رساند، به سراغ دستور بعدی در بلوکی می رود که دارای دستور <code>if</code> باشد. در این مثال، آن بلوک، بلوک اصلی است (جایی که اجرای برنامه از آن آغاز می شود). دستور بعدی نیز دستور <code>print('Done')</code> است. پس از آن، پایتون به انتهای برنامه می رسد و اجرای آن را به پایان می رساند. </p>
+<p>اگرچه این برنامه بسیار ساده است، نکات زیادی وجود دارد که باید به آن توجه کنید. همه این نکات بسیار منطقی و سرراست هستند (حتی برای افرادی که پیش زمینه C++/C دارند، به طرز شگفت انگیزی ساده هستند). در ابتدا لازم است با تمام این نکات آشنا شوید، اما پس از کمی تمرین، به راحتی با آن ها کنار خواهید آمد و استفاده از آن ها برایتان کاملاً «طبیعی» خواهد شد. </p>
+<blockquote>
+<p><strong>نکته برای برنامه نویسان C++/C</strong></p>
+<p>در پایتون دستور <code>switch</code> وجود ندارد. از<code>if..elif..else</code> برای انجام همان کار استفاده کنید (و در برخی موارد، برای انجام سریع تر این کار از یک <a href="data_structures.html#dictionary">dictionary</a> استفاده کنید.) می توانید از دستور </p>
+</blockquote>
+<h2 id="دستور-while">دستور while</h2>
+<p>دستور <code>while</code> به شما اجازه می دهد تا هنگامی که یک شرط درست باشد، یک بلوک از دستورات را به طور مکرر اجرا کنید. دستور <code>while</code> نمونه ای از چیزی است که <em>دستور حلقه (looping)</em> نامیده می شود. یک دستور <code>while</code> می تواند یک عبارت <code>else</code> اختیاری نیز داشته باشد. </p>
+<p>مثال را با نام <code>while.py</code> ذخیره کنید:</p>
+<pre><code class="lang-python">number = <span class="hljs-number">23</span>
+running = <span class="hljs-literal">True</span>
+
+<span class="hljs-keyword">while</span> running:
+    guess = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">'Enter an integer : '</span>))
+
+    <span class="hljs-keyword">if</span> guess == number:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">'Congratulations, you guessed it.'</span>)
+        <span class="hljs-comment"># this causes the while loop to stop</span>
+        running = <span class="hljs-literal">False</span>
+    <span class="hljs-keyword">elif</span> guess &lt; number:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">'No, it is a little higher than that.'</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">'No, it is a little lower than that.'</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'The while loop is over.'</span>)
+    <span class="hljs-comment"># Do anything else you want to do here</span>
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Done'</span>)
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python while.py
+Enter an integer : 50
+No, it is a little lower than that.
+Enter an integer : 22
+No, it is a little higher than that.
+Enter an integer : 23
+Congratulations, you guessed it.
+The while loop is over.
+Done
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>در این برنامه، همچنان درحال اجرای بازی حدس زدن هستیم؛ اما مزیت آن این است که کاربر می تواند تا زمانی که پاسخ صحیح را حدس بزند، به حدس زدن ادامه دهد. بنابراین دیگر نیازی نیست برای هر حدس، برنامه را دوباره اجرا کنیم؛ کاری که در بخش قبلی انجام می دادیم. این مثال به خوبی کاربرد دستور <code>while</code> را نشان می دهد. </p>
+<p>دستورات <code>input</code> و <code>if</code> را به داخل حلقه <code>while</code> منتقل می کنیم و پیش از شروع حلقه while، متغیر <code>running</code> را برابر <code>True</code> قرار می دهیم. ابتدا بررسی می کنیم که آیا متغیر <code>running</code> برابر <code>True</code> است یا خیر. سپس بلوک مربوط به while را، یعنی <em>while-block</em>اجرا می شود. پس از اجرای این بلوک،شرط دوباره بررسی می شود؛ در اینجا این شرط همان متغیر <code>running</code> است. اگر مقدار آن True باشد، بلوک while دوباره اجرا می شود؛ در غیر این صورت، اجرای برنامه به بلوک else منتقل می شود و پس از آن به سراغ دستور بعدی می رود.  </p>
+<p>بلوک <code>else</code> زمانی اجرا می شود که شرط حلقۀ <code>while</code> برابر <code>False (نادرست)</code> شود؛ حتی ممکن است این اولین باری باشد که شرط بررسی می شود. اگر یک حلقۀ <code>while</code> دارای عبارت <code>else</code> باشد، همیشه اجرا می شود مگر اینکه با استفاده از دستور <code>break</code> از حلقه خارج شوید. </p>
+<p>مقادیر <code>True</code> و <code>False</code> انواع بولی (Boolean types) نامیده می شوند و می توانید آن ها را به ترتیب معادل مقادیر <code>1</code> و <code>0</code> در نظر بگیرید. </p>
+<blockquote>
+<p><strong>نکته برای برنامه نویسان C++/C</strong></p>
+<p>به خاطر داشته باشید که حلقه <code>while</code> نیز می تواند دارای عبارت <code>else</code> باشد. </p>
+</blockquote>
+<h2 id="حلقۀ-for">حلقۀ <code>for</code></h2>
+<p>دستور <code>for..in</code> یکی دیگر از دستورات حلقه ای است که روی یک دنباله از اشیا <em>تکرار</em> انجام می دهد؛ یعنی تک تک آیتم های موجود در یک دنباله را بررسی می کند. در فصل های بعد دربارۀ <a href="data_structures.html#sequence">sequences</a> با جزئیات بیشتری بحث خواهیم کرد. چیزی که در حال حاضر کافی است بدانید این است که یک دنباله، مجموعه ای مرتب از آیتم ها است. </p>
+<p>مثال را با نام <code>for.py</code> ذخیره کنید. </p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>):
+    <span class="hljs-built_in">print</span>(i)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'The for loop is over'</span>)
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python for.py
+1
+2
+3
+4
+The for loop is over
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>در این برنامه، یک <em>دنباله</em> از اعداد را چاپ می کنیم. این دنباله را با استفاده از تابع داخلی <code>range</code> ایجاد می کنیم. </p>
+<p> در اینجا دو عدد به range می دهیم و <code>range</code> دنباله ای از اعداد را باز می گرداند که از عدد اول شروع شده و تا قبل از عدد دوم ادامه دارد. برای مثال، <code>range(1,5)</code> دنبالۀ <code>[1,2,3,4]</code> را ایجاد می کند. به صورت پیش فرض، <code>range</code> گام را برابر 1 در نظر می گیرد. اگر عدد سومی را به <code>range</code> بدهیم، آن عدد به عنوان گام استفاده می شود. برای مثال، <code>range(1,5,2)</code> دنبالۀ <code>[1,3]</code> را ایجاد می کند. به خاطر داشته باشید که range تا <em>قبل از</em> عدد دوم ادامه پیدا می کند؛ یعنی دنباله شامل عدد دوم <em>نمی شود</em>. </p>
+<p>توجه کنید که <code>()range</code> در هر لحظه فقط یک عدد را تولید می کند. اگر فهرست کامل اعداد را می خواهید، می توانید روی <code>()range</code> تابع <code>()list</code> را فراخوانی کنید. به عنوان مثال، <code>list(range(5))</code> نتیجۀ <code>[0,1,2,3,4]</code> را به دنبال خواهد داشت. لیست ها (lists) در <a href="data_structures.html#data-structures">data structures chapter</a> توضیح داده خواهند شد. </p>
+<p>سپس حلقۀ <code>for</code> روی این محدوده تکرار انجام می دهد. عبارت <code>for i in range(1,5)</code> معادل است با <code>for i in [1,2,3,4]</code>؛ یعنی هر عدد (یا به طور کلی هر شئ) موجود در دنباله، یکی یکی به <code>i</code> اختصاص داده می شود و سپس بلوک دستورات برای هر مقدار <code>i</code> اجرا می شود. در این مثال، تنها کاری که انجام می دهیم این است که مقدار را درون بلوک پرینت می کنیم. </p>
+<p>به خاطر داشته باشید که بخش <code>else</code> اختیاری است. زمانی که بخش <code>else</code> وجود داشته باشد پس از پایان حلقۀ <code>for</code> اجرا می شود؛ مگر اینکه یک دستور <a href="#break-statement">break</a> اجرا شود. </p>
+<p>به یاد داشته باشید که حلقۀ <code>for..in</code> برای هر نوع دنباله ای قابل استفاده است. در اینجا یک لیست از اعداد داریم که با استفاده از تابع داخلی <code>range</code> ساخته شده است، اما به طور کلی می توانیم از هر نوع دنباله ای شامل هر نوع شئ استفاده کنیم! در فصل های بعد این موضوع را با جزئیات بیشتری مورد بررسی قرار خواهیم داد. </p>
+<blockquote>
+<p><strong>نکته برای برنامه نویسان #C++/C/Java/C</strong></p>
+<p>حلقۀ <code>for</code> در پایتون تفاوت اساسی با حلقۀ <code>for</code> در C++/C دارد. برنامه نویسان #C توجه خواهند کرد که حلقه <code>for</code> در پایتون شبیه حلقۀ <code>foreach</code> در #C است. برنامه نویسان Java نیز متوجه خواهند شد که این حلقه به ساختار <code>for(int i: IntArray)</code> در Java 1.5 شباهت دارد. </p>
+<p>در C++/C، اگر بخواهید بنویسید <code>for (int i = 0; i &lt; 5; i++)</code>، در پایتون فقط باید بنویسید <code>for i in range(0,5)</code>. همانطور که می بینید، حلقه <code>for</code> در پایتون ساده تر، گویاتر و کم خطاتر است. </p>
+</blockquote>
+<h2 id="دستور-break">دستور break</h2>
+<p>دستور <code>break</code> برای <em>خارج شدن</em> از یک حلقه استفاده می شود؛ یعنی اجرای دستور حلقه ای را متوقف می کند، حتی اگر شرط حلقه هنوز <code>False</code> نشده باشد یا تمام آیتم های دنباله هنوز به طور کامل تکرار نشده باشند.</p>
+<p>نکتۀ مهم این است که اگر با استفاده از <code>break</code> از یک حلقۀ <code>for</code> یا <code>while</code> خارج شوید، بلوک <code>else</code> مربوط به آن حلقه اجرا <em>نخواهد شد</em>. </p>
+<p>مثال را تحت عنوان <code>break.py</code> ذخیره کنید. </p>
+<pre><code class="lang-python"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+    s = <span class="hljs-built_in">input</span>(<span class="hljs-string">'Enter something : '</span>)
+    <span class="hljs-keyword">if</span> s == <span class="hljs-string">'quit'</span>:
+        <span class="hljs-keyword">break</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Length of the string is'</span>, <span class="hljs-built_in">len</span>(s))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Done'</span>)
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python break.py
+Enter something : Programming is fun
+Length of the string is 18
+Enter something : When the work is done
+Length of the string is 21
+Enter something : if you wanna make your work also fun:
+Length of the string is 37
+Enter something : use Python!
+Length of the string is 11
+Enter something : quit
+Done
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>در این برنامه، به طور مکرر ورودی کاربر را دریافت کرده و هر بار طول هر ورودی را پرینت می کنیم. یک شرط خاص برای متوقف کردن برنامه تعیین کرده ایم؛ بررسی می کنیم که آیا ورودی کاربر برابر با <code>'quit'</code> است یا خیر. با استفاده از <em>break</em> از حلقه خارج می شویم و به انتهای برنامه می رسیم. </p>
+<p>طول یک رشته ورودی را می توان با تابع داخلی <code>len</code> به دست آورد. </p>
+<p>به خاطر داشته باشید که دستور <code>break</code> را می توان با حلقۀ <code>for</code> نیز استفاده کرد. </p>
+<p><strong>پایتون شاعرانه Swaroop</strong></p>
+<p>ورودی ای که در اینجا استفاده کرده ام، شعری کوتاه است که خودم نوشته ام:</p>
+<pre><code>Programming is fun
+When the work is done
+if you wanna make your work also fun:
+    use Python!
+</code></pre><h2 id="دستور-continue">دستور <code>continue</code></h2>
+<p>دستور <code>continue</code> برای آن استفاده می شود که به پایتون بگوید باقی دستورات موجود در بلوک فعلی را نادیده بگبرد و به تکرار بعدی حلقه <em>ادامه دهد</em>. </p>
+<p>مثال را با نام <code>continue.py</code> ذخیره کنید. </p>
+<pre><code class="lang-python"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+    s = <span class="hljs-built_in">input</span>(<span class="hljs-string">'Enter something : '</span>)
+    <span class="hljs-keyword">if</span> s == <span class="hljs-string">'quit'</span>:
+        <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(s) &lt; <span class="hljs-number">3</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">'Too small'</span>)
+        <span class="hljs-keyword">continue</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Input is of sufficient length'</span>)
+    <span class="hljs-comment"># Do other kinds of processing here...</span>
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python continue.py
+Enter something : a
+Too small
+Enter something : 12
+Too small
+Enter something : abc
+Input is of sufficient length
+Enter something : quit
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>در این برنامه، ورودی را از کاربر می پذیریم، اما زمانی آن را پردازش می کنیم که رشته ورودی حداقل 3 کاراکتر را داشته باشد. بنابراین، با استفاده از تابع داخلی <code>len</code> طول رشته را به دست می آوریم و اگر طول آن کمتر از 3 کاراکتر باشد، با استفاده از دستور <code>continue</code> باقی دستورات موجود در بلوک را رد می کنیم. در غیر این صورت، باقی دستورات حلقه اجرا می شوند و هر نوع پردازشی را که بخواهیم می توانیم دراینجا انجام دهیم. </p>
+<p>توجه داشته باشید که دستور <code>continue</code> با حلقه <code>for</code> نیز کار می کند. </p>
+<h2 id="جمع-بندی">جمع بندی</h2>
+<p>در این فصل نحوۀ استفاده از سه دستور جریان کنترل، یعنی <code>if</code>, <code>while</code> و <code>for</code> را همراه با دستورات مرتبط <code>break</code> و <code>continue</code> بررسی کردیم. این دستورات از پرکاربردترین بخش های زبان پایتون هستند؛ بنابراین تسلط بر استفاده از آنها ضروری است. </p>
+<p>در ادامه، با نحوۀ ایجاد و استفاده از توابع آشنا خواهیم شد. </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="op_exp.html" class="navigation navigation-prev " aria-label="Previous page: Operators and Expressions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="functions.html" class="navigation navigation-next " aria-label="Next page: Functions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Control flow","level":"1.9","depth":1,"next":{"title":"Functions","level":"1.10","depth":1,"path":"functions.md","ref":"functions.md","articles":[]},"previous":{"title":"Operators and Expressions","level":"1.8","depth":1,"path":"op_exp.md","ref":"op_exp.md","articles":[]},"dir":"rtl"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"authorUrl":"https://swaroopch.com/about/","buyBookUrl":"https://swaroopch.com/buybook/","contactUrl":"https://swaroopch.com/contact/","downloadUrl":"https://github.com/swaroopch/byte-of-python/releases/latest","officialUrl":"https://python.swaroopch.com","pythonVersion":"3.6.0","sourceUrl":"https://github.com/swaroopch/byte-of-python","vimBookUrl":"https://vim.swaroopch.com/"},"title":"A Byte of Python","language":"fa","gitbook":"*","direction":"rtl"},"file":{"path":"control_flow.md","mtime":"2026-10-01T20:53:21.037Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-10-01T20:53:33.324Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

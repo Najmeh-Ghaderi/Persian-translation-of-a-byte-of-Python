@@ -1,0 +1,906 @@
+
+<!DOCTYPE HTML>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Data Structures · A Byte of Python</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="problem_solving.html" />
+    
+    
+    <link rel="prev" href="modules.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="چیزی برای جستجو بنویسید" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="dedication.html">
+            
+                <a href="dedication.html">
+            
+                    
+                    Dedication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="about_python.html">
+            
+                <a href="about_python.html">
+            
+                    
+                    About Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="first_steps.html">
+            
+                <a href="first_steps.html">
+            
+                    
+                    First Steps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="op_exp.html">
+            
+                <a href="op_exp.html">
+            
+                    
+                    Operators and Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="data_structures.html">
+            
+                <a href="data_structures.html">
+            
+                    
+                    Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="problem_solving.html">
+            
+                <a href="problem_solving.html">
+            
+                    
+                    Problem Solving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="oop.html">
+            
+                <a href="oop.html">
+            
+                    
+                    Object Oriented Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="io.html">
+            
+                <a href="io.html">
+            
+                    
+                    Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                    Exceptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="stdlib.html">
+            
+                <a href="stdlib.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="more.html">
+            
+                <a href="more.html">
+            
+                    
+                    More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="what_next.html">
+            
+                <a href="what_next.html">
+            
+                    
+                    What Next
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="floss.html">
+            
+                <a href="floss.html">
+            
+                    
+                    Appendix: FLOSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                    Appendix: About
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="revision_history.html">
+            
+                <a href="revision_history.html">
+            
+                    
+                    Appendix: Revision History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="translations.html">
+            
+                <a href="translations.html">
+            
+                    
+                    Appendix: Translations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="translation_howto.html">
+            
+                <a href="translation_howto.html">
+            
+                    
+                    Appendix: Translation How-to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="feedback.html">
+            
+                <a href="feedback.html">
+            
+                    
+                    Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            انتشار یافته توسط HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Data Structures</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ساختارهای-داده">ساختارهای داده</h1>
+<p>ساختارهای داده همان طور که از نامشان پیداست، <em>ساختارهایی</em> هستند که می توانند مجموعه ای از <em>داده ها</em> را کنار هم نگه دارند. به بیان دیگر، از آنها برای ذخیره سازی مجموعه ای از داده های مرتبط با یکدیگر استفاده می کنند. </p>
+<p>پایتون چهار ساختار داده داخلی دارد- <em>list, tuple, dictionary و set</em>. در این بخش خواهیم دید که چگونه از آنها استفاده کنیم و چگونه می توانند زندگی آسان تری را برای ما رقم بزنند. </p>
+<h2 id="list">List</h2>
+<p>یک <code>list</code> ساختار داده ای است که مجموعه ای مرتب از آیتم ها را در خود نگهداری می کند؛ یعنی شما قادر هستید <em>دنباله ای</em> از آیتم ها را در یک list ذخیره کنید. تصور کردن آن آسان است، مثلاً فهرستی از کالاهایی را در نظر بگیرید که قصد خرید آنها را دارید. با این تفاوت که احتمالاً در فهرست خریدتان هر مورد را در یک خط جداگانه می نویسید، درحالی که در پایتون بین هر آیتم ویرگول می گذاریم. </p>
+<p>عناصر یک لیست باید درون براکت قرار بگیرند تا پایتون متوجه شود که شما درحال تعریف یک لیست هستید. پس از ایجاد یک لیست، می توانید عناصر موجود در آن را اضافه، حذف یا جست و جو کنید. از آنجایی که امکان اضافه یا حذف کردن عناصر وجود دارد، می گوییم list یک نوع داده <em>تغییرپذیر</em> است یعنی می توان داده های آن را تغییر داد. </p>
+<h2 id="مقدمه-ای-کوتاه-بر-شئ-ها-و-کلاس-ها">مقدمه ای کوتاه بر شئ ها و کلاس ها</h2>
+<p>اگرچه تا اینجا به طور کلی بحث درباره اشیا و کلاس ها را به تعویق انداخته ام، توضیح مختصری نیاز است تا بتوانید مفهوم لیست ها را بهتر درک کنید. این موضوع را در <a href="oop.html#oop">later chapter</a> با جزئیات بیشتری توضیح خواهم داد. </p>
+<p>یک لیست نمونه ای از کاربرد اشیا و کلاس ها است. زمانی که از متغیری مانند <code>i</code> استفاده می کنیم و مقداری مانند عدد صحیح <code>5</code> را به آن نسبت می دهیم، می توانید آن را به عنوان ایجاد یک <em>شئ</em> (یعنی نمو نه ای) به نام <code>i</code> از <em>کلاس</em> (یعنی نوع) <code>int</code> در نظر بگیرید. در واقع، می توانید برای درک بهتر این موضوع <code>help(int)</code> را مطالعه کنید. </p>
+<p>یک کلاس می تواند نیز <em>روش هایی (methods)</em> داشته باشد؛ یعنی توابعی که برای استفاده در ارتباط با همان کلاس تعریف شده اند. این قابلیت ها را فقط زمانی می توانید استفاده کنید که یک شئ از آن کلاس را در اختیار داشته باشید. برای مثال، پایتون روش <code>append</code> را برای کلاس <code>list</code> فراهم کرده است که به شما این اجازه را می دهد یک آیتم را به انتهای لیست اضافه کنید. به عنوان مثال، <code>mylist.append('an item')</code> رشته مورد نظر را به لیست <code>mylist</code> اضافه می کند. توجه کنید که برای دسترسی به روش های اشیا از نشانه گذاری نقطه ای استفاده می شود. </p>
+<p>یک کلاس نیز می تواند <em>فیلدهایی (fields)</em> داشته باشد که چیزی جز متغیرهایی نیست که برای ارتباط با همان کلاس تعریف شده اند. این متغیرها/نام ها را تنها زمانی می توانید استفاده کنید که یک شئ از آن کلاس را داشته باشید. فیلدها نیز با استفاده از نشانه گذاری نقطه ای قابل دسترس هستند؛ برای مثال، <code>mylist.field</code>. </p>
+<p>مثال را تحت عنوان <code>ds_using_list.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-comment"># This is my shopping list</span>
+shoplist = [<span class="hljs-string">'apple'</span>, <span class="hljs-string">'mango'</span>, <span class="hljs-string">'carrot'</span>, <span class="hljs-string">'banana'</span>]
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'I have'</span>, <span class="hljs-built_in">len</span>(shoplist), <span class="hljs-string">'items to purchase.'</span>)
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'These items are:'</span>, end=<span class="hljs-string">' '</span>)
+<span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> shoplist:
+    <span class="hljs-built_in">print</span>(item, end=<span class="hljs-string">' '</span>)
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'\nI also have to buy rice.'</span>)
+shoplist.append(<span class="hljs-string">'rice'</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'My shopping list is now'</span>, shoplist)
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'I will sort my list now'</span>)
+shoplist.sort()
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Sorted shopping list is'</span>, shoplist)
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'The first item I will buy is'</span>, shoplist[<span class="hljs-number">0</span>])
+olditem = shoplist[<span class="hljs-number">0</span>]
+<span class="hljs-keyword">del</span> shoplist[<span class="hljs-number">0</span>]
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'I bought the'</span>, olditem)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'My shopping list is now'</span>, shoplist)
+</code></pre>
+
+<p>خروجی: </p>
+<pre><code>$ python ds_using_list.py
+I have 4 items to purchase.
+These items are: apple mango carrot banana
+I also have to buy rice.
+My shopping list is now ['apple', 'mango', 'carrot', 'banana', 'rice']
+I will sort my list now
+Sorted shopping list is ['apple', 'banana', 'carrot', 'mango', 'rice']
+The first item I will buy is apple
+I bought the apple
+My shopping list is now ['banana', 'carrot', 'mango', 'rice']
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>متغیر <code>shoplist</code> یک لیست خرید برای کسی است که قصد رفتن به مارکت را دارد. در <code>shoplist</code> فقط رشته هایی شامل نام اقلام مورد نیاز را ذخیره کرده ایم، اما <em>هر نوع از شئ</em> را می توانید در یک لیست قرار دهید از جمله اعداد و حتی لیست های دیگر. </p>
+<p>همچنین از حلقۀ <code>for..in</code> برای پیمایش در سراسر آیتم های لیست استفاده کرده ایم. تا به اینجا، باید متوجه شده باشید که یک لیست نیز یک دنباله است. ویژگی دنباله ها را در <a href="#sequence">later section</a> مورد بررسی قرار خواهیم داد. </p>
+<p>توجه داشته باشید که از پارامتر <code>end</code> برای فراخوانی تابع <code>print</code> استفاده می شود. با استفاده از این پارامتر نمایش می دهیم که می خواهیم خروجی به جای خط جدید معمول، با یک فاصله به پایان رسد. </p>
+<p>سپس با استفاده از روش <code>append</code> مربوط به شئ لیست، یک آیتم را به لیست اضافه می کنیم؛ همان طور که پیش تر توضیح داده شد. در مرحله بعد، با پرینت محتوای لیست، بررسی می کنیم که آیا آیتم موردنظر واقعاً به لیست اضافه شده است یا خیر. برای انجام این کار، کافی است لیست را به تابع <code>print</code> بدهیم تا محتوای آن را به شکل مرتبی نمایش دهد. </p>
+<p>در مرحلۀ بعد، با استفاده از روش <code>sort</code> متعلق به لیست، لیست را مرتب می کنیم. مهم این است که بدانید این روش بر خود لیست تاثیر می گذارد و یک لیست تغییر یافته را بر نمی گرداند؛ این رفتار با نحوۀ عملکرد رشته ها متفاوت است. منظور ما از اینکه، لیست ها <em>تغییرپذیر</em> و رشته ها <em>تغییرناپذیر</em> هستند، نیز همین است. </p>
+<p>سپس، هنگامی که خرید یک کالا در مارکت به پایان می رسد، می خواهیم آن را از لیست حذف کنیم. با استفاده از دستور <code>del</code> می توانیم به این هدف دست پیدا کنیم. در اینجا مشخص می کنیم کدام عنصر لیست باید حذف شود و دستور <code>del</code> آن را برای ما از لیست حذف می کند. ما مشخص می کنیم که می خواهیم نخستین عنصر لیست حذف شود، بنابراین از <code>del shoplist[0]</code> استفاده می کنیم. (به خاطر داشته باشید شمارش در پایتون از صفر آغاز می شود). </p>
+<p>اگر می خواهید تمام روش های تعریف شده برای شئ لیست را مشاهده کنید، برای جزئیات بیشتر <code>help(list)</code> را ببینید. </p>
+<h2 id="تاپل-tuple">تاپل (Tuple)</h2>
+<p>از تاپل ها برای نگهداری چند شئ در کنار یکدیگر استفاده می شوند. می توانید آنها را شبیه به لیست ها در نظر بگیرید، اما تاپل ها بسیاری از قابلیت هایی را که کلاس list در اختیار شما قرار می دهد ندارند. ویژگی اصلی تاپل ها این است که مانند رشته <em>تغییرناپذیر</em> هستند یعنی شما نمی توانید محتوای یک تاپل را تغییر دهید. </p>
+<p>تاپل ها با قرار دادن آیتم ها در کنار یکدیگر و جداکردن آن ها با ویرگول تعریف می شوند و قرار دادن آنها درون یک جفت پرانتز اختیاری است. </p>
+<p>تاپل ها معمولاً در شرایطی استفاده می شوند که یک دستور یا یک تابع تعریف شده توسط کاربر بتواند با اطمینان فرض کند مجموعۀ مقادیر مورد نظر (یعنی تاپل مقادیر) تغییر نخواهد کرد. </p>
+<p>مثال را با نام <code>ds_using_tuple.py</code> ذخیره کنید. </p>
+<pre><code class="lang-python"><span class="hljs-comment"># I would recommend always using parentheses</span>
+<span class="hljs-comment"># to indicate start and end of tuple</span>
+<span class="hljs-comment"># even though parentheses are optional.</span>
+<span class="hljs-comment"># Explicit is better than implicit.</span>
+zoo = (<span class="hljs-string">'python'</span>, <span class="hljs-string">'elephant'</span>, <span class="hljs-string">'penguin'</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Number of animals in the zoo is'</span>, <span class="hljs-built_in">len</span>(zoo))
+
+new_zoo = <span class="hljs-string">'monkey'</span>, <span class="hljs-string">'camel'</span>, zoo    <span class="hljs-comment"># parentheses not required but are a good idea</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Number of cages in the new zoo is'</span>, <span class="hljs-built_in">len</span>(new_zoo))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'All animals in new zoo are'</span>, new_zoo)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Animals brought from old zoo are'</span>, new_zoo[<span class="hljs-number">2</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Last animal brought from old zoo is'</span>, new_zoo[<span class="hljs-number">2</span>][<span class="hljs-number">2</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Number of animals in the new zoo is'</span>,
+      <span class="hljs-built_in">len</span>(new_zoo)-<span class="hljs-number">1</span>+<span class="hljs-built_in">len</span>(new_zoo[<span class="hljs-number">2</span>]))
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python ds_using_tuple.py
+Number of animals in the zoo is 3
+Number of cages in the new zoo is 3
+All animals in new zoo are ('monkey', 'camel', ('python', 'elephant', 'penguin'))
+Animals brought from old zoo are ('python', 'elephant', 'penguin')
+Last animal brought from old zoo is penguin
+Number of animals in the new zoo is 5
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>متغیر <code>zoo</code> به یک تاپل از آیتم ها اشاره دارد. مشاهده می کنیم که تابع <code>len</code> را می توان برای به دست آوردن طول تاپل استفاده کرد. این موضوع همچنین نشان می دهد که یک تاپل یک <a href="#sequence">sequence</a> نیز هست. </p>
+<p>اکنون حیوانات را به یک باغ وحش جدید منتقل می کنیم، زیرا باغ وحش قدیمی درحال بسته شدن است. بنابراین، تاپل <code>new_zoo</code> شامل تعدادی حیوان است که از قبل در آنجا حضور دارند و همچنین حیواناتی که از باغ وحش قدیمی منتقل شده اند. خارج از این مثال، توجه داشته باشید که قرار کرفتن یک تاپل درون تاپل دیگر، هویت آن را از بین نمی برد. </p>
+<p>می توانیم با مشخص کردن موقعیت یک آیتم درون یک جفت براکت، به عناصر تاپل دسترسی پیدا کنیم؛ درست مانند کاری که با لیست ها انجام دادیم. این کار عملگر <em>اندیس گذاری</em> (<em>indexing</em>) نام دارد. برای دسترسی به سومین آیتم در تاپل <code>new_zoo</code> از <code>new_zoo[2]</code> استفاده می کنیم و برای دسترسی به سومین عنصر سومین عنصر موجود در تاپل <code>new_zoo</code> از <code>new_zoo[2][2]</code> استفاده می کنیم. پس از درک این الگو، انجام آن بسیار ساده خواهد بود.</p>
+<blockquote>
+<p><strong>تاپل با 0 یا 1 عنصر </strong></p>
+<p>یک تاپل خالی با استفاده از یک جفت پرانتز خالی ساخته می شود مانند <code>() = myempty</code>. با این حال، تعریف تاپل با یک عنصر ساده نیست. باید پس از اولین (و تنها) آیتم، یک ویرگول قرار دهید تا پایتون بتواند بین یک تاپل و یک جفت پرانتز که یک شئ را در بر گرفته است، تمایز قائل شود. بنابراین اگر منظورتان ساخت تاپلی شامل عدد <code>2</code> است، باید بنویسید: <code>singleton = (2, )</code>. </p>
+</blockquote>
+<!-- -->
+<blockquote>
+<p><strong>نکته ای برای برنامه نویسان Perl</strong></p>
+<p>یک لیست درون یک لیست، هویت خود را از دست نمی دهد؛ یعنی بر خلاف Perl، لیست ها در پایتون تخت (flattened) نمی شوند. همین موضوع دربارۀ تاپل درون تاپل، یا تاپل درون لیست، یا لیست درون تاپل و موارد مشابه نیز صدق می کند. از دید پایتون، همه این ها صرفاً اشیائی هستند که درون یک شئ دیگر ذخیره شده اند.  </p>
+</blockquote>
+<h2 id="دیکشنریdictionary">دیکشنری(Dictionary)</h2>
+<p>یک دیکشنری شبیه یک دفترجه آدرس/تلفن است یعنی شما می توانید با دانستن نام یک شخص، آدرس یا اطلاعات تماس او را پیدا کنید. به بیان دیگر، در دیکشنری <em>کلیدها</em> (نام) را به <em>مقادیر</em>(جزئیات)، مرتبط می کنیم. توجه داشته باشید که کلید باید یکتا باشد؛ درست همانطور که اگر دو نفر دقیقاً نام های یکسانی داشته باشند، نمی توانید به تنهایی از روی نام اطلاعات صحیح را تشخیص دهید. </p>
+<p>توجه کنید که برای کلیدهای دیکشنری فقط می توانید از اشیای تغییر ناپذیر (مانند رشته ها) استفاده کنید، اما مقادیر دیکشنری می توانند هم اشیای تغییرناپذیر و هم تغییرپذیر باشند. به بیان ساده، برای کلیدها فقط از اشیای ساده استفاده کنید. </p>
+<p>جفت های کلیدها و مقادیر در یک دیکشنری با استفاده از ساختار <code>d = {key1 : value1, key2 : value2}</code> مشخص می شوند. توجه کنید که بین کلید و مقدار از دو نقطه استفاده می شود و جفت های کلید-مقدار نیز با ویرگول از یکدیگر جدا می شوند؛ همۀ این موارد نیز درون یک جفت آکولاد قرار می گیرند. </p>
+<p>به خاطر داشته باشید که جفت های کلید-مقدار در دیکشنری به صورت ذاتی ترتیب خاصی ندارند. اگر ترتیب مشخصی می خواهید، باید پیش از استفاده از آنها خودتان آنها را مرتب کنید. </p>
+<p>دیکشنری هایی که استفاده می کنید نمونه ها یا اشیائی از کلاس <code>dict</code> هستند. </p>
+<p>مثال را تحت عنوان <code>ds_using_dict.py</code> ذخیره کنید:</p>
+<pre><code class="lang-python"><span class="hljs-comment"># 'ab' is short for 'a'ddress'b'ook</span>
+
+ab = {
+    <span class="hljs-string">'Swaroop'</span>: <span class="hljs-string">'swaroop@swaroopch.com'</span>,
+    <span class="hljs-string">'Larry'</span>: <span class="hljs-string">'larry@wall.org'</span>,
+    <span class="hljs-string">'Matsumoto'</span>: <span class="hljs-string">'matz@ruby-lang.org'</span>,
+    <span class="hljs-string">'Spammer'</span>: <span class="hljs-string">'spammer@hotmail.com'</span>
+}
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Swaroop's address is"</span>, ab[<span class="hljs-string">'Swaroop'</span>])
+
+<span class="hljs-comment"># Deleting a key-value pair</span>
+<span class="hljs-keyword">del</span> ab[<span class="hljs-string">'Spammer'</span>]
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'\nThere are {} contacts in the address-book\n'</span>.<span class="hljs-built_in">format</span>(<span class="hljs-built_in">len</span>(ab)))
+
+<span class="hljs-keyword">for</span> name, address <span class="hljs-keyword">in</span> ab.items():
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Contact {} at {}'</span>.<span class="hljs-built_in">format</span>(name, address))
+
+<span class="hljs-comment"># Adding a key-value pair</span>
+ab[<span class="hljs-string">'Guido'</span>] = <span class="hljs-string">'guido@python.org'</span>
+
+<span class="hljs-keyword">if</span> <span class="hljs-string">'Guido'</span> <span class="hljs-keyword">in</span> ab:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"\nGuido's address is"</span>, ab[<span class="hljs-string">'Guido'</span>])
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python ds_using_dict.py
+Swaroop's address is swaroop@swaroopch.com
+
+There are 3 contacts in the address-book
+
+Contact Swaroop at swaroop@swaroopch.com
+Contact Matsumoto at matz@ruby-lang.org
+Contact Larry at larry@wall.org
+
+Guido's address is guido@python.org
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>با استفاده از ساختاری که پیش تر توضیح دادیم، دیکشنری <code>ab</code> را ایجاد می کنیم. سپس با مشخص کردن کلید با استفاده از عملگر اندیس گذاری، به جفت های کلید-مقدار دسترسی پیدا می کنیم؛ درست مانند چیزی که در لیست ها و تاپل ها توضیح داده شد. نحو ساده را مشاهده کنید. </p>
+<p>می توانیم جفت های کلید-مقدار را با استفاده از دوست قدیمی مان یعنی دستور <code>del</code>، حذف کنیم. کافیست دیکشنری و عملگر اندیس گذاری را برای کلیدی که باید حذف شود، مشخص کنیم و آن را به دستور <code>del</code> بدهیم. برای این کار نیازی نیست مقدار مربوط به کلید را بدانیم. </p>
+<p>سپس، با استفاده از روش <code>items</code> دیکشنری به تک تک جفت های کلید-مقدار دسترسی پیدا می کنیم. این روش لیستی از تاپل ها را بر می گرداند که هر تاپل شامل یک جفت آیتم است_ کلید با مقدار همراه است. با استفاده از حلقۀ <code>for..in</code> این جفت ها را دریافت کرده و به ترتیب در متغیرهای <code>name</code> و <code>address</code> قرار می دهیم و سپس این مقادیر را در بلوک for پرینت می کنیم. </p>
+<p>می توانیم با استفاده از عملگر اندیس گذاری و اختصاص یک مقدار به کلید، جفت های کلید-مقدار جدیدی نیز اضافه کنیم؛ همان کاری که در مثال بالا برای Guido انجام داده ایم. </p>
+<p>شما قادر هستید با استفاده از عملگر <code>in</code> بررسی کنید که آیا یک کلید در دیکشنری وجود دارد یا خیر. </p>
+<p>برای مشاهده لیستی از روش های کلاس <code>dict</code>، به <code>help(dict)</code> مراجعه کنید.  </p>
+<blockquote>
+<p><strong>آرگومان های کلیدی و دیکشنری ها </strong></p>
+<p>اگر در توابع خود از آرگومان های کلیدی استفاده کرده باشید، در واقع از دیکشنری ها استفاده کرده اید! کمی به این موضوع فکر کنید <em> جفت کلید-مقدار توسط شما در لیست پارامترهای تعریف تابع مشخص می شود و هنگامی که به متغیرهای داخل تابع دسترسی پیدا می کنید، در واقع به یک کلید از یک دیکشنری دسترسی پیدا کرده اید؛ چیزی که در اصطلاح طراحی کامپایلر </em>جدول نماد (symbol table)_ نامیده می شود. </p>
+</blockquote>
+<h2 id="دنباله">دنباله</h2>
+<p>لیست ها، تاپل ها و رشته ها نمونه هایی از دنباله ها هستند؛ اما دنباله ها دقیقاً چه چیزهایی هستند و چه ویژگی خاصی دارند؟ </p>
+<p>مهم ترین ویژگی های دنباله ها عبارتند از <em>آزمون عضویت</em> (یعنی عبارت های <code>in</code> و <code>not in</code>)، <em>عملیات اندیس گذاری</em> که به ما امکان می دهد مستقیماً یک آیتم خاص از دنباله را دریافت کنیم. </p>
+<p>سه نوع دنباله ای که در بالا به آن ها اشاره شد، یعنی لیست ها، تاپل ها و رشته ها، همچنین از عملیات <em>برش(slicing)</em> پشتیبانی می کنند که به ما این امکان را می دهد که بخشی از یک دنباله را استخراج کنیم. </p>
+<p>مثال را با نام <code>ds_seq.py</code> ذخیره کنید:</p>
+<pre><code class="lang-python">shoplist = [<span class="hljs-string">'apple'</span>, <span class="hljs-string">'mango'</span>, <span class="hljs-string">'carrot'</span>, <span class="hljs-string">'banana'</span>]
+name = <span class="hljs-string">'swaroop'</span>
+
+<span class="hljs-comment"># Indexing or 'Subscription' operation #</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Item 0 is'</span>, shoplist[<span class="hljs-number">0</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Item 1 is'</span>, shoplist[<span class="hljs-number">1</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Item 2 is'</span>, shoplist[<span class="hljs-number">2</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Item 3 is'</span>, shoplist[<span class="hljs-number">3</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Item -1 is'</span>, shoplist[-<span class="hljs-number">1</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Item -2 is'</span>, shoplist[-<span class="hljs-number">2</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Character 0 is'</span>, name[<span class="hljs-number">0</span>])
+
+<span class="hljs-comment"># Slicing on a list #</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Item 1 to 3 is'</span>, shoplist[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Item 2 to end is'</span>, shoplist[<span class="hljs-number">2</span>:])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Item 1 to -1 is'</span>, shoplist[<span class="hljs-number">1</span>:-<span class="hljs-number">1</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Item start to end is'</span>, shoplist[:])
+
+<span class="hljs-comment"># Slicing on a string #</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'characters 1 to 3 is'</span>, name[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'characters 2 to end is'</span>, name[<span class="hljs-number">2</span>:])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'characters 1 to -1 is'</span>, name[<span class="hljs-number">1</span>:-<span class="hljs-number">1</span>])
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'characters start to end is'</span>, name[:])
+</code></pre>
+
+<p>خروجی: </p>
+<pre><code>$ python ds_seq.py
+Item 0 is apple
+Item 1 is mango
+Item 2 is carrot
+Item 3 is banana
+Item -1 is banana
+Item -2 is carrot
+Character 0 is s
+Item 1 to 3 is ['mango', 'carrot']
+Item 2 to end is ['carrot', 'banana']
+Item 1 to -1 is ['mango', 'carrot']
+Item start to end is ['apple', 'mango', 'carrot', 'banana']
+characters 1 to 3 is wa
+characters 2 to end is aroop
+characters 1 to -1 is waroo
+characters start to end is swaroop
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>ابتدا می بینیم چگونه با استفاده از اندیس ها، آیتم های منفرد یک دنباله را دریافت کنیم. به این کار <em>عملیات subscription</em> نیز گفته می شود. هرگاه عددی را همانند مثال بالا، درون براکت هایی پس از یک دنباله قرار دهید، پایتون آیتمی را که در آن موقعیت قرار دارد، برای شما دریافت می کند. به یاد داشته باشید که در پایتون شمارش از صفر آغاز می شود. بنابراین، <code>shoplist[0]</code> اولین عنصر و <code>shoplist[3]</code> چهارمین عنصر دنبالۀ <code>shoplist</code> را برمی گرداند. </p>
+<p>اندیس یک عدد منفی نییز می تواند باشد، در این حالت، موقعیت عنصر از انتهای دنباله محاسبه می شود. بنابراین، <code>shoplist[-1]</code> به آخرین عنصر دنباله اشاره دارد و <code>shoplist[-2]</code> دومین عنصر را از انتها باز می گرداند. </p>
+<p>عملیات برش با مشخص کردن نام دنباله و یک جفت اختیاری از اعداد که با دونقطه از یکدیگر جدا شده اند، درون براکت انجام می شود. توجه داشته باشید که این ساختار بسیار شبیه به عملیات اندیس گذاری است که تاکنون استفاده کرده اید. به خاطر داشته باشید که اعداد اختیاری هستند اما دو نقطه الزامی است.</p>
+<p>اولین عدد (عدد قبل از دونقطه) در عملیات برش، موقعیتی را مشخص می کند که برش از آنجا آغاز می شود و عدد دوم (بعد از دونقطه)، نشان می دهد که برش در کجا متوقف می شود. اگر عدد اول مشخص نشود، پایتون از ابتدای دنباله شروع می کند. اگر عدد دوم حذف شود، پایتون تا انتهای دنباله ادامه می دهد و سپس متوقف می شود. توجه کنید که برش از موقعیت شروع <em>آغاز می شود</em> و درست پیش از موقعیت <em>پایان</em> متوقف می شود؛ یعنی موقعیت شروع در برش قرار می گیرد اما موقعیت پایان در آن قرار نمی گیرد. </p>
+<p>بنابراین، <code>shoplist[1:3]</code> برشی از دنباله را برمی گرداند که از موقعیت 1 آغاز می شود، موقعیت 2 را شامل می شود و پیش از موقعیت 3 متوقف می شود؛ در نتیجه، <em>برشی</em> شامل دو عنصر ایجاد می شود. به طور مشابه، <code>[:]shoplist</code> یک کپی از کل دنباله را بر می گرداند. </p>
+<p>می توانید از موقعیت های منفی نیز برای برش استفاده کنید. اعداد منفی برای مشخص کردن موقعیت ها از انتهای دنباله استفاده می شوند. برای مثال، <code>shoplist[:-1]</code> برشی از دنباله را باز می گرداند که آخرین عنصر را حذف کرده، اما تمام عناصر دیگر را شامل می شود. </p>
+<p>همچنین می توانید آرگومان سومی را برای برش ایجاد کنید که <em>گام</em> برش است. (مقدار پیش فرض گام 1 است ): </p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>shoplist = [<span class="hljs-string">'apple'</span>, <span class="hljs-string">'mango'</span>, <span class="hljs-string">'carrot'</span>, <span class="hljs-string">'banana'</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>shoplist[::<span class="hljs-number">1</span>]
+[<span class="hljs-string">'apple'</span>, <span class="hljs-string">'mango'</span>, <span class="hljs-string">'carrot'</span>, <span class="hljs-string">'banana'</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>shoplist[::<span class="hljs-number">2</span>]
+[<span class="hljs-string">'apple'</span>, <span class="hljs-string">'carrot'</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>shoplist[::<span class="hljs-number">3</span>]
+[<span class="hljs-string">'apple'</span>, <span class="hljs-string">'banana'</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>shoplist[::-<span class="hljs-number">1</span>]
+[<span class="hljs-string">'banana'</span>, <span class="hljs-string">'carrot'</span>, <span class="hljs-string">'mango'</span>, <span class="hljs-string">'apple'</span>]
+</code></pre>
+<p>توجه کنید که وقتی مقدار گام 2 باشد، آیتم های موجود در موقعیت های ...،0،2 را دریافت می کنیم. وقتی اندازه گام 3 باشد، عناصر موجود در موقعیت های 0،3 و موارد دیگر دریافت می شوند.  </p>
+<p>ترکیب های مختلف این مشخصات برش را به صورت تعاملی در مفسر پایتون امتحان کنید؛ یعنی در محیط خط فرمان، تا بتوانید نتیجه را بلافاصله مشاهده کنید. ویژگی فوق العاده دنباله ها این است که می توانید به تاپل ها، لیست ها و رشته ها به یک روش مشابه دسترسی پیدا کنید! </p>
+<h2 id="مجموعهset">مجموعه(Set)</h2>
+<p>مجموعه ها، مجموعه هایی <em>بدون ترتیب</em> از اشیای ساده هستند. از آنها زمانی استفاده می شود که وجود یک شئ در یک مجموعه، از ترتیب آن یا تعداد دفعاتی که درآن ظاهر می شود، اهمیت بیشتری دارد. </p>
+<p>با استفاده از مجموعه ها می توانید بررسی کنید که آیا یک عنصر عضو مجموعه است، آیا یک مجموعه زیر مجموعۀ، مجموعه دیگری هست، اشتراک دو مجموعه را پیدا کنید و موارد مشابه دیگر را نیز انجام دهید. </p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>bri = <span class="hljs-built_in">set</span>([<span class="hljs-string">'brazil'</span>, <span class="hljs-string">'russia'</span>, <span class="hljs-string">'india'</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'india'</span> <span class="hljs-keyword">in</span> bri
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'usa'</span> <span class="hljs-keyword">in</span> bri
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>bric = bri.copy()
+<span class="hljs-meta">&gt;&gt;&gt; </span>bric.add(<span class="hljs-string">'china'</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>bric.issuperset(bri)
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>bri.remove(<span class="hljs-string">'russia'</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>bri &amp; bric <span class="hljs-comment"># OR bri.intersection(bric)</span>
+{<span class="hljs-string">'brazil'</span>, <span class="hljs-string">'india'</span>}
+</code></pre>
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>اگر مفاهیم پایۀ نظریۀ مجموعه ها را که در درس ریاضی در مدرسه آموخته اید، به یاد داشته باشید، این مثال تا حد زیادی خودتوضیح است. اما اگر چنین نیست، می توانید عبارت های "set theory" و "Venn diagram" را در گوگل جست و جو کنید تا کاربرد مجموعه ها در پایتون را بهتر درک کنید. </p>
+<h2 id="ارجاع-ها">ارجاع ها</h2>
+<p>هنگامی که یک شئ ایجاد می کنید و آن را به یک متغیر نسبت می دهید، متغیر فقط به آن شئ <em>اشاره می کند</em> و خود شئ نیست! به بیان دیگر، نام متغیر به بخشی از حافظه کامپیوتر شما اشاره می کند که شئ در آن ذخیره شده است. به این فرآیند، <em>پیوند دادن (binding)</em> نام به شئ گفته می شود. </p>
+<p>به طور کلی، نیازی به نگرانی دربارۀ این موضوع نیست، اما یک اثر ظریف ناشی از ارجاع ها وجود دارد که باید از آن آگاه باشید: </p>
+<p>مثال را تحت عنوان <code>ds_reference.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">'Simple Assignment'</span>)
+shoplist = [<span class="hljs-string">'apple'</span>, <span class="hljs-string">'mango'</span>, <span class="hljs-string">'carrot'</span>, <span class="hljs-string">'banana'</span>]
+<span class="hljs-comment"># mylist is just another name pointing to the same object!</span>
+mylist = shoplist
+
+<span class="hljs-comment"># I purchased the first item, so I remove it from the list</span>
+<span class="hljs-keyword">del</span> shoplist[<span class="hljs-number">0</span>]
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'shoplist is'</span>, shoplist)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'mylist is'</span>, mylist)
+<span class="hljs-comment"># Notice that both shoplist and mylist both print</span>
+<span class="hljs-comment"># the same list without the 'apple' confirming that</span>
+<span class="hljs-comment"># they point to the same object</span>
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Copy by making a full slice'</span>)
+<span class="hljs-comment"># Make a copy by doing a full slice</span>
+mylist = shoplist[:]
+<span class="hljs-comment"># Remove first item</span>
+<span class="hljs-keyword">del</span> mylist[<span class="hljs-number">0</span>]
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'shoplist is'</span>, shoplist)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'mylist is'</span>, mylist)
+<span class="hljs-comment"># Notice that now the two lists are different</span>
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python ds_reference.py
+Simple Assignment
+shoplist is ['mango', 'carrot', 'banana']
+mylist is ['mango', 'carrot', 'banana']
+Copy by making a full slice
+shoplist is ['mango', 'carrot', 'banana']
+mylist is ['carrot', 'banana']
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>بخش عمدۀ توضیحات در کامنت ها ارائه شده است. </p>
+<p>به خاطر داشته باشید که اگر بخواهید از یک لیست یا انواع مشابه دنباله ها یا اشیای پیچیده (نه <em>اشیای</em> آسان مانند اعداد صحیح)، یک کپی ایجاد کنید باید برای ساخت کپی از عملیات برش استفاده کنید. اگر فقط نام یک متغیر را به نام دیگری نسبت دهید، هردو نام به همان شئ «اشاره دارد» و اگر مراقب نباشید، این موضوع می تواند مشکل ساز شود. </p>
+<blockquote>
+<p><strong>نکته برای برنامه نویسان Perl</strong></p>
+<p>به یاد داشته باشید که یک دستور انتساب برای لیست ها کپی ایجاد <strong>نمی کند</strong>. باید از عملیات برش برای ایجاد یک کپی از دنباله استفاده کنید. </p>
+</blockquote>
+<h2 id="اطلاعات-بیشتر-دربارۀ-رشته-ها">اطلاعات بیشتر دربارۀ رشته ها</h2>
+<p>پیش تر رشته ها را با جزئیات بررسی کردیم. پس چه چیز دیگری برای دانستن وجود دارد؟ خب، آیا می دانستید که رشته ها نیز اشیا هستند و روش هایی دارند که کارهایی از بررسی بخشی از رشته گرفته تا حذف فاصله ها را انجام دهند؟ در واقع، شما پیش تر از روش های رشته استفاده کرده اید... روش <code>format</code>!</p>
+<p>رشته هایی که در برنامه ها استفاده می کنید، همگی اشیائی از کلاس <code>str</code> هستند. برخی از روش های کاربردی و مفید این کلاس در مثال بعد نشان داده شده است. برای مشاهدۀ لیست کامل این روش ها به <code>help(str)</code> مراجعه کنید. </p>
+<p>مثال را با نام <code>ds_str_methods.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-comment"># This is a string object</span>
+name = <span class="hljs-string">'Swaroop'</span>
+
+<span class="hljs-keyword">if</span> name.startswith(<span class="hljs-string">'Swa'</span>):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Yes, the string starts with "Swa"'</span>)
+
+<span class="hljs-keyword">if</span> <span class="hljs-string">'a'</span> <span class="hljs-keyword">in</span> name:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Yes, it contains the string "a"'</span>)
+
+<span class="hljs-keyword">if</span> name.find(<span class="hljs-string">'war'</span>) != -<span class="hljs-number">1</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Yes, it contains the string "war"'</span>)
+
+delimiter = <span class="hljs-string">'_*_'</span>
+mylist = [<span class="hljs-string">'Brazil'</span>, <span class="hljs-string">'Russia'</span>, <span class="hljs-string">'India'</span>, <span class="hljs-string">'China'</span>]
+<span class="hljs-built_in">print</span>(delimiter.join(mylist))
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python ds_str_methods.py
+Yes, the string starts with "Swa"
+Yes, it contains the string "a"
+Yes, it contains the string "war"
+Brazil_*_Russia_*_India_*_China
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>در اینجا نمونه های مختلفی از روش های رشته ها را در عمل مشاهده می کنیم. روش <code>startswith</code> برای بررسی این موضوع استفاده می شود که آیا رشته با رشته داده شده آغاز می شود یا خیر. عملگر <code>in</code> برای بررسی اینکه آیا این رشته داده شده بخشی از رشته دیگر است یا خیر، استفاده می شود. </p>
+<p>روش <code>find</code> برای یافتن موقعیت زیررشتۀ داده شده درون رشته به کار می رود؛ اگر این روش نتواند زیر رشته را پیدا کند، مقدار 1- را بر می گرداند. کلاس <code>str</code> نیز روش مرتب و مفیدی به نام <code>join</code> دارد که که عناصر یک رشته را با استفاده از یک رشته به عنوان جداکننده به یکدیگر متصل می کند و یک رشته بزرگتر ایجاد می شود. </p>
+<h2 id="جمع-بندی">جمع بندی</h2>
+<p>در این بخش، ساختارهای داده داخلی مختلف پایتون را با جزئیات بررسی کردیم. این ساختارهای داده برای نوشتن برنامه هایی با اندازه قابل توجه، ضروری هستند. </p>
+<p>اکنون که بخش عظیمی از مبانی پایتون را آموخته ایم، در ادامه به سراغ نحوۀ طراحی و نوشتن یک برنامۀ واقعی در پایتون خواهیم رفت. </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="modules.html" class="navigation navigation-prev " aria-label="Previous page: Modules">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="problem_solving.html" class="navigation navigation-next " aria-label="Next page: Problem Solving">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Data Structures","level":"1.12","depth":1,"next":{"title":"Problem Solving","level":"1.13","depth":1,"path":"problem_solving.md","ref":"problem_solving.md","articles":[]},"previous":{"title":"Modules","level":"1.11","depth":1,"path":"modules.md","ref":"modules.md","articles":[]},"dir":"rtl"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"authorUrl":"https://swaroopch.com/about/","buyBookUrl":"https://swaroopch.com/buybook/","contactUrl":"https://swaroopch.com/contact/","downloadUrl":"https://github.com/swaroopch/byte-of-python/releases/latest","officialUrl":"https://python.swaroopch.com","pythonVersion":"3.6.0","sourceUrl":"https://github.com/swaroopch/byte-of-python","vimBookUrl":"https://vim.swaroopch.com/"},"title":"A Byte of Python","language":"fa","gitbook":"*","direction":"rtl"},"file":{"path":"data_structures.md","mtime":"2026-10-01T20:53:21.037Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-10-01T20:53:33.324Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

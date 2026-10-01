@@ -1,0 +1,837 @@
+
+<!DOCTYPE HTML>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Functions · A Byte of Python</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="modules.html" />
+    
+    
+    <link rel="prev" href="control_flow.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="چیزی برای جستجو بنویسید" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="dedication.html">
+            
+                <a href="dedication.html">
+            
+                    
+                    Dedication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="about_python.html">
+            
+                <a href="about_python.html">
+            
+                    
+                    About Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="first_steps.html">
+            
+                <a href="first_steps.html">
+            
+                    
+                    First Steps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="op_exp.html">
+            
+                <a href="op_exp.html">
+            
+                    
+                    Operators and Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="data_structures.html">
+            
+                <a href="data_structures.html">
+            
+                    
+                    Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="problem_solving.html">
+            
+                <a href="problem_solving.html">
+            
+                    
+                    Problem Solving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="oop.html">
+            
+                <a href="oop.html">
+            
+                    
+                    Object Oriented Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="io.html">
+            
+                <a href="io.html">
+            
+                    
+                    Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                    Exceptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="stdlib.html">
+            
+                <a href="stdlib.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="more.html">
+            
+                <a href="more.html">
+            
+                    
+                    More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="what_next.html">
+            
+                <a href="what_next.html">
+            
+                    
+                    What Next
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="floss.html">
+            
+                <a href="floss.html">
+            
+                    
+                    Appendix: FLOSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                    Appendix: About
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="revision_history.html">
+            
+                <a href="revision_history.html">
+            
+                    
+                    Appendix: Revision History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="translations.html">
+            
+                <a href="translations.html">
+            
+                    
+                    Appendix: Translations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="translation_howto.html">
+            
+                <a href="translation_howto.html">
+            
+                    
+                    Appendix: Translation How-to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="feedback.html">
+            
+                <a href="feedback.html">
+            
+                    
+                    Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            انتشار یافته توسط HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Functions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="توابع">توابع</h1>
+<p>توابع بخش هایی از برنامه هستند که می توان آنها را دوباره استفاده کرد.آن ها به شما این امکان را می دهند تا به یک بلوک از دستورات یک نام بدهید و سپس هر زمان و به هر تعداد که بخواهید، آن دستورات را اجرا کنید. به این کار <em>فراخوانی (Calling)</em> تابع گفته می شود. ما قبلاً از چند تابع داخلی مانند <code>len</code> و <code>range</code> استفاده کرده ایم. </p>
+<p>مفهوم تابع احتمالاً <em>مهم ترین</em> جزء سازندۀ هر نرم افزار غیر ساده ای است (در هر زبان برنامه نویسی). بنابراین در این فصل جنبه های مختلف توابع را بررسی خواهیم کرد. </p>
+<p>توابع با استفاده از کلمۀ کلیدی <code>def</code> تعریف می شوند. پس از این کلمه، یک نام <em>شناسه</em> برای تابع قرار می گیرد و سپس یک جفت پرانتز می آید که ممکن است در آن نام تعدادی متغیر قرار گرفته باشد. در پایان نیز یک دونقطه قرار می گیرد که پایان خط را مشخص می کند. پس از آن، مجموعۀ دستورات مربوط به این تابع قرار می گیرد. یک مثال نشان می دهد که این کار در واقع بسیار ساده است: </p>
+<p>مثال را با نام <code>function1.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">say_hello</span>():
+    <span class="hljs-comment"># block belonging to the function</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'hello world'</span>)
+<span class="hljs-comment"># End of function</span>
+
+say_hello()  <span class="hljs-comment"># call the function</span>
+say_hello()  <span class="hljs-comment"># call the function again</span>
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python function1.py
+hello world
+hello world
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>ما با استفاده از نحوی که بالا توضیح داده شد، تابعی به نام <code>say_hello</code> تعریف می کنیم. این تابع هیچ پارامتری دریافت نمی کند و به همین دلیل درون پرانتزها هیچ متغیری تعریف نشده است. پارامترهای توابع در واقع ورودی تابع هستند؛ بنابراین می توانیم مقادیر مختلفی را به تابع بدهیم و نتایج متناسب آن ها را دریافت کنیم. </p>
+<p>توجه کنید که می توانیم یک تابع را دو بار فراخوانی کنیم؛ بنابراین مجبور نیستیم یک کد یکسان را دو بار بنویسیم. </p>
+<h2 id="پارامترهای-تابع">پارامترهای تابع</h2>
+<p>یک تابع می تواند پارامترهایی را دریافت کند؛ یعنی مقادیری که به تابع می دهید تا تابع بتواند با استفاده از آن مقادیر کاری را <em>انجام دهد</em>. این پارامترها شبیه متغیرها هستند، با این تفاوت که مقدار آن ها هنگام فراخوانی تابع تعریف می شوند و زمانی که تابع اجرا می شود، از قبل دارای مقدار هستند. </p>
+<p>پارامترها درون پرانتزهای تعریف تابع مشخص می شوند و با استفاده از کاما از یکدیگر جدا می شوند. هنگام فراخوانی تابع نیز مقادیر را به همین شکل وارد می کنیم. به اصطلاحات استفاده شده توجه کنید - نام هایی که در تعریف تابع قرار می گیرند، <em>پارامترها</em> نام دارند. در حالی که مقادیری که هنگام فراخوانی تابع به آن می دهیم، <em>آرگومان ها</em> نامیده می شود. </p>
+<p>مثال را تحت عنوان <code>function_param.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">print_max</span>(<span class="hljs-params">a, b</span>):
+    <span class="hljs-keyword">if</span> a &gt; b:
+        <span class="hljs-built_in">print</span>(a, <span class="hljs-string">'is maximum'</span>)
+    <span class="hljs-keyword">elif</span> a == b:
+        <span class="hljs-built_in">print</span>(a, <span class="hljs-string">'is equal to'</span>, b)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(b, <span class="hljs-string">'is maximum'</span>)
+
+<span class="hljs-comment"># directly pass literal values</span>
+print_max(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
+
+x = <span class="hljs-number">5</span>
+y = <span class="hljs-number">7</span>
+
+<span class="hljs-comment"># pass variables as arguments</span>
+print_max(x, y)
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python function_param.py
+4 is maximum
+7 is maximum
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>در اینجا تابعی به نام <code>print_max</code> تعریف می کنیم که از دو پارامتر به نام های <code>a</code> و <code>b</code> استفاده می کند. با استفاده از یک دستور سادۀ <code>if..else</code> عدد بزرگ تر را پیدا می کنیم و آن را پرینت می کنیم. </p>
+<p>در اولین فراخوانی تابع <code>print_max</code>، اعداد را مستقیماً به عنوان آرگومان وارد می کنیم. در حالت دوم، تابع را با متغیرها به عنوان آرگومان فراخوانی می کنیم. عبارت <code>print_max(x, y)</code> باعث می شود مقدار آرگومان <code>x</code> به پارامتر <code>a</code> و مقدار آرگومان <code>y</code> به پارامتر <code>b</code> نسبت داده می شود. تابع <code>print_max</code> در هر دو حالت به یک شکل مشابه عمل می کند. </p>
+<h2 id="متغیرهای-محلی">متغیرهای محلی</h2>
+<p>وقتی متغیرهایی را داخل تعریف یک تابع ایجاد می کنید، آن ها هیچ ارتباطی با متغیرهایی با همان نام که خارج از تابع استفاده شده اند ندارند؛ یعنی نام متغیرها در تابع، <em>محلی(local)</em> هستند. به این محدوده، <em>دامنۀ</em> متغیر گفته می شود. هر متغیر دارای دامنه ای است که از محل تعریف آن نام آغاز می شود و به بلوکی که متغیر در آن تعریف شده مربوط است. </p>
+<p>مثال را با نام <code>function_local.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python">x = <span class="hljs-number">50</span>
+
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">func</span>(<span class="hljs-params">x</span>):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'x is'</span>, x)
+    x = <span class="hljs-number">2</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Changed local x to'</span>, x)
+
+
+func(x)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'x is still'</span>, x)
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python function_local.py
+x is 50
+Changed local x to 2
+x is still 50
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>در اولین خط داخل بدنۀ تابع، زمانی که <em>مقدار</em> نام <em>x</em> را چاپ می کنیم، پایتون از مقدار پارامتری استفاده می کند که در بلوک اصلی برنامه، بالاتر از تابع قرار دارد. </p>
+<p>سپس مقدار <code>2</code> را به <code>x</code> اختصاص می دهیم. نام <code>x</code> برای تابع محلی است. بنابراین وقتی مقدار <code>x</code> را در تابع تغییر می دهیم، مقدار <code>x</code> که در بلوک اصلی تعریف شده است، تغییری نمی کند. </p>
+<p>با آخرین دستور <code>print</code>، مقدار <code>x</code> تعریف شده در بلوک اصلی برنامه را نمایش می دهیم و به این ترتیب تایید می کنیم که انتساب محلی داخل تابع، روی آن تاثیری نداشته است. </p>
+<h2 id="دستور-global">دستور <code>global</code></h2>
+<p>اگر بخواهید مقداری را به نامی اختصاص دهید که در سطح بالایی برنامه تعریف شده است (یعنی داخل هیچ دامنه ای مانند تابع یا کلاس قرار ندارد)، باید به پایتون بگویید که این نام محلی نیست، بلکه <em>سراسری  (global)</em> است. این کار را با استفاده از دستور <code>global</code> انجام می دهیم. بدون استفاده از <code>global</code>، نمی توان مقدار یک متغیر تعریف شده خارج از تابع را از داخل آن تابع تغییر داد. </p>
+<p>می توانید از مقادیر چنین توابعی که خارج از تابع تعریف شده اند استفاده کنید (البته به شرطی که متغیری با همان نام داخل تابع وجود نداشته باشد). با این حال، این کار توصیه نمی شود و بهتر است از آن اجتناب کنید؛ زیرا برای خوانندۀ برنامه مشخص نخواهد بود که تعریف آن متغیر کجاست. استفاده از دستور <code>global</code> به روشنی نشان می دهد که متغیر در یک بلوک بیرونی تعریف شده است. </p>
+<p>مثال را با عنوان <code>function_global.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python">x = <span class="hljs-number">50</span>
+
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">func</span>():
+    <span class="hljs-keyword">global</span> x
+
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'x is'</span>, x)
+    x = <span class="hljs-number">2</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Changed global x to'</span>, x)
+
+
+func()
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Value of x is'</span>, x)
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python function_global.py
+x is 50
+Changed global x to 2
+Value of x is 2
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>دستور <code>global</code> برای اعلام این موضوع استفاده می شود که <code>x</code> یک متغیر سراسری است - بنابراین وقتی مقدار <code>x</code> داخل تابع را تغییر می دهیم، این تغییر هنگام استفاده از مقدار <code>x</code> در بلوک اصلی برنامه نیز قابل مشاهده خواهد بود. </p>
+<p>می توانید با استفاده از چند متغیر سراسری نیز یک دستور مشابه <code>global</code> مشخص کنید؛ برای مثال: <code>global x, y, z</code>.</p>
+<h2 id="مقادیر-پیش-فرض-آرگومان-ها">مقادیر پیش فرض آرگومان ها</h2>
+<p>در بعضی توابع ممکن است بخواهید برخی از پارامترها <em>اختیاری</em> باشند و اگر کاربر مقداری برای آنها وارد نکرد، از یک مقدار پیش فرض استفاده شود. این امر با استفاده از مقادیر پیش فرض آرگومان ها انجام می شود. می توانید با قرار دادن عملگر انتساب (<code>=</code>)پس از نام پارامتر در تعریف تابع و سپس نوشتن مقدار پیش فرض، یک مقدار پیش فرض برای پارامتر تعیین کنید. </p>
+<p>توجه داشته باشید که مقدار پیش فرض آرگومان باید یک مقدار ثابت باشد. به طور دقیق تر، مقدار پیش فرض آرگومان باید تغییر ناپذیر باشد؛ این موضوع در فصل های بعدی با جزئیات بیشتری توضیح داده خواهد شد. فعلاً همین نکته را به خاطر بسپارید. </p>
+<p>مثال را با نام <code>function_default.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">say</span>(<span class="hljs-params">message, times=<span class="hljs-number">1</span></span>):
+    <span class="hljs-built_in">print</span>(message * times)
+
+say(<span class="hljs-string">'Hello'</span>)
+say(<span class="hljs-string">'World'</span>, <span class="hljs-number">5</span>)
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python function_default.py
+Hello
+WorldWorldWorldWorldWorld
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>تابع <code>say</code> برای چاپ کردن یک رشته به تعداد دفعات مشخص استفاده می شود. اگر برای تعداد دفعات مقداری را وارد نکنیم، رشته به طور پیش فرض فقط یک بار چاپ می شود. این کار را با تعیین مقدار پیش فرض <code>1</code> برای پارامتر <code>times</code> انجام داده ایم. </p>
+<p>در اولین کاربرد <code>say</code>، فقط رشته را وارد می کنیم و رشته یک بار چاپ می شود. در دومین کاربرد <code>say</code>، هم رشته و هم آرگومان <code>5</code> را وارد می کنیم و می گوییم می خواهیم پیام 5 دفعه چاپ شود. </p>
+<blockquote>
+<p><em>هشدار</em></p>
+<p>فقط پارامترهایی که در انتهای لیست پارامترها قرار دارند می توانند مقدار پیش فرض آرگومان داشته باشند؛ یعنی نمی توانید در لیست پارامتر تابع پارامتری که مقدار پیش فرض دارد را قبل از پارامتری قرار دهید که مقدار پیش فرض ندارد. </p>
+<p>دلیلش این است که مقادیر بر اساس موقعیتشان به پارامترها اختصاص داده می شوند. برای مثال، <code>def func(a, b=5)</code> معتبراست، اما <code>def func(a=5, b)</code> <em>معتبر نیست</em>. </p>
+</blockquote>
+<h2 id="آرگومان-های-کلیدی">آرگومان های کلیدی</h2>
+<p>اگر تابعی پارامترهای زیادی داشته باشد و بخواهید تنها برخی از آنها را مشخص کنید، می توانید به این نوع از پارامترها با نام گذاریشان مقدار بدهید - به این کار <em>آرگومان کلیدی</em> گفته می شود. در این روش به جای استفاده از موقعیت آنها(که تا به حال از آن استفاده می کردیم) از نام (کلید) آن استفاده می کنیم تا آرگومان ها را مشخص کنیم. </p>
+<p>این روش دو مزیت دارد - یک، استفاده از تابع آسان تر است، زیرا نیازی نیست نگران ترتیب آرگومان ها باشیم. دو، می توانیم فقط برای پارامترهایی که می خواهیم ، مقدار تعریف کنیم؛ به شرطی که سایر پارامترها دارای مقدار پیش فرض آرگومان باشند. </p>
+<p>مثال را با نام <code>function_keyword.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">func</span>(<span class="hljs-params">a, b=<span class="hljs-number">5</span>, c=<span class="hljs-number">10</span></span>):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'a is'</span>, a, <span class="hljs-string">'and b is'</span>, b, <span class="hljs-string">'and c is'</span>, c)
+
+func(<span class="hljs-number">3</span>, <span class="hljs-number">7</span>)
+func(<span class="hljs-number">25</span>, c=<span class="hljs-number">24</span>)
+func(c=<span class="hljs-number">50</span>, a=<span class="hljs-number">100</span>)
+</code></pre>
+
+<p>خروجی:</p>
+<pre><code>$ python function_keyword.py
+a is 3 and b is 7 and c is 10
+a is 25 and b is 5 and c is 24
+a is 100 and b is 5 and c is 50
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>تابع <code>func</code> یک پارامتر بدون مقدار پیش فرض و دو پارامتر با مقدار پیش فرض دارد. </p>
+<p>در اولین کاربرد، <code>func(3 , 7)</code>، پارامتر <code>a</code> مقدار <code>3</code> را می گیرد، پارامتر <code>b</code> مقدار <code>7</code> و پارامتر <code>c</code> مقدار پیش فرض <code>10</code> را می گیرد. </p>
+<p>در دومین کاربرد، <code>func(25, c=24)</code>، متغیر <code>a</code> به دلیل موقعیت آرگومان مقدار 25 را دریافت می کند. سپس، پارامتر <code>c</code> به دلیل نام گذاری اش یعنی آرگومان کلیدی مقدار <code>24</code> را می گیرد. متغیر <code>b</code> مقدار پیش فرض <code>5</code> را دریافت می کند. </p>
+<p>در سومین کاربرد، <code>func(c=50, a=100)</code>، برای تمام مقادیر مشخص شده از آرگومان های کلیدی استفاده می کنیم. توجه داشته باشید که مقدار پارامتر <code>c</code> را قبل از <code>a</code> مشخص کرده ایم، با اینکه در تعریف تابع <code>a</code> قبل از <code>c</code> قرار دارد. </p>
+<h2 id="پارامترهای-متغیر-varargs-parameters">پارامترهای متغیر (VarArgs parameters)</h2>
+<p>گاهی ممکن است بخواهید تابعی تعریف کنید که بتواند <em>هر</em> تعداد پارامتر دریافت کند؛ یعنی تعداد آرگومان ها متغیر باشد. این کار با استفاده از علامت ستاره انجام می شود. (مثال را با نام <code>function_varargs.py</code> ذخیره کنید): </p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">total</span>(<span class="hljs-params">a=<span class="hljs-number">5</span>, *numbers, **phonebook</span>):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'a'</span>, a)
+
+    <span class="hljs-comment">#iterate through all the items in tuple</span>
+    <span class="hljs-keyword">for</span> single_item <span class="hljs-keyword">in</span> numbers:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">'single_item'</span>, single_item)
+
+    <span class="hljs-comment">#iterate through all the items in dictionary    </span>
+    <span class="hljs-keyword">for</span> first_part, second_part <span class="hljs-keyword">in</span> phonebook.items():
+        <span class="hljs-built_in">print</span>(first_part,second_part)
+
+total(<span class="hljs-number">10</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,Jack=<span class="hljs-number">1123</span>,John=<span class="hljs-number">2231</span>,Inge=<span class="hljs-number">1560</span>)
+</code></pre>
+
+<p>خروجی: </p>
+<pre><code>$ python function_varargs.py
+a 10
+single_item 1
+single_item 2
+single_item 3
+Inge 1560
+John 2231
+Jack 1123
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>وقتی یک پارامتر ستاره دار مانند <code>param*</code> تعریف می کنیم، تمام آرگومان های موقعیتی از آن نقطه تا انتهای لیست، به صورت یک تاپل با نام 'param' جمع آوری می شوند. </p>
+<p>به همین شکل، وقتی پارامتری با دو ستاره مانند <code>param**</code> را تعریف می کنیم، تمام آرگومان های کلیدی از آن نقطه تا انتهای لیست ، به صورت یک دیکشنری با نام 'param' جمع آوری می شوند. </p>
+<p>تاپل ها و دیکشنری ها را در <a href="data_structures.html#data-structures">later chapter</a> بررسی خواهیم کرد. </p>
+<h2 id="دستور-return">دستور <code>return</code></h2>
+<p>دستور <code>return</code> برای <em>بازگشت</em> از یک تابع استفاده می شود؛ یعنی اجرای تابع را متوقف کرده و از آن خارج می شود. همچنین می توانیم به صورت اختیاری یک <em>مقدار تابع</em> را از تابع برگردانیم. </p>
+<p>مثال را تحت عنوان <code>function_return.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">maximum</span>(<span class="hljs-params">x, y</span>):
+    <span class="hljs-keyword">if</span> x &gt; y:
+        <span class="hljs-keyword">return</span> x
+    <span class="hljs-keyword">elif</span> x == y:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'The numbers are equal'</span>
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> y
+
+<span class="hljs-built_in">print</span>(maximum(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>))
+</code></pre>
+
+<p>خروجی: </p>
+<pre><code>$ python function_return.py
+3
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>تابع <code>maximum</code> بیشترین مقدار پارامترهای خود، یعنی اعدادی که به تابع داده شدند، را بر می گرداند. این تابع با استفاده از دستور سادۀ <code>if..else</code> مقدار بزرگتر را پیدا کرده و سپس آن مقدار را <em>باز می گرداند</em>. </p>
+<p>توجه داشته باشید که دستور <code>return</code> بدون مقدار، معادل <code>return None</code> است. توجه کنید که <code>None</code> یک نوع ویژه در پایتون است که نشان دهندۀ نبود مقدار است. برای مثال، زمانی استفاده می شود که نشان دهد یک متغیر مقداری ندارد و مقدار آن <code>None</code> است. </p>
+<p>هر تابع به طور ضمنی در انتهای خود شامل یک <code>return None</code> است؛ مگر اینکه خودتان یک دستور <code>return</code> نوشته باشید. می توانید این موضوع را با اجرای <code>print(some_function())</code> مشاهده کنید؛ در حالی که تابع <code>some_function</code> از دستور <code>return</code> استفاده نمی کند. مثلاً: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">some_function</span>():
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+<p>دستور <code>pass</code> در پایتون برای نشان دادن یک بلوک خالی از دستورات استفاده می شود. </p>
+<blockquote>
+<p>نکته: یک تابع داخلی به نام <code>max</code> وجود دارد که از قبل قابلیت «پیدا کردن بیشترین مقدار» را پیاده سازی کرده است؛ بنابراین هر زمان امکانش وجود دارد، از همین تابع داخلی استفاده کنید. </p>
+</blockquote>
+<h2 id="docstrings">DocStrings</h2>
+<p>پایتون قابلیتی بسیار کاربردی به نام <em>رشته های مستند سازی (documentation strings)</em> دارد که معمولاً با نام کوتاه تر <em>docstrings</em> شناخته می شود. قابلیت Docstrings ابزار مهمی است که باید از آنها استفاده کنید زیرا برنامه بهتر مستند می شود و درک آن را آسان تر می کند. جالب تر اینکه حتی می توانیم هنگام اجرای برنامه، Docstring مربوط به یک تابع را دوباره دریافت کنبم! </p>
+<p>مثال را با نام <code>function_docstring.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">print_max</span>(<span class="hljs-params">x, y</span>):
+    <span class="hljs-string">'''Prints the maximum of two numbers.
+
+    The two values must be integers.'''</span>
+    <span class="hljs-comment"># convert to integers, if possible</span>
+    x = <span class="hljs-built_in">int</span>(x)
+    y = <span class="hljs-built_in">int</span>(y)
+
+    <span class="hljs-keyword">if</span> x &gt; y:
+        <span class="hljs-built_in">print</span>(x, <span class="hljs-string">'is maximum'</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(y, <span class="hljs-string">'is maximum'</span>)
+
+print_max(<span class="hljs-number">3</span>, <span class="hljs-number">5</span>)
+<span class="hljs-built_in">print</span>(print_max.__doc__)
+</code></pre>
+
+<p>خروجی: </p>
+<pre><code>$ python function_docstring.py
+5 is maximum
+Prints the maximum of two numbers.
+
+    The two values must be integers.
+</code></pre>
+
+<p><strong>نحوۀ عملکرد</strong></p>
+<p>رشته ای که در اولین خط منطقی یک تابع قرار می گیرد، <em>docstring</em> آن تابع است. توجه داشته باشید که Docstringها برای <a href="modules.html#modules">modules</a> و <a href="oop.html#oop">classes</a> کاربرد دارند که در فصل های مربوطه به یادگیری آنها خواهیم پرداخت. </p>
+<p>قرارداد رایج برای Docstringها به این صورت است که از یک رشتۀ چند خطی استفاده کنیم؛ خط اول با یک حرف بزرگ شروع شده و با نقطه به پایان می رسد. سپس برای خط دوم یک خط خالی قرار می گیرد و از خط سوم، توضیحات کامل تر و با جزئیات تری نوشته می شود. <em>اکیداً توصیه می شود</em> برای تمام توابع غیرساده ای که می نویسید، این قرارداد را در Docstringهای خود رعایت کنید. </p>
+<p>می توانیم Docstring تابع <code>print_max</code> را با استفاده از ویژگی <code>__doc__</code> آن دریافت کنیم. (به <em>دو زیرخط</em> در انتها و ابتدای آن توجه کنید). فقط به خاطر داشته باشید که پایتون با <em>همه چیز</em> مانند یک شئ رفتار می کند و این امر شامل تابع ها نیز می شود. در فصل مربوط به <a href="oop.html#oop">classes</a> دربارۀ اشیا بیشتر یاد خواهیم گرفت. </p>
+<p>اگر قبلاً از <code>()help</code> در پایتون استفاده کرده باشید، در واقع با کاربرد Docstringها مواجه شده اید! کاری که <code>()help</code> در پایتون انجام می دهد این است که ویژگی <code>__doc__</code> تابع را دریافت کرده و آن را به شکل خوانا و مرتب نمایش می دهد. می توانید این کار را برای تابع بالا امتحان کنید؛ کافیست <code>help(print_max)</code> را در برنامۀ خود قرار دهید. به یاد داشته باشید که برای خروج از <code>help</code> از کلید <code>q</code> استفاده کنید. </p>
+<p>ابزارهای خودکار نیز می توانند به همین روش مستندات را از برنامۀ شما استخراج کنند. بنابراین، <em>اکیداً توصیه می کنم</em> برای هر تابع غیرساده ای که می نویسید از Docstringها استفاده کنید. دستور <code>pydoc</code> که به همراه توزیع پایتون ارائه می شود نیز روشی مشابه <code>()help</code> دارد و از Docstringها استفاده می کند. </p>
+<h2 id="جمع-بندی">جمع بندی</h2>
+<p>در این بخش جنبه های مختلف و متعددی از توابع را بررسی کردیم؛ البته توجه داشته باشید که هنوز تمام جوانب توابع را پوشش نداده ایم. با این حال، بیشتر چیزهایی را که در استفادۀ روزمره از توابع پایتون به آنها نیاز خواهید داشت، آموختیم. </p>
+<p>در فصل بعد، نحوۀ استفاده و همچنین ایجاد Modules در پایتون را بررسی خواهیم کرد. </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="control_flow.html" class="navigation navigation-prev " aria-label="Previous page: Control flow">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="modules.html" class="navigation navigation-next " aria-label="Next page: Modules">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Functions","level":"1.10","depth":1,"next":{"title":"Modules","level":"1.11","depth":1,"path":"modules.md","ref":"modules.md","articles":[]},"previous":{"title":"Control flow","level":"1.9","depth":1,"path":"control_flow.md","ref":"control_flow.md","articles":[]},"dir":"rtl"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"authorUrl":"https://swaroopch.com/about/","buyBookUrl":"https://swaroopch.com/buybook/","contactUrl":"https://swaroopch.com/contact/","downloadUrl":"https://github.com/swaroopch/byte-of-python/releases/latest","officialUrl":"https://python.swaroopch.com","pythonVersion":"3.6.0","sourceUrl":"https://github.com/swaroopch/byte-of-python","vimBookUrl":"https://vim.swaroopch.com/"},"title":"A Byte of Python","language":"fa","gitbook":"*","direction":"rtl"},"file":{"path":"functions.md","mtime":"2026-10-01T20:53:21.037Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-10-01T20:53:33.324Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

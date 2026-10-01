@@ -1,0 +1,791 @@
+
+<!DOCTYPE HTML>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Operators and Expressions · A Byte of Python</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="control_flow.html" />
+    
+    
+    <link rel="prev" href="basics.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="چیزی برای جستجو بنویسید" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="dedication.html">
+            
+                <a href="dedication.html">
+            
+                    
+                    Dedication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="about_python.html">
+            
+                <a href="about_python.html">
+            
+                    
+                    About Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="first_steps.html">
+            
+                <a href="first_steps.html">
+            
+                    
+                    First Steps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="op_exp.html">
+            
+                <a href="op_exp.html">
+            
+                    
+                    Operators and Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="data_structures.html">
+            
+                <a href="data_structures.html">
+            
+                    
+                    Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="problem_solving.html">
+            
+                <a href="problem_solving.html">
+            
+                    
+                    Problem Solving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="oop.html">
+            
+                <a href="oop.html">
+            
+                    
+                    Object Oriented Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="io.html">
+            
+                <a href="io.html">
+            
+                    
+                    Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                    Exceptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="stdlib.html">
+            
+                <a href="stdlib.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="more.html">
+            
+                <a href="more.html">
+            
+                    
+                    More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="what_next.html">
+            
+                <a href="what_next.html">
+            
+                    
+                    What Next
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="floss.html">
+            
+                <a href="floss.html">
+            
+                    
+                    Appendix: FLOSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                    Appendix: About
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="revision_history.html">
+            
+                <a href="revision_history.html">
+            
+                    
+                    Appendix: Revision History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="translations.html">
+            
+                <a href="translations.html">
+            
+                    
+                    Appendix: Translations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="translation_howto.html">
+            
+                <a href="translation_howto.html">
+            
+                    
+                    Appendix: Translation How-to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="feedback.html">
+            
+                <a href="feedback.html">
+            
+                    
+                    Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            انتشار یافته توسط HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Operators and Expressions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="عملگرها-و-عبارت-ها-op-exp">عملگرها و عبارت ها {op-exp#}</h1>
+<p>بیشتر دستورها (خطوط منطقی) که می نویسید شامل <em>عبارات (expressions)</em> هستند. یک مثال ساده از عبارت، <code>3 + 2</code> است. یک عبارت را می توان به عملگرها و عملوندها تجزیه کرد. </p>
+<p><em>عملگرها</em> قابلیتی هستند که کاری را انجام می دهند و می توان آنها را با نمادهایی مانند <code>+</code> یا با کلمات کلیدی خاص نمایش داد. عملگرها برای انجام عملیات خود به داده هایی نیاز دارند و این داده ها <em>عملوند</em> نامیده می شوند. در این مثال، <code>2</code> و <code>3</code> عملوند هستند. </p>
+<h2 id="عملگرها">عملگرها</h2>
+<p>در این بخش نگاهی کوتاه و مختصر به عملگرها و کاربرد آنها خواهیم داشت. </p>
+<p>توجه داشته باشید که می توانید عبارات داده شده در مثال ها را با استفاده از مفسر و به صورت تعاملی ارزیابی کنید. برای مثال، برای آزمایش عبارت <code>3 + 2</code>، از خط فرمان مفسر تعاملی پایتون استفاده کنید: </p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+<span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> * <span class="hljs-number">5</span>
+<span class="hljs-number">15</span>
+&gt;&gt;&gt;
+</code></pre>
+<p>در اینجا، مروری سریع بر عملگرهای موجود ارائه شده است: </p>
+<ul>
+<li><p><code>+</code> (جمع) </p>
+<ul>
+<li>دو شئ را با یکدیگر جمع می کند. </li>
+<li><code>5 + 3</code> مقدار <code>8</code> را می دهد. عبارت <code>'a' + 'b'</code> مقدار <code>'ab'</code> را ایجاد می کند. </li>
+</ul>
+</li>
+<li><p><code>-</code> (تفریق) </p>
+<ul>
+<li>تفریق یک عدد از عدد دیگر را انجام می دهد؛ اگر عملوند اول موجود نباشد، مقدار آن صفر در نظر گرفته می شود. </li>
+<li><code>-5.2</code> یک عدد منفی ایجاد می کند و عبارت <code>24 - 50</code> مقدار <code>26</code> را می دهد. </li>
+</ul>
+</li>
+<li><p><code>*</code> (ضرب) </p>
+<ul>
+<li>حاصل ضرب دو عدد را بر می گرداند یا رشته را به همان تعداد مشخص تکرار می کند. </li>
+<li><code>3 * 2</code> مقدار <code>6</code> را ایجاد می کند. عبارت <code>'la' * 3'</code> مقدار <code>'lalala'</code> را می دهد. </li>
+</ul>
+</li>
+<li><p><code>**</code> (توان ) </p>
+<ul>
+<li>مقدار x را به توان y بر می گرداند. </li>
+<li><code>4**3</code> مقدار <code>81</code> را می دهد (یعنی <code>3 * 3 * 3 * 3</code>) </li>
+</ul>
+</li>
+<li><p><code>/</code> (تقسیم) </p>
+<ul>
+<li>مقدار x را بر y تقسیم می کند. </li>
+<li><code>3 / 13</code> مقدار <code>4.333333333333333</code> را ایجاد می کند. </li>
+</ul>
+</li>
+<li><p><code>//</code> (تقسیم و کف)</p>
+<ul>
+<li>مقدار x را بر y تقسیم می کند و پاسخ را به سمت <em>پایین</em> تا نزدیک ترین مقدار صحیح گرد می کند. توجه داشته باشید که اگر یکی از مقادیر از نوع اعشاری باشد، نتیجه نیز از نوع اعشاری خواهد بود. </li>
+<li><code>3 // 13</code> مقدار <code>4</code> را ایجاد می کند. </li>
+<li><code>3 // 13-</code> مقدار <code>5-</code> را می دهد. </li>
+<li><code>1.81 // 9</code> مقدار <code>4.0</code> را می دهد. </li>
+</ul>
+</li>
+<li><p><code>%</code> (باقی مانده)</p>
+<ul>
+<li>باقی مانده حاصل از تقسیم را بر می گرداند.</li>
+<li><code>3 % 13</code> مقدار <code>1</code> را می دهد. <code>2.25 % 25.5-</code> مقدار <code>1.5</code> را ایجاد می کند. </li>
+</ul>
+</li>
+<li><p><code>&gt;&gt;</code> (شیفت به چپ )</p>
+<ul>
+<li>بیت های یک عدد را به اندازۀ تعداد بیت های مشخص شده به چپ جا به جا می کند ( هر عدد در حافظه توسط بیت ها یا ارقام باینری یعنی 0 و 1، نمایش داده می شود). </li>
+<li><code>2 &gt;&gt; 2</code> مقدار <code>8</code> را می دهد. <code>2</code> در نمایش بیتی با <code>10</code> مشخص می شود. </li>
+<li>با شیفت دادن 2 بیت به چپ، مقدار <code>1000</code> به دست می آید که نشان دهندۀ عدد <code>8</code> است. </li>
+</ul>
+</li>
+<li><p><code>&lt;&lt;</code> (شیفت به راست )</p>
+<ul>
+<li>بیت های یک عدد را به اندازۀ تعداد بیت های مشخص شده به سمت راست جا به جا می کند. </li>
+<li><code>1 &lt;&lt; 11</code> مقدار <code>5</code> را می دهد. <code>11 &gt;&gt; 1</code> gives <code>5</code>.</li>
+<li>عدد <code>11</code> در نمایش بیتی به صورت <code>1011</code> است که با شیفت 1 بیت به سمت راست، به <code>101</code> تبدیل می شود که همان عدد <code>5</code> است. </li>
+</ul>
+</li>
+<li><p><code>&amp;</code> (AND)</p>
+<ul>
+<li>عمل AND بیتی را روی اعداد انجام می دهد: اگر هر دو عدد <code>1</code> باشند، نتیجه <code>1</code> خواهد بود. در غیر این صورت، نتیجه <code>0</code> می شود. </li>
+<li>عبارت <code>3 &amp; 5</code> مقدار <code>1</code> را می دهد. (عبارت <code>0011 &amp; 0101</code> مقدار <code>0001</code> را می دهد)</li>
+</ul>
+</li>
+<li><p><code>|</code> (OR)</p>
+<ul>
+<li>عمل OR بیتی را روی اعداد انجام می دهد: اگر هر دو عدد <code>1</code> باشند، نتیجه <code>0</code> خواهد بود. در غیر این صورت، <code>1</code> خواهد بود.  </li>
+<li>عبارت <code>3 | 5</code> مقدار <code>7</code> را می دهد. (<code>0011 | 0101</code> مقدار <code>0111</code> را ایجاد می کند). </li>
+</ul>
+</li>
+<li><p><code>^</code> (XOR)</p>
+<ul>
+<li>عمل XOR بیتی را روی اعداد انجام می دهد: اگر هر دو بیت (<code>0</code> یا <code>1</code>) یکسان باشند، نتیجه <code>0</code> می شود. در غیر این صورت، <code>1</code> می شود. </li>
+<li><code>3 ^ 5</code> مقدار <code>6</code> را می دهد (<code>0011 ^ 0101</code> مقدار <code>0110</code> را ایجاد می کند). </li>
+</ul>
+</li>
+<li><p><code>~</code> (معکوس بیتی)</p>
+<ul>
+<li>معکوس بیتی x برابر با (x+1)- است.</li>
+<li>عبارت <code>5~</code> مقدار <code>6-</code> را می دهد. جزئیات بیشتر را می توانید در <a href="http://stackoverflow.com/a/11810203" target="_blank">http://stackoverflow.com/a/11810203</a> مشاهده کنید. </li>
+</ul>
+</li>
+<li><p><code>&gt;</code> (کوچک تر از)</p>
+<ul>
+<li>بررسی می کند که آیا x از y کوچکتر است یا خیر. تمام عملگرهای مقایسه ای مقدار <code>True</code> یا <code>False</code> را بر می گردانند. به بزرگ و کوچک بودن حروف در این نام ها توجه کنید. </li>
+<li><code>3 &gt; 5</code> مقدار <code>False</code> و <code>5 &gt; 3</code> مقدار <code>True</code> باز می گرداند. </li>
+<li>مقایسه ها را می توان به صورت زنجیره ای و بدون محدودیت خاصی انجام داد: <code>3 &lt; 5 &lt; 7</code> مقدار <code>True</code> را ایجاد می کند. </li>
+</ul>
+</li>
+<li><p><code>&lt;</code> (بزرگ تر از)</p>
+<ul>
+<li>بررسی می کند که آیا x بزرگتر از y است یا خیر. </li>
+<li>عبارت <code>3 &lt; 5</code> مقدار <code>True</code> را بر می گرداند. اگر هردو عملوند عدد باشند، ابتدا به یک نوع مشترک تبدیل می شوند. در غیر این صورت، مقدار <code>False</code> را بر می گرداند. </li>
+</ul>
+</li>
+<li><p><code>=&gt;</code> (کوچک تر یا مساوی) </p>
+<ul>
+<li>بررسی می کند که آیا x کوچکتر یا مساوی با y است یا خیر. </li>
+<li>عبارت <code>x = 3; y = 6; x &lt;= y</code> مقدار <code>True</code> را ایجاد می کند. </li>
+</ul>
+</li>
+<li><p><code>&gt;=</code> (بزرگتر یا مساوی)<code>&gt;=</code> </p>
+<ul>
+<li>بررسی می کند که آیا x از y بزرگتر یا مساوی است یا خیر. </li>
+<li>عبارت <code>x = 4; y = 3; x &gt;= 3</code> مقدار <code>True</code> را بر می گرداند. </li>
+</ul>
+</li>
+<li><p><code>==</code> (مساوی)</p>
+<ul>
+<li>بررسی می کند که آیا دو شئ با یکدیگر برابر هستند یا خیر. </li>
+<li>عبارت <code>x = 2; y = 2; x == y</code> مقدار <code>True</code> را بر می گرداند. </li>
+<li>عبارت <code>x = 'str'; y = 'stR'; x == y</code> مقدار <code>False</code> را بر می گرداند. </li>
+<li>عبارت <code>x = 'str'; y = 'str'; x == y</code> مقدار <code>True</code> را بر می گرداند. </li>
+</ul>
+</li>
+<li><p><code>=!</code> (نا مساوی)</p>
+<ul>
+<li>بررسی می کند که آیا دو شئ با یکدیگر برابر نیستند. </li>
+<li>عبارت <code>x = 2; y = 3; x != y</code> مقدار <code>True</code> را بر می گرداند. </li>
+</ul>
+</li>
+<li><p><code>not</code> (boolean NOT)</p>
+<ul>
+<li>اگر x برابر <code>True</code> باشد، مقدار <code>False</code> را بر می گرداند. اگر x برابر <code>False</code> باشد، مقدار <code>True</code> را بر می گرداند. </li>
+<li>عبارت <code>x = True; not x</code> مقدار <code>False</code> را باز می گرداند. </li>
+</ul>
+</li>
+<li><p><code>and</code> (boolean AND)</p>
+<ul>
+<li>اگر x برابر <code>False</code> باشد، عبارت <code>x and y</code> مقدار <code>False</code> را بر می گرداند. در غیر این صورت، نتیجۀ ارزیابی y را بر می گرداند. </li>
+<li>عبارت <code>x = False; y = True; x and y</code> مقدار <code>False</code> را بر می گرداند زیرا x برابر False است. در این شرایط، پایتون y را ارزیابی نمی کند زیرا می داند سمت چپ عبارت 'and' برابر <code>False</code> است بنابراین صرف نظر از مقادیر دیگر کل عبارت <code>False</code> خواهد بود. این رفتار ارزیابی اتصال کوتاه (short-circuit evaluation) نامیده می شود.</li>
+</ul>
+</li>
+<li><p><code>or</code> (boolean OR)</p>
+<ul>
+<li>اگر x برابر <code>True</code> باشد، مقدار True را بر می گرداند. در غیر این صورت، نتیجۀ ارزیابی y را بر می گرداند. </li>
+<li>عبارت <code>x = True; y = False; x or y</code> مقدار <code>True</code> را باز می گرداند. در اینجا نیز ارزیابی اتصال کوتاه اعمال می شود. </li>
+</ul>
+</li>
+</ul>
+<h2 id="میان-بر-برای-عملیات-ریاضی-و-انتساب">میان بر برای عملیات ریاضی و انتساب</h2>
+<p>معمول است که یک عملیات ریاضی را روی یک متغیر اجرا کنیم و سپس نتیجۀ آن عملیات را دوباره به همان متغیر نسبت دهیم. بنابراین، برای چنین عباراتی یک میان بر وجود دارد: </p>
+<pre><code class="lang-python">a = <span class="hljs-number">2</span>
+a = a * <span class="hljs-number">3</span>
+</code></pre>
+<p>را نیز می توان به صورت زیر نوشت: </p>
+<pre><code class="lang-python">a = <span class="hljs-number">2</span>
+a *= <span class="hljs-number">3</span>
+</code></pre>
+<p>توجه کنید که عبارت <code>var = var operation expression</code> به صورت <code>var operation = expression</code> نوشته می شود. </p>
+<h2 id="ترتیب-ارزیابی">ترتیب ارزیابی</h2>
+<p>اگر عبارتی مانند <code>4 * 3 + 2</code> داشته باشید، ابتدا جمع انجام می شود یا ضرب؟ ریاضیات دبیرستان به ما می آموزد که ابتدا ضرب باید انجام شود. این بدان معناست که عملگر ضرب نسبت به عملگر جمع تقدم دارد. </p>
+<p>جدول زیر ترتیب تقدم عملگرها در پایتون را نشان می دهد؛ این جدول از کمترین تقدم (کمترین میزان اتصال) تا بیشترین تقدم (بیشترین مقدار اتصال) مرتب شده است. این بدان معناست که در یک عبارت مشخص، پایتون ابتدا عملگرها و عباراتی را ارزیابی می کند که در بخش پایین تر جدول قرار دارند و سپس به مواردی می پردازد که در بخش بالاتر جدول آمده اند. </p>
+<p>جدول زیر که از <a href="http://docs.python.org/3/reference/expressions.html#operator-precedence" target="_blank">راهنمای مرجع پایتون</a>  گرفته شده است، برای کامل بودن مطالب ارائه شده است. بسیار بهتر است که برای گروه بندی مناسب عملگرها و عملوندها از پرانتز استفاده کنید تا تقدم آنها را به صورت آشکار مشخص کنید. این کار باعث خوانایی بیشتر برنامه می شود. برای جزئیات بیشتر به <a href="#changing-order-of-evaluation">تغییر ترتیب ارزیابی</a> مراجعه کنید. </p>
+<ul>
+<li><code>lambda</code> : lambda عبارت </li>
+<li><code>if - else</code> : عبارت شرطی </li>
+<li><code>or</code> : Boolean OR</li>
+<li><code>and</code> : Boolean AND</li>
+<li><code>not x</code> : Boolean NOT</li>
+<li><code>in, not in, is, is not, &lt;, &lt;=, &gt;, &gt;=, !=, ==</code> : مقایسه ها، شامل آزمون های عضویت و آزمون های هویتی </li>
+<li><code>|</code> : Bitwise OR</li>
+<li><code>^</code> : Bitwise XOR</li>
+<li><code>&amp;</code> : Bitwise AND</li>
+<li><code>&lt;&lt;, &gt;&gt;</code> : شیفت ها </li>
+<li><code>+, -</code> : جمع و تفریق </li>
+<li><code>*, /, //, %</code> : ضرب، تقسیم، تقسیم و کف و باقی مانده </li>
+<li><code>+x, -x, ~x</code> : Positive, Negative, bitwise NOT</li>
+<li><code>**</code> : توان رسانی </li>
+<li><code>x[index], x[index:index], x(arguments...), x.attribute</code> : دسترسی به عنصر، برش، فراخوانی و ارجاع به ویژگی </li>
+<li><code>(expressions...), [expressions...], {key: value...}, {expressions...}</code> : ایجاد اتصال یا تاپل، ایجاد لیست، ایجاد دیکشنری، ایجاد مجموعه </li>
+</ul>
+<p>عملگرهایی که تاکنون با آنها آشنا نشده ایم، در فصل های بعدی توضیح داده خواهند شد.</p>
+<p>عملگرهایی که <em>تقدم یکسانی</em> دارند در یک ردیف از جدول بالا قرار گرفته اند. برای مثال، <code>+</code> و <code>-</code> تقدم یکسانی دارند. </p>
+<h2 id="تغییر-ترتیب-ارزیابی-changing-order-of-evaluation">تغییر ترتیب ارزیابی {changing-order-of-evaluation#}</h2>
+<p>برای خواناتر کردن عبارات، می توانیم از پرانتزها استفاده کنیم. برای مثال، <code>(4 * 3) + 2</code> قطعاً درک ساده تری نسبت به <code>4 * 3 + 2</code> دارد، زیرا عبارت دوم به دانستن تقدم عملگرها نیاز دارد. همانند هر چیز دیگری، پرانتزها باید به اندازه و به صورت منطقی استفاده شوند (در استفاده از آنها زیاده روی نکنید) و نباید اضافی باشند؛ مانند <code>((4 * 3) + 2)</code>. </p>
+<p>استفاده از پرانتز یک مزیت دیگر نیز دارد - به ما اجازه می دهد ترتیب ارزیابی را تغییر دهیم. برای مثال، اگر بخواهید در یک عبارت، جمع پیش از ضرب انجام شود، می توانید چیزی مانند <code>4 * (3 + 2)</code> بنویسید. </p>
+<h2 id="شرکت-پذیری">شرکت پذیری</h2>
+<p>عملگرها معمولاً از چپ به راست با یکدیگر ترکیب می شوند. این بدان معناست که عملگرهایی با تقدم یکسان، به ترتیب از چپ به راست ارزیابی می شوند.  برای مثال، <code>4 + 3 + 2</code> به صورت <code>4 + (3 + 2)</code> ارزیابی می شود. </p>
+<h2 id="عبارات">عبارات</h2>
+<p>مثال را با نام <code>expression.py</code> ذخیره کنید: </p>
+<pre><code class="lang-python">length = <span class="hljs-number">5</span>
+breadth = <span class="hljs-number">2</span>
+
+area = length * breadth
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Area is'</span>, area)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Perimeter is'</span>, <span class="hljs-number">2</span> * (length + breadth))
+</code></pre>
+<p>خروجی: </p>
+<pre><code>$ python expression.py
+Area is 10
+Perimeter is 14
+</code></pre><p><strong>نحوۀ عملکرد</strong></p>
+<p>طول و عرض مستطیل در متغیرهایی با همین نام ذخیره می شوند. از این متغیرها برای مساحبۀ مساحت و محیط مستطیل با کمک عبارت ها استفاده می کنیم. نتیجۀ عبارت <code>length * breadth</code> را در متغیر <code>area</code> ذخیره کرده و سپس با استفاده از تابع <code>print</code> آن را چاپ می کنیم. در حالت دوم، مستقیماً از مقدار عبارت <code>(length + breadth) * 2</code> در تابع print استفاده  می کنیم. </p>
+<p>همچنین توجه کنید که پایتون خروجی را <em>به شکلی مرتب و خوانا چاپ می کند</em>. اگرچه فاصله ای بین <code>'Area is'</code> و متغیر <code>area</code> مشخص نکرده ایم، پایتون این فاصله را برای ما قرار می دهد تا خروجی مرتبی داشته باشیم و برنامه نیز به این شکل خواناتر باشد؛ زیرا دیگر لازم نیست نگران فاصله گذاری در رشته هایی باشیم که برای خروجی استفاده می کنیم. این نمونه ای از این است که چگونه پایتون کار برنامه نویس را آسان می کند. </p>
+<h2 id="جمع-بندی">جمع بندی</h2>
+<p>دیدیم که چگونه از عملگرها، عملوندها و عبارات استفاده کنیم؛ این ها اجزای سازندۀ اساسی هر برنامه هستند. در ادامه، خواهیم دید که چگونه با استفاده از دستورها از این موارد در برنامه های خود بهره بگیریم. </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="basics.html" class="navigation navigation-prev " aria-label="Previous page: Basics">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="control_flow.html" class="navigation navigation-next " aria-label="Next page: Control flow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Operators and Expressions","level":"1.8","depth":1,"next":{"title":"Control flow","level":"1.9","depth":1,"path":"control_flow.md","ref":"control_flow.md","articles":[]},"previous":{"title":"Basics","level":"1.7","depth":1,"path":"basics.md","ref":"basics.md","articles":[]},"dir":"rtl"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"authorUrl":"https://swaroopch.com/about/","buyBookUrl":"https://swaroopch.com/buybook/","contactUrl":"https://swaroopch.com/contact/","downloadUrl":"https://github.com/swaroopch/byte-of-python/releases/latest","officialUrl":"https://python.swaroopch.com","pythonVersion":"3.6.0","sourceUrl":"https://github.com/swaroopch/byte-of-python","vimBookUrl":"https://vim.swaroopch.com/"},"title":"A Byte of Python","language":"fa","gitbook":"*","direction":"rtl"},"file":{"path":"op_exp.md","mtime":"2026-10-01T20:53:21.049Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-10-01T20:53:33.324Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
