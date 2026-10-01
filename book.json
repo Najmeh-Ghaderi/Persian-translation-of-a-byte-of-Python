@@ -1,5 +1,7 @@
 {
     "title": "A Byte of Python",
+    "language": "fa",
+    "direction": "rtl",
     "variables": {
         "authorUrl": "https://swaroopch.com/about/",
         "buyBookUrl": "https://swaroopch.com/buybook/",
