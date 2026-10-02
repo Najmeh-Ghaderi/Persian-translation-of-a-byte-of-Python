@@ -1,6 +1,7 @@
 # Summary
 
 * [Dedication](dedication.md)
+* [دربارۀ مترجم و این کتاب](translator_note.md)
 * [Preface](preface.md)
 * [About Python](about_python.md)
 * [Installation](installation.md)
