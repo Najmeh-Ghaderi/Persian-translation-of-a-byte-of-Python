@@ -1,0 +1,14 @@
+html, body {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+.book.book-rtl .book-body,
+.book .book-body {
+    direction: rtl !important;
+}
+
+.markdown-section {
+    direction: rtl !important;
+    text-align: right !important;
+}
